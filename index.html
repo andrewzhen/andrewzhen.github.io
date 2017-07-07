@@ -1,21 +1,116 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!DOCTYPE html>
 <html>
 <head>
-	<title>test</title>
+	<title>Andrew Zhen</title>
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-102146073-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<script src="script.js"></script>
 
 <body>
-test
+	<!-- landing page -->
+	<section class="background_picture">
+			<div class="intro">
+				<h1>Andrew Zhen</h1>
+
+				<div>
+					<a href="https://www.facebook.com/zhen.andrew" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/a.jzhen/" class="fa fa-instagram"></a>
+					<a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-ghost"></a>
+					<a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-wechat"></a>
+				</div>
+
+				<div>
+					<p>WHAT YOU THINK, YOU BECOME. &nbsp&nbsp WHAT YOU FEEL, YOU ATTRACT. &nbsp&nbsp WHAT YOU IMAGINE, YOU CREATE.</p>
+				</div>
+			</div>
+	</section>
+
+	<!-- about -->
+	<section>
+		<div class="about">
+			<h1>About</h1>
+			<p>甄家豪</p>
+		</div>
+	</section>
+
+	<table class="table" align="center" cellpadding="20px">
+		<tr>
+			<th class="portrait"></th>
+			<th style="text-align: left">
+				<p>
+					Hi everyone, I'm Andrew and this is my own little part of the internet where I get to share my life for all to see!
+				</p>
+
+				<p>
+					I'm a student at the University of California, San Diego studying Cognitive Science, specializing in machine learning and computation, class of 2020. 
+				</p>
+
+				<p>
+					If you ever want to&nbsp<img src="camera.png" width="30" height="25"> or <img src="basketball.png" width="30" height="25">&nbsp, you can reach me at the social media links above.
+				</p>
+			</th>
+		</tr>	
+	</table>
+
+	<hr>
+	<hr>
+	<hr>
+
+	<!-- <div id="grad"></div> -->
+
+	<!-- interests -->
+	<section class="interests">
+		<button id="btn1" class="button" onclick="focus1();refreshContent('Photography','Basketball','Traveling','School')">Photography</a></button>
+
+		<span class="bar">|</span>
+
+		<button id="btn2" class="button" onclick="focus2();refreshContent('Basketball','Photography','Traveling','School')">Basketball</a></button>
+		
+		<span class="bar">|</span>
+
+		<button id="btn3" class="button" onclick="focus3();refreshContent('Traveling','Photography','Basketball','School')">Traveling</a></button>
+
+		<span class="bar">|</span>
+
+		<button id="btn4" class="button" onclick="focus4();refreshContent('School','Traveling','Photography','Basketball')">School</a></button>
+
+		<div id="contentPage" align="left" style="padding-left: 145px; padding-top: 100px">
+			<div id="Photography">
+				<a href="beach.jpg"><img src="pho1.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho2.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho3.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho4.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho5.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho6.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho7.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho8.jpg" hspace="30" vspace="30"></a>
+				<a href="beach.jpg"><img src="pho9.jpg" hspace="30" vspace="30"></a>
+			</div>
+
+			<div id="Basketball">
+				<p>Coming Soon</p>
+			</div>
+
+			<div id="Traveling">
+				<p>Coming Soon</p>
+			</div>
+
+			<div id="School">
+				<p>Coming Soon</p>
+			</div>
+		</ul>
+	</section>
+
+	<!-- scroll to top -->
+	<div style="text-align: center">
+		<button id="topButton" onclick="topPage()">^</button>
+	</div>
+
+	 <!-- <audio loop autoplay> -->
+		<!-- <source src="sound.mp3"> -->
+	 <!-- </audio> -->
 </body>
 </html>

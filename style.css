@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Arima Madurai');
+@import url('https://fonts.googleapis.com/css?family=Playfair Display SC');
+@import url('https://fonts.googleapis.com/css?family=Abril Fatface');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Indie Flower');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.background_picture {
+	height: 90%;
+	width: 94.5%;
+	margin: 3%;
+	background-image: url("beach.jpg");
+	display: table;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.intro {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro h1 {
+	color: white;
+	font-family: 'Raleway';
+	font-size:90px;
+	font-weight: lighter;
+	margin-top: 150px;
+	margin-bottom: 20px;
+	opacity: 0.9;
+}
+
+.intro a {
+	margin-right: 40px;
+	margin-bottom: 500px;
+	transition: margin-bottom 2s, background 0.5s;
+}
+
+.intro a:hover {
+	margin-bottom: 0px;
+}
+
+.intro p {
+	color: white;
+	font-family: 'Raleway';
+	word-spacing: 3px;
+	letter-spacing: 3px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: padding 0.5s, font-size 0.5s;
+}
+
+.fa:hover {
+	padding: 11px;
+	font-size: 21px;
+	opacity: 0.7;
+}
+
+.fa-facebook {
+	background: linear-gradient(to top right, rgb(85,110,255), rgb(85,110,150));
+    color: white;
+    opacity: 0.9;
+}
+
+.fa-instagram {
+	background: linear-gradient(to top left, rgb(255,140,30), rgb(185,50,140));
+    color: white;
+}
+
+.fa-snapchat-ghost {
+	text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+	background: linear-gradient(to top right, rgb(255,220,0), rgb(255,253,102));
+	color: white;
+}
+
+.fa-wechat {
+	background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
+	color: white;
+}
+
+.portrait {
+	width:550;
+	height:400;
+	border-radius: 50%;
+	background-image: url("portrait.jpg"), url("portraitbg.jpg");
+	background-attachment: fixed;
+	background-position: 15% 65%;
+	background-repeat: no-repeat;
+	background-size: 700px 500px, 1700px 850px;
+	background-color: transparent, transparent;
+}
+
+.about h1 {
+	font-family: 'Playfair Display SC';
+	font-size: 60px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.about p {
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 5px;
+}
+
+.table {
+	width: 80%; 
+	padding-bottom: 150px;
+}
+
+.table p {
+	font-family: 'Indie Flower';
+	font-size: 30px;
+}
+
+hr {
+	border-width: 1px;
+	margin-left: 8em;
+	margin-right: 8em;
+	border-style: solid;
+	color: rgb(200,200,200);
+}
+
+.interests {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+.button {
+	font-family: 'Abril Fatface';
+	background-color: transparent;
+	border-color: white;
+	border-style: solid;
+	padding-top: 30px;
+	outline: none;
+	cursor: pointer;
+	display: solid;
+	width: 17%;
+	font-size: 30px;
+	transition: font-size 1s;
+	margin-top: 170px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	display: inline-block;
+}
+
+button:hover {
+	font-size: 36px;
+	border-top-color: rgb(220,220,220);
+}
+
+.bar {
+	font-size: 25px;
+}
+
+#grad {
+	height: 200px;
+	/*background: linear-gradient(to top left, rgba(220,220,220,1),rgba(220,222,220,0));*/
+	/*background: linear-gradient(to top left, rgb(255,0,0),rgb(255,155,95));*/
+	/*background: linear-gradient(to top left, rgb(0,0,0), rgb(255,255,255));*/
+	margin-left: 8em;
+	margin-right: 8em;
+	opacity: 0.8;
+}
+
+#contentPage img {
+	object-fit: cover;
+	width: 400px;
+	height: 400px;
+	transition: width 0.75s, height 0.75s, opacity 2s;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
+}
+
+#contentPage img:hover {
+	width: 405px;
+	height: 405px;
+	opacity: 0.9;
+}
+
+#contentPage p {
+	padding-left: 500px;
+	/*text-align: center;*/
+	font-size: 60px;
+	font-family: 'Arima Madurai';
+	padding-top: 100px;
+	padding-bottom: 700px;
+}
+
+#topButton {
+	font-size: 50px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+}
