@@ -86,9 +86,8 @@ html, body {
 .portrait {
 	width:550;
 	height:400;
-	border-radius: 50%;
+	border-radius: 2%;
 	background-image: url("portrait.jpg");
-	background-color: rgb(220,220,220);
 	background-attachment: fixed;
 	background-position: 15% 65%;
 	background-repeat: no-repeat;
@@ -144,8 +143,8 @@ hr {
 	display: solid;
 	width: 17%;
 	font-size: 30px;
-	transition: font-size 1s;
 	margin-top: 170px;
+	transition: font-size 0.5s;
 }
 
 a {
@@ -190,6 +189,8 @@ footer {
 	background-color: rgb(220,220,220);
 	font-family: 'Raleway';
 	padding-left: 50px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	margin-left: 50px;
+	margin-right: 50px;
 }

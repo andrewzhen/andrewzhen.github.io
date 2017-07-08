@@ -9,13 +9,16 @@ ga('send', 'pageview');
 
 // start up
 window.onload = function() {
-	// var x = document.getElementById("btn1");
-	var x = document.getElementById("btn2");
+	// Basketball tab
+    var x = document.getElementById("btn1");
+    refreshContent("Photography", "Basketball", "Traveling", "School");
+
+	// Photography tab
+	// var x = document.getElementById("btn2");
+	// refreshContent("School", "Photography", "Basketball", "Traveling");
+	
     x.style.fontSize = "36px";
     x.style.borderTopColor = "black";
-
-    // refreshContent("Photography", "Basketball", "Traveling", "School");
-    refreshContent("School", "Photography", "Basketball", "Traveling");
 }
 
 function focus1() {
@@ -115,7 +118,20 @@ function scrollFunction() {
     }
 }
 
-function topPage() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
+// var modal = document.getElementById('myModal');
+// var btn = document.getElementById('wechat');
+// var span = document.getElementById("close")[0];
+
+// fa fa-wechat.onclick = function() {
+// 	modal.style.display = "block";
+// }
+
+// span.onclick = function() {
+// 	modal.style.dispaly = "none";
+// }
+
+// window.onclick = function(event) {
+// 	if(event.target == modal) {
+// 		modal.style.display = "none";
+// 	}
+// }
