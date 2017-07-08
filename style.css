@@ -83,6 +83,43 @@ html, body {
 	color: white;
 }
 
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: transparent;
+    border-style: solid;
+    border: none !important;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-family: 'Raleway'
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    /*color: #aaa;*/
+    float: right;
+    font-size:50px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 .portrait {
 	width:550;
 	height:400;
@@ -166,15 +203,9 @@ button:hover {
 	object-fit: cover;
 	width: 400px;
 	height: 400px;
-	transition: width 0.75s, height 0.75s, opacity 2s;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
 	border-radius: 1%;
-}
-
-#contentPage img:hover {
-	width: 405px;
-	height: 405px;
-	opacity: 0.9;
+	cursor: pointer;
 }
 
 #contentPage p {

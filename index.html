@@ -49,16 +49,31 @@
 		<div>
 			<a href="https://www.facebook.com/zhen.andrew" class="fa fa-facebook"></a>
 			<a href="https://www.instagram.com/a.jzhen/" class="fa fa-instagram"></a>
-			<a href="https://accounts.snapchat.com/accounts/snapcodes" class="fa fa-snapchat-ghost"></a>
-			<a id="wechat" class="fa fa-wechat"></a>
+			<a style="cursor: pointer" id="snapChat" class="fa fa-snapchat-ghost"></a>
+			<a style="cursor: pointer" id="weChat" class="fa fa-wechat"></a>
 		</div>
+
+		<div id="snapChatModal" class="modal">
+			<div class="modal-content">
+				<span id="snapChatSpan" class="close">&times;</span>
+				<p>SnapChat Username: andrewzee6</p>
+				<img src="snapChatQR.png" style="border-radius: 8%">
+			</div>
+		</div>
+
+		<div id="weChatModal" class="modal">
+			<div class="modal-content">
+				<span id="weChatSpan" class="close">&times;</span>
+				<p>WeChat ID: drewzhen</p>
+				<img src="weChatQR.png" style="border-radius: 4%; width: 525px; height: 525px">
+			</div>
+		</div>
+
 	</section>
 
 	<hr>
 	<hr>
 	<hr>
-
-	<!-- <div id="grad"></div> -->
 
 	<!-- interests -->
 	<section class="interests">
@@ -78,15 +93,15 @@
 
 		<div id="contentPage" align="left" style="padding-left: 145px; padding-top: 100px">
 			<div id="Photography">
-				<a><img src="pho1.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho2.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho3.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho4.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho5.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho6.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho7.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho8.jpg" hspace="30" vspace="30"></a>
-				<a><img src="pho9.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho1" src="pho1.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho2" src="pho2.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho3" src="pho3.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho4" src="pho4.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho5" src="pho5.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho6" src="pho6.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho7" src="pho7.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho8" src="pho8.jpg" hspace="30" vspace="30"></a>
+				<a><img id="pho9" src="pho9.jpg" hspace="30" vspace="30"></a>
 			</div>
 
 			<div id="Basketball">
@@ -100,7 +115,55 @@
 			<div id="School">
 				<p>Coming Soon</p>
 			</div>
-		</ul>
+		</div>
+
+		<div class="phoModals">
+			<div id="pho1Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho1Span"></span><img src="pho1.jpg">
+				</div>
+			</div>
+			<div id="pho2Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho2Span"></span><img src="pho2.jpg">
+				</div>
+			</div>
+			<div id="pho3Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho3Span"></span><img src="pho3.jpg">
+				</div>
+			</div>
+			<div id="pho4Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho4Span"></span><img src="pho4.jpg">
+				</div>
+			</div>
+			<div id="pho5Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho5Span"></span><img src="pho5.jpg">
+				</div>
+			</div>
+			<div id="pho6Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho6Span"></span><img src="pho6.jpg">
+				</div>
+			</div>
+			<div id="pho7Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho7Span"></span><img src="pho7.jpg">
+				</div>
+			</div>
+			<div id="pho8Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho8Span"></span><img src="pho8.jpg">
+				</div>
+			</div>
+			<div id="pho9Modal" class="modal">
+				<div class="modal-content">
+					<span id="pho9Span"></span><img src="pho9.jpg">
+				</div>
+			</div>
+		</div>
 	</section>
 
 	 <!-- <audio loop autoplay> -->
