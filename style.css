@@ -178,7 +178,7 @@ html, body {
     font-size: 25px;
     font-family: 'Raleway';
     max-width: 66em;
-    width: 100%;
+    width: 90%;
 
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
