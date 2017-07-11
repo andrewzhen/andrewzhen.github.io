@@ -26,19 +26,19 @@ html, body {
 	background-repeat: no-repeat;
 }
 
-@media only screen and (max-device-width: 320px) {
-	.background_picture {
-		min-height: 100%;
+@media only screen and (max-device-width: 900px) {
+	.background_picture img{
+		height: auto;
 		min-width: 100%;
 	}
 
-	.portrait {
-		min-height: 100%;
+	.portrait img{
+		height: auto;
 		min-width: 100%;
 	}
 
-	.socialMedia {
-		min-height: 100%;
+	.socialMedia img{
+		height: auto;
 		min-width: 100%;
 	}
 }
@@ -70,9 +70,9 @@ html, body {
 	width: 80%;
 }
 
-@media only screen and (max-device-width: 900px) {
+@media only screen and (max-device-width: 1000px) {
 	.quote {
-		width: 500px;
+		width: 200px;
 		margin: auto;
 	}
 }
