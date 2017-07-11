@@ -148,3 +148,13 @@ window.onclick = function(event) {
 		pho9Modal.style.display = "none";
 	}
 }
+
+pho1Span.onclick = function() { pho1Modal.style.display = "none";}
+pho2Span.onclick = function() { pho2Modal.style.display = "none";}
+pho3Span.onclick = function() { pho3Modal.style.display = "none";}
+pho4Span.onclick = function() { pho4Modal.style.display = "none";}
+pho5Span.onclick = function() { pho5Modal.style.display = "none";}
+pho6Span.onclick = function() { pho6Modal.style.display = "none";}
+pho7Span.onclick = function() { pho7Modal.style.display = "none";}
+pho8Span.onclick = function() { pho8Modal.style.display = "none";}
+pho9Span.onclick = function() { pho9Modal.style.display = "none";}
