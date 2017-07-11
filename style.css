@@ -28,29 +28,15 @@ html, body {
 
 @media only screen and (max-device-width: 320px) {
 	.background_picture {
-		background-size: 320px;
+		background-size: contain;
 	}
 
 	.portrait {
-		background-size: 320px;
+		background-size: contain;
 	}
 
 	.socialMedia {
-		background-size: 320px;	
-	}
-}
-
-@media only screen and (max-device-width: 320px) {
-	.background_picture {
-		background-size: 320px;
-	}
-
-	.portrait {
-		background-size: 320px;
-	}
-
-	.socialMedia {
-		background-size: 320px;	
+		background-size: contain;
 	}
 }
 
