@@ -29,17 +29,17 @@ html, body {
 @media only screen and (max-device-width: 900px) {
 	.background_picture img{
 		height: auto;
-		min-width: 100%;
+		max-width: 100%;
 	}
 
 	.portrait img{
 		height: auto;
-		min-width: 100%;
+		max-width: 100%;
 	}
 
 	.socialMedia img{
 		height: auto;
-		min-width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -72,8 +72,12 @@ html, body {
 
 @media only screen and (max-device-width: 1000px) {
 	.quote {
-		width: 200px;
+		width: 430px;
 		margin: auto;
+	}
+
+	footer {
+		font-size: 7px;
 	}
 }
 
