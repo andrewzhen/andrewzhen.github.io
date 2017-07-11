@@ -12,7 +12,7 @@ window.onload = function() {
     var x = document.getElementById("btn1");
     refreshContent("Photography", "Basketball", "Traveling", "School");
 	
-    x.style.fontSize = "36px";
+    x.style.fontSize = "2vw";
     x.style.borderTopColor = "black";
 }
 
@@ -30,7 +30,7 @@ weChatSpan.onclick = function() { weChatModal.style.display = "none";}
 
 function focus1() {
     var x = document.getElementById("btn1");
-    x.style.fontSize = "36px";
+    x.style.fontSize = "2vw";
     x.style.borderTopColor = "black";        
 
     x = document.getElementById("btn2");
@@ -52,7 +52,7 @@ function focus2() {
     x.style.borderTopColor = "";           
 
     x = document.getElementById("btn2");
-    x.style.fontSize = "36px";           
+    x.style.fontSize = "2vw";           
     x.style.borderTopColor = "black";
 
     x = document.getElementById("btn3");
@@ -74,7 +74,7 @@ function focus3() {
     x.style.borderTopColor = "";
 
     x = document.getElementById("btn3");
-    x.style.fontSize = "36px";           
+    x.style.fontSize = "2vw";           
     x.style.borderTopColor = "black";
 
     x = document.getElementById("btn4");
@@ -96,7 +96,7 @@ function focus4() {
     x.style.borderTopColor = ""; 
 
     x = document.getElementById("btn4");
-    x.style.fontSize = "36px";           
+    x.style.fontSize = "2vw";           
     x.style.borderTopColor = "black";                    
 }
 

@@ -24,6 +24,7 @@ html, body {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	transform: translateZ(-10px);
 }
 
 /*container*/
@@ -45,20 +46,87 @@ html, body {
 
 .quote {
 	color: white;
+	font-size: 20px;
 	font-family: 'Raleway';
 	word-spacing: 3px;
 	letter-spacing: 3px;
 }
 
+@media only screen and (max-device-width: 900px) {
+	.quote {
+		width: 500px;
+		margin: auto;
+	}
+}
+
+.about {
+	background: rgb(40,46,52);
+	color: white;
+	text-align: center;
+	padding: 1px;
+	height: 200px;
+}
+
+.about h1 {
+	font-family: 'Playfair Display SC';
+	font-size: 60px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.about p {
+	font-size: 40px;
+	letter-spacing: 5px;
+	margin-top: 5px;
+}
+
+.portrait {
+	width: 100%;
+	height: 50%;
+	background-size: cover;
+	background-image: url("portrait.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.description {
+	width: 70%;
+	background: rgb(220,220,220);
+	font-family: 'Raleway';
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin: auto;
+}
+
+.table {
+	display: inline;
+	width: 80%; 
+	padding-bottom: 150px;
+	font-family: 'Indie Flower';
+	font-size: 30px;
+	text-align: center;
+}
+
+.socialMedia {
+	width: 100%;
+	height: 20%;
+	background-size: cover;
+	background-image: url("socialMedia.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 5%;
+	opacity: 0.9;
+}
+
 .fa {
     padding: 10px;
-    font-size: 20px;
-    width: 20px;
+    font-size: 25px;
+    width: 25px;
     text-align: center;
     border-radius: 50%;
-    opacity: 0.9;
-    margin-right: 40px;
-    margin-bottom: 148px;
+    margin-right: 5%;
 }
 
 .fa-facebook {
@@ -120,51 +188,7 @@ html, body {
     cursor: pointer;
 }
 
-.portrait {
-	width:550;
-	height:400;
-	border-radius: 2%;
-	background-image: url("portrait.jpg");
-	background-attachment: fixed;
-	background-position: 15% 65%;
-	background-repeat: no-repeat;
-	background-size: 700px 500px;
-}
-
-.about h1 {
-	font-family: 'Playfair Display SC';
-	font-size: 60px;
-	text-align: center;
-	padding-top: 50px;
-}
-
-.about p {
-	padding-bottom: 50px;
-	text-align: center;
-	font-size: 40px;
-	letter-spacing: 5px;
-}
-
-.table {
-	width: 80%; 
-	padding-bottom: 150px;
-}
-
-.table p {
-	font-family: 'Indie Flower';
-	font-size: 30px;
-}
-
-hr {
-	border-width: 1px;
-	margin-left: 8em;
-	margin-right: 8em;
-	border-style: solid;
-	color: rgb(200,200,200);
-}
-
 .interests {
-	padding-top: 100px;
 	padding-bottom: 100px;
 	text-align: center;
 }
@@ -178,9 +202,11 @@ hr {
 	outline: none;
 	cursor: pointer;
 	display: solid;
+
 	width: 17%;
-	font-size: 30px;
-	margin-top: 170px;
+	font-size: 1.3vw;
+	margin-top: 5%;
+	margin-bottom: 5%;
 	transition: font-size 0.5s;
 }
 
@@ -191,7 +217,7 @@ a {
 }
 
 button:hover {
-	font-size: 36px;
+	font-size: 2vw;
 	border-top-color: rgb(220,220,220);
 }
 
@@ -199,7 +225,11 @@ button:hover {
 	font-size: 25px;
 }
 
-#contentPage img {
+.contentPage {
+	text-align: center;
+}
+
+.contentPage img {
 	object-fit: cover;
 	width: 400px;
 	height: 400px;
@@ -208,8 +238,7 @@ button:hover {
 	cursor: pointer;
 }
 
-#contentPage p {
-	padding-left: 500px;
+.contentPage p {
 	font-size: 60px;
 	font-family: 'Arima Madurai';
 	padding-top: 100px;
