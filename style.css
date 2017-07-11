@@ -172,6 +172,7 @@ html, body {
     border: none !important;
     padding: 20px;
     margin-top: 5%;
+    margin-bottom: 10%;
     border: 1px solid #888;
     display: inline-block;
     color: white;
@@ -179,9 +180,11 @@ html, body {
     font-family: 'Raleway';
     max-width: 66em;
     width: 90%;
+    height: 100%;
 
     -webkit-overflow-scrolling: touch;
     overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 /* The Close Button */
