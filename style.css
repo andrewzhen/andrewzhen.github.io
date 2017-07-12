@@ -26,23 +26,6 @@ html, body {
 	background-repeat: no-repeat;
 }
 
-@media only screen and (max-device-width: 900px) {
-	.background_picture img{
-		height: auto;
-		max-width: 100%;
-	}
-
-	.portrait img{
-		height: auto;
-		max-width: 100%;
-	}
-
-	.socialMedia img{
-		height: auto;
-		max-width: 100%;
-	}
-}
-
 /*container*/
 .intro {
 	max-width: 100%;
