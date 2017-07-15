@@ -38,7 +38,7 @@
 					<div>&nbsp</div>
 
 					<p>
-						If you ever want to&nbsp<img src="camera.png" width="30" height="25"> or <img src="basketball.png" width="30" height="25">&nbsp, you can reach me at the social media links below.
+						If you ever want to&nbsp<img src="camera.png" width="30" height="25"> or <img src="basketball.png" width="30" height="25">, you can reach me at the social media links below.
 					</p>
 				</div>
 			</div>
@@ -70,45 +70,54 @@
 		</div>
 	</section>
 
+	<hr>
+
 	<!-- interests -->
 	<section class="interests">
-		<button id="btn1" class="button" onclick="focus1();refreshContent('Photography','Basketball','Traveling','School')">Photography</a></button>
+		<div class="contentHeader">
+			<p>PHOTOGRAPHY</p>
+		</div>
 
-		<span class="bar">|</span>
+		<div class="buttonHeader">
+			<button id="btn1" class="button" onclick="focus1();refreshContent('Landscape','Architecture','Events','Everyday')">Landscape</a></button>
 
-		<button id="btn2" class="button" onclick="focus2();refreshContent('Basketball','Photography','Traveling','School')">Basketball</a></button>
-		
-		<span class="bar">|</span>
+			<span class="bar">|</span>
 
-		<button id="btn3" class="button" onclick="focus3();refreshContent('Traveling','Photography','Basketball','School')">Traveling</a></button>
+			<button id="btn2" class="button" onclick="focus2();refreshContent('Architecture','Landscape','Events','Events')">Architecture</a></button>
+			
+			<span class="bar">|</span>
 
-		<span class="bar">|</span>
+			<button id="btn3" class="button" onclick="focus3();refreshContent('Events','Landscape','Architecture','Everyday')">Events</a></button>
 
-		<button id="btn4" class="button" onclick="focus4();refreshContent('School','Traveling','Photography','Basketball')">School</a></button>
+			<span class="bar">|</span>
 
-		<div class="contentPage">
-			<div id="Photography">
-				<a><img id="pho1" src="pho1.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho2" src="pho2.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho3" src="pho3.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho4" src="pho4.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho5" src="pho5.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho6" src="pho6.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho7" src="pho7.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho8" src="pho8.jpg" hspace="30" vspace="30"></a>
-				<a><img id="pho9" src="pho9.jpg" hspace="30" vspace="30"></a>
+			<button id="btn4" class="button" onclick="focus4();refreshContent('Everyday','Landscape','Architecture','Events')">Everyday</a></button>
+		</div>
+
+		<div class="contentSection">
+			<div id="Landscape" class="imageStyle">
+				<img id="land1" src="landscape/land1.jpg">
+				<img id="land2" src="landscape/land2.jpg">
+				<img id="land3" src="landscape/land3.jpg">
+				<img id="land4" src="landscape/land4.jpg">
+				<img id="land5" src="landscape/land5.jpg">
+				<img id="land6" src="landscape/land6.jpg">
 			</div>
 
-			<div id="Basketball">
-				<p>Coming Soon</p>
+			<div id="Architecture" class="imageStyle">
+				<img src="architecture/arch1.jpg">
+				<img src="architecture/arch2.jpg">
+				<img src="architecture/arch3.jpg">
 			</div>
 
-			<div id="Traveling">
-				<p>Coming Soon</p>
+			<div id="Events" class="imageStyle">
+				<img src="events/eve1.jpg">
+				<img src="events/eve2.jpg">
 			</div>
 
-			<div id="School">
-				<p>Coming Soon</p>
+			<div id="Everyday" class="imageStyle">
+				<img src="everyday/ed1.jpg">
+				<img src="everyday/ed2.jpg">
 			</div>
 		</div>
 
@@ -164,14 +173,11 @@
 	 <!-- <audio loop autoplay> -->
 		<!-- <source src="sound.mp3"> -->
 	 <!-- </audio> -->
-
-	 <!-- footer -->
+	 		<!-- footer -->
 	 <footer>
 	 	<p>Photos taken from a Nikon D3300 18-55mm f/3.5-5.6 and a OnePlus 3<img src="faviconBlack.png" style="padding-right: 100px; width: 25px; height: 25px; float: right">
 	 	</p>
 	 </footer>
-
-	 <p>&nbsp</p>
 </body>
 
 <script src="script.js"></script>

@@ -10,10 +10,10 @@ ga('send', 'pageview');
 // start up
 window.onload = function() {
     var x = document.getElementById("btn1");
-    refreshContent("Photography", "Basketball", "Traveling", "School");
+    refreshContent("Landscape" , "Architecture", "Events", "Everyday");
 	
     x.style.fontSize = "2vw";
-    x.style.borderTopColor = "black";
+    x.style.borderTopColor = "white";
 }
 
 // social media modal
@@ -31,7 +31,7 @@ weChatSpan.onclick = function() { weChatModal.style.display = "none";}
 function focus1() {
     var x = document.getElementById("btn1");
     x.style.fontSize = "2vw";
-    x.style.borderTopColor = "black";        
+    x.style.borderTopColor = "white";
 
     x = document.getElementById("btn2");
     x.style.fontSize = "";           
@@ -53,7 +53,7 @@ function focus2() {
 
     x = document.getElementById("btn2");
     x.style.fontSize = "2vw";           
-    x.style.borderTopColor = "black";
+    x.style.borderTopColor = "white";
 
     x = document.getElementById("btn3");
     x.style.fontSize = ""; 
@@ -75,7 +75,7 @@ function focus3() {
 
     x = document.getElementById("btn3");
     x.style.fontSize = "2vw";           
-    x.style.borderTopColor = "black";
+    x.style.borderTopColor = "white";
 
     x = document.getElementById("btn4");
     x.style.fontSize = "";  
@@ -97,7 +97,7 @@ function focus4() {
 
     x = document.getElementById("btn4");
     x.style.fontSize = "2vw";           
-    x.style.borderTopColor = "black";                    
+    x.style.borderTopColor = "white";
 }
 
 function refreshContent(show, hide1, hide2, hide3) {
