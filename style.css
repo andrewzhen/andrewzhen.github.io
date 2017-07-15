@@ -45,7 +45,7 @@ html, body {
 	letter-spacing: 0.7vw;
 }
 
-.quote {
+.quote1 {
 	color: white;
 	font-size: 18px;
 	font-family: 'Raleway';
@@ -117,7 +117,7 @@ html, body {
 
 .socialMedia {
 	width: 100%;
-	height: 30%;
+	height: 20%;
 	background-size: cover;
 	background-image: url("socialMedia.jpg");
 	background-attachment: fixed;
@@ -132,7 +132,7 @@ html, body {
     border-radius: 20%;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 1.5%;
 }
 
 .fa-facebook {
@@ -218,11 +218,12 @@ hr {
 	background: rgb(52,52,52);
 	color: white;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 3vw;
 	font-family: 'Arima Madurai';
 	height: 70px;
-	padding-top: 50px;
-	padding-bottom: 20px;
+	padding-top: 3%;
+	padding-left: 4vw;
+	padding-bottom: 9%;
 	letter-spacing: 5vw;
 }
 
@@ -264,8 +265,28 @@ a {
 	display: inline-block;
 }
 
+.quote2 {
+	padding-top: 3%;
+	font-size: 1vw;
+	font-family: 'Raleway';
+	word-spacing: 5px;
+	letter-spacing: 4px;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 10px;
+}
+
+.quote2Author {
+	font-family: 'Raleway';
+	font-style: italic;
+	font-size: 15px;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	letter-spacing: 1px;
+}
+
 .contentSection {
-	margin-top: 8%;
+	margin-top: 5%;
 }
 
 .contentSection img {
