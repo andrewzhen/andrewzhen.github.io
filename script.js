@@ -22,11 +22,11 @@ var snapChatModal = document.getElementById('snapChatModal'); var snapChatBtn = 
 
 weChatBtn.onclick = function() { weChatModal.style.display = "block";}
 
+weChatSpan.onclick = function() { weChatModal.style.display = "none";}
+
 snapChatBtn.onclick = function() { snapChatModal.style.display = "block";}
 
 snapChatSpan.onclick = function() { snapChatModal.style.display = "none";}
-
-weChatSpan.onclick = function() { weChatModal.style.display = "none";}
 
 function focus1() {
     var x = document.getElementById("btn1");
@@ -112,49 +112,55 @@ function refreshContent(show, hide1, hide2, hide3) {
 	toHide3.style.display = "none";
 }
 
-// image gallery modal
-var pho1Modal = document.getElementById("pho1Modal"); var pho1Btn = document.getElementById("pho1");
-var pho2Modal = document.getElementById("pho2Modal"); var pho2Btn = document.getElementById("pho2");
-var pho3Modal = document.getElementById("pho3Modal"); var pho3Btn = document.getElementById("pho3");
-var pho4Modal = document.getElementById("pho4Modal"); var pho4Btn = document.getElementById("pho4");
-var pho5Modal = document.getElementById("pho5Modal"); var pho5Btn = document.getElementById("pho5");
-var phoM6odal = document.getElementById("pho6Modal"); var pho6Btn = document.getElementById("pho6");
-var pho7Modal = document.getElementById("pho7Modal"); var pho7Btn = document.getElementById("pho7");
-var pho8Modal = document.getElementById("pho8Modal"); var pho8Btn = document.getElementById("pho8");
-var pho9Modal = document.getElementById("pho9Modal"); var pho9Btn = document.getElementById("pho9");
+var land1Modal = document.getElementById('land1Modal'); var land1Btn = document.getElementById("land1");
+land1Btn.onclick = function() { land1Modal.style.display = "block"; }
+land1Span.onclick = function() { land1Modal.style.display = "none"; }
 
-pho1Btn.onclick = function() { pho1Modal.style.display = "block";}
-pho2Btn.onclick = function() { pho2Modal.style.display = "block";}
-pho3Btn.onclick = function() { pho3Modal.style.display = "block";}
-pho4Btn.onclick = function() { pho4Modal.style.display = "block";}
-pho5Btn.onclick = function() { pho5Modal.style.display = "block";}
-pho6Btn.onclick = function() { pho6Modal.style.display = "block";}
-pho7Btn.onclick = function() { pho7Modal.style.display = "block";}
-pho8Btn.onclick = function() { pho8Modal.style.display = "block";}
-pho9Btn.onclick = function() { pho9Modal.style.display = "block";}
+var land2Modal = document.getElementById('land2Modal'); var land2Btn = document.getElementById("land2");
+land2Btn.onclick = function() { land2Modal.style.display = "block"; }
+land2Span.onclick = function() { land2Modal.style.display = "none"; }
+
+// image gallery modal
+var land3Modal = document.getElementById("land3Modal"); var land3Btn = document.getElementById("land3");
+land3Btn.onclick = function() { land3Modal.style.display = "block";}
+land3Span.onclick = function() { land3Modal.style.display = "none";}
+
+var land4Modal = document.getElementById("land4Modal"); var land4Btn = document.getElementById("land4");
+land4Btn.onclick = function() { land4Modal.style.display = "block";}
+land4Span.onclick = function() { land4Modal.style.display = "none";}
+
+var land5Modal = document.getElementById("land5Modal"); var land5Btn = document.getElementById("land5");
+land5Btn.onclick = function() { land5Modal.style.display = "block";}
+land5Span.onclick = function() { land5Modal.style.display = "none";}
+
+var land6Modal = document.getElementById("land6Modal"); var land6Btn = document.getElementById("land6");
+land6Btn.onclick = function() { land6Modal.style.display = "block";}
+land6Span.onclick = function() { land6Modal.style.display = "none";}
+
+var land7Modal = document.getElementById("land7Modal"); var land7Btn = document.getElementById("land7");
+land7Btn.onclick = function() { land7Modal.style.display = "block";}
+land7Span.onclick = function() { land7Modal.style.display = "none";}
+
+var land8Modal = document.getElementById("land8Modal"); var land8Btn = document.getElementById("land8");
+land8Btn.onclick = function() { land8Modal.style.display = "block";}
+land8Span.onclick = function() { land8Modal.style.display = "none";}
+
+var land9Modal = document.getElementById("land9Modal"); var land9Btn = document.getElementById("land9");
+land9Btn.onclick = function() { land9Modal.style.display = "block";}
+land9Span.onclick = function() { land9Modal.style.display = "none";}
 
 window.onclick = function(event) {
 	if( event.target == weChatModal || event.target == snapChatModal ||
-		event.target == pho1Modal || event.target == pho2Modal ||
-		event.target == pho3Modal || event.target == pho4Modal ||
-		event.target == pho5Modal || event.target == pho6Modal ||
-		event.target == pho7Modal || event.target == pho8Modal || 
-		event.target == pho9Modal) {
+		event.target == land1Modal || event.target == land2Modal ||
+		event.target == land3Modal || event.target == land4Modal ||
+		event.target == land5Modal || event.target == land6Modal ||
+		event.target == land7Modal || event.target == land8Modal || 
+		event.target == land9Modal) {
 		weChatModal.style.display = "none"; snapChatModal.style.display = "none";
-		pho1Modal.style.display = "none"; pho2Modal.style.display = "none";
-		pho3Modal.style.display = "none"; pho4Modal.style.display = "none";
-		pho5Modal.style.display = "none"; pho6Modal.style.display = "none";
-		pho7Modal.style.display = "none"; pho8Modal.style.display = "none";
-		pho9Modal.style.display = "none";
+		land1Modal.style.display = "none"; land2Modal.style.display = "none";
+		land3Modal.style.display = "none"; land4Modal.style.display = "none";
+		land5Modal.style.display = "none"; land6Modal.style.display = "none";
+		land7Modal.style.display = "none"; land8Modal.style.display = "none";
+		land9Modal.style.display = "none";
 	}
 }
-
-pho1Span.onclick = function() { pho1Modal.style.display = "none";}
-pho2Span.onclick = function() { pho2Modal.style.display = "none";}
-pho3Span.onclick = function() { pho3Modal.style.display = "none";}
-pho4Span.onclick = function() { pho4Modal.style.display = "none";}
-pho5Span.onclick = function() { pho5Modal.style.display = "none";}
-pho6Span.onclick = function() { pho6Modal.style.display = "none";}
-pho7Span.onclick = function() { pho7Modal.style.display = "none";}
-pho8Span.onclick = function() { pho8Modal.style.display = "none";}
-pho9Span.onclick = function() { pho9Modal.style.display = "none";}
