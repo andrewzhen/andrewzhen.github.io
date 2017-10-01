@@ -10,7 +10,8 @@ ga('send', 'pageview');
 // start up
 window.onload = function() {
     var x = document.getElementById("btn1");
-    refreshContent("Architecture" , "Landscape", "Events", "Everyday");
+    // refreshContent("Architecture" , "Landscape", "Events", "Everyday");
+    refreshContent("Landscape" , "Architecture", "Events", "Everyday");
 	
     x.style.fontSize = "2vw";
     x.style.borderTopColor = "white";
