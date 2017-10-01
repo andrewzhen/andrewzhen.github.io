@@ -206,13 +206,13 @@ window.onclick = function(event) {
 		event.target == land3Modal || event.target == land4Modal ||
 		event.target == land5Modal || event.target == land6Modal ||
 		event.target == land7Modal || event.target == land8Modal || 
-		event.target == land9Modal || event.target == arch1Modal
-        // || event.target == arch2Modal || event.target == arch3Modal ||
-        // event.target == arch4Modal || event.target == arch5Modal ||
-        // event.target == arch6Modal || event.target == arch7Modal ||
-        // event.target == arch8Modal || event.target == arch9Modal ||
-        // event.target == arch10Modal || event.target == arch11Modal ||
-        // event.target == arch12Modal 
+		event.target == land9Modal || event.target == arch1Modal || 
+        event.target == arch2Modal || event.target == arch3Modal ||
+        event.target == arch4Modal || event.target == arch5Modal ||
+        event.target == arch6Modal || event.target == arch7Modal ||
+        event.target == arch8Modal || event.target == arch9Modal ||
+        event.target == arch10Modal || event.target == arch11Modal ||
+        event.target == arch12Modal 
         )
     {
 		weChatModal.style.display = "none"; snapChatModal.style.display = "none";
@@ -223,12 +223,11 @@ window.onclick = function(event) {
 		land7Modal.style.display = "none"; land8Modal.style.display = "none";
 		land9Modal.style.display = "none";
 
-        arch1Modal.style.display = "none"; 
-        //arch2Modal.style.display = "none";
-        // arch3Modal.style.display = "none"; arch4Modal.style.display = "none";
-        // arch5Modal.style.display = "none"; arch6Modal.style.display = "none";
-        // arch7Modal.style.display = "none"; arch8Modal.style.display = "none";
-        // arch9Modal.style.display = "none"; arch10Modal.style.display = "none";
-        // arch11Modal.style.display = "none"; arch12Modal.style.display = "none";
+        arch1Modal.style.display = "none"; arch2Modal.style.display = "none";
+        arch3Modal.style.display = "none"; arch4Modal.style.display = "none";
+        arch5Modal.style.display = "none"; arch6Modal.style.display = "none";
+        arch7Modal.style.display = "none"; arch8Modal.style.display = "none";
+        arch9Modal.style.display = "none"; arch10Modal.style.display = "none";
+        arch11Modal.style.display = "none"; arch12Modal.style.display = "none";
 	}
 }
