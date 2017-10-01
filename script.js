@@ -200,19 +200,115 @@ var arch12Modal = document.getElementById('arch12Modal'); var arch12Btn = docume
 arch12Btn.onclick = function() { arch12Modal.style.display = "block"; }
 arch12Span.onclick = function() { arch12Modal.style.display = "none"; }
 
+//EVENTS
+var eve1Modal = document.getElementById('eve1Modal'); var eve1Btn = document.getElementById("eve1");
+eve1Btn.onclick = function() { eve1Modal.style.display = "block"; }
+eve1Span.onclick = function() { eve1Modal.style.display = "none"; }
+
+var eve2Modal = document.getElementById('eve2Modal'); var eve2Btn = document.getElementById("eve2");
+eve2Btn.onclick = function() { eve2Modal.style.display = "block"; }
+eve2Span.onclick = function() { eve2Modal.style.display = "none"; }
+
+var eve3Modal = document.getElementById('eve3Modal'); var eve3Btn = document.getElementById("eve3");
+eve3Btn.onclick = function() { eve3Modal.style.display = "block"; }
+eve3Span.onclick = function() { eve3Modal.style.display = "none"; }
+
+var eve4Modal = document.getElementById('eve4Modal'); var eve4Btn = document.getElementById("eve4");
+eve4Btn.onclick = function() { eve4Modal.style.display = "block"; }
+eve4Span.onclick = function() { eve4Modal.style.display = "none"; }
+
+var eve5Modal = document.getElementById('eve5Modal'); var eve5Btn = document.getElementById("eve5");
+eve5Btn.onclick = function() { eve5Modal.style.display = "block"; }
+eve5Span.onclick = function() { eve5Modal.style.display = "none"; }
+
+var eve6Modal = document.getElementById('eve1Modal'); var eve6Btn = document.getElementById("eve6");
+eve6Btn.onclick = function() { eve6Modal.style.display = "block"; }
+eve6Span.onclick = function() { eve6Modal.style.display = "none"; }
+
+var eve7Modal = document.getElementById('eve7Modal'); var eve7Btn = document.getElementById("eve7");
+eve7Btn.onclick = function() { eve7Modal.style.display = "block"; }
+eve7Span.onclick = function() { eve7Modal.style.display = "none"; }
+
+var eve8Modal = document.getElementById('eve8Modal'); var eve8Btn = document.getElementById("eve8");
+eve8Btn.onclick = function() { eve8Modal.style.display = "block"; }
+eve8Span.onclick = function() { eve8Modal.style.display = "none"; }
+
+var eve9Modal = document.getElementById('eve9Modal'); var eve9Btn = document.getElementById("eve9");
+eve9Btn.onclick = function() { eve9Modal.style.display = "block"; }
+eve9Span.onclick = function() { eve9Modal.style.display = "none"; }
+
+var eve10Modal = document.getElementById('eve10Modal'); var eve10Btn = document.getElementById("eve10");
+eve10Btn.onclick = function() { eve10Modal.style.display = "block"; }
+eve10Span.onclick = function() { eve10Modal.style.display = "none"; }
+
+var eve11Modal = document.getElementById('eve11Modal'); var eve11Btn = document.getElementById("eve11");
+eve11Btn.onclick = function() { eve11Modal.style.display = "block"; }
+eve11Span.onclick = function() { eve11Modal.style.display = "none"; }
+
+var eve12Modal = document.getElementById('eve12Modal'); var eve12Btn = document.getElementById("eve12");
+eve12Btn.onclick = function() { eve12Modal.style.display = "block"; }
+eve12Span.onclick = function() { eve12Modal.style.display = "none"; }
+
+//EVERYDAY
+var ed1Modal = document.getElementById('ed1Modal'); var ed1Btn = document.getElementById("ed1");
+ed1Btn.onclick = function() { ed1Modal.style.display = "block"; }
+ed1Span.onclick = function() { ed1Modal.style.display = "none"; }
+
+var ed2Modal = document.getElementById('ed2Modal'); var ed2Btn = document.getElementById("ed2");
+ed2Btn.onclick = function() { ed2Modal.style.display = "block"; }
+ed2Span.onclick = function() { ed2Modal.style.display = "none"; }
+
+var ed3Modal = document.getElementById('ed3Modal'); var ed3Btn = document.getElementById("ed3");
+ed3Btn.onclick = function() { ed3Modal.style.display = "block"; }
+ed3Span.onclick = function() { ed3Modal.style.display = "none"; }
+
+var ed4Modal = document.getElementById('ed4Modal'); var ed4Btn = document.getElementById("ed4");
+ed4Btn.onclick = function() { ed4Modal.style.display = "block"; }
+ed4Span.onclick = function() { ed4Modal.style.display = "none"; }
+
+var ed5Modal = document.getElementById('ed5Modal'); var ed5Btn = document.getElementById("ed5");
+ed5Btn.onclick = function() { ed5Modal.style.display = "block"; }
+ed5Span.onclick = function() { ed51Modal.style.display = "none"; }
+
+var ed6Modal = document.getElementById('ed6Modal'); var ed6Btn = document.getElementById("ed6");
+ed6Btn.onclick = function() { ed6Modal.style.display = "block"; }
+ed6Span.onclick = function() { ed6Modal.style.display = "none"; }
+
+var ed7Modal = document.getElementById('ed7Modal'); var ed7Btn = document.getElementById("ed7");
+ed7Btn.onclick = function() { ed7Modal.style.display = "block"; }
+ed7Span.onclick = function() { ed7Modal.style.display = "none"; }
+
+var ed8Modal = document.getElementById('ed8Modal'); var ed8Btn = document.getElementById("ed8");
+ed8Btn.onclick = function() { ed8Modal.style.display = "block"; }
+ed8Span.onclick = function() { ed8Modal.style.display = "none"; }
+
+var ed9Modal = document.getElementById('ed9Modal'); var ed9Btn = document.getElementById("ed9");
+ed9Btn.onclick = function() { ed9Modal.style.display = "block"; }
+ed9Span.onclick = function() { ed9Modal.style.display = "none"; }
+
 window.onclick = function(event) {
-	if( event.target == weChatModal || event.target == snapChatModal ||
-		event.target == land1Modal || event.target == land2Modal ||
+	if( event.target == weChatModal || event.target == snapChatModal ||    //social media
+		event.target == land1Modal || event.target == land2Modal ||        //landscape
 		event.target == land3Modal || event.target == land4Modal ||
 		event.target == land5Modal || event.target == land6Modal ||
 		event.target == land7Modal || event.target == land8Modal || 
-		event.target == land9Modal || event.target == arch1Modal || 
+		event.target == land9Modal || event.target == arch1Modal ||        //architecture
         event.target == arch2Modal || event.target == arch3Modal ||
         event.target == arch4Modal || event.target == arch5Modal ||
         event.target == arch6Modal || event.target == arch7Modal ||
         event.target == arch8Modal || event.target == arch9Modal ||
         event.target == arch10Modal || event.target == arch11Modal ||
-        event.target == arch12Modal 
+        event.target == arch12Modal || event.target == eve1Modal ||        //events
+        event.target == eve2Modal || event.target == eve3Modal ||
+        event.target == eve4Modal || event.target == eve5Modal ||
+        event.target == eve66Modal || event.target == eve7Modal ||
+        event.target == eve8Modal || event.target == eve9Modal ||
+        event.target == eve10Modal || event.target == eve11Modal ||
+        event.target == eve12Modal || event.target == ed1Modal ||          //everyday
+        event.target == ed2Modal || event.target == ed3Modal ||
+        event.target == ed4Modal || event.target == ed5Modal ||
+        event.target == ed6Modal || event.target == ed7Modal ||
+        event.target == ed8Modal || event.target == ed9Modal
         )
     {
 		weChatModal.style.display = "none"; snapChatModal.style.display = "none";
@@ -229,5 +325,18 @@ window.onclick = function(event) {
         arch7Modal.style.display = "none"; arch8Modal.style.display = "none";
         arch9Modal.style.display = "none"; arch10Modal.style.display = "none";
         arch11Modal.style.display = "none"; arch12Modal.style.display = "none";
+
+        eve1Modal.style.display = "none"; eve2Modal.style.display = "none";
+        eve3Modal.style.display = "none"; eve4Modal.style.display = "none";
+        eve5Modal.style.display = "none"; eve6Modal.style.display = "none";
+        eve7Modal.style.display = "none"; eve8Modal.style.display = "none";
+        eve9Modal.style.display = "none"; eve10Modal.style.display = "none";
+        eve11Modal.style.display = "none"; eve12Modal.style.display = "none";
+
+        ed1Modal.style.display = "none"; ed2Modal.style.display = "none";
+        ed3Modal.style.display = "none"; ed4Modal.style.display = "none";
+        ed5Modal.style.display = "none"; ed6Modal.style.display = "none";
+        ed7Modal.style.display = "none"; ed8Modal.style.display = "none";
+        ed9Modal.style.display = "none";
 	}
 }
