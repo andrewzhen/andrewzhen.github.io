@@ -99,7 +99,7 @@ html, body {
 }
 
 .description {
-	width: 60%;
+	width: 57%;
 	font-family: 'Raleway';
 	padding-top: 75px;
 	padding-bottom: 75px;
@@ -264,11 +264,17 @@ a {
 
 .quote2Author {
 	font-family: 'Raleway';
-	font-style: italic;
 	font-size: 0.7vw;
 	text-transform: uppercase;
 	word-spacing: 3px;
 	letter-spacing: 1px;
+}
+
+.lange {
+	color: white;
+	background-color: rgb(52,52,52);
+	outline: none;
+
 }
 
 .contentSection {
