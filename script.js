@@ -289,25 +289,25 @@ ed9Span.onclick = function() { ed9Modal.style.display = "none"; }
 window.onclick = function(event) {
 	if( event.target == weChatModal || event.target == snapChatModal ||    //social media
 		event.target == land1Modal || event.target == land2Modal ||        //landscape
-		event.target == land3Modal || event.target == land4Modal ||
-		event.target == land5Modal || event.target == land6Modal ||
+		event.target == land3Modal || event.target == land4Modal || 
+		event.target == land5Modal || event.target == land6Modal || 
 		event.target == land7Modal || event.target == land8Modal || 
 		event.target == land9Modal || event.target == arch1Modal ||        //architecture
-        event.target == arch2Modal || event.target == arch3Modal ||
-        event.target == arch4Modal || event.target == arch5Modal ||
-        event.target == arch6Modal || event.target == arch7Modal ||
-        event.target == arch8Modal || event.target == arch9Modal ||
-        event.target == arch10Modal || event.target == arch11Modal ||
+        event.target == arch2Modal || event.target == arch3Modal || 
+        event.target == arch4Modal || event.target == arch5Modal || 
+        event.target == arch6Modal || event.target == arch7Modal || 
+        event.target == arch8Modal || event.target == arch9Modal || 
+        event.target == arch10Modal || event.target == arch11Modal || 
         event.target == arch12Modal || event.target == eve1Modal ||        //events
-        event.target == eve2Modal || event.target == eve3Modal ||
-        event.target == eve4Modal || event.target == eve5Modal ||
-        event.target == eve6Modal || event.target == eve7Modal ||
-        event.target == eve8Modal || event.target == eve9Modal ||
-        event.target == eve10Modal || event.target == eve11Modal ||
+        event.target == eve2Modal || event.target == eve3Modal || 
+        event.target == eve4Modal || event.target == eve5Modal || 
+        event.target == eve6Modal || event.target == eve7Modal || 
+        event.target == eve8Modal || event.target == eve9Modal || 
+        event.target == eve10Modal || event.target == eve11Modal || 
         event.target == eve12Modal || event.target == ed1Modal ||          //everyday
-        event.target == ed2Modal || event.target == ed3Modal ||
-        event.target == ed4Modal || event.target == ed5Modal ||
-        event.target == ed6Modal || event.target == ed7Modal ||
+        event.target == ed2Modal || event.target == ed3Modal || 
+        event.target == ed4Modal || event.target == ed5Modal || 
+        event.target == ed6Modal || event.target == ed7Modal || 
         event.target == ed8Modal || event.target == ed9Modal
         )
     {
