@@ -274,7 +274,16 @@ a {
 .lange {
 	background-color: rgb(52,52,52);
 	border: none;
-	border-radius: 10%;
+	border-radius: 3%;
+	padding: 6px;
+}
+
+.lange button:hover {
+	padding: 9px;
+	font-size: 0.9vw;
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	transition: 0.2s;
 }
 
 .contentSection {
