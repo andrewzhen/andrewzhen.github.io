@@ -100,7 +100,8 @@ html, body {
 
 .description {
 	width: 90%;
-	font-family: 'Raleway';
+	/*font-family: 'Raleway';*/
+	font-family: 'Playfair Display SC';
 	padding-top: 75px;
 	padding-bottom: 75px;
 	margin: auto;
