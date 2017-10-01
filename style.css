@@ -263,7 +263,7 @@ a {
 }
 
 .lange {
-	background-color: rgb(80,80,80);
+	background-color: transparent;
 	border: none;
 	outline: none;
 	font-family: 'Raleway';
@@ -274,18 +274,12 @@ a {
 	border-radius: 1%;
 	padding: 6px;
 
-	transition: padding 0.5s, font-size 0.5s, word-spacing 0.5s, letter-spacing 0.5s;
+	transition: color 1s, background-color 1s;
 }
 
 .lange button:hover {
-	padding: 9px;
-	font-size: 0.755vw;
-	word-spacing: 5px;
-	letter-spacing: 3px;
-}
-
-.lange a {
 	color: white;
+	background-color: rgb(120,120,120);
 }
 
 .contentSection {
