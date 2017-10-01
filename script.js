@@ -221,7 +221,7 @@ var eve5Modal = document.getElementById('eve5Modal'); var eve5Btn = document.get
 eve5Btn.onclick = function() { eve5Modal.style.display = "block"; }
 eve5Span.onclick = function() { eve5Modal.style.display = "none"; }
 
-var eve6Modal = document.getElementById('eve1Modal'); var eve6Btn = document.getElementById("eve6");
+var eve6Modal = document.getElementById('eve6Modal'); var eve6Btn = document.getElementById("eve6");
 eve6Btn.onclick = function() { eve6Modal.style.display = "block"; }
 eve6Span.onclick = function() { eve6Modal.style.display = "none"; }
 
@@ -268,7 +268,7 @@ ed4Span.onclick = function() { ed4Modal.style.display = "none"; }
 
 var ed5Modal = document.getElementById('ed5Modal'); var ed5Btn = document.getElementById("ed5");
 ed5Btn.onclick = function() { ed5Modal.style.display = "block"; }
-ed5Span.onclick = function() { ed51Modal.style.display = "none"; }
+ed5Span.onclick = function() { ed5Modal.style.display = "none"; }
 
 var ed6Modal = document.getElementById('ed6Modal'); var ed6Btn = document.getElementById("ed6");
 ed6Btn.onclick = function() { ed6Modal.style.display = "block"; }
