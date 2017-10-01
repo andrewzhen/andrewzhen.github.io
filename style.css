@@ -263,7 +263,6 @@ a {
 }
 
 .lange {
-	color: white;
 	background-color: rgb(80,80,80);
 	border: none;
 	outline: none;
@@ -272,17 +271,21 @@ a {
 	text-transform: uppercase;
 	word-spacing: 3px;
 	letter-spacing: 1px;
-	border-radius: 3%;
+	border-radius: 1%;
 	padding: 6px;
 
-	transition: padding 2s, font-size 2s, word-spacing 2s, letter-spacing 2s;
+	transition: padding 0.5s, font-size 0.5s, word-spacing 0.5s, letter-spacing 0.5s;
 }
 
 .lange button:hover {
 	padding: 9px;
-	font-size: 0.77vw;
+	font-size: 0.755vw;
 	word-spacing: 5px;
 	letter-spacing: 3px;
+}
+
+.lange a {
+	color: white;
 }
 
 .contentSection {
