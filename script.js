@@ -301,7 +301,7 @@ window.onclick = function(event) {
         event.target == arch12Modal || event.target == eve1Modal ||        //events
         event.target == eve2Modal || event.target == eve3Modal ||
         event.target == eve4Modal || event.target == eve5Modal ||
-        event.target == eve66Modal || event.target == eve7Modal ||
+        event.target == eve6Modal || event.target == eve7Modal ||
         event.target == eve8Modal || event.target == eve9Modal ||
         event.target == eve10Modal || event.target == eve11Modal ||
         event.target == eve12Modal || event.target == ed1Modal ||          //everyday
