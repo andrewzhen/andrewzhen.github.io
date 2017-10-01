@@ -17,11 +17,11 @@ html, body {
 }
 
 .background_picture {
-	max-width: 100%;
+	width: 100%;
 	height: auto;
 	background-image: url("beach.jpg");
 	display: table;
-	background-size: cover;
+	/*background-size: cover;*/
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
