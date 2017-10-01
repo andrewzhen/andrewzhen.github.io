@@ -150,7 +150,7 @@ var land9Modal = document.getElementById("land9Modal"); var land9Btn = document.
 land9Btn.onclick = function() { land9Modal.style.display = "block";}
 land9Span.onclick = function() { land9Modal.style.display = "none";}
 
-ARCHITECTURE
+//ARCHITECTURE
 var arch1Modal = document.getElementById('arch1Modal'); var arch1Btn = document.getElementById("arch1");
 arch1Btn.onclick = function() { arch1Modal.style.display = "block"; }
 arch1Span.onclick = function() { arch1Modal.style.display = "none"; }
