@@ -275,7 +275,7 @@ a {
 	border-radius: 3%;
 	padding: 6px;
 
-	transition: padding 2s, font-size 2s, word-spacing: 2s, letter-spacing: 2s;
+	transition: padding 2s, font-size 2s, word-spacing 2s, letter-spacing 2s;
 }
 
 .lange button:hover {
