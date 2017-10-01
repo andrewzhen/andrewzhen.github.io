@@ -112,6 +112,7 @@ function refreshContent(show, hide1, hide2, hide3) {
 	toHide3.style.display = "none";
 }
 
+//LANDSCAPE
 var land1Modal = document.getElementById('land1Modal'); var land1Btn = document.getElementById("land1");
 land1Btn.onclick = function() { land1Modal.style.display = "block"; }
 land1Span.onclick = function() { land1Modal.style.display = "none"; }
@@ -120,7 +121,6 @@ var land2Modal = document.getElementById('land2Modal'); var land2Btn = document.
 land2Btn.onclick = function() { land2Modal.style.display = "block"; }
 land2Span.onclick = function() { land2Modal.style.display = "none"; }
 
-// image gallery modal
 var land3Modal = document.getElementById("land3Modal"); var land3Btn = document.getElementById("land3");
 land3Btn.onclick = function() { land3Modal.style.display = "block";}
 land3Span.onclick = function() { land3Modal.style.display = "none";}
@@ -149,18 +149,84 @@ var land9Modal = document.getElementById("land9Modal"); var land9Btn = document.
 land9Btn.onclick = function() { land9Modal.style.display = "block";}
 land9Span.onclick = function() { land9Modal.style.display = "none";}
 
+//ARCHITECTURE
+var arch1Modal = document.getElementById('arch1Modal'); var arch1Btn = document.getElementById("arch1");
+arch1Btn.onclick = function() { arch1Modal.style.display = "block"; }
+arch1Span.onclick = function() { arch1Modal.style.display = "none"; }
+
+var arch2Modal = document.getElementById('arch2Modal'); var arch2Btn = document.getElementById("arch2");
+arch2Btn.onclick = function() { arch2Modal.style.display = "block"; }
+arch2Span.onclick = function() { arch2Modal.style.display = "none"; }
+
+var arch3Modal = document.getElementById('arch3Modal'); var arch3Btn = document.getElementById("arch3");
+arch3Btn.onclick = function() { arch3Modal.style.display = "block"; }
+arch3Span.onclick = function() { arch3Modal.style.display = "none"; }
+
+var arch4Modal = document.getElementById('arch4Modal'); var arch4Btn = document.getElementById("arch4");
+arch4Btn.onclick = function() { arch4Modal.style.display = "block"; }
+arch4Span.onclick = function() { arch4Modal.style.display = "none"; }
+
+var arch5Modal = document.getElementById('arch5Modal'); var arch5Btn = document.getElementById("arch5");
+arch5Btn.onclick = function() { arch5Modal.style.display = "block"; }
+arch5Span.onclick = function() { arch5Modal.style.display = "none"; }
+
+var arch6Modal = document.getElementById('arch6Modal'); var arch6Btn = document.getElementById("arch6");
+arch6Btn.onclick = function() { arch6Modal.style.display = "block"; }
+arch6Span.onclick = function() { arch6Modal.style.display = "none"; }
+
+var arch7Modal = document.getElementById('arch7Modal'); var arch7Btn = document.getElementById("arch7");
+arch7Btn.onclick = function() { arch7Modal.style.display = "block"; }
+arch7Span.onclick = function() { arch7Modal.style.display = "none"; }
+
+var arch8Modal = document.getElementById('arch8Modal'); var arch8Btn = document.getElementById("arch8");
+arch8Btn.onclick = function() { arch8Modal.style.display = "block"; }
+arch8Span.onclick = function() { arch8Modal.style.display = "none"; }
+
+var arch9Modal = document.getElementById('arch9Modal'); var arch9Btn = document.getElementById("arch9");
+arch9Btn.onclick = function() { arch9Modal.style.display = "block"; }
+arch9Span.onclick = function() { arch9Modal.style.display = "none"; }
+
+var arch10Modal = document.getElementById('arch10Modal'); var arch10Btn = document.getElementById("arch10");
+arch10Btn.onclick = function() { arch10Modal.style.display = "block"; }
+arch10Span.onclick = function() { arch10Modal.style.display = "none"; }
+
+var arch11Modal = document.getElementById('arch11Modal'); var arch11Btn = document.getElementById("arch11");
+arch11Btn.onclick = function() { arch11Modal.style.display = "block"; }
+arch11Span.onclick = function() { arch11Modal.style.display = "none"; }
+
+var arch12Modal = document.getElementById('arch12Modal'); var arch12Btn = document.getElementById("arch12");
+arch12Btn.onclick = function() { arch12Modal.style.display = "block"; }
+arch12Span.onclick = function() { arch12Modal.style.display = "none"; }
+
 window.onclick = function(event) {
 	if( event.target == weChatModal || event.target == snapChatModal ||
 		event.target == land1Modal || event.target == land2Modal ||
 		event.target == land3Modal || event.target == land4Modal ||
 		event.target == land5Modal || event.target == land6Modal ||
 		event.target == land7Modal || event.target == land8Modal || 
-		event.target == land9Modal) {
+		event.target == land9Modal || 
+
+        event.target == arch1Modal ||
+        event.target == arch2Modal || event.target == arch3Modal ||
+        event.target == arch4Modal || event.target == arch5Modal ||
+        event.target == arch6Modal || event.target == arch7Modal ||
+        event.target == arch8Modal || event.target == arch9Modal ||
+        event.target == arch10Modal || event.target == arch11Modal ||
+        event.target == arch12Modal) {
+
 		weChatModal.style.display = "none"; snapChatModal.style.display = "none";
+
 		land1Modal.style.display = "none"; land2Modal.style.display = "none";
 		land3Modal.style.display = "none"; land4Modal.style.display = "none";
 		land5Modal.style.display = "none"; land6Modal.style.display = "none";
 		land7Modal.style.display = "none"; land8Modal.style.display = "none";
 		land9Modal.style.display = "none";
+
+        arch1Modal.style.display == "none"; arch2Modal.style.display == "none";
+        arch3Modal.style.display == "none"; arch4Modal.style.display == "none";
+        arch5Modal.style.display == "none"; arch6Modal.style.display == "none";
+        arch7Modal.style.display == "none"; arch8Modal.style.display == "none";
+        arch9Modal.style.display == "none"; arch10Modal.style.display == "none";
+        arch11Modal.style.display == "none"; arch12Modal.style.display == "none";
 	}
 }
