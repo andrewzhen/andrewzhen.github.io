@@ -274,8 +274,11 @@ a {
 .lange {
 	background-color: rgb(80,80,80);
 	border: none;
+	outline: none;
 	border-radius: 3%;
 	padding: 6px;
+
+	transition: padding 0.5s, font-size 0.5s, word-spacing: 0.5s, letter-spacing: 0.5s;
 }
 
 .lange button:hover {
@@ -283,8 +286,6 @@ a {
 	font-size: 0.9vw;
 	word-spacing: 5px;
 	letter-spacing: 3px;
-
-	transition: 0.2s;
 }
 
 .contentSection {
