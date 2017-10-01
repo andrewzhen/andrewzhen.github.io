@@ -262,19 +262,16 @@ a {
 	padding-bottom: 10px;
 }
 
-.quote2Author {
+.lange {
 	color: white;
+	background-color: rgb(80,80,80);
+	border: none;
+	outline: none;
 	font-family: 'Raleway';
 	font-size: 0.75vw;
 	text-transform: uppercase;
 	word-spacing: 3px;
 	letter-spacing: 1px;
-}
-
-.lange {
-	background-color: rgb(80,80,80);
-	border: none;
-	outline: none;
 	border-radius: 3%;
 	padding: 6px;
 
