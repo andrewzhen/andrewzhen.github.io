@@ -151,9 +151,9 @@ land9Btn.onclick = function() { land9Modal.style.display = "block";}
 land9Span.onclick = function() { land9Modal.style.display = "none";}
 
 //ARCHITECTURE
-// var arch1Modal = document.getElementById('arch1Modal'); var arch1Btn = document.getElementById("arch1");
-// arch1Btn.onclick = function() { arch1Modal.style.display = "block"; }
-// arch1Span.onclick = function() { arch1Modal.style.display = "none"; }
+var arch1Modal = document.getElementById('arch1Modal'); var arch1Btn = document.getElementById("arch1");
+arch1Btn.onclick = function() { arch1Modal.style.display = "block"; }
+arch1Span.onclick = function() { arch1Modal.style.display = "none"; }
 
 // var arch2Modal = document.getElementById('arch2Modal'); var arch2Btn = document.getElementById("arch2");
 // arch2Btn.onclick = function() { arch2Modal.style.display = "block"; }
@@ -205,9 +205,8 @@ window.onclick = function(event) {
 		event.target == land3Modal || event.target == land4Modal ||
 		event.target == land5Modal || event.target == land6Modal ||
 		event.target == land7Modal || event.target == land8Modal || 
-		event.target == land9Modal 
-        // || event.target == arch1Modal ||
-        // event.target == arch2Modal || event.target == arch3Modal ||
+		event.target == land9Modal || event.target == arch1Modal
+        // || event.target == arch2Modal || event.target == arch3Modal ||
         // event.target == arch4Modal || event.target == arch5Modal ||
         // event.target == arch6Modal || event.target == arch7Modal ||
         // event.target == arch8Modal || event.target == arch9Modal ||
@@ -223,7 +222,8 @@ window.onclick = function(event) {
 		land7Modal.style.display = "none"; land8Modal.style.display = "none";
 		land9Modal.style.display = "none";
 
-        // arch1Modal.style.display == "none"; arch2Modal.style.display == "none";
+        arch1Modal.style.display == "none"; 
+        //arch2Modal.style.display == "none";
         // arch3Modal.style.display == "none"; arch4Modal.style.display == "none";
         // arch5Modal.style.display == "none"; arch6Modal.style.display == "none";
         // arch7Modal.style.display == "none"; arch8Modal.style.display == "none";
