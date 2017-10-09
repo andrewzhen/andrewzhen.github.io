@@ -133,31 +133,28 @@ html, body {
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1.5%;
+    opacity: 0.9;
 }
 
 .fa-facebook {
 	background: linear-gradient(to top right, rgb(85,110,255), rgb(85,110,150));
     color: white;
-    opacity: 0.8;
 }
 
 .fa-instagram {
 	background: linear-gradient(to top left, rgb(255,140,30), rgb(185,50,140));
     color: white;
-    opacity: 0.8;
 }
 
 .fa-snapchat-ghost {
 	text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
 	background: linear-gradient(to top right, rgb(255,220,0), rgb(255,253,102));
 	color: white;
-	opacity: 0.8;
 }
 
 .fa-wechat {
 	background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
 	color: white;
-	opacity: 0.8;
 }
 
 /* The Modal (background) */
@@ -201,28 +198,27 @@ hr {
 }
 
 .contentHeader {
-	background: rgb(52,52,52);
+	background: rgb(30,30,30);
 	color: white;
-	font-weight: bold;
 	font-size: 3vw;
 	font-family: 'Arima Madurai';
 	height: 70px;
 	padding-top: 3%;
 	padding-left: 4vw;
 	padding-bottom: 7%;
-	letter-spacing: 5vw;
+	letter-spacing: 2vw;
 }
 
 .buttonHeader {
 	margin-top: 0;
-	background: rgb(52,52,52);
+	background: rgb(30,30,30);
 }
 
 .catButton {
 	color: white;
 	font-family: 'Raleway';
 	background-color: transparent;
-	border-color: rgb(52,52,52);
+	border-color: rgb(30,30,30);
 	border-style: solid;
 	padding-top: 10px;
 	outline: none;
@@ -299,7 +295,7 @@ a {
 }
 
 footer {
-	background-color: rgb(190,190,190);
+	background-color: rgb(170,170,170);
 	font-family: 'Raleway';
 	padding-left: 50px;
 	padding-top: 10px;
