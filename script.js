@@ -340,10 +340,3 @@ function refreshContent(show, hide1, hide2, hide3) {
 //         ed9Modal.style.display = "none";
 // 	}
 // }
-
-window.onclick = function(event) {
-    if(event.target == weChatModal || event.target == snapChatModal) {
-        weChatModal.style.display = "none";
-        snapChatModal.style.display = "none";
-    }
-}
