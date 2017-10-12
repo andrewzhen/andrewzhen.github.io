@@ -128,6 +128,14 @@ body, html {
 	background-position: center center;
 }
 
+.socialMedia a {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  transform: translateY(-40%);
+}
+
 .fa {
     padding: 10px;
     font-size: 25px;
