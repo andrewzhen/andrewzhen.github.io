@@ -28,9 +28,14 @@ body, html {
 }
 
 @media only screen and (max-device-width: 1024px) {
-    .background {
+    .background_picture {
         background-attachment: scroll;
-		background-repeat: repeat;        
+		background-repeat: repeat;
+    }
+
+    .portrait {
+    	background-attachment: scroll;
+		background-repeat: repeat;
     }
 }
 
