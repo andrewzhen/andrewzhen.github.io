@@ -21,17 +21,17 @@ body, html {
 	height: 100%;
 	width: 100%;
 	display: table;
-	background-attachment: fixed;
+	/*background-attachment: fixed;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 	background-size: cover;
 }
 
-@media only screen and (max-device-width: 1024px) {
+/*@media only screen and (max-device-width: 1024px) {
     .parallax {
         background-attachment: scroll;
     }
-}
+}*/
 
 /*container*/
 .intro {
