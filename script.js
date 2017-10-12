@@ -344,6 +344,6 @@ function refreshContent(show, hide1, hide2, hide3) {
 window.onclick = function(event) {
     if(event.target == weChatModal || event.target == snapChatModal) {
         weChatModal.style.display = "none";
-        snapChatModal.style.display = "none"
+        snapChatModal.style.display = "none";
     }
 }
