@@ -99,7 +99,7 @@
 
 		<div class="contentSection">
 			<div id="Landscape" class="imageStyle">
-				<img id="land1" src="landscape/land1.jpg">
+				<img id="land1" src="landscape/land1.jpg" onclick="document.getElementById('land1Modal').style.display='block'">
 				<img id="land2" src="landscape/land2.jpg">
 				<img id="land3" src="landscape/land3.jpg">
 				<img id="land4" src="landscape/land4.jpg">
@@ -154,7 +154,7 @@
 		</div>
 
 		<div class="landModals" align="center">
-			<div id="land1Modal" class="modal">
+			<div id="land1Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="land1Span"></span><img src="landscape/land1.jpg">
 				</div>
