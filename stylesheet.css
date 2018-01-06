@@ -121,7 +121,7 @@ body, html {
 }
 @media only screen and (max-device-width: 1024px) {
     .background_picture {
-      background-size: contain;
+      background-size: auto 100%;
     }
 }
 
@@ -165,12 +165,11 @@ body, html {
   background-position: center center;
   background-repeat: no-repeat;
 	background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
 }
 @media only screen and (max-device-width: 1024px) {
     .portrait {
-      background-size: contain;
-      height: 100px;
+      background-size: auto 100%;
     }
 }
 
