@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair Display SC');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Indie Flower');
 
@@ -10,13 +9,6 @@ body, html {
 }
 #photography body, #photography {
   background: rgb(45,45,45);
-}
-
-@media only screen and (max-device-width: 1024px) {
-    .background_picture {
-        background-attachment: scroll;
-    background-repeat: repeat;
-    }
 }
 
 /*Navigation Bar*/
@@ -78,18 +70,10 @@ body, html {
     width: 20px;
     border-radius: 20%;
     margin-right: 1.7%;
-    margin-top: 1.5%;
+    margin-top: 2.7vmin;
     opacity: 0.9;
 }
 
-#photography .fa-facebook {
-  background: rgb(45,45,45);
-  color: rgb(240,240,240);
-}
-#photography .fa-facebook:hover {
-  background: linear-gradient(to top right, rgb(85,110,255), rgb(85,110,150));
-  color: white;
-}
 #photography .fa-instagram {
   background: rgb(45,45,45);
   color: rgb(240,240,240);
@@ -134,6 +118,12 @@ body, html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#photography @media only screen and (max-device-width: 1024px) {
+    .background_picture {
+        background-attachment: scroll;
+    background-repeat: repeat;
+    }
+}
 
 /*Landing Page container*/
 #photography .animation-intro {
@@ -168,18 +158,20 @@ body, html {
 	height: 50px;
 }
 
-#photography .about h1 {
-	font-family: 'Playfair Display SC';
-	font-size: 40px;
-}
-
 #photography .portrait {
 	background-image: url("portrait.jpg");
-  height: 670px;
+  width: 100%;
+  height: 50%;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+#photography @media only screen and (max-device-width: 1024px) {
+    .portrait {
+      background-attachment: scroll;
+      background-repeat: repeat;
+    }
 }
 
 /*Description*/
@@ -188,7 +180,8 @@ body, html {
 }
 
 #photography .description {
-	width: 57%;
+  font-size: 1.5vmax;
+	width: 50vmax;
 	font-family: 'Raleway';
 	padding-top: 75px;
 	padding-bottom: 75px;
@@ -212,7 +205,8 @@ body, html {
 }
 
 #photography .categories {
-	margin-top: 5vh;
+	padding-top: 40px;
+  margin-bottom: 150px;
 	background: rgb(45,45,45);
 }
 
@@ -281,14 +275,15 @@ body, html {
 #photography #topBtn {
   display: block;
   position: fixed;
-  height: 50px;
-  width: 50px;
+  height: 4.7vmax;
+  width: 4.7vmax;
   bottom: 100px;
   right: 40px;
   z-index: 99;
   border: none;
   outline: none;
   background-color: rgb(230,230,230);
+  font-size: 1vmax;
   color: black;
   cursor: pointer;
   padding: 15px;
@@ -312,11 +307,12 @@ body, html {
 }
 
 #photography #footer-description {
-	padding-top: 20px;
+	font-size: 1vw;
 }
 
 #photography #footer-date {
   float: right;
-  padding-bottom: 20px;
-  padding-right: 30px;
+  font-size: 1vw;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
 }
