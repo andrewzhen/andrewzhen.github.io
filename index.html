@@ -1,56 +1,64 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>Andrew Zhen</title>
-	<link rel="icon" href="favicon.png" type="image/png">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Photography</title>
+	<link rel="icon" href="blue peter.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 
-<body id="body">
-	<!-- landing page -->
+<body id="photography">
+
+	<!-- Landing Page -->
+	<ul id="navigation-bar">
+		<li><a href="#home" id="home">Andrew Zhen</a></li>
+		<div id="photography-header">Photography</div>
+		<div class="socialMedia">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<a style="cursor: pointer" id="snapchat" class="fa fa-snapchat-ghost"></a>
+			<a style="cursor: pointer" id="wechat" class="fa fa-wechat"></a>
+			<a href="https://www.instagram.com/a.jzhen/" class="fa fa-instagram" target="_blank"></a>
+			<a href="https://www.facebook.com/zhen.andrew" class="fa fa-facebook" target="_blank"></a>
+		</div>
+	</ul>
+
 	<section class="background_picture">
-			<div class="intro">
-				<h1>ANDREW ZHEN</h1>
+		<div class="animation-intro">
+			<div class="animation-text">
+				<a href="https://www.google.com/maps/place/La+Jolla,+San+Diego,+CA/@32.8725017,-117.3186122,12z/data=!3m1!4b1!4m5!3m4!1s0x80dbd0764fcc0ecd:0xfce51ef45c1d3094!8m2!3d32.8328112!4d-117.2712717" title="Directions to La Jolla, CA" target="_blank" style="text-decoration: none; color: red">
+					<img src="location.png" width="20" height="20">
+					<i>La Jolla, San Diego, CA.</i>
+				</a>
+				La Jolla is a community within the city of San Diego and is home to many cultural attractions, software and bioengineering companies and leaders in scientific research and education. 
+				Because of La Jolla's costal geography, its sandy beaches and rugged shorelines make it the top destination for the perfect sunset photo! 
+				In fact, traveling around La Jolla inspired me to take up a camera and begin snapping photos of it. 
+				I hope I did at least a decent job!
 			</div>
+		</div>
 	</section>
 
-	<!-- about -->
+	<!-- About -->
 	<section style="text-align: center">
-		<div class="about">
-			<h1>About</h1>
-		</div>
+		<div class="horizontal-divider"></div>
 
 		<div class="table">
 			<div class="portrait"></div>
-			<div style="background: rgb(220,220,220);">
+			<div class="description-container">
 				<div class="description">
+					<p>Hello,</p>
+					<p>I'm Andrew!</p>
 					<p>
-						I'm a student at the University of California San Diego studying Data Science, class of 2020.
-					</p>
-
-					<div>&nbsp</div>
-
-					<p>
-						If you ever want to&nbsp<img src="camera.png" width="30" height="25"> together or need a couple photos yourself, you can reach me at the social media links below.
+						If you ever want to&nbsp<img src="camera.png" width="30" height="25"> together or just need a couple photos yourself, you can reach me at the social media links above
 					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="socialMedia">
-				<a href="https://www.facebook.com/zhen.andrew" class="fa fa-facebook" target="_blank"></a>
-				<a href="https://www.instagram.com/a.jzhen/" class="fa fa-instagram" target="_blank"></a>
-				<a style="cursor: pointer" id="snapChat" class="fa fa-snapchat-ghost"></a>
-				<a style="cursor: pointer" id="weChat" class="fa fa-wechat"></a>
-		</div>
-
-		<div align="center">
+		<div id="socialMediaModals">
 			<div id="snapChatModal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="snapChatSpan"></span>
-					<p>SnapChat Username: andrewzee6</p>
+					<p style="padding-top: 125px">SnapChat Username: andrewzee6</p>
 					<img src="snapChatQR.png" style="border-radius: 8%"  onclick="document.getElementById('snapChatModal').style.display='block'">
 				</div>
 			</div>
@@ -58,40 +66,27 @@
 			<div id="weChatModal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="weChatSpan"></span>
-					<p>WeChat ID: drewzhen</p>
+					<p style="padding-top: 125px">WeChat ID: drewzhen</p>
 					<img src="weChatQR.png" style="border-radius: 4%; width: 525px; height: 525px"  onclick="document.getElementById('weChatModal').style.display='block'">
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- interests -->
-	<section class="interests">
-		<div class="contentHeader">
-			<p>PHOTOGRAPHY</p>
-		</div>
-
-		<div class="buttonHeader">
-			<button id="btn1" class="catButton" onclick="focus1();refreshContent('Landscape','Architecture','Events','Everyday')">landscape</button>
-
-			<span class="bar">|</span>
-
-			<button id="btn2" class="catButton" onclick="focus2();refreshContent('Architecture','Landscape','Events','Everyday')">architecture</button>
-			
-			<span class="bar">|</span>
-
-			<button id="btn3" class="catButton" onclick="focus3();refreshContent('Events','Landscape','Architecture','Everyday')">events</button>
-
-			<span class="bar">|</span>
-
-			<button id="btn4" class="catButton" onclick="focus4();refreshContent('Everyday','Landscape','Architecture','Events')">everyday</button>
+	<!-- Photos -->
+	<section class="contentSection">
+		<div class="categories">
+			<button id="btn1" class="categoryButton" onclick="focus1();refreshContent('Landscape','Architecture','Events','Everyday')">Landscape</button>
+			<button id="btn2" class="categoryButton" onclick="focus2();refreshContent('Architecture','Landscape','Events','Everyday')">Architecture</button>
+			<button id="btn3" class="categoryButton" onclick="focus3();refreshContent('Events','Landscape','Architecture','Everyday')">Events</button>
+			<button id="btn4" class="categoryButton" onclick="focus4();refreshContent('Everyday','Landscape','Architecture','Events')">Everyday</button>
 		</div>
 
 		<br>
 		<br>
 
-		<div class="contentSection">
-			<div id="Landscape" class="imageStyle">
+		<div class="photos imageStyle">
+			<div id="Landscape">
 				<img id="land1" src="landscape/land1.jpg" onclick="document.getElementById('land1Modal').style.display='block'">
 				<img id="land2" src="landscape/land2.jpg" onclick="document.getElementById('land2Modal').style.display='block'">
 				<img id="land3" src="landscape/land3.jpg" onclick="document.getElementById('land3Modal').style.display='block'">
@@ -112,7 +107,7 @@
 				<img id="land18" src="landscape/land18.jpg" onclick="document.getElementById('land18Modal').style.display='block'">
 			</div>
 
-			<div id="Architecture" class="imageStyle">
+			<div id="Architecture">
 				<img id="arch1" src="architecture/arch1.jpg" onclick="document.getElementById('arch1Modal').style.display='block'">
 				<img id="arch2"  src="architecture/arch2.jpg" onclick="document.getElementById('arch2Modal').style.display='block'">
 				<img id="arch3"  src="architecture/arch3.jpg" onclick="document.getElementById('arch3Modal').style.display='block'">
@@ -133,7 +128,7 @@
 				<img id="arch18"  src="architecture/arch18.jpg" onclick="document.getElementById('arch18Modal').style.display='block'">
 			</div>
 
-			<div id="Events" class="imageStyle">
+			<div id="Events">
 				<img id="eve1" src="events/eve1.jpg" onclick="document.getElementById('eve1Modal').style.display='block'">
 				<img id="eve2" src="events/eve2.jpg" onclick="document.getElementById('eve2Modal').style.display='block'">
 				<img id="eve3" src="events/eve3.jpg" onclick="document.getElementById('eve3Modal').style.display='block'">
@@ -154,7 +149,7 @@
 				<img id="eve18" src="events/eve18.jpg" onclick="document.getElementById('eve18Modal').style.display='block'">
 			</div>
 
-			<div id="Everyday" class="imageStyle">
+			<div id="Everyday">
 				<img id="ed1" src="everyday/ed1.jpg" onclick="document.getElementById('ed1Modal').style.display='block'">
 				<img id="ed2" src="everyday/ed2.jpg" onclick="document.getElementById('ed2Modal').style.display='block'">
 				<img id="ed3" src="everyday/ed3.jpg" onclick="document.getElementById('ed3Modal').style.display='block'">
@@ -176,7 +171,8 @@
 			</div>
 		</div>
 
-		<div class="landModals" align="center">
+		<div class="imgModals" align="center">
+			<!-- Landscape Modals -->
 			<div id="land1Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="land1Span"></span><img src="landscape/land1.jpg">
@@ -267,9 +263,8 @@
 					<span id="land18Span"></span><img src="landscape/land18.jpg">
 				</div>
 			</div>
-		</div>
 
-		<div class="landModals" align="center">
+			<!-- Architecture Modals -->
 			<div id="arch1Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="arch1Span"></span><img src="architecture/arch1.jpg">
@@ -310,7 +305,6 @@
 					<span id="arch8Span"></span><img src="architecture/arch8.jpg">
 				</div>
 			</div>
-
 			<div id="arch9Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="arch9Span"></span><img src="architecture/arch9.jpg">
@@ -361,10 +355,8 @@
 					<span id="arch18Span"></span><img src="architecture/arch18.jpg">
 				</div>
 			</div>
-		</div>
 
-
-		<div class="landModals" align="center">
+			<!-- Events Modals -->
 			<div id="eve1Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="eve1Span"></span><img src="events/eve1.jpg">
@@ -455,10 +447,8 @@
 					<span id="eve18Span"></span><img src="events/eve18.jpg">
 				</div>
 			</div>
-		</div>
 
-
-		<div class="landModals" align="center">
+			<!-- Everyday Modals -->
 			<div id="ed1Modal" class="modal" onclick="this.style.display='none'">
 				<div class="modal-content">
 					<span id="ed1Span"></span><img src="everyday/ed1.jpg">
@@ -552,14 +542,19 @@
 		</div>
 	</section>
 
+	<button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
 	 <footer>
-	 	<p>Photographs taken with a Nikon D3300<img src="faviconBlack.png" style="padding-right: 100px; width: 25px; height: 25px; float: right">
-	 	</p>
-	 </footer>
+	 		<ul id="foot">
+	 			<li id="footer-description">Photographs taken with a Nikon D3300</li>
+	 			<li id="footer-date">2018</li>
+	 		</ul>
+	 	</footer>
 </body>
 
 <script src="script.js"></script>
 
+<!-- Google Analytics -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
