@@ -111,17 +111,17 @@ body, html {
 #photography .background_picture {
 	background-image: url("beach.jpg");
 	height: 100%;
-	width: 100%;
+	max-width: 100%;
 	display: table;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#photography @media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
     .background_picture {
-        background-attachment: scroll;
-    background-repeat: repeat;
+      background-attachment: scroll;
+      background-repeat: repeat;
     }
 }
 
@@ -160,14 +160,14 @@ body, html {
 
 #photography .portrait {
 	background-image: url("portrait.jpg");
-  width: 100%;
+  max-width: 100%;
   height: 50%;
 	background-attachment: fixed;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-#photography @media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1024px) {
     .portrait {
       background-attachment: scroll;
       background-repeat: repeat;
@@ -211,7 +211,7 @@ body, html {
 }
 
 #photography .categoryButton {
-	color: white;
+	color: rgb(180,180,180);
 	font-family: 'Raleway';
 	background-color: transparent;
 	border-color: rgb(45,45,45);
@@ -219,8 +219,8 @@ body, html {
 	outline: none;
 	cursor: pointer;
 	display: solid;
-	width: 13%;
-	font-size: 1.3vw;
+	width: 20vw;
+	font-size: 2vw;
 	margin-bottom: 3%;
   -webkit-transition: font-size 0.5s;
 	transition: font-size 0.5s;
@@ -228,8 +228,7 @@ body, html {
 
 #photography .categoryButton:hover {
   font-weight: bold;
-  font-size: 1.5vw;
-  color: rgb(250,250,250);
+  color: white;
 }
 
 #photography .photos {
@@ -307,12 +306,14 @@ body, html {
 }
 
 #photography #footer-description {
-	font-size: 1vw;
+	font-size: 1.2vw;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
 }
 
 #photography #footer-date {
   float: right;
-  font-size: 1vw;
+  font-size: 1.25vw;
   padding-bottom: 1vw;
   padding-right: 1vw;
 }
