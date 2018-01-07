@@ -34,6 +34,7 @@ body, html {
   text-align: center;
   padding: 20px 16px;
   background-color: rgb(220,220,220);
+  border-radius: 2%;
 }
 
 #photography #home {-webkit-transition: 0.3s; transition: 0.3s;}
@@ -41,17 +42,15 @@ body, html {
   font-weight: bold;
   color: rgb(230,230,230);
   background-color: rgb(35,35,35);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 #photography #photography-header {
   float: left;
   color: white;
   font-family: 'Raleway';
-  font-size: 20px;
-  padding-top: 15px;
-  padding-left: 20px;
+  font-size: 26px;
+  padding-top: 13px;
+  padding-left: 30px;
 }
 
 /*Social Media Links*/
@@ -68,31 +67,21 @@ body, html {
     padding: 7px;
     font-size: 20px;
     width: 20px;
-    border-radius: 20%;
+    border-radius: 25%;
     margin-right: 1.7%;
     margin-top: 2.6vmin;
     opacity: 0.9;
+    color: white;
+    background: rgb(45,45,45);
 }
 
-#photography .fa-instagram {
-  background: rgb(45,45,45);
-  color: rgb(240,240,240);
-}
 #photography .fa-instagram:hover {
   background: linear-gradient(to top left, rgb(255,140,30), rgb(185,50,140));
   color: white;
 }
-#photography .fa-wechat {
-  background: rgb(45,45,45);
-  color: rgb(240,240,240);
-}
 #photography .fa-wechat:hover {
   background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
   color: white;
-}
-#photography .fa-snapchat-ghost {
-  background: rgb(45,45,45);
-  color: rgb(240,240,240);
 }
 #photography .fa-snapchat-ghost:hover {
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
@@ -116,6 +105,10 @@ body, html {
   background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+  }
 }
 
 /*Landing Page container*/
@@ -138,6 +131,11 @@ body, html {
   animation-delay: 0.2s;
   animation-duration: 5s;
   animation-fill-mode: forwards;
+
+  @media (max-width: 1024px) {
+    font-size: 2vh;
+    line-height: 3vh;
+  }
 }
 @keyframes topFadeIn {
   0% { position: absolute; top: -5%; opacity: 0;}
@@ -159,6 +157,10 @@ body, html {
   background-repeat: no-repeat;
 	background-attachment: fixed;
   background-size: cover;
+
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+  }
 }
 
 /*Description*/
@@ -207,9 +209,9 @@ body, html {
 	display: solid;
 	width: 20vw;
 	font-size: 2vw;
-	margin-bottom: 1.5%;
-  -webkit-transition: font-size 0.5s;
-	transition: font-size 0.5s;
+	margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+	transition: 0.2s;
 }
 
 #photography .categoryButton:hover {
@@ -272,6 +274,8 @@ body, html {
   cursor: pointer;
   padding: 15px;
   border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 #photography #topBtn:hover {
