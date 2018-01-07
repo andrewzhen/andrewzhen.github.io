@@ -1,163 +1,250 @@
-@import url('https://fonts.googleapis.com/css?family=Arima Madurai');
-@import url('https://fonts.googleapis.com/css?family=Playfair Display SC');
-@import url('https://fonts.googleapis.com/css?family=Abril Fatface');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Indie Flower');
 
 body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+#photography body, #photography {
+  background: rgb(45,45,45);
+}
+
+/*Navigation Bar*/
+#photography #navigation-bar {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  top: 0;
   width: 100%;
-  background: rgb(210,210,210);
+  background-color: rgb(45,45,45);
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
-.background_picture {
-  background-image: url("beach.jpg");
-  height: 100%;
-  width: 100%;
-  display: table;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1024px) {
-    .background_picture {
-        background-attachment: scroll;
-    background-repeat: repeat;
-    }
-}
-
-/*container*/
-.intro {
-  max-width: 100%;
-  margin: 0 auto;
+#photography li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Raleway';
+  float: left;
+  dsiplay: block;
+  color: black;
   text-align: center;
+  padding: 20px 16px;
+  background-color: rgb(220,220,220);
+  border-radius: 2%;
 }
 
-/*name*/
-.intro h1 {
+#photography #home {-webkit-transition: 0.3s; transition: 0.3s;}
+#photography #home:hover {
+  font-weight: bold;
+  color: rgb(230,230,230);
+  background-color: rgb(35,35,35);
+}
+
+#photography #photography-header {
+  float: left;
   color: white;
   font-family: 'Raleway';
-  font-size: 60px;
-  font-weight: lighter;
-  margin-top: 200px;
-  letter-spacing: 0.2vw;
+  font-size: 26px;
+  padding-top: 13px;
+  padding-left: 30px;
 }
 
-.about {
-  background: rgb(40,46,52);
-  color: white;
-  text-align: center;
-  padding: 1px;
-  height: 120px;
-  letter-spacing: 0.5vw;
-}
-
-.about h1 {
-  font-family: 'Playfair Display SC';
-  font-size: 40px;
-}
-
-.portrait {
-  background-image: url("portrait.jpg");
-  width: 100%;
-  height: 50%;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1024px) {
-  .portrait {
-      background-attachment: scroll;
-    background-repeat: repeat;
-    }
-}
-
-.description {
-  width: 57%;
-  font-family: 'Raleway';
-  padding-top: 75px;
-  padding-bottom: 75px;
-  margin: auto;
-}
-
-.table {
-  display: inline;
-  width: 80%; 
-  padding-bottom: 150px;
-  font-family: 'Indie Flower';
-  font-size: 30px;
-  text-align: center;
-}
-
-.socialMedia {
-  background-image: url("socialMedia.jpg");
-  width: 100%;
-  height: 20%;
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media only screen and (max-device-width: 1024px) {
-  .socialMedia {
-      background-attachment: scroll;
-    background-repeat: repeat;
-    }
-}
-
-.socialMedia a {
+/*Social Media Links*/
+#photography .socialMedia a {
+  float: right;
   position: relative;
-  top: 40%;
   -webkit-transform: translateY(-40%);
   -ms-transform: translateY(-40%);
   transform: translateY(-40%);
+  text-decoration: none;
 }
 
-.fa {
-    padding: 10px;
-    font-size: 25px;
-    width: 25px;
-    border-radius: 20%;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 1.5%;
+#photography .fa {
+    padding: 7px;
+    font-size: 20px;
+    width: 20px;
+    border-radius: 25%;
+    margin-right: 1.7%;
+    margin-top: 2.6vmin;
     opacity: 0.9;
-}
-
-.fa-facebook {
-  background: linear-gradient(to top right, rgb(85,110,255), rgb(85,110,150));
     color: white;
+    background: rgb(45,45,45);
 }
 
-.fa-instagram {
+#photography .fa-instagram:hover {
   background: linear-gradient(to top left, rgb(255,140,30), rgb(185,50,140));
-    color: white;
+  color: white;
 }
-
-.fa-snapchat-ghost {
+#photography .fa-wechat:hover {
+  background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
+  color: white;
+}
+#photography .fa-snapchat-ghost:hover {
   text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
   background: linear-gradient(to top right, rgb(255,220,0), rgb(255,253,102));
   color: white;
 }
 
-.fa-wechat {
-  background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
+#photography #socialMediaModals p {
+  align: center;
+  font-family: "Raleway";
+  font-size: 25px;
   color: white;
 }
 
-/* The Modal (background) */
-.modal {
+/*Landing Page*/
+#photography .background_picture {
+	background-image: url("beach.jpg");
+  width: 100%;
+	height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+@media only screen and (max-device-width: 1024px) {
+  #photography .background_picture {
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+}
+
+/*Landing Page container*/
+#photography .animation-intro {
+  font-color: white;
+	width: 47%;
+  height: 75%;
+	margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+#photography .animation-text {
+  color: black;
+  font-family: "Raleway";
+  font-size: 2vh;
+  line-height: 3vh;
+  position: absolute;
+  top: 20%;
+  animation-name: topFadeIn;
+  animation-delay: 0.2s;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+}
+@media only screen and (max-device-width: 1024px) {
+  #photography .animation-text {
+    font-size: 2vh;
+    line-height: 3vh;
+  }
+}
+@keyframes topFadeIn {
+  0% { position: absolute; top: -5%; opacity: 0;}
+  75% { position: absolute; top: 20%; opacity: 1; }
+  100% { opacity: 1; }
+}
+
+/*Horizontal Divider*/
+#photography .horizontal-divider {
+	background: rgb(45,45,45);
+	height: 25px;
+}
+
+#photography .portrait {
+	background-image: url("portrait.jpg");
+  width: 100%;
+  height: 650px;
+  background-position: center center;
+  background-repeat: no-repeat;
+	background-attachment: fixed;
+  background-size: cover;
+}
+@media only screen and (max-device-width: 1024px) {
+  #photography .portrait {
+    background-attachment: scroll;
+    background-repeat: repeat;
+  }
+}
+
+/*Description*/
+#photography .description-container {
+  background: rgb(220,220,220);
+}
+
+#photography .description {
+  font-size: 1.5vmax;
+	width: 50vmax;
+	font-family: 'Raleway';
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin: auto;
+}
+
+#photography .table {
+	display: inline;
+	width: 80%; 
+	padding-bottom: 150px;
+	font-family: 'Indie Flower';
+	font-size: 30px;
+	text-align: center;
+}
+
+/*Photography Section*/
+#photography .contentSection {
+	padding-bottom: 200px;
+	text-align: center;
+  background-color:white;
+}
+
+#photography .categories {
+	padding-top: 20px;
+	background: rgb(45,45,45);
+}
+
+#photography .categoryButton {
+	color: rgb(180,180,180);
+	font-family: 'Raleway';
+	background-color: transparent;
+	border-color: rgb(45,45,45);
+	border-style: solid;
+	outline: none;
+	cursor: pointer;
+	display: solid;
+	width: 20vw;
+	font-size: 2vw;
+	margin-bottom: 20px;
+  -webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+#photography .categoryButton:hover {
+  font-weight: bold;
+  color: white;
+}
+
+#photography .photos {
+	margin-top: 5%;
+}
+
+#photography .photos img {
+	object-fit: cover;
+	width: 450px;
+	height: 450px;
+	border-radius: 1%;
+	cursor: pointer;
+	margin:17px;
+}
+
+#photography .imageStyle img:hover {
+	-webkit-filter: brightness(60%);
+  -webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+/* Modal Background */
+#photography .modal {
     display: none;
     position: fixed;
     z-index: 1;
@@ -165,116 +252,62 @@ body, html {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
     cursor: pointer;
 }
 
-/* Modal Content/Box */
-.modal-content {
-    color: white;
-    font-size: 25px;
-    font-family: 'Raleway';
-    display: table-cell;
-    padding-top: 3%;
-}
-
-.landModals img {
+/*For Resizing Window*/
+#photography .imgModals img {
   max-width: 100%;
   max-width: 100%;
 }
 
-hr {
-  height: 12px;
-  margin: 0;
-  background: rgb(40,40,40);
-  border-color: rgb(40,40,40);
-}
-
-.interests {
-  padding-bottom: 200px;
-  text-align: center;
-}
-
-.contentHeader {
-  background: rgb(30,30,30);
-  color: white;
-  font-size: 3vw;
-  /*font-family: 'Arima Madurai';*/
-  font-family: 'Raleway';
-  height: 70px;
-  padding-top: 3%;
-  padding-left: 4vw;
-  padding-bottom: 7%;
-  letter-spacing: 2vw;
-}
-
-.buttonHeader {
-  margin-top: 0;
-  background: rgb(30,30,30);
-}
-
-.catButton {
-  color: white;
-  font-family: 'Raleway';
-  background-color: transparent;
-  border-color: rgb(30,30,30);
-  border-style: solid;
-  padding-top: 10px;
+/*Go to Top Button*/
+#photography #topBtn {
+  display: block;
+  position: fixed;
+  height: 4.7vmax;
+  width: 4.7vmax;
+  bottom: 10vmax;
+  right: 1%;
+  z-index: 99;
+  border: none;
   outline: none;
-  cursor: pointer;
-  display: solid;
-
-  width: 13%;
-  font-size: 1.3vw;
-  margin-top: 2%; 
-  margin-bottom: 2%;
-  transition: font-size 0.5s;
-}
-
-.catButton button:hover {
-  font-size: 1.6vw;
-  border-top-color: rgb(180,180,180);
-}
-
-.bar {
-  font-size: 25px;
-  color: white;
-}
-
-a {
-  text-decoration: none;
+  background-color: rgb(230,230,230);
+  font-size: 1vmax;
   color: black;
-  display: inline-block;
-}
-
-.contentSection {
-  margin-top: 5%;
-}
-
-.contentSection img {
-  object-fit: cover;
-  width: 400px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
-  border-radius: 1%;
   cursor: pointer;
-
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 35px;
-  margin-bottom: 35px;
-}
-
-.imageStyle img:hover {
-  -webkit-filter: brightness(60%);
+  padding: 15px;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-footer {
-  background-color: rgb(170,170,170);
+#photography #topBtn:hover {
+  background-color: rgb(200,200,200);
+}
+
+/*Footer*/
+#photography ul li {
+  display: inline;
+}
+
+#photography #foot {
+  list-style-type: none;
+  color: rgb(220,220,220);
+  background-color: rgb(45,45,45);
   font-family: 'Raleway';
-  padding-left: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+#photography #footer-description {
+	font-size: 1.2vw;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
+}
+
+#photography #footer-date {
+  float: right;
+  font-size: 1.25vw;
+  padding-bottom: 1vw;
+  padding-right: 1vw;
 }
