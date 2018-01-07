@@ -111,18 +111,11 @@ body, html {
 #photography .background_picture {
 	background-image: url("beach.jpg");
   width: 100%;
-  max-width: 100%;
 	height: 100%;
-	display: table;
   background-position: center center;
   background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-}
-@media only screen and (max-width: 1024px) {
-    .background_picture {
-      background-size: contain;
-    }
 }
 
 /*Landing Page container*/
@@ -155,7 +148,7 @@ body, html {
 /*Horizontal Divider*/
 #photography .horizontal-divider {
 	background: rgb(45,45,45);
-	height: 50px;
+	height: 25px;
 }
 
 #photography .portrait {
@@ -166,11 +159,6 @@ body, html {
   background-repeat: no-repeat;
 	background-attachment: fixed;
   background-size: cover;
-}
-@media only screen and (max-width: 1024px) {
-    .portrait {
-      background-size: contain;
-    }
 }
 
 /*Description*/
@@ -204,8 +192,7 @@ body, html {
 }
 
 #photography .categories {
-	padding-top: 40px;
-  margin-bottom: 150px;
+	padding-top: 20px;
 	background: rgb(45,45,45);
 }
 
@@ -220,7 +207,7 @@ body, html {
 	display: solid;
 	width: 20vw;
 	font-size: 2vw;
-	margin-bottom: 3%;
+	margin-bottom: 1.5%;
   -webkit-transition: font-size 0.5s;
 	transition: font-size 0.5s;
 }
