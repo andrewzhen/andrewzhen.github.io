@@ -34,7 +34,6 @@ body, html {
   text-align: center;
   padding: 20px 16px;
   background-color: rgb(220,220,220);
-  border-radius: 2%;
 }
 
 #photography #home {-webkit-transition: 0.3s; transition: 0.3s;}
@@ -69,7 +68,7 @@ body, html {
     width: 20px;
     border-radius: 25%;
     margin-right: 1.7%;
-    margin-top: 2.6vmin;
+    margin-top: 26px;
     opacity: 0.9;
     color: white;
     background: rgb(45,45,45);
@@ -128,7 +127,7 @@ body, html {
   font-size: 2vh;
   line-height: 3vh;
   position: absolute;
-  top: 20%;
+  top: 12vw;
   animation-name: topFadeIn;
   animation-delay: 0.2s;
   animation-duration: 5s;
@@ -136,13 +135,13 @@ body, html {
 }
 @media only screen and (max-device-width: 1024px) {
   #photography .animation-text {
-    font-size: 2vh;
-    line-height: 3vh;
+    font-size: 1.5vh;
+    line-height: 2.3vh;
   }
 }
 @keyframes topFadeIn {
   0% { position: absolute; top: -5%; opacity: 0;}
-  75% { position: absolute; top: 20%; opacity: 1; }
+  75% { position: absolute; top: 12vw; opacity: 1; }
   100% { opacity: 1; }
 }
 
@@ -165,6 +164,7 @@ body, html {
   #photography .portrait {
     background-attachment: scroll;
     background-repeat: repeat;
+    height: 550px;
   }
 }
 
@@ -174,7 +174,7 @@ body, html {
 }
 
 #photography .description {
-  font-size: 1.5vmax;
+  font-size: 25px;
 	width: 50vmax;
 	font-family: 'Raleway';
 	padding-top: 75px;
@@ -268,8 +268,8 @@ body, html {
   position: fixed;
   height: 4.7vmax;
   width: 4.7vmax;
-  bottom: 10vmax;
-  right: 1%;
+  bottom: 10%;
+  right: 2%;
   z-index: 99;
   border: none;
   outline: none;
@@ -300,14 +300,14 @@ body, html {
 }
 
 #photography #footer-description {
-	font-size: 1.2vw;
-  padding-bottom: 1vw;
-  padding-right: 1vw;
+	font-size: 15px;
+  padding-bottom: 1%;
+  padding-right: 1%;
 }
 
 #photography #footer-date {
   float: right;
-  font-size: 1.25vw;
-  padding-bottom: 1vw;
-  padding-right: 1vw;
+  font-size: 15px;
+  padding-bottom: 1%;
+  padding-right: 1%;
 }
