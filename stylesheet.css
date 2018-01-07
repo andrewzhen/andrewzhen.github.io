@@ -107,7 +107,7 @@ body, html {
 	background-size: cover;
 }
 @media (max-width: 1024px) {
-  background-attachment: scroll;
+  .background-attachment: scroll;
 }
 
 /*Landing Page container*/
@@ -132,8 +132,8 @@ body, html {
   animation-fill-mode: forwards;
 }
 @media (max-width: 1024px) {
-  font-size: 2vh;
-  line-height: 3vh;
+  .font-size: 2vh;
+  .line-height: 3vh;
 }
 @keyframes topFadeIn {
   0% { position: absolute; top: -5%; opacity: 0;}
@@ -157,7 +157,7 @@ body, html {
   background-size: cover;
 }
 @media (max-width: 1024px) {
-  background-attachment: scroll;
+  .background-attachment: scroll;
 }
 
 /*Description*/
@@ -260,8 +260,8 @@ body, html {
   position: fixed;
   height: 4.7vmax;
   width: 4.7vmax;
-  bottom: 100px;
-  right: 40px;
+  bottom: 10vmax;
+  right: 1%;
   z-index: 99;
   border: none;
   outline: none;
