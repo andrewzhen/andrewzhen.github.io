@@ -32,7 +32,7 @@ body, html {
   dsiplay: block;
   color: black;
   text-align: center;
-  padding: 20px 16px;
+  padding: 15px 10px;
   background-color: rgb(220,220,220);
 }
 
@@ -47,8 +47,8 @@ body, html {
   float: left;
   color: white;
   font-family: 'Raleway';
-  font-size: 26px;
-  padding-top: 13px;
+  font-size: 22px;
+  padding-top: 11px;
   padding-left: 30px;
 }
 
@@ -63,12 +63,12 @@ body, html {
 }
 
 #photography .fa {
-    padding: 7px;
+    padding: 11px 7px 0 0;
     font-size: 20px;
     width: 20px;
     border-radius: 25%;
     margin-right: 1.7%;
-    margin-top: 26px;
+    margin-top: 15px;
     opacity: 0.9;
     color: white;
     background: rgb(45,45,45);
@@ -93,6 +93,7 @@ body, html {
   font-family: "Raleway";
   font-size: 25px;
   color: white;
+  margin-top: 5%
 }
 
 /*Landing Page*/
@@ -124,20 +125,14 @@ body, html {
 #photography .animation-text {
   color: black;
   font-family: "Raleway";
-  font-size: 2vh;
-  line-height: 3vh;
+  font-size: 20px;
+  line-height: 29px;
   position: absolute;
   top: 12vw;
   animation-name: topFadeIn;
   animation-delay: 0.2s;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-}
-@media only screen and (max-device-width: 1024px) {
-  #photography .animation-text {
-    font-size: 1.5vh;
-    line-height: 2.3vh;
-  }
 }
 @keyframes topFadeIn {
   0% { position: absolute; top: -5%; opacity: 0;}
@@ -247,7 +242,7 @@ body, html {
 #photography .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 99;
     left: 0;
     top: 0;
     width: 100%;
@@ -258,8 +253,12 @@ body, html {
 
 /*For Resizing Window*/
 #photography .imgModals img {
+  max-height: calc(100% - 100px);
+  position: fixed;
+  top: 50%;
   max-width: 100%;
   max-width: 100%;
+  transform: translate(-50%, -50%);
 }
 
 /*Go to Top Button*/
@@ -270,7 +269,7 @@ body, html {
   width: 4.7vmax;
   bottom: 10%;
   right: 2%;
-  z-index: 99;
+  z-index: 50;
   border: none;
   outline: none;
   background-color: rgb(230,230,230);
