@@ -100,7 +100,7 @@ body, html {
 
 /*Landing Page*/
 #photography .background_picture {
-	background-image: url("beach.jpg");
+	background-image: url("../images/beach.jpg");
   width: 100%;
 	height: 100%;
   background-position: center center;
@@ -149,7 +149,7 @@ body, html {
 }
 
 #photography .portrait {
-	background-image: url("portrait.jpg");
+	background-image: url("../images/portrait.jpg");
   width: 100%;
   height: 650px;
   background-position: center center;
@@ -174,8 +174,8 @@ body, html {
   font-size: 25px;
 	width: 50vmax;
 	font-family: 'Raleway';
-	padding-top: 75px;
-	padding-bottom: 75px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 	margin: auto;
 }
 
@@ -185,7 +185,7 @@ body, html {
 	padding-bottom: 150px;
 	font-family: 'Indie Flower';
 	font-size: 30px;
-	text-align: center;
+	text-align: left;
 }
 
 /*Photography Section*/
@@ -222,15 +222,17 @@ body, html {
 }
 
 #photography .photos {
-	margin-top: 5%;
+	margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #photography .photos img {
 	object-fit: cover;
-  width: 28vw;
+  width: 24vw;
   height: 24vw;
 	cursor: pointer;
-	margin:1vw;
+	margin:0.1vw;
 }
 
 #photography .imageStyle img:hover {
