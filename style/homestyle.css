@@ -1,22 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
 }
 
-#landing {
-  height: 100%;
-  background-image: url("../images/ocean.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.container {
+  display: table;
+  padding-top: 10%;
+  width: 100%;
+  table-layout: fixed;
 }
 
-.center {
-  width: 25%;
-  display: block;
-  padding-top: 88px;
-  margin-left: auto;
-  margin-right: auto;
+.profile {
+  display: table-cell;
+  vertical-align: top;
+  margin-left: 40%;
+  padding-right: 15%;
+  font-size: 1.1vw;
+  font-family: "Roboto";
+  color: rgb(30,30,30);
+}
+
+.resources {
+  margin-top: 12vw;
+  margin-left: 38vw;
+}
+
+.links {
+  text-decoration: none;
+  font-family: "Roboto";
+  color: rgb(100,100,100);
+  font-size: 0.9vw;
+  padding-left: 2vw;
 }
