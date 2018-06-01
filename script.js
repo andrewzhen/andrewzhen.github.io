@@ -10,7 +10,7 @@ ga('send', 'pageview');
 //Start Up
 window.onload = function() {
     var x = document.getElementById("btn1");
-    refreshContent("Landscape" , "Architecture", "Events", "Everyday");
+    refreshContent("Landscape" , "Portrait");
     x.style.fontWeight = "bold";
     x.style.color = "white";
     document.getElementById("topBtn").style.display = "none";
@@ -96,10 +96,6 @@ function focus1() {
     x.style.color = "white";
     x = document.getElementById("btn2");
     x.style = "";
-    x = document.getElementById("btn3");
-    x.style = "";
-    x = document.getElementById("btn4");
-    x.style = "";
 }
 function focus2() {
     var x = document.getElementById("btn1");
@@ -107,40 +103,10 @@ function focus2() {
     x = document.getElementById("btn2");
     x.style.fontWeight = "bold";
     x.style.color = "white";
-    x = document.getElementById("btn3");
-    x.style = "";
-    x = document.getElementById("btn4");
-    x.style = "";
 }
-function focus3() {
-    var x = document.getElementById("btn1");
-    x.style = "";
-    x = document.getElementById("btn2");
-    x.style = "";
-    x = document.getElementById("btn3");
-    x.style.fontWeight = "bold";
-    x.style.color = "white";     
-    x = document.getElementById("btn4");
-    x.style = "";
-}
-function focus4() {
-    var x = document.getElementById("btn1");
-    x.style = "";
-    x = document.getElementById("btn2");
-    x.style = "";
-    x = document.getElementById("btn3");
-    x.style = "";
-    x = document.getElementById("btn4");
-    x.style.fontWeight = "bold";
-    x.style.color = "white";
-}
-function refreshContent(show, hide1, hide2, hide3) {
-	var toShow = document.getElementById(show);
-	var toHide1 = document.getElementById(hide1);
-	var toHide2 = document.getElementById(hide2);
-	var toHide3 = document.getElementById(hide3);	
-	toShow.style.display = "block";
-	toHide1.style.display = "none";
-	toHide2.style.display = "none";
-	toHide3.style.display = "none";
+function refreshContent(show, hide1) {
+    var toShow = document.getElementById(show);
+    var toHide1 = document.getElementById(hide1); 
+    toShow.style.display = "block";
+    toHide1.style.display = "none";
 }

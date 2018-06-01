@@ -209,8 +209,8 @@ body, html {
 	outline: none;
 	cursor: pointer;
 	display: solid;
-	width: 20vw;
-	font-size: 1.5vw;
+	width: 16vw;
+	font-size: 1.3vw;
 	margin-bottom: 20px;
   -webkit-transition: 0.2s;
 	transition: 0.2s;
@@ -259,9 +259,15 @@ body, html {
   max-height: calc(100% - 100px);
   position: fixed;
   top: 50%;
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-width: 100%;
   transform: translate(-50%, -50%);
+}
+
+#photography .imgModals img:hover {
+  -webkit-filter: none;
 }
 
 /*Go to Top Button*/
