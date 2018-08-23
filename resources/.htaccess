@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Enter Details"
-AuthUserFile /Users/Andrew/Projects/andrewzhen.github.io/resources/.htpasswd
-require valid-user

@@ -8,9 +8,9 @@ body, html {
 	width: 100%;
 }
 #photography body, #photography {
-  /*background: rgb(45,45,45);*/
   background: rgb(18,23,18);
 }
+
 
 /*Navigation Bar*/
 #photography #navigation-bar {
@@ -22,7 +22,6 @@ body, html {
   z-index: 5;
   top: 0;
   width: 100%;
-  /*background-color: rgb(45,45,45);*/
   background: rgb(18,23,18);
 }
 
@@ -54,6 +53,7 @@ body, html {
   padding-left: 25px;
 }
 
+
 /*Social Media Links*/
 #photography .socialMedia a {
   float: right;
@@ -67,12 +67,11 @@ body, html {
 #photography .fa {
     font-size: 20px;
     width: 20px;
-    border-radius: 25%;
+    border-radius: 3px;
     margin: 15px 30px -7px 0;
-    padding: 5px;
+    padding: 5px 5px 5px 7px;
     opacity: 0.9;
     color: white;
-    /*background: rgb(45,45,45);*/
     background: rgb(18,23,18);
 }
 
@@ -80,23 +79,11 @@ body, html {
   background: linear-gradient(to top left, rgb(255,140,30), rgb(185,50,140));
   color: white;
 }
-#photography .fa-wechat:hover {
-  background: linear-gradient(to bottom right, rgb(90,255,70), rgb(90,200,70));
-  color: white;
-}
-#photography .fa-snapchat-ghost:hover {
-  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
-  background: linear-gradient(to top right, rgb(255,220,0), rgb(255,253,102));
+#photography .fa-linkedin:hover {
+  background: #007bb5;
   color: white;
 }
 
-#photography #socialMediaModals p {
-  align: center;
-  font-family: "Raleway";
-  font-size: 25px;
-  color: white;
-  margin-top: 5%
-}
 
 /*Landing Page*/
 #photography .background_picture {
@@ -115,10 +102,11 @@ body, html {
   }
 }
 
+
 /*Landing Page container*/
 #photography .animation-intro {
   font-color: white;
-	width: 47%;
+	width: 42%;
   height: 75%;
 	margin: 0 auto;
   position: relative;
@@ -141,6 +129,7 @@ body, html {
   75% { position: absolute; top: 12vw; opacity: 1; }
   100% { opacity: 1; }
 }
+
 
 /*Horizontal Divider*/
 #photography .horizontal-divider {
@@ -165,6 +154,7 @@ body, html {
   }
 }
 
+
 /*Description*/
 #photography .description-container {
   background: rgb(220,220,220);
@@ -188,6 +178,7 @@ body, html {
 	text-align: left;
 }
 
+
 /*Photography Section*/
 #photography .contentSection {
 	padding-bottom: 200px;
@@ -195,30 +186,17 @@ body, html {
   background-color:white;
 }
 
-#photography .categories {
-	padding-top: 20px;
+#photography .gallery-div {
+	padding-top: 30px;
 	background: rgb(45,45,45);
 }
 
-#photography .categoryButton {
-	color: rgb(180,180,180);
+#photography .gallery {
+	color: rgb(230,230,230);
 	font-family: 'Raleway';
-	background-color: transparent;
-	border-color: rgb(45,45,45);
-	border-style: solid;
-	outline: none;
-	cursor: pointer;
-	display: solid;
-	width: 16vw;
-	font-size: 1.3vw;
-	margin-bottom: 20px;
-  -webkit-transition: 0.2s;
-	transition: 0.2s;
-}
-
-#photography .categoryButton:hover {
-  font-weight: bold;
-  color: white;
+	padding-bottom: 30px;
+  margin: auto;
+  letter-spacing: 2px;
 }
 
 #photography .photos {
@@ -229,17 +207,55 @@ body, html {
 
 #photography .photos img {
 	object-fit: cover;
-  width: 24vw;
-  height: 24vw;
+  width: 22vw;
+  height: 22vw;
 	cursor: pointer;
-	margin:0.1vw;
+	margin: 0.1vw;
 }
 
-#photography .imageStyle img:hover {
-	-webkit-filter: brightness(60%);
-  -webkit-transition: 0.4s;
-	transition: 0.4s;
+#Landscape {
+  display: table;
+  margin: auto;
+  margin-top: 5vw;
 }
+
+.cap {
+  height: 0px;
+  width: 100%;
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Raleway";
+  font-size: 1.6vw;
+}
+
+p span {
+  display: block;
+  margin-bottom: 7px;
+}
+
+.img_wrap {
+  width: 22vw;
+  height: 22vw;
+  position: relative;
+  text-align: center;
+  color: white;
+  display: table-cell;
+}
+
+.img_wrap:hover {
+  -webkit-filter: brightness(70%);
+}
+
+.img_wrap:hover .cap {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+}
+
 
 /* Modal Background */
 #photography .modal {
@@ -253,6 +269,7 @@ body, html {
     background-color: rgba(0,0,0,0.8);
     cursor: pointer;
 }
+
 
 /*For Resizing Window*/
 #photography .imgModals img {
@@ -269,6 +286,7 @@ body, html {
 #photography .imgModals img:hover {
   -webkit-filter: none;
 }
+
 
 /*Go to Top Button*/
 #photography #topBtn {
@@ -294,6 +312,7 @@ body, html {
 #photography #topBtn:hover {
   background-color: rgb(200,200,200);
 }
+
 
 /*Footer*/
 #photography ul li {
