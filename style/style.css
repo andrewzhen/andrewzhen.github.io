@@ -8,10 +8,10 @@ body, html {
 	width: 100%;
   scroll-behavior: smooth;
 }
+
 #photography body, #photography {
   background: rgb(18,23,18);
 }
-
 
 /*Navigation Bar*/
 #photography #navigation-bar {
@@ -67,7 +67,6 @@ body, html {
   padding-left: 25px;
 }
 
-
 /*Social Media Links*/
 #photography .socialMedia a {
   float: right;
@@ -98,7 +97,6 @@ body, html {
   color: white;
 }
 
-
 /*Landing Page*/
 #photography .background_picture {
 	background-image: url("../images/beach.jpg");
@@ -126,7 +124,6 @@ body, html {
   }
 }
 
-
 /*Landing Page container*/
 #photography .animation-intro {
   font-color: white;
@@ -153,7 +150,6 @@ body, html {
   75% { position: absolute; top: 12vw; opacity: 1; }
   100% { opacity: 1; }
 }
-
 
 /*Horizontal Divider*/
 #photography .horizontal-divider {
@@ -275,7 +271,6 @@ p span {
   opacity: 1;
 }
 
-
 /* Modal Background */
 #photography .modal {
     display: none;
@@ -299,13 +294,11 @@ p span {
   max-width: 100%;
   max-width: 100%;
   transform: translate(-50%, -50%);
-  overflow: hidden !important;
 }
 
 #photography .imgModals img:hover {
   -webkit-filter: none;
 }
-
 
 /*Go to Top Button*/
 #photography #topBtn {
@@ -331,7 +324,6 @@ p span {
 #photography #topBtn:hover {
   opacity: 0.7;
 }
-
 
 /*Footer*/
 .foot-div {
