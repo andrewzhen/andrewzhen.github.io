@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+.name {
+  font-family: 'Noto Sans KR';
+  font-size: 4vw;
+}
+
+.description {
+  font-family: 'Noto Sans KR';
+  font-size: 1.5vw;
+}
+
+.top-margin {
+  margin-top: 20vh;
+}
+
+.links {
+  margin-top: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.fa {
+  width: 15px;
+  height: 15px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  vertical-align: middle;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #C2185B;
+  color: white;
+}
+
+.github {
+  background: #212121;
+  background-image: url("github.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photography {
+  background: #546E7A;
+  background-image: url("camera.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.resume {
+  background: #616161;
+  background-image: url("resume.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+
+.email {
+  border: black dashed 1px;
+  background-image: url("email.png");
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
