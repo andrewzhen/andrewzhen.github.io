@@ -9,7 +9,7 @@ body, html {
 
 /*----------------------------------HEADER*/
 #header {
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
 }
 
 #name-div {
@@ -125,11 +125,36 @@ input:checked + .slider:before {
 }
 
 /*-----------------------------INTRODUCTION BODY*/
+#landing-div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 200px;
+  max-height: 115px;
+  border-radius: 10px;
+}
+
 #description {
-  width: 65%;
+  text-align: center;
   font-size: 36px;
-  line-height: 140%;
-  margin-bottom: 30vh;
+  transition: all 0.3s ease;
+}
+
+#description:hover {
+  font-size: 38px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.wip {
+  text-align: center;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.wip:hover {
+  transform: translateY(-10px);
+  cursor: default;
+  transition: all 0.3s ease;
 }
 
 /*-----------------------------WORK*/
@@ -172,14 +197,15 @@ input:checked + .slider:before {
 }
 
 #title {
-  font-size: 24px;
+  font-size: 22px;
   margin-top: 1.5vw;
-  margin-bottom: 0;
+  margin-bottom: 0.5vw;
 }
 
 #summary {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 140%;
+  color: rgb(100,100,100);
   margin: 0;
 }
 
