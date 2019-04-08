@@ -7,6 +7,18 @@ body, html {
   margin-right: 8vw;
 }
 
+/*----------------------------------FADEIN*/
+section {
+  opacity: 0;
+  transform: translate(0, 100px);
+  transition: all 2s;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
 /*----------------------------------HEADER*/
 #header {
   padding-bottom: 15vh;
