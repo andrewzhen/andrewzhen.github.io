@@ -24,21 +24,27 @@ section.visible {
   padding-bottom: 15vh;
 }
 
-#name-div {
+#home-div {
   float: left;
   transition: all 0.5s ease;
 }
 
-#name {
-  font-size: 24px;
+#home-div:hover {
+  transform: translateY(8px);
+  color: #757575;
+}
+
+#home-div > a:hover {
+  color: #757575;
+}
+
+#home {
+  font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   color: black;
   display: inline;
-}
-
-#name-div:hover {
-  transform: translateY(10px);
+  transition: all 0.5s ease;
 }
 
 #darkmode:hover {
@@ -56,7 +62,7 @@ section.visible {
 }
 
 .nav:hover {
-  transform: translateY(8px);
+  transform: translateY(6px);
 }
 
 .nav > a {
@@ -64,6 +70,11 @@ section.visible {
   font-weight: 500;
   color: black;
   text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.nav > a:hover {
+  color: #757575;
 }
 
 /*--------------------------------DARK MODE*/
@@ -134,91 +145,6 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
-}
-
-/*-----------------------------INTRODUCTION BODY*/
-#landing-div {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 200px;
-  max-height: 115px;
-  border-radius: 10px;
-}
-
-#description {
-  text-align: center;
-  font-size: 36px;
-  transition: all 0.3s ease;
-}
-
-#description:hover {
-  font-size: 38px;
-  transition: all 0.3s ease;
-  cursor: default;
-}
-
-.wip {
-  text-align: center;
-  font-size: 22px;
-  transition: all 0.3s ease;
-}
-
-.wip:hover {
-  transform: translateY(-10px);
-  cursor: default;
-  transition: all 0.3s ease;
-}
-
-/*-----------------------------WORK*/
-.grid-container {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-}
-
-.grid-item {
-  width: 21vw;
-  height: 21vw;
-  margin-bottom: 15rem;
-}
-
-.grid-item img {
-  height: 100%;
-  width: 100%;
-  transition: all 0.5s ease;
-}
-
-.grid-item img:hover {
-  transform: translateY(15px);
-  cursor: pointer;
-}
-
-.grid-left {
-  margin-right: auto;
-}
-
-.grid-middle {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.grid-right {
-  margin-left: auto;
-}
-
-#title {
-  font-size: 22px;
-  margin-top: 1.5vw;
-  margin-bottom: 0.5vw;
-}
-
-#summary {
-  font-size: 14px;
-  line-height: 140%;
-  color: rgb(100,100,100);
-  margin: 0;
 }
 
 /*-----------------------------CONTACT*/
