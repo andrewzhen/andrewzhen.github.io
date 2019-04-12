@@ -1,0 +1,93 @@
+html, body {
+  font-size: 1vw;
+}
+
+.work-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5vw
+}
+
+/*---------------------------Container 1*/
+.heading-container {
+  display: grid;
+  grid-template-columns: 15% 15% 70%;
+  margin-bottom: 5vw;
+}
+
+.heading-container p {
+  margin: 0.5vw;
+}
+
+.work-logo {
+  text-align: center;
+}
+
+.work-header {
+  font-weight: 600;
+}
+
+/*---------------------------Container 2*/
+.body-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 5vw;
+}
+
+.body-container p {
+  margin: 0;
+  line-height: 210%;
+}
+
+/*---------------------------Container 3*/
+.impact-right-container {
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  margin-bottom: 3vw;
+}
+
+.impact-right-container p {
+  margin: 0;
+  line-height: 210%;
+}
+
+.impact-right-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.right-caption {
+  padding-left: 1vw;
+}
+
+.impact-left-container {
+  display: grid;
+  grid-template-columns: 15% 35% 50%;
+  margin-bottom: 3vw;
+}
+
+.impact-left-container p {
+  margin: 0;
+  line-height: 210%;
+}
+
+.impact-left-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.left-caption {
+  padding-right: 1vw;
+}
+
+/*---------------------------Container 4*/
+.conclusion-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 20vw;
+}
+
+.conclusion-container p {
+  margin: 0;
+  line-height: 210%;
+}
