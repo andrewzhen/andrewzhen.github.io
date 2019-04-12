@@ -1,0 +1,9 @@
+html, body {
+  font-size: 1vw;
+}
+
+.work-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 5vw
+}
