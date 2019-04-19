@@ -1,4 +1,14 @@
 /*----------------------------------------ABOUT*/
+.aboutPic img {
+  width: 100%;
+  margin-top: -5vw;
+  margin-bottom: 5vw;
+}
+
+.aboutArea {
+  margin-bottom: 10vw;
+}
+
 .aboutArea p {
   font-size: 22px;
   line-height: 140%;
@@ -10,25 +20,6 @@
   color: #D4D4D4;
 }
 
-.aboutContact {
-  text-align: right;
-}
-
-.aboutCopyright {
-  text-align: right;
-}
-
-.aboutCopyright p {
-  font-size: 18px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+.aboutWidth {
+  width: 35vw;
 }

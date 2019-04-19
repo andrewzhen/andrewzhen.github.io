@@ -2,8 +2,51 @@ html, body {
   font-size: 1vw;
 }
 
+.work-banner {
+  width: 100vw;
+  height: 35vh;
+  background-color: #343434;
+  margin-top: -10vh;
+  margin-left: -15vw;
+  margin-bottom: 5vw;
+  line-height: 35vh;
+}
+
 .work-title {
-  font-size: 36px;
+  font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 5vw
+  color: white;
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+.work-description {
+  font-size: 1vw;
+  color: white;
+  margin-left: 15vw;
+  margin-right: 15vw; 
+}
+
+.line-height-160 {
+  line-height: 160%;
+}
+
+.project-header {
+  font-size: 2vw;
+  font-weight: 600;
+  margin: 0;
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 5vw;
+}
+
+.body-container img {
+  width: 100%;
+}
+
+.project-date {
+  color: #7A7A7A;
 }
