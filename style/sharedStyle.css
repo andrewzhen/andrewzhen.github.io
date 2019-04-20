@@ -6,6 +6,10 @@ body, html {
   padding: 0;
 }
 
+.line-height-160 {
+  line-height: 160%;
+}
+
 /*----------------------------------FADEIN*/
 section {
   opacity: 0;

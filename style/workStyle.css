@@ -3,11 +3,27 @@ html, body {
 }
 
 #caida-banner {
+  background-color: #BBE8E0;
+}
+
+#snaash-banner {
+  background-color: #F3D1A6;
+}
+
+.quote {
+  margin-left: 5vw;
+  color: #949494;
+}
+
+.subheader {
+  color: #9E9E9E;
+}
+
+.banner {
   width: 100vw;
   height: 35vh;
   margin-top: -10vh;
   margin-left: -15vw;
-  background-color: #BBE8E0;
   display: table;
   margin-bottom: 5vw;
 }
@@ -27,6 +43,11 @@ html, body {
 
 .inline-div {
   float: left;
+}
+
+.line-height-210 {
+  margin: 0;
+  line-height: 210%;
 }
 
 /*---------------------------Container 1*/
@@ -98,4 +119,25 @@ html, body {
 .conclusion-container p {
   margin: 0;
   line-height: 210%;
+}
+
+/*---------------------------iOS Container*/
+.ios-container {
+  display: grid;
+  grid-template-columns: 15% 5% 30% 15% 30% 5%;
+  margin-bottom: 5vw;
+}
+.ios-container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/*---------------------------Competitive Analysis Container*/
+ .ca-container {
+  display: grid;
+  grid-template-columns: 15% 20% 65%;
+ }
+.ca-container img {
+  width: 100%;
+  object-fit: contain;
 }
