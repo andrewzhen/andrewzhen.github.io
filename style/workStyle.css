@@ -2,17 +2,39 @@ html, body {
   font-size: 1vw;
 }
 
+#caida-banner {
+  width: 100vw;
+  height: 35vh;
+  margin-top: -10vh;
+  margin-left: -15vw;
+  background-color: #BBE8E0;
+  display: table;
+  margin-bottom: 5vw;
+}
+
+#valign-div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .work-title {
   font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 5vw
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0 !important;
+}
+
+.inline-div {
+  float: left;
 }
 
 /*---------------------------Container 1*/
 .heading-container {
   display: grid;
-  grid-template-columns: 15% 15% 70%;
-  margin-bottom: 5vw;
+  grid-template-columns: 60% 40%;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
 .heading-container p {
@@ -21,10 +43,12 @@ html, body {
 
 .work-logo {
   text-align: center;
+  padding-top: 3vh;
 }
 
 .work-header {
   font-weight: 600;
+  margin-left: 0 !important;
 }
 
 /*---------------------------Container 2*/
@@ -47,7 +71,7 @@ html, body {
 .impact-container {
   display: grid;
   grid-template-columns: 15% 35% 50%;
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
 }
 
 .impact-container p {
