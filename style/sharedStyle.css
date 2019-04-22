@@ -243,5 +243,14 @@ input:checked + .slider:before {
 }
 
 #copyright {
-  font-size: 18px;
+  font-size: 1vw;
+  width: fit-content;
+  display: inline;
+}
+
+#note {
+  font-size: 1vw;
+  float: right;
+  display: inline;
+  margin: 0;
 }

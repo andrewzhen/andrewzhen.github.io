@@ -38,7 +38,7 @@ function darkmode() {
 function changeColor(newColor, otherColor) {
   document.getElementById("body").style.backgroundColor = otherColor;
 
-  const elementsList = document.querySelectorAll("#body, #home, #name, #about, #photo, #description, #description-2, #home-location, #email, #resume, #linkedin, #github, #instagram");
+  const elementsList = document.querySelectorAll("#body, #home, #name, #about, #photo, #description, #description-2, #work-1, #work-2, #movie-wiki, #home-location, #email, #resume, #linkedin, #github, #instagram");
   const elementsArray = [...elementsList];
 
   elementsArray.forEach(element => {
@@ -48,6 +48,10 @@ function changeColor(newColor, otherColor) {
 
 function mo(id) {
   document.getElementById(id).style.color = "#9E9E9E";
+
+  if (id == "email") {
+    document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
+  }
 }
 
 function ml(id) {
@@ -56,9 +60,8 @@ function ml(id) {
   } else {
     document.getElementById(id).style.color = "black";
   }
-  // if (turnOn) {
-  //   document.getElementById(id).style.color = "black";
-  // } else {
-  //   document.getElementById(id).style.color = "white";
-  // }
+
+  if (id == "email") {
+    document.getElementById(id).innerHTML = "Email";
+  }
 }

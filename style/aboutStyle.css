@@ -7,7 +7,7 @@
 
 .aboutArea {
   display: grid;
-  grid-template-columns: 40% 20% 40%;
+  grid-template-columns: 55% 15% 30%;
   margin-bottom: 10vw;
 }
 
@@ -15,21 +15,31 @@
   font-size: 22px;
   line-height: 140%;
   margin: 0;
-  text-align: justify;
+}
+
+.aboutArea a {
+  color: black;
 }
 
 .aboutHeader {
+  font-weight: 600;
   color: #D4D4D4;
+  padding-bottom: 0.5vh;
 }
 
-.movie > .movie-space p {
+#movie-title {
+  font-size: 1vw;
+  font-weight: 600;
+}
+
+#movie-poster {
+  padding-top: 1vh;
+}
+
+.movie > .movie-spacing p {
   font-size: 1vw !important;
 }
 
-.movie-space {
-  padding-top: 1.5vh;
-}
-
-.movie-wiki {
-  color: rgb(150,150,150);
+.movie-spacing {
+  padding-top: 1vh;
 }

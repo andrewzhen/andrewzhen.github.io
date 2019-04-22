@@ -19,8 +19,8 @@
 <body id="body">
   <div class="content-margins">
     <div id="header">
-      <!-- <div id="home-div"><a href="https://ajzhen.com" id="home" onmouseover="mo('home')" onmouseleave="ml('home')">Home</a></div> -->
-      <div id="home-div"><a href="index.html" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div>
+      <div id="home-div"><a href="https://ajzhen.com" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div>
+      <!-- <div id="home-div"><a href="index.html" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div> -->
 
       <div id="nav-div">
         <div class="nav sink"><a href="https://ajzhen.com/about" id="about" onmouseover="mo('about')" onmouseleave="ml('about')">About</a></div>
@@ -42,25 +42,32 @@
       <div class="aboutArea">
         <div>
           <p class="aboutHeader">Biography</p>
-          <p> Hey! I’m a third year studying design + interaction at UC San 
-          Diego and I’m currently looking for positions in these fields.</p>
+          <p>Hey! I’m a third year undergraduate student studying Cognitive 
+             Science (Design/Interaction concentration) at UC San Diego 🔱. 
+             <br/> <br/> Right now, I’m actively applying for UX Engineer and 
+             Designer intern positions for Summer '19.</p>
           <br><br>
           <p class="aboutHeader">Experience</p>
-          <p> Previously, I’ve had the opportunities to work as a 
-          UX developer at CAIDA and then as a data scientist at AlphaCore Capital LLC before that.</p>
+          <p>Previously, I’ve had the opportunities to work as a UX developer 
+             at <a href="http://www.caida.org/home/" id="work-1">CAIDA</a> and as a Data 
+             Scientist at <a href="https://www.alphacorecap.com/" id="work-2">AlphaCore Capital</a> 
+             before that. <br/> <br/> Apart from being in the office, you 
+             can catch me working on, or brainstorming my next project 👨🏻‍💻.</p>
           <br><br>
           <p class="aboutHeader">Interests</p>
-          <p> I spend my time burning food calories through basketball, enjoying a 
-          thoughtful film, and secretly browsing cat videos on Instagram.</p>
+          <p>On good days, I spend my time burning food calories through basketball, 
+             enjoying a thoughtful thriller film, and secretly browsing cat 
+             videos on Instagram 😻.</p>
         </div>
         <div></div>
         <div class="movie">
           <p class="aboutHeader">Last Film Watched</p>
-          <img src="assets/lastmoviewatched.jpg" width="50%">
-          <div class="movie-space">
-            <p>IMDb Rating: 7.0/10</p>
-            <p><a href="https://en.wikipedia.org/wiki/Missing_Link_(2019_film)" target="_blank" class="movie-wiki">Missing Link (2019 film) - Wikipedia</a></p>
-            <p class="movie-space">... and the film before? <a href="https://en.wikipedia.org/wiki/Shazam!_(film)" target="_blank" class="movie-wiki">Shazam!</a></p>
+          <p id="movie-title"><i>Missing Link</i></p>
+          <img src="assets/lastmoviewatched.jpg" width="80%" id="movie-poster">
+          <div class="movie-spacing">
+            <p>IMDb Rating: 7.0 / 10 🎬</p>
+            <p><a href="https://en.wikipedia.org/wiki/Missing_Link_(2019_film)" target="_blank" id="movie-wiki">Missing Link (2019 film) - Wikipedia</a></p>
+            <p class="movie-spacing">... and the film before? <a href="https://en.wikipedia.org/wiki/Shazam!_(film)" target="_blank" id="movie-wiki"><i>Shazam!</i></a></p>
           </div>
         </div>
         <div></div>
@@ -69,7 +76,7 @@
 
     <div id="contact">
       <ul>
-        <li><a href="mailto:andrewjzhen@gmail.com" id="email" onmouseover="mo('email')" onmouseleave="ml('email')">Email</a></li>
+        <li><span id="email" onmouseover="mo('email')" onmouseleave="ml('email')">Email</span></li>
         <li><a href="assets/resume.pdf" id="resume" onmouseover="mo('resume')" onmouseleave="ml('resume')">Résumé</a></li>
         <li><a href="https://www.linkedin.com/in/andrew-zhen/" id="linkedin" onmouseover="mo('linkedin')" onmouseleave="ml('linkedin')">LinkedIn</a></li>
         <li><a href="https://github.com/andrewzhen" id="github" onmouseover="mo('github')" onmouseleave="ml('github')">Github</a></li>
@@ -77,7 +84,7 @@
       </ul>
     </div>
 
-    <div id="footer"><p id="copyright">© 2019 Andrew Zhen All Rights Reserved</p></div>
+    <div id="footer"><p id="copyright">© 2019 Andrew Zhen All Rights Reserved</p><p id="note">Built from the ground up</p></div>
 
   <script src="script.js" type="text/javascript"></script>
 </body>
