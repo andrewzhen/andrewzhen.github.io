@@ -4,6 +4,7 @@ body, html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   margin: 0;
   padding: 0;
+  transition: all 0.5s ease;
 }
 
 .line-height-160 {
@@ -134,7 +135,7 @@ section.visible {
 
 /*--------------------------------DARK MODE*/
 #darkmode {
-  color: #868686;
+  color: rgb(100,100,100);
 }
 
 label {
@@ -211,8 +212,8 @@ input:checked + .slider:before {
 
 /*-----------------------------CONTACT*/
 #contact {
-  font-size: 36px;
-  margin-bottom: 10rem;
+  font-size: 2rem;
+  margin-bottom: 5rem;
 }
 
 #contact ul {
@@ -220,16 +221,20 @@ input:checked + .slider:before {
   margin: 0;
   padding: 0;
   line-height: 140%;
+  display: block;
 }
 
-#contact ul a {
+#contact a {
+  display: block;
   text-decoration: none;
-  border-bottom: 4px solid transparent;
   color: black;
+  transition: all 0.5s ease;
+  width: fit-content;
 }
 
-#contact ul a:hover {
-  border-color: black;
+#contact a:hover {
+  transform: translateX(10px);
+  color: #9E9E9E; 
 }
 
 /*----------------------------FOOTER*/

@@ -4,6 +4,7 @@
   height: 95vh;
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
   filter: grayscale(30%);
+  transition: all 0.5s ease;
 }
 
 /*----------------------------------HEADER*/
@@ -36,6 +37,7 @@
   margin:0;
   float: right;
   font-weight: 600;
+  transition: all 0.5s ease;
 }
 #description:hover {
   cursor: default;
@@ -44,6 +46,7 @@
 #description-2 {
   font-size: 1.5vw;
   float: right;
+  transition: all 0.5s ease;
 }
 #description-2:hover {
   cursor: default;
@@ -54,6 +57,7 @@
   bottom: 0;
   right: 15vw;
   font-size: 14px;
+  transition: all 0.5s ease;
 }
 
 .wip {
@@ -75,10 +79,10 @@
   height: 100%;
   display: grid;
   grid-template-columns: auto auto;
-  margin-bottom: 10vw;
 }
 
 .grid-item {
+  position: relative;
   width: 32vw;
   height: 32vw;
   margin-bottom: 12rem;
@@ -91,19 +95,34 @@
   border-radius: 10px;
 }
 
-.grid-item img:hover {
-  transform: translateY(15px);
-  cursor: pointer;
-}
-
 .grid-item-right {
   margin-left: auto;
 }
 
+.grid-content {
+  transition: all 0.5s ease;
+}
+.grid-content:hover {
+  transform: translateY(17px);
+  cursor: pointer; 
+}
+
+.no-transition {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
 .not-ready {
-  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(50%);
-  opacity: 0.5;
+  -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
+  filter: brightness(50%);
+}
+.coming-soon {
+  text-align: center;
+  font-size: 2vw;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
 }
 
 #title {
