@@ -3,28 +3,18 @@ html, body {
 }
 
 .work-banner {
-  width: 100vw;
+  width: 70vw;
   height: 35vh;
   background-color: #343434;
   margin-top: -10vh;
-  margin-left: -15vw;
   margin-bottom: 5vw;
-  line-height: 35vh;
-}
-
-.work-title {
-  font-size: 3vw;
-  font-weight: bold;
-  color: white;
-  margin-left: 15vw;
-  margin-right: 15vw;
 }
 
 .work-description {
   font-size: 1vw;
   color: white;
-  margin-left: 15vw;
-  margin-right: 15vw; 
+  margin-left: 5vw;
+  margin-right: 5vw; 
 }
 
 .project-header {
@@ -33,13 +23,13 @@ html, body {
   margin: 0;
 }
 
-.body-container {
+.body-container-longterm {
   display: grid;
   grid-template-columns: 20% 80%;
   margin-bottom: 5vw;
 }
 
-.body-container img {
+.body-container-longterm img {
   width: 100%;
 }
 

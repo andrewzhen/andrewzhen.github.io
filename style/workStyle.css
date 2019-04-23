@@ -20,10 +20,9 @@ html, body {
 }
 
 .banner {
-  width: 100vw;
+  width: 70vw;
   height: 35vh;
   margin-top: -10vh;
-  margin-left: -15vw;
   display: table;
   margin-bottom: 5vw;
 }
@@ -53,9 +52,9 @@ html, body {
 /*---------------------------Container 1*/
 .heading-container {
   display: grid;
-  grid-template-columns: 60% 40%;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  grid-template-columns: 65% 35%;
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .heading-container p {
@@ -64,7 +63,6 @@ html, body {
 
 .work-logo {
   text-align: center;
-  padding-top: 3vh;
 }
 
 .work-header {
@@ -140,4 +138,45 @@ html, body {
 .ca-container img {
   width: 100%;
   object-fit: contain;
+}
+
+/*---------------------------Long Term*/
+.longterm-title {
+  padding: 0.5vw;
+  color: white;
+}
+
+.longterm-banner {
+  width: 70vw;
+  height: 35vh;
+  background-color: #343434;
+  margin-top: -10vh;
+  margin-bottom: 5vw;
+}
+
+.longterm-description {
+  font-size: 1vw;
+  color: white;
+  margin-left: 5vw;
+  margin-right: 5vw; 
+}
+
+.project-header {
+  font-size: 2vw;
+  font-weight: 600;
+  margin: 0;
+}
+
+.body-container-longterm {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 5vw;
+}
+
+.body-container-longterm img {
+  width: 100%;
+}
+
+.project-date {
+  color: #7A7A7A;
 }
