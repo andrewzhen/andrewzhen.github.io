@@ -38,19 +38,33 @@ function darkmode() {
 function changeColor(newColor, otherColor) {
   document.getElementById("body").style.backgroundColor = otherColor;
 
-  const elementsList = document.querySelectorAll("#body, #home, #name, #about, #photo, #description, #description-2, #work-1, #work-2, #movie-wiki, #home-location, #email, #resume, #linkedin, #github, #instagram");
+  const elementsList = document.querySelectorAll("#body, #home, #name, #about, #photo, #description, #description-2, #work-1, #work-2, #movie-wiki, #email, #resume, #linkedin, #github, #instagram");
   const elementsArray = [...elementsList];
 
   elementsArray.forEach(element => {
     element.style.color = newColor;
   })
+
+  if (newColor == "white") {
+    document.getElementById("parallax-bar").style.backgroundColor = "rgb(30,30,30)";
+  } else {
+    document.getElementById("parallax-bar").style.backgroundColor = "rgb(230,230,230)";
+  }
 }
 
 function mo(id) {
-  document.getElementById(id).style.color = "#9E9E9E";
-
-  if (id == "email") {
-    document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
+  if (document.getElementById("body").style.backgroundColor == "black") {
+    document.getElementById(id).style.color = "#BDBDBD";
+    if (id == "email") {
+      document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
+      document.getElementById("email").style.color = "white";
+    }
+  } else {
+    document.getElementById(id).style.color = "#616161";
+    if (id == "email") {
+      document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
+      document.getElementById("email").style.color = "black";
+    }
   }
 }
 

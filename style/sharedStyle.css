@@ -35,11 +35,6 @@ section.visible {
 
 #home-div:hover {
   transform: translateY(8px);
-  color: #757575;
-}
-
-#home-div > a:hover {
-  color: #757575;
 }
 
 #home {
@@ -127,10 +122,6 @@ section.visible {
   color: black;
   text-decoration: none;
   transition: all 0.5s ease;
-}
-
-.nav > a:hover {
-  color: #757575;
 }
 
 /*--------------------------------DARK MODE*/

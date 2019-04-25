@@ -21,9 +21,10 @@
 }
 
 #light-bg {
-  background-image:url("../assets/light-bg.jpg");
+  background:url("../assets/light-bg.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
   height: 95vh;
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
   filter: grayscale(30%);
@@ -39,11 +40,6 @@
 
 #name-div:hover {
   transform: translateY(8px);
-  color: #BDBDBD;
-}
-
-#name-div > a:hover {
-  color: #757575;
 }
 
 #name {
@@ -76,18 +72,17 @@
   cursor: default;
 }
 
-#home-location {
-  position: absolute;
-  bottom: 0;
-  right: 15vw;
-  font-size: 14px;
-  transition: all 0.5s ease;
-}
-
 .wip {
   text-align: center;
   font-size: 22px;
   transition: all 0.3s ease;
+}
+
+#parallax-bar {
+  width: 100%;
+  height: 1.5vh;
+  background-color: rgb(230,230,230);
+  transition: all 0.5s ease;
 }
 
 /*-----------------------------WORK*/
@@ -156,15 +151,16 @@
 }
 
 #title {
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 1.8vw;
   margin-top: 1vw;
   margin-bottom: 0.5vw;
 }
 
 #summary {
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 0.9vw;
   line-height: 140%;
-  color: rgb(100,100,100);
+  color: rgb(150,150,150);
   margin: 0;
 }
