@@ -25,7 +25,7 @@ section.visible {
 
 /*----------------------------------HEADER*/
 #header {
-  padding-bottom: 20vh;
+  padding-bottom: 10vw;
 }
 
 #home-div {
@@ -38,7 +38,7 @@ section.visible {
 }
 
 #home {
-  font-size: 18px;
+  font-size: 1.8vw;
   font-weight: 500;
   text-decoration: none;
   color: black;
@@ -117,7 +117,7 @@ section.visible {
 }
 
 .nav > a {
-  font-size: 18px;
+  font-size: 1.2vw;
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -126,19 +126,22 @@ section.visible {
 
 /*--------------------------------DARK MODE*/
 #darkmode {
+  font-size: 1.2vw;
   color: rgb(100,100,100);
 }
 
 label {
   vertical-align: sub;
-  line-height: 25px;
+  /*25px = 1.85vw*/
+  line-height: 1.85vw;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 33px;
-  height: 18px;
+  /*33px = 2.1vw, 18px = 1.2vw*/
+  width: 2.1vw;
+  height: 1.2vw;
 }
 
 .switch input {
@@ -162,10 +165,11 @@ label {
 .slider:before {
   position: absolute;
   content: "";
-  height: 16px;
-  width: 16px;
-  left: 1px;
-  bottom: 1px;
+  /*16px = 1vw, 1px = 0.1vw*/
+  height: 1vw;
+  width: 1vw;
+  left: 0.1vw;
+  bottom: 0.1vw;
   background-color: white;
   -webkit-transition: .4s;
   transition .4s;
@@ -176,17 +180,19 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #66BB6A;
+  box-shadow: 0 0 0.1vw #66BB6A;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(15px);
-  -ms-transform: translateX(15px);
-  transform: translateX(15px);
+  /*15px = 0.9vw*/
+  -webkit-transform: translateX(0.9vw);
+  -ms-transform: translateX(0.9vw);
+  transform: translateX(0.9vw);
 }
 
 /* Rounded sliders */
 .slider.round {
+  /*17px = vw*/
   border-radius: 17px;
 }
 
@@ -203,8 +209,9 @@ input:checked + .slider:before {
 
 /*-----------------------------CONTACT*/
 #contact {
-  font-size: 2rem;
-  margin-bottom: 5rem;
+  font-size: 2.2vw;
+  margin-top: 3vw;
+  margin-bottom: 5vw;
 }
 
 #contact ul {
@@ -230,18 +237,15 @@ input:checked + .slider:before {
 
 /*----------------------------FOOTER*/
 #footer {
-  margin-bottom: 5rem;
+  margin-bottom: 5vw;
 }
 
 #copyright {
   font-size: 1vw;
-  width: fit-content;
-  display: inline;
+  float: left;
 }
 
 #note {
   font-size: 1vw;
   float: right;
-  display: inline;
-  margin: 0;
 }

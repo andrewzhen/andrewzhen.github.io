@@ -1,7 +1,6 @@
 /*----------------------------------------ABOUT*/
 .aboutPic img {
   width: 100%;
-  margin-top: -5vw;
   margin-bottom: 5vw;
 }
 
@@ -12,7 +11,7 @@
 }
 
 .aboutArea p {
-  font-size: 22px;
+  font-size: 1.6vw;
   line-height: 140%;
   margin: 0;
 }
@@ -22,6 +21,7 @@
 }
 
 .aboutHeader {
+  font-size: 1.8vw;
   font-weight: 600;
   color: #D4D4D4;
   padding-bottom: 0.5vh;

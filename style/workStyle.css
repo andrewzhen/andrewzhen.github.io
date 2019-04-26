@@ -21,8 +21,7 @@ html, body {
 
 .banner {
   width: 70vw;
-  height: 35vh;
-  margin-top: -10vh;
+  height: 20vw;
   display: table;
   margin-bottom: 5vw;
 }
@@ -78,6 +77,7 @@ html, body {
 }
 
 .body-container p {
+  font-size: 1vw;
   margin: 0;
   line-height: 210%;
 }
@@ -94,6 +94,7 @@ html, body {
 }
 
 .impact-container p {
+  font-size: 1vw;
   margin: 0;
   line-height: 210%;
 }
@@ -115,6 +116,7 @@ html, body {
 }
 
 .conclusion-container p {
+  font-size: 1vw;
   margin: 0;
   line-height: 210%;
 }
@@ -148,9 +150,8 @@ html, body {
 
 .longterm-banner {
   width: 70vw;
-  height: 35vh;
+  height: 20vw;
   background-color: #343434;
-  margin-top: -10vh;
   margin-bottom: 5vw;
 }
 

@@ -1,29 +1,7 @@
-.parallax {
-  perspective: 1px;
-  height: 95vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective-origin-x: 100%;
-}
-.parallax-layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin-x: 100%;
-}
-.parallax-base {
-  transform: translateZ(0);
-}
-.parallax-back {
-  transform: translateZ(-1px) scale(2);
-}
-
 #light-bg {
-  background:url("../assets/light-bg.jpg");
+  background: url("../assets/light-bg.jpg");
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 95vh;
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
@@ -31,6 +9,12 @@
   transition: all 0.5s ease;
   z-index: 0;
 }
+
+/*@media only screen and (max-width: 600px) {
+  #light-bg {
+    background: url("../assets/dark-bg-flipped.jpg");
+  }
+}*/
 
 /*----------------------------------HEADER*/
 #name-div {
@@ -43,7 +27,7 @@
 }
 
 #name {
-  font-size: 24px;
+  font-size: 1.5vw;
   font-weight: 500;
   text-decoration: none;
   color: black;
@@ -54,9 +38,10 @@
 /*-----------------------------INTRODUCTION BODY*/
 #description {
   font-size: 3.5vw;
-  margin:0;
-  float: right;
+  margin-top: 10vh;
+  margin-bottom: 0;
   font-weight: 600;
+  text-align: right;
   transition: all 0.5s ease;
 }
 #description:hover {
@@ -64,9 +49,10 @@
 }
 
 #description-2 {
+  text-align: right;
   font-size: 1.5vw;
-  float: right;
   transition: all 0.5s ease;
+  margin-bottom: 30vh;
 }
 #description-2:hover {
   cursor: default;
@@ -74,7 +60,7 @@
 
 .wip {
   text-align: center;
-  font-size: 22px;
+  font-size: 1.5vw;
   transition: all 0.3s ease;
 }
 
@@ -110,7 +96,7 @@
   position: relative;
   width: 32vw;
   height: 32vw;
-  margin-bottom: 12rem;
+  margin-bottom: 10vw;
 }
 
 .grid-item img {

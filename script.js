@@ -1,8 +1,6 @@
 var turnOn = false;
 localStorage.setItem("status", turnOn);
 var status = localStorage.getItem("turnOn");
-var bg = document.getElementById("light-bg").style;
-var loc = document.getElementById("home-location");
 
 if (turnOn) {
   darkmode();
@@ -12,6 +10,7 @@ if (turnOn) {
 function darkmode() {
   if (turnOn) {
     try {
+      var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(30%)";
       bg.backgroundImage = "url(assets/light-bg.jpg)";
       loc.innerHTML = "Mt Woodson Summit, San Diego";
@@ -23,6 +22,7 @@ function darkmode() {
     turnOn = false;
   } else {
     try {
+      var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(0%)";
       bg.backgroundImage = "url(assets/dark-bg.jpg)";
       loc.innerHTML = "Sunset Cliffs, San Diego";
@@ -45,10 +45,16 @@ function changeColor(newColor, otherColor) {
     element.style.color = newColor;
   })
 
-  if (newColor == "white") {
-    document.getElementById("parallax-bar").style.backgroundColor = "rgb(30,30,30)";
-  } else {
-    document.getElementById("parallax-bar").style.backgroundColor = "rgb(230,230,230)";
+  try {
+    var pbar = document.getElementById("parallax-bar").style;
+
+    if (newColor == "white") {
+      document.getElementById("parallax-bar").style.backgroundColor = "rgb(30,30,30)";
+    } else {
+      document.getElementById("parallax-bar").style.backgroundColor = "rgb(230,230,230)";
+    }
+  } catch (error) {
+    console.log(error)
   }
 }
 

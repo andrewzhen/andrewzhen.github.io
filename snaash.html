@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102146073-1"></script>
   <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
     gtag('config', 'UA-102146073-1');
   </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Snaash iOS App</title>
-  <link rel="shortcut icon" type="image/png" href="assets/blue_peter.png">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" type="text/css" href="style/workStyle.css">
   <link rel="stylesheet" type="text/css" href="style/sharedStyle.css">
 </head>
@@ -344,7 +352,7 @@
            between altruistic users focused on giving back to each other.</p>
       </div>
       <div></div>
-      <p><br/><img src="assets/snaash/fortune-cookie.png" width="50%"></p>
+      <div class="work-logo"><img src="assets/caida/caida.png" width=50%><p>Center for Applied Internet Data Analysis</p></div>
       <div></div>
       <p class="subheader">A fitting fortune cookie message that I personally received</p>
     </div>
@@ -360,7 +368,12 @@
       </div>
     </div>
 
-    <div id="footer"><p id="copyright">© 2019 Andrew Zhen All Rights Reserved</p><p id="note">Built from the ground up</p></div>
+    <div id="footer">
+      <p id="copyright">© 2019 Andrew Zhen All Rights Reserved</p>
+      <p id="note">Built from the ground up</p>
+      <div style="clear: both"></div>
+    </div>
+    
   </div>
 </body>
 </html>
