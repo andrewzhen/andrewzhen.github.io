@@ -11,7 +11,7 @@
 }
 
 .aboutArea p {
-  font-size: 1.6vw;
+  font-size: 1.3vw;
   line-height: 140%;
   margin: 0;
 }
@@ -27,9 +27,16 @@
   padding-bottom: 0.5vh;
 }
 
+.about-subdivs {
+  margin-bottom: 3vw;
+}
+
+.about-p {
+  padding-bottom: 1vw;
+}
+
 #movie-title {
   font-size: 1vw;
-  font-weight: 600;
 }
 
 #movie-poster {

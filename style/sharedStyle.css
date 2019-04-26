@@ -38,7 +38,7 @@ section.visible {
 }
 
 #home {
-  font-size: 1.8vw;
+  font-size: 1vw;
   font-weight: 500;
   text-decoration: none;
   color: black;
@@ -117,7 +117,7 @@ section.visible {
 }
 
 .nav > a {
-  font-size: 1.2vw;
+  font-size: 1vw;
   font-weight: 500;
   color: black;
   text-decoration: none;
@@ -126,14 +126,15 @@ section.visible {
 
 /*--------------------------------DARK MODE*/
 #darkmode {
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: rgb(100,100,100);
 }
 
 label {
   vertical-align: sub;
   /*25px = 1.85vw*/
-  line-height: 1.85vw;
+  /*line-height: 1.85vw;*/
+  line-height: 2vw;
 }
 
 .switch {
@@ -172,7 +173,7 @@ label {
   bottom: 0.1vw;
   background-color: white;
   -webkit-transition: .4s;
-  transition .4s;
+  transition: .4s;
 }
 
 input:checked + .slider {
@@ -185,9 +186,9 @@ input:focus + .slider {
 
 input:checked + .slider:before {
   /*15px = 0.9vw*/
-  -webkit-transform: translateX(0.9vw);
-  -ms-transform: translateX(0.9vw);
-  transform: translateX(0.9vw);
+  -webkit-transform: translateX(0.85vw);
+  -ms-transform: translateX(0.85vw);
+  transform: translateX(0.85vw);
 }
 
 /* Rounded sliders */

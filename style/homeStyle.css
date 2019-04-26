@@ -1,20 +1,15 @@
 #light-bg {
+  position: relative;
   background: url("../assets/light-bg.jpg");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 95vh;
   -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
   filter: grayscale(30%);
   transition: all 0.5s ease;
   z-index: 0;
+  height: fit-content;
 }
-
-/*@media only screen and (max-width: 600px) {
-  #light-bg {
-    background: url("../assets/dark-bg-flipped.jpg");
-  }
-}*/
 
 /*----------------------------------HEADER*/
 #name-div {
@@ -38,7 +33,7 @@
 /*-----------------------------INTRODUCTION BODY*/
 #description {
   font-size: 3.5vw;
-  margin-top: 10vh;
+  margin-top: 2vw;
   margin-bottom: 0;
   font-weight: 600;
   text-align: right;
@@ -52,7 +47,7 @@
   text-align: right;
   font-size: 1.5vw;
   transition: all 0.5s ease;
-  margin-bottom: 30vh;
+  margin-bottom: 28vw;
 }
 #description-2:hover {
   cursor: default;
@@ -65,8 +60,10 @@
 }
 
 #parallax-bar {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 1.5vh;
+  height: 1vw;
   background-color: rgb(230,230,230);
   transition: all 0.5s ease;
 }
