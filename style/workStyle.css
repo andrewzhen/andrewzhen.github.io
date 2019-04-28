@@ -5,23 +5,25 @@ html, body {
 #caida-banner {
   background-color: #BBE8E0;
 }
-
 #snaash-banner {
   background-color: #F3D1A6;
+}
+#zilter-banner {
+  background-color: #A5D6A7;
 }
 
 .quote {
   margin-left: 5vw;
-  color: #949494;
 }
 
 .subheader {
   color: #9E9E9E;
+  font-weight: 600;
 }
 
 .banner {
   width: 70vw;
-  height: 20vw;
+  height: 25vw;
   display: table;
   margin-bottom: 5vw;
 }
@@ -34,9 +36,8 @@ html, body {
 .work-title {
   font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 0;
+  margin-bottom: 2vw;
   margin-top: 0;
-  margin-left: 0 !important;
 }
 
 .inline-div {
@@ -54,10 +55,6 @@ html, body {
   grid-template-columns: 65% 35%;
   margin-left: 5vw;
   margin-right: 5vw;
-}
-
-.heading-container p {
-  margin: 0.5vw;
 }
 
 .work-logo {
@@ -84,6 +81,10 @@ html, body {
 
 .body-container img {
   width: 100%;
+}
+
+.body-container iframe {
+  height: 100%;
 }
 
 /*---------------------------Container 3*/
@@ -144,7 +145,6 @@ html, body {
 
 /*---------------------------Long Term*/
 .longterm-title {
-  padding: 0.5vw;
   color: white;
 }
 
@@ -158,7 +158,6 @@ html, body {
 .longterm-description {
   font-size: 1vw;
   color: white;
-  margin-left: 5vw;
   margin-right: 5vw; 
 }
 

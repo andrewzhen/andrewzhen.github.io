@@ -25,7 +25,7 @@ section.visible {
 
 /*----------------------------------HEADER*/
 #header {
-  padding-bottom: 10vw;
+  padding-bottom: 7vw;
 }
 
 #home-div {
@@ -77,7 +77,8 @@ section.visible {
 }
 
 .hvr-bob {
-  display: inline-block;
+  text-align: right;
+  /*display: inline-block;*/
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
