@@ -17,8 +17,16 @@ html, body {
 }
 
 .subheader {
-  color: #9E9E9E;
+  color: #E9B153;
   font-weight: 600;
+  margin-top: 0;
+  padding-bottom: 1vw;
+}
+
+#img-caption {
+  font-size: 0.85vw;
+  color: #BDBDBD;
+  text-align: center;
 }
 
 .banner {
@@ -33,7 +41,7 @@ html, body {
   vertical-align: middle;
 }
 
-.work-title {
+#work-title {
   font-size: 3vw;
   font-weight: bold;
   margin-bottom: 2vw;
@@ -44,15 +52,10 @@ html, body {
   float: left;
 }
 
-.line-height-210 {
-  margin: 0;
-  line-height: 210%;
-}
-
 /*---------------------------Container 1*/
 .heading-container {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 69% 31%;
   margin-left: 5vw;
   margin-right: 5vw;
 }
@@ -61,7 +64,7 @@ html, body {
   text-align: center;
 }
 
-.work-header {
+#work-header {
   font-weight: 600;
   margin-left: 0 !important;
 }
@@ -76,15 +79,18 @@ html, body {
 .body-container p {
   font-size: 1vw;
   margin: 0;
-  line-height: 210%;
 }
 
 .body-container img {
   width: 100%;
 }
 
-.body-container iframe {
-  height: 100%;
+#body-header {
+  font-size: 1.3vw;
+  font-weight: 600;
+  text-align: right;
+  padding-right: 1vw;
+  margin: 0;
 }
 
 /*---------------------------Container 3*/
@@ -97,7 +103,6 @@ html, body {
 .impact-container p {
   font-size: 1vw;
   margin: 0;
-  line-height: 210%;
 }
 
 .impact-container img {
@@ -119,7 +124,6 @@ html, body {
 .conclusion-container p {
   font-size: 1vw;
   margin: 0;
-  line-height: 210%;
 }
 
 /*---------------------------iOS Container*/
@@ -141,6 +145,19 @@ html, body {
 .ca-container img {
   width: 100%;
   object-fit: contain;
+}
+
+/*---------------------------Prototype Container*/
+.p-container {
+  display: grid;
+  grid-template-columns: 15% 40% 5% 40%;
+  margin-bottom: 5vw;
+}
+
+#prototypes {
+  border: none;
+  width: 100%;
+  height: 50vw;
 }
 
 /*---------------------------Long Term*/

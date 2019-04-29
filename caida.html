@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="style/workStyle.css">
   <link rel="stylesheet" type="text/css" href="style/sharedStyle.css">
 </head>
-<body>
+<body id="body">
   <div class="content-margins">
     <div id="header">
       <div id="home-div"><a href="https://ajzhen.com" id="home">Home</a></div>
@@ -25,12 +25,13 @@
       <div id="nav-div">
         <div class="nav"><a href="https://ajzhen.com/about" id="about">About</a></div>
         <div class="nav"><a href="https://ajzhen.herokuapp.com" id="photo">Photography</a></div>
-        <!-- <div id="darkmode" class="nav">Dark Mode
+        
+        <div id="darkmode" class="nav">Dark Mode
           <label class="switch">
-            <input type="checkbox">
-            <p class="slider round"></p>
+            <input id="checkDark" type="checkbox" onchange="darkmode()">
+            <span class="slider round"></span>
           </label>
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -38,27 +39,27 @@
       <div id="valign-div">
         <div class="heading-container">
           <div>
-            <p class="work-title">UX Developer Internship</p>
+            <p id="work-title">UX Developer Internship</p>
             <div class="inline-div" style="padding-right: 4.5vw">
-              <p class="work-header">Date</p>
-              <p class="work-header">Duration</p>
-              <p class="work-header">Teammate</p>
-              <p class="work-header">Supervisor</p>
+              <p id="work-header">Date</p>
+              <p id="work-header">Duration</p>
+              <p id="work-header">Teammate</p>
+              <p id="work-header">Supervisor</p>
             </div>
             <div class="inline-div">
-              <p class="work-value">July 2018</p>
-              <p class="work-value">3 Months</p>
-              <p class="work-value">J. Chan</p>
-              <p class="work-value">R. Mok</p>
-             </div>
+              <p id="work-value">July 2018</p>
+              <p id="work-value">3 Months</p>
+              <p id="work-value">J. Chan</p>
+              <p id="work-value">R. Mok</p>
+            </div>
           </div> 
-          <div class="work-logo"><img src="assets/caida/caida.png" width=50%><p>Center for Applied Internet Data Analysis</p></div>
+          <div class="work-logo"><img src="assets/caida/caida.png" width=50%><p id="logo-caption">Center for Applied Internet Data Analysis</p></div>
         </div>
       </div>
     </div>
 
     <div class="body-container">
-      <div class="grid"><div class="work-header"><p>Tools + Skills</p></div></div>
+      <div class="grid"><div><p id="body-header">Tools + Skills</p></div></div>
       <div class="grid">
         <p>— HTML, CSS, JavaScript, Bootstrap, Meteor web framework, Git</p>
         <p>— Web Application Development, User Interface, Front-End Design</p>
@@ -66,7 +67,7 @@
     </div>
 
     <div class="body-container">
-      <div class="grid"><div class="work-header"><p>Description</p></div></div>
+      <div class="grid"><div><p id="body-header">Description</p></div></div>
       <div class="grid">
         <p>For the Summer of 2018, I served as a UX Developer for a web 
            platform called QUINCE, an abbreviation for the lengthy title: Quality 
@@ -78,7 +79,7 @@
     </div>
 
     <div class="body-container">
-      <div class="grid"><div class="work-header"><p>Responsibility</p></div></div>
+      <div class="grid"><div><p id="body-header">Responsibility</p></div></div>
       <div class="grid">
         <p>Under the supervision of Ricky, I helped design and develop the web 
            platform to increase participant engagement. Naturally, I spent some
@@ -144,7 +145,7 @@
     </div>
 
     <div class="conclusion-container">
-      <div class="grid"><div class="work-header"><p>Conclusion + <br/> Key Takeaways</p></div></div>
+      <div class="grid"><div><p id="body-header">Conclusion + Takeaways</p></div></div>
       <div class="grid">
         <p>Starting off at the internship was a little rough: I had to become 
           familiar with Meteor, get certain dependencies installed on my 
@@ -172,5 +173,7 @@
     </div>
 
   </div>
+
+  <script src="script.js" type="text/javascript"></script>
 </body>
 </html>

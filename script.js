@@ -13,10 +13,10 @@ function darkmode() {
       var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(30%)";
       bg.backgroundImage = "url(assets/light-bg.jpg)";
-      loc.innerHTML = "Mt Woodson Summit, San Diego";
     } catch (error) {
       console.log(error);
     }
+    document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
     changeColor("black", "white");
 
     turnOn = false;
@@ -25,10 +25,10 @@ function darkmode() {
       var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(0%)";
       bg.backgroundImage = "url(assets/dark-bg.jpg)";
-      loc.innerHTML = "Sunset Cliffs, San Diego";
     } catch (error) {
       console.log(error);
     }
+    document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
     changeColor("white", "black");
     
     turnOn = true;
@@ -38,11 +38,23 @@ function darkmode() {
 function changeColor(newColor, otherColor) {
   document.getElementById("body").style.backgroundColor = otherColor;
 
-  const elementsList = document.querySelectorAll("#body, #home, #name, #about, #photo, #description, #description-2, #work-1, #work-2, #movie-wiki, #email, #resume, #linkedin, #github, #instagram");
-  const elementsArray = [...elementsList];
+  // Change color of these elements
+  const changeColor = document.querySelectorAll("\
+  #body, #home, #name, #about, #photo, #description, #description-2, #work-1, \
+  #work-2, #movie-wiki, #email, #resume, #linkedin, #github, #instagram");
+  const changeColorList = [...changeColor];
 
-  elementsArray.forEach(element => {
+  changeColorList.forEach(element => {
     element.style.color = newColor;
+  })
+
+  // Don't change color of these elements
+  const sameColor = document.querySelectorAll("\
+  #work-title, #work-header, #work-value, #logo-caption");
+  const sameColorList = [...sameColor];
+
+  sameColorList.forEach(element => {
+    element.style.color = "black";
   })
 
   try {
@@ -50,6 +62,7 @@ function changeColor(newColor, otherColor) {
 
     if (newColor == "white") {
       document.getElementById("parallax-bar").style.backgroundColor = "rgb(30,30,30)";
+      document.getElementById("heading-container").p.style.color = "black";
     } else {
       document.getElementById("parallax-bar").style.backgroundColor = "rgb(230,230,230)";
     }
