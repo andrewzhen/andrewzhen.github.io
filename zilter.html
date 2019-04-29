@@ -17,47 +17,81 @@
   <link rel="stylesheet" type="text/css" href="style/workStyle.css">
   <link rel="stylesheet" type="text/css" href="style/sharedStyle.css">
 </head>
-<body id="zilter-bg">
+<body id="body">
   <div class="content-margins">
     <div id="header">
-      <div id="home-div"><a href="https://ajzhen.com" id="home">Home</a></div>
+      <div id="home-div"><a href="https://ajzhen.com" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div>
 
       <div id="nav-div">
-        <div class="nav"><a href="https://ajzhen.com/about" id="about">About</a></div>
-        <div class="nav"><a href="https://ajzhen.herokuapp.com" id="photo">Photography</a></div>
+        <div class="nav sink"><a href="https://ajzhen.com/about" id="about" onmouseover="mo('about')" onmouseleave="ml('about')">About</a></div>
+        <div class="nav sink"><a href="https://ajzhen.herokuapp.com" id="photo" onmouseover="mo('photo')" onmouseleave="ml('photo')">Photography</a></div>
         
-        <!-- <div id="darkmode" class="nav">Dark Mode
+        <div id="darkmode" class="nav">Dark Mode
           <label class="switch">
             <input id="checkDark" type="checkbox" onchange="darkmode()">
             <span class="slider round"></span>
           </label>
-        </div> -->
+        </div>
+
       </div>
     </div>
 
     <div id="zilter-banner" class="banner">
       <div id="valign-div">
-        <div id="heading-container">
+        <div class="heading-container">
           <div>
-            <p class="work-title">Zilter Web App</p>
+            <p id="work-title">Zilter Web App</p>
             <div class="inline-div" style="padding-right: 4.5vw">
-              <p class="work-header">Date</p>
-              <p class="work-header">Duration</p>
-              <p class="work-header">Role</p>
-              <p class="work-header">Teammates</p>
-              <p class="work-header">Course</p>
+              <p id="work-header">Date</p>
+              <p id="work-header">Duration</p>
+              <p id="work-header">Role</p>
+              <p id="work-header">Teammates</p>
+              <p id="work-header">Course</p>
             </div>
             <div class="inline-div">
-              <p class="work-value">October 2018</p>
-              <p class="work-value">2.5 Months</p>
-              <p class="work-value">UX Developer</p>
-              <p class="work-value">C. Wong, L. Ahn</p>
-              <p class="work-value">Interaction Design</p>
+              <p id="work-value">October 2018</p>
+              <p id="work-value">2.5 Months</p>
+              <p id="work-value">UX Developer</p>
+              <p id="work-value">C. Wong, L. Ahn</p>
+              <p id="work-value">Interaction Design</p>
              </div>
           </div> 
         </div>
       </div>
     </div>
+
+    <div class="body-container">
+      <div><p id="body-header">Tools + Skills</p></div>
+      <div>
+        <p class="line-height-210">— HTML, CSS, Figma</p>
+        <p class="line-height-210">— Interaction Design, Visual Design, Need Finding, Prototyping</p>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div><p id="body-header">Description</p></div>
+      <div>
+        <p class="line-height-210">The goal of this project was to focus on 
+           hands-on practice with a modern human-centered design process while 
+           building a web application to serve a set of target users. The way 
+           we materialized this goal was via an web application concept that 
+           aims to ease the shopping experience in its entirety by eliminating 
+           the need for users to conduct research on a product.</p>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <div><p id="body-header">Responsibility</p></div>
+      <div>
+        <p class="line-height-210">My main role was to implement mockups into 
+           user testable prototypes and in turn, present these to an audience. 
+           I shared the responsibility of performing user testing and turning 
+           feedback into thoughtful design changes.</p>
+      </div>
+    </div>
+
+
+
 
     <div id="footer">
       <p id="copyright">© 2019 Andrew Zhen All Rights Reserved</p>

@@ -20,11 +20,11 @@
 <body id="body">
   <div class="content-margins">
     <div id="header">
-      <div id="home-div"><a href="https://ajzhen.com" id="home">Home</a></div>
+      <div id="home-div"><a href="https://ajzhen.com" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div>
 
       <div id="nav-div">
-        <div class="nav"><a href="https://ajzhen.com/about" id="about">About</a></div>
-        <div class="nav"><a href="https://ajzhen.herokuapp.com" id="photo">Photography</a></div>
+        <div class="nav sink"><a href="https://ajzhen.com/about" id="about" onmouseover="mo('about')" onmouseleave="ml('about')">About</a></div>
+        <div class="nav sink"><a href="https://ajzhen.herokuapp.com" id="photo" onmouseover="mo('photo')" onmouseleave="ml('photo')">Photography</a></div>
         
         <div id="darkmode" class="nav">Dark Mode
           <label class="switch">
@@ -32,6 +32,7 @@
             <span class="slider round"></span>
           </label>
         </div>
+
       </div>
     </div>
 
