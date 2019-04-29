@@ -9,6 +9,7 @@ if (turnOn) {
 
 function darkmode() {
   if (turnOn) {
+    // Landing image
     try {
       var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(30%)";
@@ -16,11 +17,19 @@ function darkmode() {
     } catch (error) {
       console.log(error);
     }
-    document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
+
+    // Snaash reddit
+    try {
+      document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
+    } catch (error) {
+      console.log(error);
+    }
+
     changeColor("black", "white");
 
     turnOn = false;
   } else {
+    // Landing image
     try {
       var bg = document.getElementById("light-bg").style;
       bg.filter = "grayscale(0%)";
@@ -28,7 +37,14 @@ function darkmode() {
     } catch (error) {
       console.log(error);
     }
-    document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
+
+    // Snaash reddit
+    try {
+      document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
+    } catch (error) {
+      console.log(error);
+    }
+
     changeColor("white", "black");
     
     turnOn = true;
@@ -54,7 +70,9 @@ function changeColor(newColor, otherColor) {
   const sameColorList = [...sameColor];
 
   sameColorList.forEach(element => {
-    element.style.color = "black";
+    if (element != "longterm-title" && element != "longterm-description") {
+      element.style.color = "black";
+    }
   })
 
   try {

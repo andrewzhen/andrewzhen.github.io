@@ -52,7 +52,7 @@ html, body {
   float: left;
 }
 
-/*---------------------------Container 1*/
+/*---------------------------Banner Container*/
 .heading-container {
   display: grid;
   grid-template-columns: 69% 31%;
@@ -69,7 +69,7 @@ html, body {
   margin-left: 0 !important;
 }
 
-/*---------------------------Container 2*/
+/*---------------------------Body Container*/
 .body-container {
   display: grid;
   grid-template-columns: 15% 85%;
@@ -93,7 +93,7 @@ html, body {
   margin: 0;
 }
 
-/*---------------------------Container 3*/
+/*---------------------------Impact Container*/
 .impact-container {
   display: grid;
   grid-template-columns: 15% 35% 50%;
@@ -112,18 +112,6 @@ html, body {
 
 .caption {
   padding-right: 1vw;
-}
-
-/*---------------------------Container 4*/
-.conclusion-container {
-  display: grid;
-  grid-template-columns: 15% 85%;
-  margin-bottom: 20vw;
-}
-
-.conclusion-container p {
-  font-size: 1vw;
-  margin: 0;
 }
 
 /*---------------------------iOS Container*/
@@ -161,10 +149,6 @@ html, body {
 }
 
 /*---------------------------Long Term*/
-.longterm-title {
-  color: white;
-}
-
 .longterm-banner {
   width: 70vw;
   height: 20vw;
@@ -172,7 +156,15 @@ html, body {
   margin-bottom: 5vw;
 }
 
-.longterm-description {
+#longterm-title {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 2vw;
+  margin-top: 0;
+  color: white;
+}
+
+#longterm-description {
   font-size: 1vw;
   color: white;
   margin-right: 5vw; 
@@ -196,4 +188,16 @@ html, body {
 
 .project-date {
   color: #7A7A7A;
+}
+
+/*---------------------------Conclusion Container*/
+.conclusion-container {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 20vw;
+}
+
+.conclusion-container p {
+  font-size: 1vw;
+  margin: 0;
 }
