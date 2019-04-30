@@ -99,20 +99,26 @@
 .grid-item img {
   height: 100%;
   width: 100%;
-  transition: all 0.5s ease;
-  border-radius: 3px;
+  transition: all 0.2s ease;
+  overflow: hidden;
 }
 
 .grid-item-right {
   margin-left: auto;
 }
 
-.grid-content {
-  transition: all 0.5s ease;
-}
-.grid-content:hover {
-  transform: translateY(17px);
+.grid-item:hover p {
+  color: #FF8A65;
   cursor: pointer; 
+}
+
+.grid-item:hover img {
+  transform: translateY(-10px);
+}
+
+.grid-content {
+  transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .no-transition {
@@ -136,8 +142,9 @@
 #title {
   font-weight: 600;
   font-size: 1.8vw;
-  margin-top: 1vw;
-  margin-bottom: 0.5vw;
+  padding-top: 1vw;
+  padding-bottom: 0.5vw;
+  margin: 0;
 }
 
 #summary {
