@@ -79,10 +79,12 @@ function changeColor(newColor, otherColor) {
     var pbar = document.getElementById("parallax-bar").style;
 
     if (newColor == "white") {
-      document.getElementById("parallax-bar").style.backgroundColor = "rgb(30,30,30)";
+      pbar.backgroundColor = "rgb(30,30,30)";
+      document.getElementById("name-div").style.borderLeft = "0.3vw dotted white";
       document.getElementById("heading-container").p.style.color = "black";
     } else {
-      document.getElementById("parallax-bar").style.backgroundColor = "rgb(230,230,230)";
+      pbar.backgroundColor = "rgb(230,230,230)";
+      document.getElementById("name-div").style.borderLeft = "0.3vw dotted black";
     }
   } catch (error) {
     console.log(error)

@@ -17,10 +17,16 @@ html, body {
 }
 
 .subheader {
-  color: #E9B153;
   font-weight: 600;
   margin-top: 0;
   padding-bottom: 1vw;
+}
+
+.snaash-subheader {
+  color: #E9B153;
+}
+.zilter-subheader {
+  color: #76B979;
 }
 
 #img-caption {

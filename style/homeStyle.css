@@ -15,19 +15,17 @@
 #name-div {
   float: left;
   transition: all 0.5s ease;
-}
-
-#name-div:hover {
-  transform: translateY(8px);
+  border-left: 0.3vw dotted black;
+  padding-left: 0.8vw;
 }
 
 #name {
-  font-size: 1.5vw;
+  font-size: 2vw;
   font-weight: 500;
   text-decoration: none;
-  color: black;
   display: inline;
   transition: all 0.5s ease;
+  cursor: default;
 }
 
 /*-----------------------------INTRODUCTION BODY*/

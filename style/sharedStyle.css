@@ -255,4 +255,10 @@ input:checked + .slider:before {
 #note {
   font-size: 1vw;
   float: right;
+  transition: all 0.5s ease;
+}
+#note:hover {
+  font-style: italic;
+  transition: all 0.5s ease;
+  cursor: default;
 }
