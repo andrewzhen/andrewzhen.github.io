@@ -37,7 +37,7 @@ html, body {
 
 .banner {
   width: 70vw;
-  height: 25vw;
+  height: 20vw;
   display: table;
   margin-bottom: 5vw;
 }
@@ -50,7 +50,7 @@ html, body {
 #work-title {
   font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   margin-top: 0;
 }
 
@@ -139,6 +139,10 @@ html, body {
 .ca-container img {
   width: 100%;
   object-fit: contain;
+}
+
+.ca-title {
+  font-weight: 500;
 }
 
 /*---------------------------Prototype Container*/
