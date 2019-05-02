@@ -80,11 +80,9 @@ function changeColor(newColor, otherColor) {
 
     if (newColor == "white") {
       pbar.backgroundColor = "rgb(30,30,30)";
-      document.getElementById("name-div").style.borderLeft = "0.3vw dotted white";
       document.getElementById("heading-container").p.style.color = "black";
     } else {
       pbar.backgroundColor = "rgb(230,230,230)";
-      document.getElementById("name-div").style.borderLeft = "0.3vw dotted black";
     }
   } catch (error) {
     console.log(error)

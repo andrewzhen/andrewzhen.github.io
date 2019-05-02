@@ -15,8 +15,6 @@
 #name-div {
   float: left;
   transition: all 0.5s ease;
-  border-left: 0.3vw dotted black;
-  padding-left: 0.8vw;
 }
 
 #name {
@@ -98,7 +96,6 @@
   height: 100%;
   width: 100%;
   transition: all 0.2s ease;
-  overflow: hidden;
 }
 
 .grid-item-right {
@@ -122,11 +119,10 @@
 .no-transition {
   -webkit-transform: none !important;
   transform: none !important;
-}
-.not-ready {
   -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
   filter: brightness(50%);
 }
+
 .coming-soon {
   text-align: center;
   font-size: 2vw;
