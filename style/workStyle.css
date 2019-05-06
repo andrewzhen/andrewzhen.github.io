@@ -11,6 +11,9 @@ html, body {
 #zilter-banner {
   background-color: #A5D6A7;
 }
+#quickly-banner {
+  background-color: #FFF279;
+}
 
 #link {
   transition: all 0.5s ease;
@@ -174,7 +177,7 @@ html, body {
 #longterm-title {
   font-size: 3vw;
   font-weight: bold;
-  margin-bottom: 2vw;
+  margin-bottom: 0;
   margin-top: 0;
   color: white;
 }
@@ -188,6 +191,7 @@ html, body {
 .project-header {
   font-size: 2vw;
   font-weight: 600;
+  line-height: normal;
   margin: 0;
 }
 
