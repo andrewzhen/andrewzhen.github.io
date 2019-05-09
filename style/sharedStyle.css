@@ -47,6 +47,9 @@ section.visible {
   float: left;
   transition: all 0.5s ease;
 }
+#home-div a {
+  text-decoration: none;
+}
 
 #home-div:hover {
   transform: translateY(8px);
@@ -55,10 +58,29 @@ section.visible {
 #home {
   font-size: 1vw;
   font-weight: 500;
-  text-decoration: none;
   color: black;
   display: inline;
   transition: all 0.5s ease;
+}
+#home-b {
+  font-size: 1vw;
+  font-weight: 500;
+  color: black;
+  display: inline;
+  transition: all 0.5s ease; 
+}
+#home-w {
+  font-size: 1vw;
+  font-weight: 500;
+  color: white;
+  display: inline;
+  transition: all 0.5s ease; 
+}
+#about-w {
+  color: white;
+}
+#photo-w {
+  color: white;
 }
 
 /* Bob */
@@ -117,6 +139,12 @@ section.visible {
 #darkmode:hover {
   transform: none;
 }
+#darkmode-b:hover {
+  transform: none;
+}
+#darkmode-w:hover {
+  transform: none;
+}
 
 #nav-div {
   float: right;
@@ -143,7 +171,20 @@ section.visible {
 /*--------------------------------DARK MODE*/
 #darkmode {
   font-size: 1vw;
-  color: rgb(100,100,100);
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+#darkmode-b {
+  color: black;
+  font-size: 1vw;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+#darkmode-w {
+  color: white;
+  font-size: 1vw;
+  font-weight: 500;
+  transition: all 0.5s ease;
 }
 
 label {
@@ -220,8 +261,8 @@ input:checked + .slider:before {
 /*-----------------------------BODY*/
 .content-margins {
   padding-top: 5vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
 }
 
 /*-----------------------------CONTACT*/
