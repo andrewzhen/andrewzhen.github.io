@@ -18,8 +18,8 @@
 
 .aboutHeader {
   font-size: 1.8vw;
-  font-weight: 600;
-  color: #D4D4D4;
+  font-weight: 500;
+  color: #BDBDBD;
   padding-bottom: 0.5vh;
 }
 
@@ -36,13 +36,5 @@
 }
 
 #movie-poster {
-  padding-top: 1vh;
-}
-
-.movie > .movie-spacing p {
-  font-size: 1vw !important;
-}
-
-.movie-spacing {
   padding-top: 1vh;
 }

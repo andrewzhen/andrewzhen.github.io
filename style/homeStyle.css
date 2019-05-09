@@ -29,7 +29,7 @@
 /*-----------------------------INTRODUCTION BODY*/
 #description {
   font-size: 3.5vw;
-  margin-top: 5vw;
+  margin-top: 9vw;
   margin-bottom: 0;
   font-weight: 600;
   text-align: right;
@@ -43,7 +43,7 @@
   text-align: right;
   font-size: 1.5vw;
   transition: all 0.5s ease;
-  margin-bottom: 28vw;
+  margin-bottom: 24vw;
 }
 #description-2:hover {
   cursor: default;
