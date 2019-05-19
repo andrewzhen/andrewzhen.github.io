@@ -1,0 +1,23 @@
+{
+  "name": "andrewzhen.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fadein.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewzhen/andrewzhen.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewzhen/andrewzhen.github.io/issues"
+  },
+  "homepage": "https://github.com/andrewzhen/andrewzhen.github.io#readme",
+  "dependencies": {
+    "terser": "^3.17.0"
+  }
+}
