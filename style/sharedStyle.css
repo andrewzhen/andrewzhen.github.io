@@ -44,43 +44,41 @@ section.visible {
   padding-bottom: 7vw;
 }
 
+#logo {
+  height: 2vw;
+  float: left;
+}
+
 #home-div {
   float: left;
   transition: all 0.5s ease;
+  line-height: 2vw;
 }
 #home-div a {
   text-decoration: none;
 }
-
 #home-div:hover {
   transform: translateY(8px);
 }
-
 #home {
   font-size: 1vw;
-  font-weight: 500;
   color: black;
   display: inline;
   transition: all 0.5s ease;
 }
-#home-b {
+#home-x {
   font-size: 1vw;
-  font-weight: 500;
   color: black;
   display: inline;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
 #home-w {
   font-size: 1vw;
-  font-weight: 500;
   color: white;
   display: inline;
-  transition: all 0.5s ease; 
+  transition: all 0.5s ease;
 }
-#about-w {
-  color: white;
-}
-#photo-w {
+#about-w, #photo-w {
   color: white;
 }
 
@@ -137,16 +135,6 @@ section.visible {
   animation-direction: normal, alternate;
 }
 
-#darkmode:hover {
-  transform: none;
-}
-#darkmode-b:hover {
-  transform: none;
-}
-#darkmode-w:hover {
-  transform: none;
-}
-
 #nav-div {
   float: right;
 }
@@ -163,29 +151,47 @@ section.visible {
 
 .nav > a {
   font-size: 1vw;
-  font-weight: 500;
   color: black;
   text-decoration: none;
   transition: all 0.5s ease;
+  line-height: 2vw;
 }
 
 /*--------------------------------DARK MODE*/
 #darkmode {
   font-size: 1vw;
-  font-weight: 500;
   transition: all 0.5s ease;
+  line-height: 2vw;
 }
-#darkmode-b {
+#darkmode-txt {
+  margin-right: 1vw;
   color: black;
   font-size: 1vw;
-  font-weight: 500;
   transition: all 0.5s ease;
+  line-height: 2vw;
 }
-#darkmode-w {
+#darkmode-txt-x {
+  margin-right: 1vw;
+  color: black;
+  font-size: 1vw;
+  transition: all 0.5s ease;
+  line-height: 2vw;
+}
+#darkmode-txt-w {
+  margin-right: 1vw;
   color: white;
   font-size: 1vw;
-  font-weight: 500;
   transition: all 0.5s ease;
+  line-height: 2vw;
+}
+#darkmode:hover {
+  transform: none;
+}
+#darkmode-b:hover {
+  transform: none;
+}
+#darkmode-w:hover {
+  transform: none;
 }
 
 label {
@@ -301,12 +307,12 @@ input:checked + .slider:before {
 
 #copyright {
   font-size: 1vw;
-  float: left;
+  float: right;
 }
 
 #note {
   font-size: 1vw;
-  float: right;
+  float: left;
   transition: all 0.5s ease;
 }
 #note:hover {

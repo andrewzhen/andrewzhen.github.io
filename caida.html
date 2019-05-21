@@ -13,26 +13,26 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CAIDA Internship</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" type="image/png" href="assets/logo.png">
   <link rel="stylesheet" type="text/css" href="style/workStyle.css">
   <link rel="stylesheet" type="text/css" href="style/sharedStyle.css">
 </head>
+
 <body id="body">
   <div class="content-margins">
     <div id="header">
-      <div id="home-div"><a href="https://ajzhen.com" id="home-b" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">Home</a></div>
+      <span><a href="https://ajzhen.com"><img src="assets/logo.png" id="logo"></a></span>
+      <div class="nav sink"><a href="https://ajzhen.com" id="home" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">HOME</a></div>
+      <div class="nav sink"><a href="https://ajzhen.com/about" id="about" onmouseover="mo('about')" onmouseleave="ml('about')">ABOUT</a></div>
+      <div class="nav sink"><a href="https://ajzhen.herokuapp.com" id="photo" onmouseover="mo('photo')" onmouseleave="ml('photo')" target="_blank">PHOTOGRAPHY</a></div>
 
       <div id="nav-div">
-        <div class="nav sink"><a href="https://ajzhen.com/about" onmouseover="mo('about')" onmouseleave="ml('about')">About</a></div>
-        <div class="nav sink"><a href="https://ajzhen.herokuapp.com" onmouseover="mo('photo')" onmouseleave="ml('photo')">Photography</a></div>
-        
-        <div id="darkmode-b" class="nav">Dark Mode
+        <div id="darkmode" class="nav"><span id="darkmode-txt">DARK MODE</span>
           <label class="switch">
             <input id="checkDark" type="checkbox" onchange="darkmode()">
             <span class="slider round"></span>
           </label>
         </div>
-
       </div>
     </div>
 
@@ -176,11 +176,10 @@
     </div>
 
     <div id="footer">
-      <p id="copyright">© 2019 Andrew Zhen</p>
       <p id="note">Built From The Ground Up</p>
+      <p id="copyright">© 2019 Andrew Zhen</p>
       <div style="clear: both"></div>
     </div>
-
   </div>
 
   <script src="script.js" type="text/javascript"></script>

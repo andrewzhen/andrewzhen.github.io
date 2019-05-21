@@ -28,25 +28,20 @@
 
 /*-----------------------------INTRODUCTION BODY*/
 #description {
-  font-size: 3.5vw;
-  margin-top: 9vw;
-  margin-bottom: 0;
-  font-weight: 600;
-  text-align: right;
+  font-size: 3vw;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  font-weight: 500;
   transition: all 0.5s ease;
+  width: 55%;
+  line-height: 120%;
 }
-#description:hover {
-  cursor: default;
-}
-
 #description-2 {
-  text-align: right;
-  font-size: 1.5vw;
+  font-size: 1.8vw;
   transition: all 0.5s ease;
   margin-bottom: 24vw;
-}
-#description-2:hover {
-  cursor: default;
+  width: 55%;
+  line-height: 120%;
 }
 
 .wip {
@@ -62,24 +57,37 @@
 }
 
 .content {
-  margin-top: 10vw;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin-left: 12vw;
+  margin-right: 12vw;
   z-index: 1;
 }
 
-.grid-container {
+.content-header {
+  font-size: 1vw;
+  margin-bottom: 2vw;
+}
+
+.grid-container-right {
   margin: auto;
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 65% 35%;
+}
+
+.grid-container-left {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 35% 65%;
 }
 
 .grid-item {
   position: relative;
-  width: 32vw;
-  height: 32vw;
+  width: 90%;
+  /*width: 32vw;
+  height: 32vw;*/
   margin-bottom: 10vw;
 }
 
@@ -125,18 +133,22 @@
 }
 
 #title {
-  font-weight: 600;
-  font-size: 1.8vw;
+  font-weight: 500;
+  font-size: 2vw;
   line-height: normal;
-  padding-top: 1vw;
-  padding-bottom: 0.5vw;
+  padding-bottom: 2vw;
   margin: 0;
 }
 
 #summary {
-  /*font-weight: 500;*/
-  font-size: 1.1vw;
-  line-height: 140%;
-  color: rgb(150,150,150);
+  font-size: 1.3vw;
+  font-weight: 300;
+  line-height: 160%;
+  padding-bottom: 2vw;
   margin: 0;
+}
+
+#year {
+  font-weight: 500;
+  font-size: 1vw;
 }
