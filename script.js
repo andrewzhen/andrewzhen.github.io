@@ -7,43 +7,44 @@ if (turnOn) {
   document.getElementById("checkDark").checked = true;
 }
 
-function darkmode() {
+function darkmode(id="") {
+  var page = id.split('-')[0];
   if (turnOn) {
-    // Landing image
-    try {
-      var bg = document.getElementById("light-bg").style;
-      bg.filter = "grayscale(30%)";
-      bg.backgroundImage = "url(assets/light-bg.jpg)";
-    } catch (error) {
-      console.log(error);
+    // Dark Nav
+    if (page == "home" || page == "about") {
+      try {
+        document.getElementById("home-w").id = "home-b";
+        document.getElementById("about-w").id = "about-b";
+        document.getElementById("photo-w").id = "photo-b";
+        document.getElementById("darkmode-txt-w").id = "darkmode-txt-b";
+        activeTab(page + '-b');
+      } catch (error) { console.log(error); }
     }
 
     // Snaash reddit
     try {
       document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) { console.log(error); }
 
     changeColor("black", "white");
 
     turnOn = false;
   } else {
-    // Landing image
-    try {
-      var bg = document.getElementById("light-bg").style;
-      bg.filter = "grayscale(0%)";
-      bg.backgroundImage = "url(assets/dark-bg.jpg)";
-    } catch (error) {
-      console.log(error);
+    // Light Nav
+    if (page == "home" || page == "about") {
+      try {
+        document.getElementById("home-b").id = "home-w";
+        document.getElementById("about-b").id = "about-w";
+        document.getElementById("photo-b").id = "photo-w";
+        document.getElementById("darkmode-txt-b").id = "darkmode-txt-w";
+        activeTab(id.split('-')[0] + '-w');
+      } catch (error) { console.log(error); }
     }
 
     // Snaash reddit
     try {
       document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) { console.log(error); }
 
     changeColor("white", "black");
     
@@ -84,35 +85,18 @@ function changeColor(newColor, otherColor) {
     } else {
       pbar.backgroundColor = "rgb(230,230,230)";
     }
-  } catch (error) {
-    console.log(error)
-  }
+  } catch (error) { console.log(error); }
 }
 
-function mo(id) {
-  if (document.getElementById("body").style.backgroundColor == "black") {
-    document.getElementById(id).style.color = "#BDBDBD";
-    if (id == "email") {
-      document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
-      document.getElementById("email").style.color = "white";
-    }
-  } else {
-    document.getElementById(id).style.color = "#616161";
-    if (id == "email") {
-      document.getElementById(id).innerHTML = "andrewjzhen@gmail.com";
-      document.getElementById("email").style.color = "black";
-    }
-  }
+function emailOver() {
+  document.getElementById('email').innerHTML = "andrewjzhen@gmail.com";
 }
 
-function ml(id) {
-  if (document.getElementById("body").style.backgroundColor == "black") {
-    document.getElementById(id).style.color = "white";
-  } else {
-    document.getElementById(id).style.color = "black";
-  }
+function emailLeave() {
+  document.getElementById('email').innerHTML = "Email";
+}
 
-  if (id == "email") {
-    document.getElementById(id).innerHTML = "Email";
-  }
+function activeTab(id) {
+  var color = (id.split('-')[1] == 'b') ? 'black' : 'white';
+  document.getElementById(id).style.borderBottom = "0.1vw solid " + color;
 }

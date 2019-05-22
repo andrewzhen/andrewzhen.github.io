@@ -21,18 +21,18 @@
   <script src="fadein.js"></script>
 </head>
 
-<body id="body">
+<body id="body" onload="activeTab('home-b')">
   <div class="content-margins">
     <div id="header">
       <span><a href="https://ajzhen.com"><img src="assets/logo.png" id="logo"></a></span>
-      <div class="nav"><a href="https://ajzhen.com" id="home-x" onmouseover="mo('home')" onmouseleave="ml('home')" onclick="stilldark()">HOME</a></div>
-      <div class="nav"><a href="https://ajzhen.com/about" id="about-x" onmouseover="mo('about')" onmouseleave="ml('about')">ABOUT</a></div>
-      <div class="nav"><a href="https://ajzhen.herokuapp.com" id="photo-x" onmouseover="mo('photo')" onmouseleave="ml('photo')" target="_blank">PHOTOGRAPHY</a></div>
+      <div class="nav"><a href="https://ajzhen.com" id="home-b" onclick="stilldark()">Home</a></div>
+      <div class="nav"><a href="https://ajzhen.com/about" id="about-b">About</a></div>
+      <div class="nav"><a href="https://ajzhen.herokuapp.com" id="photo-b" target="_blank">Photography</a></div>
 
       <div id="nav-div">
-        <div id="darkmode" class="nav"><span id="darkmode-txt-x">DARK MODE</span>
+        <div id="darkmode" class="nav"><span id="darkmode-txt-b">Dark Mode</span>
           <label class="switch">
-            <input id="checkDark" type="checkbox" onchange="darkmode()">
+            <input id="checkDark" type="checkbox" onchange="darkmode('home-b')">
             <span class="slider round"></span>
           </label>
         </div>
@@ -56,7 +56,7 @@
           </div>
         </div>
         <div>
-          <p id="title">CAIDA Internship</p>
+          <a id="title" href="https://ajzhen.com/caida">CAIDA Internship</a>
           <p id="summary">Summer-long experience at The Center of Applied Internet Data Analysis at UC San Diego.</p>
           <p id="year">SUMMER 2018</p>
         </div>
@@ -66,7 +66,7 @@
     <section>
       <div class="grid-container-left">
         <div>
-          <p id="title">Snaash iOS App</p>
+          <a id="title" href="https://ajzhen.com/snaash">Snaash iOS App</a>
           <p id="summary">Design and prototyping of an advice-giving platform, powered by the wisdom of elders.</p>
           <p id="year">SUMMER 2018 - PRESENT</p>
         </div>
@@ -90,7 +90,7 @@
           </div>
         </div>
         <div>
-          <p id="title">Zilter Web App</p>
+          <a id="title" href="https://ajzhen.com/zilter">Zilter Web App</a>
           <p id="summary">Design, prototyping and development of a website concept featuring built-in research done conveniently for you.</p>
           <p id="year">WINTER 2018 - PRESENT</p>
         </div>
@@ -100,7 +100,7 @@
     <section>
       <div class="grid-container-left">
         <div>
-          <p id="title">Quickly Web App</p>
+          <a id="title" href="https://ajzhen.com/quickly">Quickly Web App</a>
           <p id="summary">Development of a class-scheduling tool for UC San Diego students under contract work.</p>
           <p id="year">SPRING 2018</p>
         </div>
@@ -123,8 +123,8 @@
           </div>
         </div>
         <div>
-          <p id="title">To-Do App Redesign</p>
-          <p id="summary">Redesign and implementation of a to-do list application based on the (JavaScript) Meteor web framework.</p>
+          <p id="title" style="text-decoration: none">To-Do App Redesign</p>
+          <p id="summary">Redesign and implementation of a to-do list application using the JavaScript web framework, Meteor.</p>
           <p id="year">SPRING 2018</p>
         </div>
       </div>
@@ -133,8 +133,8 @@
     <section>
       <div class="grid-container-left">
         <div>
-          <p id="title">Long Term</p>
-          <p id="summary">A collection of design and developement projects.</p>
+          <a id="title" href="https://ajzhen.com/long-term">Long Term</a>
+          <p id="summary">A collection of my personal design and development projects.</p>
           <p id="year">2018 - PRESENT</p>
         </div>
         <div class="grid-item grid-item-right">
@@ -149,7 +149,7 @@
 
     <div id="contact">
       <ul>
-        <li><span id="email" onmouseover="mo('email')" onmouseleave="ml('email')">Email</span></li>
+        <li><span id="email" onmouseover="emailOver()" onmouseleave="emailLeave()">Email</span></li>
         <li><a href="assets/resume.pdf" id="resume" onmouseover="mo('resume')" onmouseleave="ml('resume')" target="_blank">Résumé</a></li>
         <li><a href="https://www.linkedin.com/in/andrew-zhen/" id="linkedin" onmouseover="mo('linkedin')" onmouseleave="ml('linkedin')" target="_blank">LinkedIn</a></li>
         <li><a href="https://github.com/andrewzhen" id="github" onmouseover="mo('github')" onmouseleave="ml('github')" target="_blank">GitHub</a></li>

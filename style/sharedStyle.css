@@ -1,5 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');*/
-
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   /*font-family: Roboto, sans-serif;*/
@@ -50,37 +48,35 @@ section.visible {
   float: left;
 }
 
-#home-div {
-  float: left;
-  transition: all 0.5s ease;
-  line-height: 2vw;
-}
-#home-div a {
-  text-decoration: none;
-}
-#home-div:hover {
-  transform: translateY(8px);
-}
-#home {
+/*--------------------------------BLACK NAV*/
+#home-b {
   font-size: 1vw;
   color: black;
   display: inline;
   transition: all 0.5s ease;
 }
-#home-x {
-  font-size: 1vw;
-  color: black;
-  display: inline;
-  transition: all 0.5s ease;
+#home-b, #about-b, #photo-b {
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
 }
+#home-b:hover, #about-b:hover, #photo-b:hover {
+  border-bottom: 0.1vw solid black;
+}
+
+/*--------------------------------WHITE NAV*/
 #home-w {
   font-size: 1vw;
   color: white;
   display: inline;
   transition: all 0.5s ease;
 }
-#about-w, #photo-w {
+#home-w, #about-w, #photo-w {
   color: white;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
+}
+#home-w:hover, #about-w:hover, #photo-w:hover {
+  border-bottom: 0.1vw solid white;
 }
 
 /* Bob */
@@ -146,10 +142,6 @@ section.visible {
   transition: all 0.5s ease;
 }
 
-.nav:hover {
-  transform: translateY(6px);
-}
-
 .nav > a {
   font-size: 1vw;
   color: black;
@@ -164,14 +156,7 @@ section.visible {
   transition: all 0.5s ease;
   line-height: 2vw;
 }
-#darkmode-txt {
-  margin-right: 1vw;
-  color: black;
-  font-size: 1vw;
-  transition: all 0.5s ease;
-  line-height: 2vw;
-}
-#darkmode-txt-x {
+#darkmode-txt-b {
   margin-right: 1vw;
   color: black;
   font-size: 1vw;
@@ -184,15 +169,6 @@ section.visible {
   font-size: 1vw;
   transition: all 0.5s ease;
   line-height: 2vw;
-}
-#darkmode:hover {
-  transform: none;
-}
-#darkmode-b:hover {
-  transform: none;
-}
-#darkmode-w:hover {
-  transform: none;
 }
 
 label {
@@ -298,7 +274,6 @@ input:checked + .slider:before {
 
 #contact a:hover {
   transform: translateX(10px);
-  color: #9E9E9E; 
 }
 
 /*----------------------------FOOTER*/
