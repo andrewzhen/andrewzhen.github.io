@@ -1,9 +1,11 @@
 // GET FILE NAME
-var file = window.location.pathname.split('/');
-console.log(window.location.pathname);
-console.log(file);
-file = file.length == 7 ? file[6].split('.')[0] : file[1];
-file = file == "index" ? "home" : 'about';
+if (window.location.pathname.split('/').length == 2) {
+  var file = window.location.pathname.split('/')[1];
+  file = file == "about" ? "about" : "home";
+} else {
+  var file = window.location.pathname.split('/')[6];
+  file = file == "index.html" ? "home" : 'about';
+}
 
 // CHANGE FILE TO CURRENT MODE
 if (sessionStorage.getItem('toggle') == null) {
