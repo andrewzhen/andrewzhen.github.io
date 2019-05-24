@@ -48,90 +48,6 @@ section.visible {
   float: left;
 }
 
-/*--------------------------------BLACK NAV*/
-#home-b {
-  font-size: 1vw;
-  color: black;
-  display: inline;
-  transition: all 0.5s ease;
-}
-#home-b, #about-b, #photo-b {
-  padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
-}
-#home-b:hover, #about-b:hover, #photo-b:hover {
-  border-bottom: 0.1vw solid black;
-}
-
-/*--------------------------------WHITE NAV*/
-#home-w {
-  font-size: 1vw;
-  color: white;
-  display: inline;
-  transition: all 0.5s ease;
-}
-#home-w, #about-w, #photo-w {
-  color: white;
-  padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
-}
-#home-w:hover, #about-w:hover, #photo-w:hover {
-  border-bottom: 0.1vw solid white;
-}
-
-/* Bob */
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-  }
-  50% {
-    -webkit-transform: translateY(-14px);
-    transform: translateY(-14px);
-  }
-  100% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-  }
-}
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-  }
-  50% {
-    -webkit-transform: translateY(-14px);
-    transform: translateY(-14px);
-  }
-  100% {
-    -webkit-transform: translateY(-28px);
-    transform: translateY(-28px);
-  }
-}
-
-.hvr-bob {
-  text-align: right;
-  /*display: inline-block;*/
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: .6s, 2s;
-  animation-duration: .6s, 2s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
 #nav-div {
   float: right;
 }
@@ -150,8 +66,82 @@ section.visible {
   line-height: 2vw;
 }
 
+/*--------------------------------ONLY BLACK NAV*/
+#home-bx {
+  font-size: 1vw;
+  display: inline;
+  transition: all 0.5s ease;
+}
+#home-bx, #about-bx, #photo-bx {
+  color: black;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
+}
+#home-bx:hover, #about-bx:hover, #photo-bx:hover {
+  border-bottom: 0.1vw solid black;
+}
+
+/*--------------------------------ONLY WHITE NAV*/
+#home-wx {
+  font-size: 1vw;
+  display: inline;
+  transition: all 0.5s ease;
+}
+#home-wx, #about-wx, #photo-wx {
+  color: white;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
+}
+#home-wx:hover, #about-wx:hover, #photo-wx:hover {
+  border-bottom: 0.1vw solid white;
+}
+
+/*--------------------------------BLACK NAV*/
+#home-b {
+  font-size: 1vw;
+  display: inline;
+  transition: all 0.5s ease;
+}
+#home-b, #about-b, #photo-b {
+  color: black;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
+}
+#home-b:hover, #about-b:hover, #photo-b:hover {
+  border-bottom: 0.1vw solid black;
+}
+
+/*--------------------------------WHITE NAV*/
+#home-w {
+  font-size: 1vw;
+  display: inline;
+  transition: all 0.5s ease;
+}
+#home-w, #about-w, #photo-w {
+  color: white;
+  padding-bottom: 1vw;
+  border-bottom: 0.1vw solid transparent;
+}
+#home-w:hover, #about-w:hover, #photo-w:hover {
+  border-bottom: 0.1vw solid white;
+}
+
 /*--------------------------------DARK MODE*/
 #darkmode {
+  font-size: 1vw;
+  transition: all 0.5s ease;
+  line-height: 2vw;
+}
+#darkmode-txt-bx {
+  margin-right: 1vw;
+  color: black;
+  font-size: 1vw;
+  transition: all 0.5s ease;
+  line-height: 2vw;
+}
+#darkmode-txt-wx {
+  margin-right: 1vw;
+  color: white;
   font-size: 1vw;
   transition: all 0.5s ease;
   line-height: 2vw;
