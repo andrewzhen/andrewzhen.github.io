@@ -1,7 +1,9 @@
 // GET FILE NAME
 var file = window.location.pathname.split('/');
-file = file.length == 7 ? file[6] : file[1];
-file = file == "index.html" ? "home" : "about";
+console.log(window.location.pathname);
+console.log(file);
+file = file.length == 7 ? file[6].split('.')[0] : file[1];
+file = file == "index" ? "home" : 'about';
 
 // CHANGE FILE TO CURRENT MODE
 if (sessionStorage.getItem('toggle') == null) {
@@ -23,12 +25,14 @@ if (sessionStorage.getItem('toggle') == null) {
 
 // ACTIVE TAB
 function activeTab(id, dark) {
-  if (dark) {
-    document.getElementById("checkDark").checked = true;
-    document.getElementById(id).style.borderBottom = "0.1vw solid white"; 
-  } else {
-    document.getElementById("checkDark").checked = false;
-    document.getElementById(id).style.borderBottom = "0.1vw solid black";
+  if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
+    if (dark) {
+      document.getElementById("checkDark").checked = true;
+      document.getElementById(id).style.borderBottom = "0.1vw solid white"; 
+    } else {
+      document.getElementById("checkDark").checked = false;
+      document.getElementById(id).style.borderBottom = "0.1vw solid black";
+    }
   }
 }
 
