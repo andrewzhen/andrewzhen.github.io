@@ -1,6 +1,5 @@
 html, body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  /*font-family: Roboto, sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 1vw;
   margin: 0;
   padding: 0;
