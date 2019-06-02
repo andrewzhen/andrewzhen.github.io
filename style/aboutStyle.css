@@ -1,5 +1,14 @@
+/*-----------------------------RESPONSIVENESS*/
+@media only screen and (max-width: 767px) {
+  body .about-container { grid-template-columns: 100%; }
+  body .about-pic img { margin-bottom: 8vw; }
+  .about-container .aboutHeader { font-size: 1.8vw; }
+  .about-container #about-txt { font-size: 2vw; }
+  .about-container #last-film, .about-container #movie { display: none; }
+}
+
 /*----------------------------------------ABOUT*/
-.aboutPic img {
+.about-pic img {
   width: 100%;
   margin-bottom: 5vw;
 }
@@ -12,12 +21,12 @@
 
 .about-container p {
   font-size: 1.3vw;
-  line-height: 160%;
+  line-height: 200%;
   margin: 0;
 }
 
 .about-right-pad {
-  padding-right: 2.5vw;
+  padding-right: 5vw;
 }
 
 .padding-bottom {
@@ -28,7 +37,7 @@
   font-size: 1.8vw;
   font-weight: 500;
   color: #BDBDBD;
-  padding-bottom: 1.5vw;
+  padding-bottom: 1vw;
 }
 
 .about-p {

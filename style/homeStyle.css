@@ -2,8 +2,6 @@
 @media only screen and (max-width: 767px) {
   #year { display: none; }
   
-  body .content-margins { padding-top: 15vw; }
-
   body #description { font-size: 5.5vw; width: 100%; margin-bottom: 26vw; margin-top: 8vw;}
   body #color-block { top: 50vw; left: 12vw; width: 76%; height: 8vw; }
   body #white-block { top: 50vw; left: 12vw; width: 76%; height: 8vw; }

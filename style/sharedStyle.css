@@ -1,7 +1,7 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
+  body .content-margins { padding-top: 15vw; }
   #logo { display: none; }
-
   body .nav { margin-left: 0; margin-right: 5vw;}
   body .nav a { font-size: 2vw !important; }
   
