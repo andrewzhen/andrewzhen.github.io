@@ -1,30 +1,41 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
+  /*landing*/
   body .content-margins { padding-top: 15vw; }
-  #logo { display: none; }
-  body .nav { margin-left: 0; margin-right: 5vw;}
-  body .nav a { font-size: 2vw !important; }
+  body #header { padding-bottom: 15vw; }
+  #darkmode-txt-b, #darkmode-txt-w, #darkmode-txt-bx, #darkmode-txt-wx  { display: none; }
+  body .nav { margin-right: 9vw;}
+  body .nav a { font-size: 3vw !important; }
+  .nav #home-b, .nav #about-b, .nav #photo-b { border-bottom: none !important; }
+  .nav #home-w, .nav #about-w, .nav #photo-w { border-bottom: none !important; }
+  .nav #home-bx, .nav #about-bx, .nav #photo-bx { border-bottom: none !important; }
+  .nav #home-wx, .nav #about-wx, .nav #photo-wx { border-bottom: none !important; }
+  /*end landing*/
   
   /*darkmode*/
   body #darkmode span { font-size: 2vw; }
   body .switch { 
     position: absolute;
-    top: 14.8vw;
+    top: 14.5vw;
     right: 12vw;
-    width: 4.2vw; height: 2.4vw;
+    width: 6.3vw; height: 3.6vw;
   }
-  body .slider:before { height: 2vw; width: 2vw; left: 0.2vw; bottom: 0.2vw; }
+  body .slider:before { height: 3vw; width: 3vw; left: 0.3vw; bottom: 0.3vw; }
   body input:checked + .slider:before {
-    -webkit-transform: translateX(1.75vw);
-    -ms-transform: translateX(1.75vw);
-    transform: translateX(1.75vw);
+    -webkit-transform: translateX(2.65vw);
+    -ms-transform: translateX(2.65vw);
+    transform: translateX(2.65vw);
   }
   /*end darkmode*/
 
-  body #contact { font-size: 3vw; }
-  body #contact ul { line-height: 200%; }
+  /*work*/
+  body .section-header { font-size: 3vw; padding-bottom: 1vw;}
+  /*end work*/
 
-  body #copyright, body #note { font-size: 2vw; }
+  /*footer*/
+  body #contact { font-size: 4vw; font-weight: 500; margin-bottom: 15vw;}
+  body #copyright, body #note { font-size: 3vw; }
+  /*end footer*/
 }
 
 html, body {
@@ -82,7 +93,7 @@ section.visible {
 
 .nav {
   display: inline-block;
-  margin-left: 2vw;
+  margin-right: 2vw;
   transition: all 0.5s ease;
 }
 
@@ -159,6 +170,7 @@ section.visible {
   font-size: 1vw;
   transition: all 0.5s ease;
   line-height: 2vw;
+  margin-right: 0;
 }
 #darkmode-txt-bx {
   margin-right: 1vw;
@@ -267,17 +279,23 @@ input:checked + .slider:before {
   margin-right: 12vw;
 }
 
+.section-header {
+  font-size: 1.3vw;
+  color: #BDBDBD;
+  padding-bottom: 1vw;
+}
+
 /*-----------------------------CONTACT*/
 #contact {
   font-size: 2.2vw;
-  margin-bottom: 10vw;
+  margin-bottom: 12vw;
 }
 
 #contact ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  line-height: 140%;
+  line-height: 160%;
   display: block;
 }
 
