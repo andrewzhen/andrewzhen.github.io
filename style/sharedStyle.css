@@ -3,7 +3,7 @@
   /*landing*/
   body .content-margins { padding-top: 15vw; }
   body #header { padding-bottom: 15vw; }
-  #darkmode-txt-b, #darkmode-txt-w, #darkmode-txt-bx, #darkmode-txt-wx  { display: none; }
+  #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
   body .nav a { font-size: 3vw !important; }
   .nav #home-b, .nav #about-b, .nav #photo-b { border-bottom: none !important; }
@@ -14,18 +14,9 @@
   
   /*darkmode*/
   body #darkmode span { font-size: 2vw; }
-  body .switch { 
-    position: absolute;
-    top: 14.5vw;
-    right: 12vw;
-    width: 6.3vw; height: 3.6vw;
-  }
+  body .switch { position: absolute; top: 14.5vw; right: 12vw; width: 6.3vw; height: 3.6vw; }
   body .slider:before { height: 3vw; width: 3vw; left: 0.3vw; bottom: 0.3vw; }
-  body input:checked + .slider:before {
-    -webkit-transform: translateX(2.65vw);
-    -ms-transform: translateX(2.65vw);
-    transform: translateX(2.65vw);
-  }
+  body input:checked + .slider:before { -webkit-transform: translateX(2.65vw); -ms-transform: translateX(2.65vw); transform: translateX(2.65vw); }
   /*end darkmode*/
 
   /*work*/
@@ -46,21 +37,11 @@ html, body {
   transition: all 0.5s ease;
 }
 
-p {
-  line-height: 210%;
-  margin: 0;
-}
-
+p { line-height: 210%; margin: 0; }
 a { color: black; }
 
-.line-height-160 {
-  line-height: 160%;
-}
-
-.line-height-210 {
-  line-height: 210%;
-  margin: 0;
-}
+.line-height-160 { line-height: 160%; }
+.line-height-210 { line-height: 210%; margin: 0; }
 
 .mb-2 { margin-bottom: 2vw; }
 .mb-0 { margin-bottom: 0vw; }
@@ -172,30 +153,9 @@ section.visible {
   line-height: 2vw;
   margin-right: 0;
 }
-#darkmode-txt-bx {
+#darkmode-txt {
   margin-right: 1vw;
-  color: black;
-  font-size: 1vw;
-  transition: all 0.5s ease;
-  line-height: 2vw;
-}
-#darkmode-txt-wx {
-  margin-right: 1vw;
-  color: white;
-  font-size: 1vw;
-  transition: all 0.5s ease;
-  line-height: 2vw;
-}
-#darkmode-txt-b {
-  margin-right: 1vw;
-  color: black;
-  font-size: 1vw;
-  transition: all 0.5s ease;
-  line-height: 2vw;
-}
-#darkmode-txt-w {
-  margin-right: 1vw;
-  color: white;
+  color: #8C8C8C;
   font-size: 1vw;
   transition: all 0.5s ease;
   line-height: 2vw;
@@ -204,8 +164,7 @@ section.visible {
 label {
   vertical-align: sub;
   /*25px = 1.85vw*/
-  /*line-height: 1.85vw;*/
-  line-height: 2vw;
+  line-height: 1.85vw;
 }
 
 .switch {

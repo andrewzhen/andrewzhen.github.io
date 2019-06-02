@@ -62,7 +62,6 @@ function defaultMode() {
     document.getElementById("home-w").id = "home-b";
     document.getElementById("about-w").id = "about-b";
     document.getElementById("photo-w").id = "photo-b";
-    document.getElementById("darkmode-txt-w").id = "darkmode-txt-b";
     activeTab(file + "-b", false);
   } catch (error) { console.log(error); }
 
@@ -84,7 +83,6 @@ function darkMode() {
     document.getElementById("home-b").id = "home-w";
     document.getElementById("about-b").id = "about-w";
     document.getElementById("photo-b").id = "photo-w";
-    document.getElementById("darkmode-txt-b").id = "darkmode-txt-w";
     activeTab(file + "-w", true);
   } catch (error) { console.log(error); }
 
