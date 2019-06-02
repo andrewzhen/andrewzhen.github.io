@@ -1,3 +1,27 @@
+/*-----------------------------RESPONSIVENESS*/
+@media only screen and (max-width: 767px) {
+  #year { display: none; }
+  
+  body .content-margins { padding-top: 15vw; }
+
+  body #description { font-size: 5.5vw; width: 100%; margin-bottom: 26vw; margin-top: 8vw;}
+  body #color-block { top: 50vw; left: 12vw; width: 76%; height: 8vw; }
+  body #white-block { top: 50vw; left: 12vw; width: 76%; height: 8vw; }
+  body #description-2 { font-size: 3.5vw; width: 100%; margin-bottom: 19vw;}
+
+  body .content-header { font-size: 2vw; margin-bottom: 5vw; } 
+
+  body .grid-container-right { display: flex; flex-wrap: wrap; margin-bottom: 7vw;}
+  body .grid-container-left { display: flex; flex-wrap: wrap; margin-bottom: 7vw;}
+  body #work-img { order: 1; }
+  body #work-des { order: 2; }
+  body .grid-item { margin-bottom: 4vw; width: 100%;}
+  body #title { font-size: 3vw; }
+  body #summary { font-size: 2.2vw; }
+  body .coming-soon { font-size: 4vw; }
+}
+
+
 /*-----------------------------INTRODUCTION BODY*/
 #description {
   font-size: 3vw;
@@ -8,12 +32,6 @@
   width: 55%;
   line-height: 120%;
   z-index: 10;
-}
-
-@media only screen and (max-width: 518px) {
-  #description {
-    width: 60%;
-  }
 }
 #description-2 {
   font-size: 1.8vw;
@@ -122,15 +140,15 @@
 
 .grid-item:hover p {
   color: #FF8A65;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .grid-item:hover img {
-  transform: translateY(-10px);
+  transform: translateY(-1vw);
 }
 
 .grid-content {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
 }
 

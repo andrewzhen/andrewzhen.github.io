@@ -1,3 +1,32 @@
+/*-----------------------------RESPONSIVENESS*/
+@media only screen and (max-width: 767px) {
+  #logo { display: none; }
+
+  body .nav { margin-left: 0; margin-right: 5vw;}
+  body .nav a { font-size: 2vw !important; }
+  
+  /*darkmode*/
+  body #darkmode span { font-size: 2vw; }
+  body .switch { 
+    position: absolute;
+    top: 14.8vw;
+    right: 12vw;
+    width: 4.2vw; height: 2.4vw;
+  }
+  body .slider:before { height: 2vw; width: 2vw; left: 0.2vw; bottom: 0.2vw; }
+  body input:checked + .slider:before {
+    -webkit-transform: translateX(1.75vw);
+    -ms-transform: translateX(1.75vw);
+    transform: translateX(1.75vw);
+  }
+  /*end darkmode*/
+
+  body #contact { font-size: 3vw; }
+  body #contact ul { line-height: 200%; }
+
+  body #copyright, body #note { font-size: 2vw; }
+}
+
 html, body {
   font-family: -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 1vw;
