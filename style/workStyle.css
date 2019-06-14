@@ -4,35 +4,49 @@
   body .banner-info { margin-bottom: 25vw; }
   .content-margins .banner { height: 85vw; }
   body #work-title { font-size: 5vw; }
+  body #longterm-title { font-size: 5vw; }
+  body #longterm-description { font-size: 3vw; margin-right: 30%;}
   .banner-info .body-container { grid-template-columns: 30% 70%; }
   .banner-info .body-container p { font-size: 3vw; }
   /*end banner*/
 
-  body .body-container { grid-template-columns: 100%; margin-bottom: 10vw;}
-  body .body-container p { font-size: 2.5vw; }
-  .body-container #body-header { font-size: 4vw; margin-bottom: 2.5vw;}
+  body #first { order: 1; }
+  body #second { order: 2; }
+  body #img-caption { font-size: 2.5vw; }
 
-  body .conclusion-container { grid-template-columns: 100%; margin-bottom: 15vw;}
-  body .conclusion-container p { font-size: 2.5vw; }
-  .conclusion-container #body-header { font-size: 4vw; margin-bottom: 2.5vw;}
+  body .body-container { grid-template-columns: 100%; margin-bottom: 10vw; }
+  body .body-container p { font-size: 3.2vw; }
+  body .body-container #body-header { font-size: 5vw; margin-bottom: 2.5vw; }
+  body .body-container .subheader { font-size: 4vw; }
+  body .body-container #zilter-logo { width: 80% !important; padding-top: 5vw; padding-bottom: 5vw; }
+
+  body .impact-container { display: flex; flex-wrap: wrap; }
+  body .impact-container p { font-size: 3.2vw; }
+  body .impact-container #first img { padding: 0 !important; width: 100% !important; margin-bottom: 5vw; }
+  body .impact-container #second img { padding: 0 !important; width: 100% !important; margin-bottom: 10vw; }
+  body .impact-container .caption { margin-top: 5vw; margin-bottom: 10vw; }
+
+  body .ios-container { grid-template-columns: 0% 0% 45% 10% 45% 0%; }
+
+  body .ca-container { grid-template-columns: 100%; }
+  body .ca-container p { font-size: 3.2vw; }
+  body .ca-container img { width: 50%; }
+  body .ca-container .notable-features { padding-left: 0; margin-top: 5vw; margin-bottom: 5vw; }
+
+  body .p-container { display: none; }
+
+  body .conclusion-container { grid-template-columns: 100%; margin-bottom: 15vw; }
+  body .conclusion-container p { font-size: 3.2vw; }
+  body .conclusion-container #body-header { font-size: 5vw; margin-bottom: 2.5vw; }
+  body .conclusion-container #fortune-cookie { width: 80%; margin-top: 5vw; margin-bottom: 5vw; }
 } 
 
-#caida-banner {
-  background-color: #BBE8E0;
-}
-#snaash-banner {
-  background-color: #F3D1A6;
-}
-#zilter-banner {
-  background-color: #A5D6A7;
-}
-#quickly-banner {
-  background-color: #FFF279;
-}
+#caida-banner { background-color: #BBE8E0; }
+#snaash-banner { background-color: #F3D1A6; }
+#zilter-banner { background-color: #A5D6A7; }
+#quickly-banner { background-color: #FFF279; }
 
-#link {
-  transition: all 0.5s ease;
-}
+#link { transition: all 0.5s ease; }
 
 .subheader {
   font-weight: 600;
@@ -40,15 +54,9 @@
   padding-bottom: 1vw;
 }
 
-.caida-subheader {
-  color: #62D6C1;
-}
-.snaash-subheader {
-  color: #E9B153;
-}
-.zilter-subheader {
-  color: #76B979;
-}
+.caida-subheader { color: #62D6C1; }
+.snaash-subheader { color: #E9B153; }
+.zilter-subheader { color: #76B979; }
 
 #img-caption {
   font-size: 0.85vw;
