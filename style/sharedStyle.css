@@ -5,7 +5,7 @@
   body #header { padding-bottom: 15vw; }
   #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
-  body .nav a { font-size: 2.5vw !important; }
+  body .nav a { font-size: 3.2vw !important; }
   .nav #home-b, .nav #about-b, .nav #photo-b { border-bottom: none !important; }
   .nav #home-w, .nav #about-w, .nav #photo-w { border-bottom: none !important; }
   .nav #home-bx, .nav #about-bx, .nav #photo-bx { border-bottom: none !important; }
@@ -20,12 +20,13 @@
   /*end darkmode*/
 
   /*work*/
-  body .section-header { font-size: 3vw; padding-bottom: 1vw;}
+  body .section-header { font-size: 3.2vw; padding-bottom: 1vw;}
   /*end work*/
 
   /*footer*/
+  body #footer { padding-top: 5vw; }
   body #contact { font-size: 4vw; font-weight: 500; margin-bottom: 15vw;}
-  body #copyright, body #note { font-size: 2.5vw; }
+  body #copyright, body #note { font-size: 3vw; }
   /*end footer*/
 }
 

@@ -2,12 +2,12 @@
 @media only screen and (max-width: 767px) {
   /*banner*/
   body .banner-info { margin-bottom: 25vw; }
-  .content-margins .banner { height: 85vw; }
-  body #work-title { font-size: 5vw; }
-  body #longterm-title { font-size: 5vw; }
-  body #longterm-description { font-size: 3vw; margin-right: 30%;}
+  .content-margins .banner { height: 90vw; }
+  body #work-title { font-size: 7vw; }
+  body #longterm-title { font-size: 7vw; }
+  body #longterm-description { font-size: 3.2vw; margin-right: 30%;}
   .banner-info .body-container { grid-template-columns: 30% 70%; }
-  .banner-info .body-container p { font-size: 3vw; }
+  .banner-info .body-container p { font-size: 3.2vw; }
   /*end banner*/
 
   body #first { order: 1; }
@@ -33,7 +33,11 @@
   body .ca-container img { width: 50%; }
   body .ca-container .notable-features { padding-left: 0; margin-top: 5vw; margin-bottom: 5vw; }
 
-  body .p-container { display: none; }
+  body .p-container, #longterm-details { display: none; }
+
+  body .body-container-longterm { grid-template-columns: 100%; padding-top: 15vw; }
+  body .body-container-longterm .project-header { font-size: 5vw; }
+  body .body-container-longterm .longterm-date { font-size: 3.2vw; }
 
   body .conclusion-container { grid-template-columns: 100%; margin-bottom: 15vw; }
   body .conclusion-container p { font-size: 3.2vw; }
@@ -227,7 +231,7 @@
   width: 100%;
 }
 
-.project-date {
+.longterm-date {
   color: #7A7A7A;
 }
 

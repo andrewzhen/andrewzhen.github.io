@@ -8,14 +8,14 @@
   /*end landing*/
 
   /*work*/
-  body .grid-container-right { display: flex; flex-wrap: wrap; margin-bottom: 7vw; }
-  body .grid-container-left { display: flex; flex-wrap: wrap; margin-bottom: 7vw; }
+  body .grid-container-right { display: flex; flex-wrap: wrap; margin-bottom: 10vw; }
+  body .grid-container-left { display: flex; flex-wrap: wrap; margin-bottom: 10vw; }
   body #work-img { order: 1; }
   body #work-des { order: 2; }
   body .grid-item { margin-bottom: 4vw; width: 100%; }
   body #title { font-size: 4vw; }
   #year { display: none; }
-  body #summary { font-size: 2.5vw; }
+  body #summary { font-size: 3.2vw; }
   body .coming-soon { font-size: 4vw; }
   /*end work*/
 }
