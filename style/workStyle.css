@@ -42,6 +42,7 @@
   body .conclusion-container { grid-template-columns: 100%; margin-bottom: 15vw; }
   body .conclusion-container p { font-size: 3.2vw; }
   body .conclusion-container #body-header { font-size: 5vw; margin-bottom: 2.5vw; }
+  body .conclusion-container .subheader { font-size: 4vw; }
   body .conclusion-container #fortune-cookie { width: 80%; margin-top: 5vw; margin-bottom: 5vw; }
 } 
 

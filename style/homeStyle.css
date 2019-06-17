@@ -8,8 +8,8 @@
   /*end landing*/
 
   /*work*/
-  body .grid-container-right { display: flex; flex-wrap: wrap; margin-bottom: 10vw; }
-  body .grid-container-left { display: flex; flex-wrap: wrap; margin-bottom: 10vw; }
+  body .grid-container-right { display: flex; flex-wrap: wrap; margin-bottom: 13vw; }
+  body .grid-container-left { display: flex; flex-wrap: wrap; margin-bottom: 13vw; }
   body #work-img { order: 1; }
   body #work-des { order: 2; }
   body .grid-item { margin-bottom: 4vw; width: 100%; }
