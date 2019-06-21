@@ -96,10 +96,10 @@ section.visible {
 #home-bx, #about-bx, #photo-bx {
   color: black;
   padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
+  border-bottom: 0.2vw solid transparent;
 }
 #home-bx:hover, #about-bx:hover, #photo-bx:hover {
-  border-bottom: 0.1vw solid black;
+  border-bottom: 0.2vw solid black;
 }
 
 /*--------------------------------ONLY WHITE NAV*/
@@ -111,10 +111,10 @@ section.visible {
 #home-wx, #about-wx, #photo-wx {
   color: white;
   padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
+  border-bottom: 0.2vw solid transparent;
 }
 #home-wx:hover, #about-wx:hover, #photo-wx:hover {
-  border-bottom: 0.1vw solid white;
+  border-bottom: 0.2vw solid white;
 }
 
 /*--------------------------------BLACK NAV*/
@@ -126,10 +126,10 @@ section.visible {
 #home-b, #about-b, #photo-b {
   color: black;
   padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
+  border-bottom: 0.2vw solid transparent;
 }
 #home-b:hover, #about-b:hover, #photo-b:hover {
-  border-bottom: 0.1vw solid black;
+  border-bottom: 0.2vw solid black;
 }
 
 /*--------------------------------WHITE NAV*/
@@ -141,10 +141,10 @@ section.visible {
 #home-w, #about-w, #photo-w {
   color: white;
   padding-bottom: 1vw;
-  border-bottom: 0.1vw solid transparent;
+  border-bottom: 0.2vw solid transparent;
 }
 #home-w:hover, #about-w:hover, #photo-w:hover {
-  border-bottom: 0.1vw solid white;
+  border-bottom: 0.2vw solid white;
 }
 
 /*--------------------------------DARK MODE*/
@@ -248,6 +248,7 @@ input:checked + .slider:before {
 /*-----------------------------CONTACT*/
 #contact {
   font-size: 2.2vw;
+  margin-top: 5vw;
   margin-bottom: 12vw;
 }
 

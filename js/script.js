@@ -30,10 +30,10 @@ function activeTab(id, dark) {
   if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
     if (dark) {
       document.getElementById("checkDark").checked = true;
-      document.getElementById(id).style.borderBottom = "0.1vw solid white"; 
+      document.getElementById(id).style.borderBottom = "0.2vw solid white"; 
     } else {
       document.getElementById("checkDark").checked = false;
-      document.getElementById(id).style.borderBottom = "0.1vw solid black";
+      document.getElementById(id).style.borderBottom = "0.2vw solid black";
     }
   }
 }
@@ -104,7 +104,7 @@ function changeColor(newColor, otherColor) {
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, \
+  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #datu, \
   #work-1, #work-2, #email, #resume, #linkedin, #github, #instagram, #note");
   const changeColorList = [...changeColor];
 
