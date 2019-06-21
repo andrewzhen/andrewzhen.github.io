@@ -1,6 +1,6 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
-  body .about-container { width: 100%; }
+  body .about-container { width: 100%; margin-bottom: 10vw; }
   body .about-pic img { margin-bottom: 10vw; }
   .about-container .aboutHeader { font-size: 1.8vw; }
   .about-container #about-txt { font-size: 4vw; }
