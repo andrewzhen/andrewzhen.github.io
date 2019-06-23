@@ -5,7 +5,7 @@
   .about-container .aboutHeader { font-size: 1.8vw; }
   .about-container #about-txt { font-size: 4vw; }
   .about-container .about-right-pad { padding-right: 0; }
-  .about-container #movie { display: none; }
+  .about-container #movie-txt { text-decoration: none; }
 }
 
 /*----------------------------------------ABOUT*/
@@ -48,7 +48,6 @@
 }
 #movie:hover #movie-txt {
   cursor: default;
-  opacity:0;
 }
 #movie:hover #movie-img {
   visibility: visible;

@@ -63,6 +63,8 @@ function defaultMode() {
     document.getElementById("about-w").id = "about-b";
     document.getElementById("photo-w").id = "photo-b";
     activeTab(file + "-b", false);
+    document.getElementById("description").style.filter = "none";
+    document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
   // Snaash > Reddit image
@@ -84,6 +86,8 @@ function darkMode() {
     document.getElementById("about-b").id = "about-w";
     document.getElementById("photo-b").id = "photo-w";
     activeTab(file + "-w", true);
+    document.getElementById("description").style.filter = "drop-shadow(0.2vw 0.2vw 0.1vw black)";
+    document.getElementById("description-2").style.filter = "drop-shadow(0.2vw 0.2vw 0.1vw black)";
   } catch (error) { console.log(error); }
 
   // Snaash > Reddit image
@@ -104,7 +108,7 @@ function changeColor(newColor, otherColor) {
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #datu, \
+  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #datu, #its, \
   #work-1, #work-2, #email, #resume, #linkedin, #github, #instagram, #note");
   const changeColorList = [...changeColor];
 
