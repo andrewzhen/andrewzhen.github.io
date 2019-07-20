@@ -84,8 +84,8 @@ function darkMode() {
     document.getElementById("about-b").id = "about-w";
     document.getElementById("photo-b").id = "photo-w";
     activeTab(file + "-w", true);
-    document.getElementById("description").style.filter = "drop-shadow(0.2vw 0.2vw 0.1vw black)";
-    document.getElementById("description-2").style.filter = "drop-shadow(0.2vw 0.2vw 0.1vw black)";
+    document.getElementById("description").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
+    document.getElementById("description-2").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
   } catch (error) { console.log(error); }
 
   // Snaash > Reddit image
