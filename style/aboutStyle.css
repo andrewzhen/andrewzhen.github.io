@@ -30,25 +30,30 @@
   position: relative;
   width: fit-content;
 }
+
 #movie-txt {
   text-decoration: underline;
 }
+
 #movie-img {
   position: absolute;
   visibility: hidden;
-  width: 22vw;
+  width: 10vw;
 }
 
 #movie #movie-img, #movie #movie-txt {
   transition: all 0.5s ease;
 }
+
 #movie #movie-img {
   position:absolute; 
   opacity:0;
 }
+
 #movie:hover #movie-txt {
   cursor: default;
 }
+
 #movie:hover #movie-img {
   visibility: visible;
   opacity:1;

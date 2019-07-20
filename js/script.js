@@ -1,26 +1,22 @@
-// GET FILE NAME
+// GET FILE NAME FROM EITHER WWW OR LOCAL
 if (window.location.pathname.split('/').length == 2) {
   var file = window.location.pathname.split('/')[1];
   file = file == "about" ? "about" : "home";
 } else {
-  var file = window.location.pathname.split('/')[6];
+  var file = window.location.pathname.split('/')[7];
   file = file == "index.html" ? "home" : 'about';
 }
 
-// CHANGE FILE TO CURRENT MODE
+// INITIALIZE TOGGLE OR CHANGE TO CURRENT MODE
 if (sessionStorage.getItem('toggle') == null) {
-  sessionStorage.setItem("toggle", false);
-  activeTab(file + "-b", false);
+  // * FALSE DEFUALTS TO LIGHT MODE, TRUE DEFAULTS TO DARK MODE
+  // * CHANGE NAV ID TO "-b" FOR LIGHT MODE AND "-w" for DARK MODE
+  sessionStorage.setItem("toggle", true);
+}
+if (sessionStorage.getItem('toggle') == "true") {
+  darkMode();
 } else {
-  if (sessionStorage.getItem('toggle') == "true") {
-    darkMode(file + "-w");
-    activeTab(file + "-w", true);
-    document.getElementById("checkDark").checked = true;
-  } else {
-    defaultMode(file + "-b");
-    activeTab(file + "-b", false);
-    document.getElementById("checkDark").checked = false;
-  }
+  defaultMode();
 }
 
 
@@ -30,11 +26,10 @@ function activeTab(id, dark) {
   if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
     if (dark) {
       document.getElementById("checkDark").checked = true;
-      document.getElementById(id).style.borderBottom = "0.2vw solid white"; 
     } else {
       document.getElementById("checkDark").checked = false;
-      document.getElementById(id).style.borderBottom = "0.2vw solid black";
     }
+    document.getElementById(id).style.color = "#8C8C8C";
   }
 }
 
@@ -74,6 +69,9 @@ function defaultMode() {
 
   // Other Components
   changeColor("black", "white");
+
+  // Toggle navigation  color
+  activeTab(file + "-b", false);
 }
 
 
@@ -97,6 +95,9 @@ function darkMode() {
 
   // Other Components
   changeColor("white", "black");
+
+  // Toggle navigation color
+  activeTab(file + "-w", true);
 } 
 
 

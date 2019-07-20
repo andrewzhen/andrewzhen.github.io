@@ -6,10 +6,6 @@
   #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
   body .nav a { font-size: 3.2vw !important; }
-  .nav #home-b, .nav #about-b, .nav #photo-b { border-bottom: none !important; }
-  .nav #home-w, .nav #about-w, .nav #photo-w { border-bottom: none !important; }
-  .nav #home-bx, .nav #about-bx, .nav #photo-bx { border-bottom: none !important; }
-  .nav #home-wx, .nav #about-wx, .nav #photo-wx { border-bottom: none !important; }
   /*end landing*/
   
   /*darkmode*/
@@ -99,11 +95,9 @@ section.visible {
 }
 #home-bx, #about-bx, #photo-bx {
   color: black;
-  padding-bottom: 1vw;
-  border-bottom: 0.2vw solid transparent;
 }
 #home-bx:hover, #about-bx:hover, #photo-bx:hover {
-  border-bottom: 0.2vw solid black;
+  color: #BDBDBD;
 }
 
 /*--------------------------------ONLY WHITE NAV*/
@@ -114,11 +108,9 @@ section.visible {
 }
 #home-wx, #about-wx, #photo-wx {
   color: white;
-  padding-bottom: 1vw;
-  border-bottom: 0.2vw solid transparent;
 }
 #home-wx:hover, #about-wx:hover, #photo-wx:hover {
-  border-bottom: 0.2vw solid white;
+  color: #616161;
 }
 
 /*--------------------------------BLACK NAV*/
@@ -129,11 +121,9 @@ section.visible {
 }
 #home-b, #about-b, #photo-b {
   color: black;
-  padding-bottom: 1vw;
-  border-bottom: 0.2vw solid transparent;
 }
 #home-b:hover, #about-b:hover, #photo-b:hover {
-  border-bottom: 0.2vw solid black;
+  color: #BDBDBD;
 }
 
 /*--------------------------------WHITE NAV*/
@@ -144,11 +134,9 @@ section.visible {
 }
 #home-w, #about-w, #photo-w {
   color: white;
-  padding-bottom: 1vw;
-  border-bottom: 0.2vw solid transparent;
 }
 #home-w:hover, #about-w:hover, #photo-w:hover {
-  border-bottom: 0.2vw solid white;
+  color: #616161;
 }
 
 /*--------------------------------DARK MODE*/
@@ -292,6 +280,7 @@ input:checked + .slider:before {
   transition: all 0.5s ease;
 }
 #note:hover {
+  color: #66BB6A !important;
   font-style: italic;
   transition: all 0.5s ease;
   cursor: default;
