@@ -25,6 +25,13 @@
   margin: 0;
 }
 
+.about-container h2 {
+  font-size: 1vw;
+  font-weight: normal;
+  line-height: 200%;
+  margin: 0;
+}
+
 /*-------------------------------------MOVIE*/
 #movie {
   position: relative;

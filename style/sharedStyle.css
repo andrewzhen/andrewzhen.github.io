@@ -97,7 +97,7 @@ section.visible {
   color: black;
 }
 #home-bx:hover, #about-bx:hover, #photo-bx:hover {
-  color: #BDBDBD;
+  color: #8C8C8C;
 }
 
 /*--------------------------------ONLY WHITE NAV*/
@@ -110,7 +110,7 @@ section.visible {
   color: white;
 }
 #home-wx:hover, #about-wx:hover, #photo-wx:hover {
-  color: #616161;
+  color: #8C8C8C;
 }
 
 /*--------------------------------BLACK NAV*/
@@ -123,7 +123,7 @@ section.visible {
   color: black;
 }
 #home-b:hover, #about-b:hover, #photo-b:hover {
-  color: #BDBDBD;
+  color: #8C8C8C;
 }
 
 /*--------------------------------WHITE NAV*/
@@ -136,7 +136,7 @@ section.visible {
   color: white;
 }
 #home-w:hover, #about-w:hover, #photo-w:hover {
-  color: #616161;
+  color: #8C8C8C;
 }
 
 /*--------------------------------DARK MODE*/
@@ -232,8 +232,8 @@ input:checked + .slider:before {
 }
 
 .section-header {
-  font-size: 1.3vw;
-  color: #BDBDBD;
+  font-size: 1vw;
+  color: #8C8C8C;
   padding-bottom: 1vw;
 }
 
