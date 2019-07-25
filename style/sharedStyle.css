@@ -280,8 +280,7 @@ input:checked + .slider:before {
   transition: all 0.5s ease;
 }
 #note:hover {
-  color: #66BB6A !important;
-  font-style: italic;
+  color: #90CAF9 !important;
   transition: all 0.5s ease;
   cursor: default;
 }
