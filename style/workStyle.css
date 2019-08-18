@@ -46,10 +46,10 @@
   body .conclusion-container #fortune-cookie { width: 80%; margin-top: 5vw; margin-bottom: 5vw; }
 } 
 
-#caida-banner { background-color: #BBE8E0; }
-#snaash-banner { background-color: #F3D1A6; }
-#zilter-banner { background-color: #A5D6A7; }
-#quickly-banner { background-color: #FFF279; }
+#caida-banner { background-color: #BBE8E0; background-image: url('../assets/caida-banner.jpg'); }
+#snaash-banner { background-color: #F3D1A6; background-image: url('../assets/snaash-banner.jpg'); }
+#zilter-banner { background-color: #A5D6A7; background-image: url('../assets/zilter-banner.jpg'); }
+#quickly-banner { background-color: #FFF279; background-image: url('../assets/quickly-banner.jpg'); }
 
 #link { transition: all 0.5s ease; }
 
@@ -122,6 +122,10 @@
 
 .body-container img {
   width: 100%;
+}
+
+.body-container a {
+  cursor: pointer;
 }
 
 #body-header {
@@ -198,7 +202,9 @@
 
 /*---------------------------Long Term*/
 #longterm-banner {
-  background-color: #343434;
+  /*background-color: #343434;*/
+  background-color: #263238;
+  background-image: url('../assets/long-term-banner.jpg'); 
 }
 
 #longterm-title {
