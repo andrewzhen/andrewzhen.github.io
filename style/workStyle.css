@@ -112,15 +112,6 @@
   margin-left: 0 !important;
 }
 
-/*---------------------------Head Container*/
-.head-container {
-  padding-top: 5vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
-  position: fixed;
-  z-index: -2;
-}
-
 /*---------------------------Body Container*/
 .body-container {
   display: grid;

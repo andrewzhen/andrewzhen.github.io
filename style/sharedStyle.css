@@ -56,6 +56,14 @@ section.visible {
 }
 
 /*----------------------------------HEADER*/
+.head-container {
+  padding-top: 5vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  position: fixed;
+  z-index: -2;
+}
+
 .highlight {
   background-image: linear-gradient(transparent, transparent 68%, rgb(188, 240, 224) 68%, rgb(188, 240, 224));
 }
