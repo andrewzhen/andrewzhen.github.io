@@ -56,6 +56,14 @@ section.visible {
 }
 
 /*----------------------------------HEADER*/
+.default-top {
+  top: 0 !important;
+  padding-top: 5vw !important;
+  padding-top: 5vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+
 .head-container {
   padding-top: 5vw;
   padding-left: 12vw;

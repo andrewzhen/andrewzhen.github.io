@@ -1,7 +1,6 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
-  body #about-container { width: 100%; margin-bottom: 10vw; }
-  body .about-head-container { top: 75vw; }
+  body .about-container { width: 100%; margin-bottom: 10vw; }
   body .about-pic img { margin-bottom: 10vw; }
   .about-container .aboutHeader { font-size: 1.8vw; }
   .about-container #about-txt { font-size: 4vw; }
@@ -10,14 +9,9 @@
 }
 
 /*----------------------------------------ABOUT*/
-#about-head-container {
-  top: 60vw;
-}
-
 .about-pic img {
   width: 100%;
   margin-bottom: 5vw;
-  margin-top: -5vw;
 }
 
 .about-container {
