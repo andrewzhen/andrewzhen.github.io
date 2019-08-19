@@ -2,8 +2,12 @@
 @media only screen and (max-width: 767px) {
   /*banner*/
   body .banner-info { margin-bottom: 25vw; }
-  .content-margins .banner { height: 90vw; }
   body #work-title { font-size: 7vw; }
+  body #caida-banner { background-image: none; height: 90vw; }
+  body #snaash-banner { background-image: none; height: 90vw; }
+  body #zilter-banner { background-image: none; height: 90vw; }
+  body #quickly-banner { background-image: none; height: 90vw; }
+  body #longterm-banner { background-image: none; height: 90vw; }
   body #longterm-title { font-size: 7vw; }
   body #longterm-description { font-size: 3.2vw; margin-right: 30%;}
   .banner-info .body-container { grid-template-columns: 30% 70%; }
@@ -35,7 +39,7 @@
 
   body .p-container, #longterm-details { display: none; }
 
-  body .body-container-longterm { grid-template-columns: 100%; padding-top: 15vw; }
+  body .body-container-longterm { grid-template-columns: 100%; }
   body .body-container-longterm .project-header { font-size: 5vw; }
   body .body-container-longterm .longterm-date { font-size: 3.2vw; }
 
@@ -46,10 +50,10 @@
   body .conclusion-container #fortune-cookie { width: 80%; margin-top: 5vw; margin-bottom: 5vw; }
 } 
 
-#caida-banner { background-color: #BBE8E0; background-image: url('../assets/caida-banner.jpg'); }
-#snaash-banner { background-color: #F3D1A6; background-image: url('../assets/snaash-banner.jpg'); }
-#zilter-banner { background-color: #A5D6A7; background-image: url('../assets/zilter-banner.jpg'); }
-#quickly-banner { background-color: #FFF279; background-image: url('../assets/quickly-banner.jpg'); }
+#caida-banner { background-color: #BBE8E0; background-image: url('../assets/caida-banner.jpg'); background-size: cover; }
+#snaash-banner { background-color: #F3D1A6; background-image: url('../assets/snaash-banner.jpg'); background-size: cover; }
+#zilter-banner { background-color: #A5D6A7; background-image: url('../assets/zilter-banner.jpg'); background-size: cover; }
+#quickly-banner { background-color: #FFF279; background-image: url('../assets/quickly-banner.jpg'); background-size: cover; }
 
 #link { transition: all 0.5s ease; }
 
@@ -106,6 +110,15 @@
 #work-header {
   font-weight: 600;
   margin-left: 0 !important;
+}
+
+/*---------------------------Head Container*/
+.head-container {
+  padding-top: 5vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  position: fixed;
+  z-index: -2;
 }
 
 /*---------------------------Body Container*/
@@ -202,9 +215,9 @@
 
 /*---------------------------Long Term*/
 #longterm-banner {
-  /*background-color: #343434;*/
   background-color: #263238;
-  background-image: url('../assets/long-term-banner.jpg'); 
+  background-image: url('../assets/long-term-banner.jpg');
+  background-size: cover;
 }
 
 #longterm-title {

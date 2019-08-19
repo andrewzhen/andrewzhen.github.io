@@ -1,8 +1,8 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   /*landing*/
-  body .content-margins { padding-top: 15vw; }
-  body #header { padding-bottom: 15vw; }
+  body #content-margins { padding-top: 18vw; top: 90vw; }
+  body #header { padding-bottom: 15vw; padding-top: 10vw; }
   #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
   body .nav a { font-size: 3.2vw !important; }
@@ -225,10 +225,15 @@ input:checked + .slider:before {
 }
 
 /*-----------------------------BODY*/
-.content-margins {
-  padding-top: 5vw;
-  margin-left: 12vw;
-  margin-right: 12vw;
+#content-margins {
+  padding-top: 7vw;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  position: absolute;
+  width: 76vw;
+  top: 40vw;
+  background: black;
+  transition: all 0.5s ease;
 }
 
 .section-header {

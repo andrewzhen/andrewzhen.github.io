@@ -23,13 +23,17 @@ if (sessionStorage.getItem('toggle') == "true") {
 
 // ACTIVE TAB
 function activeTab(id, dark) {
-  if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
-    if (dark) {
-      document.getElementById("checkDark").checked = true;
-    } else {
-      document.getElementById("checkDark").checked = false;
+  try {
+    if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
+      if (dark) {
+        document.getElementById("checkDark").checked = true;
+      } else {
+        document.getElementById("checkDark").checked = false;
+      }
+      document.getElementById(id).style.color = "#8C8C8C";
     }
-    document.getElementById(id).style.color = "#8C8C8C";
+  } catch (error) {
+    console.log(error);
   }
 }
 
@@ -70,6 +74,8 @@ function defaultMode() {
   // Other Components
   changeColor("black", "white");
 
+  document.getElementById("content-margins").style.background = "white";
+
   // Toggle navigation  color
   activeTab(file + "-b", false);
 }
@@ -95,6 +101,8 @@ function darkMode() {
 
   // Other Components
   changeColor("white", "black");
+
+  document.getElementById("content-margins").style.background = "black";
 
   // Toggle navigation color
   activeTab(file + "-w", true);
