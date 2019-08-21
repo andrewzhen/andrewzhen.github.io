@@ -39,7 +39,7 @@
 
   body .p-container, #longterm-details { display: none; }
 
-  body .body-container-longterm { grid-template-columns: 100%; }
+  body .body-container-longterm { grid-template-columns: 100%; margin-bottom: 12vw; }
   body .body-container-longterm .project-header { font-size: 5vw; }
   body .body-container-longterm .longterm-date { font-size: 3.2vw; }
 
@@ -235,7 +235,7 @@
 .body-container-longterm {
   display: grid;
   grid-template-columns: 20% 80%;
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
 }
 
 .body-container-longterm img {
