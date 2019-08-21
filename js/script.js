@@ -66,15 +66,14 @@ function defaultMode() {
     document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image
+  // Snaash > Reddit image & Work pages
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
+    document.getElementById("content-margins").style.background = "white";
   } catch (error) { console.log(error); }
 
   // Other Components
   changeColor("black", "white");
-
-  document.getElementById("content-margins").style.background = "white";
 
   // Toggle navigation  color
   activeTab(file + "-b", false);
@@ -94,15 +93,14 @@ function darkMode() {
     document.getElementById("description-2").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image
+  // Snaash > Reddit image & Work pages
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
+    document.getElementById("content-margins").style.background = "black";
   } catch (error) { console.log(error); }
 
   // Other Components
   changeColor("white", "black");
-
-  document.getElementById("content-margins").style.background = "black";
 
   // Toggle navigation color
   activeTab(file + "-w", true);
