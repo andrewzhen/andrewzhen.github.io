@@ -56,6 +56,11 @@ function toggle() {
 
 // DEFAULT MODE
 function defaultMode() {
+  // Work pages
+  try {
+    document.getElementById("content-margins").style.background = "white";
+  } catch (error) { console.log(error); }
+
   // NAV
   try {
     document.getElementById("home-w").id = "home-b";
@@ -66,10 +71,9 @@ function defaultMode() {
     document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image & Work pages
+  // Snaash > Reddit image
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
-    document.getElementById("content-margins").style.background = "white";
   } catch (error) { console.log(error); }
 
   // Other Components
@@ -83,6 +87,11 @@ function defaultMode() {
 
 // DARK MODE
 function darkMode() {
+  // Work pages
+  try {
+    document.getElementById("content-margins").style.background = "black";
+  } catch (error) { console.log(error); }
+
   // NAV
   try {
     document.getElementById("home-b").id = "home-w";
@@ -93,10 +102,9 @@ function darkMode() {
     document.getElementById("description-2").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image & Work pages
+  // Snaash > Reddit image
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
-    document.getElementById("content-margins").style.background = "black";
   } catch (error) { console.log(error); }
 
   // Other Components
