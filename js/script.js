@@ -152,5 +152,5 @@ function emailOver() {
 
 // EMAIL LEAVE
 function emailLeave() {
-  document.getElementById('email').innerHTML = "Email";
+  document.getElementById('email').innerHTML = "+ Email";
 }
