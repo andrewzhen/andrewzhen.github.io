@@ -145,12 +145,7 @@ function changeColor(newColor, otherColor) {
 
 
 
-// EMAIL OVER
-function emailOver() {
-  document.getElementById('email').innerHTML = "andrewjzhen@gmail.com";
-}
-
-// EMAIL LEAVE
-function emailLeave() {
-  document.getElementById('email').innerHTML = "+ Email";
+// CONTACT CHANGE
+function contactChange(id, text) {
+  document.getElementById(id).innerHTML = text;
 }
