@@ -149,3 +149,14 @@ function changeColor(newColor, otherColor) {
 function contactChange(id, text) {
   document.getElementById(id).innerHTML = text;
 }
+
+// COPY TEXT
+function copy(id, text) {
+  const el = document.createElement('textarea');
+  el.value = text;
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.getElementById(id).innerHTML = "Copied";
+  document.body.removeChild(el);
+}

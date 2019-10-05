@@ -285,6 +285,10 @@ input:checked + .slider:before {
   transform: translateX(10px);
 }
 
+#email:hover {
+  cursor: pointer;
+}
+
 /*----------------------------FOOTER*/
 #footer {
   margin-bottom: 5vw;

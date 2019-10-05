@@ -83,18 +83,16 @@
 
     <section>
       <div id="contact">
-          <ul>
-            <li><span id="email" onmouseover="emailOver()" onmouseleave="emailLeave()">+ Email</span></li>
+        <ul>
+          <li><a id="email" onmouseover="contactChange('email', 'andrewjzhen@gmail.com')" onmouseleave="contactChange('email', '+ Email')" onclick="copy('email', 'andrewjzhen@gmail.com')">+ Email</a></li>
 
-            <li><a href="assets/resume.pdf" id="resume" onmouseover="mo('resume')" onmouseleave="ml('resume')">+ Résumé</a></li>
+          <li><a href="assets/resume.pdf" id="resume" onmouseover="contactChange('resume', 'resume.pdf')" onmouseleave="contactChange('resume', '+ Résumé')">+ Résumé</a></li>
 
-            <li><a href="https://www.linkedin.com/in/andrew-zhen/" id="linkedin" onmouseover="mo('linkedin')" onmouseleave="ml('linkedin')">+ LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/andrew-zhen/" id="linkedin" onmouseover="contactChange('linkedin', 'linkedin.com/in/andrew-zhen/')" onmouseleave="contactChange('linkedin', '+ LinkedIn')">+ LinkedIn</a></li>
 
-            <li><a href="https://github.com/andrewzhen" id="github" onmouseover="mo('github')" onmouseleave="ml('github')">+ GitHub</a></li>
-
-            <!-- <li><a href="https://www.instagram.com/a.jzhen/" id="instagram" onmouseover="mo('instagram')" onmouseleave="ml('instagram')">+ Instagram</a></li> -->
-          </ul>
-        </div>
+          <li><a href="https://github.com/andrewzhen" id="github" onmouseover="contactChange('github', 'github.com/andrewzhen')" onmouseleave="contactChange('github', '+ GitHub')">+ GitHub</a></li>
+        </ul>
+      </div>
     </section>
 
     <div id="footer">
