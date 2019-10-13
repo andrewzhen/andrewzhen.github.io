@@ -9,7 +9,7 @@ if (window.location.pathname.split('/').length == 2) {
 
 // INITIALIZE TOGGLE OR CHANGE TO CURRENT MODE
 if (sessionStorage.getItem('toggle') == null) {
-  // * FALSE DEFUALTS TO LIGHT MODE, TRUE DEFAULTS TO DARK MODE
+  // * FALSE DEFAULTS TO LIGHT MODE, TRUE DEFAULTS TO DARK MODE
   // * CHANGE NAV ID TO "-b" FOR LIGHT MODE AND "-w" for DARK MODE
   sessionStorage.setItem("toggle", true);
 }
