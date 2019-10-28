@@ -19,8 +19,6 @@ if (sessionStorage.getItem('toggle') == "true") {
   defaultMode();
 }
 
-
-
 // ACTIVE TAB
 function activeTab(id, dark) {
   try {
@@ -71,6 +69,12 @@ function defaultMode() {
     document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
+  // Description
+  try {
+    document.getElementById("description").style.textShadow = "";
+    document.getElementById("description-2").style.textShadow = "";
+  } catch (error) { console.log(error); }
+
   // Snaash > Reddit image
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
@@ -98,8 +102,12 @@ function darkMode() {
     document.getElementById("about-b").id = "about-w";
     document.getElementById("photo-b").id = "photo-w";
     activeTab(file + "-w", true);
-    document.getElementById("description").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
-    document.getElementById("description-2").style.filter = "drop-shadow(0.1vw 0.1vw 0.1vw rgb(30,30,30)";
+  } catch (error) { console.log(error); }
+
+  // Description
+  try {
+    document.getElementById("description").style.textShadow = "black 1px 0 0";
+    document.getElementById("description-2").style.textShadow = "black 1px 0 0";
   } catch (error) { console.log(error); }
 
   // Snaash > Reddit image
