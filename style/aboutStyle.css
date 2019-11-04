@@ -1,67 +1,28 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
-  body .about-container { width: 100%; margin-bottom: 10vw; }
-  body .about-pic img { margin-bottom: 10vw; }
-  .about-container .aboutHeader { font-size: 1.8vw; }
-  .about-container #about-txt { font-size: 4vw; }
-  .about-container .about-right-pad { padding-right: 0; }
-  .about-container #movie-txt { text-decoration: none; }
+  body .aboutContainer { width: 100%; margin-bottom: 10vw; }
+  body .aboutPic img { margin-bottom: 10vw; }
+  .aboutContainer .aboutTxt { font-size: 4vw; }
+  .aboutContainer .aboutSpacing { margin-bottom: 10vw; }
 }
 
 /*----------------------------------------ABOUT*/
-.about-pic img {
+.aboutPic img {
   width: 100%;
-  margin-bottom: 5vw;
+  margin-bottom: 10vw;
 }
 
-.about-container {
+.aboutContainer {
   width: 60%;
-  margin-bottom: 3vw;
+  margin-bottom: 10vw;
 }
 
-.about-container p {
+.aboutContainer p {
   font-size: 1.3vw;
   line-height: 200%;
   margin: 0;
 }
 
-.about-container h2 {
-  font-size: 1vw;
-  font-weight: normal;
-  line-height: 200%;
-  margin: 0;
-}
-
-/*-------------------------------------MOVIE*/
-#movie {
-  position: relative;
-  width: fit-content;
-}
-
-#movie-txt {
-  text-decoration: underline;
-}
-
-#movie-img {
-  position: absolute;
-  visibility: hidden;
-  width: 12vw;
-}
-
-#movie #movie-img, #movie #movie-txt {
-  transition: all 0.5s ease;
-}
-
-#movie #movie-img {
-  position:absolute; 
-  opacity:0;
-}
-
-#movie:hover #movie-txt {
-  cursor: default;
-}
-
-#movie:hover #movie-img {
-  visibility: visible;
-  opacity:1;
+.aboutSpacing {
+  margin-bottom: 5vw;
 }

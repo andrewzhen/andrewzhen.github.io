@@ -56,7 +56,7 @@ function toggle() {
 function defaultMode() {
   // Work pages
   try {
-    document.getElementById("content-margins").style.background = "white";
+    document.getElementById("content-margins").style.background = "#f5f5f5";
   } catch (error) { console.log(error); }
 
   // NAV
@@ -69,19 +69,13 @@ function defaultMode() {
     document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
-  // Description
-  try {
-    document.getElementById("description").style.textShadow = "";
-    document.getElementById("description-2").style.textShadow = "";
-  } catch (error) { console.log(error); }
-
   // Snaash > Reddit image
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
   } catch (error) { console.log(error); }
 
   // Other Components
-  changeColor("black", "white");
+  changeColor("#171717", "#f5f5f5");
 
   // Toggle navigation  color
   activeTab(file + "-b", false);
@@ -93,7 +87,7 @@ function defaultMode() {
 function darkMode() {
   // Work pages
   try {
-    document.getElementById("content-margins").style.background = "black";
+    document.getElementById("content-margins").style.background = "#171717";
   } catch (error) { console.log(error); }
 
   // NAV
@@ -104,19 +98,13 @@ function darkMode() {
     activeTab(file + "-w", true);
   } catch (error) { console.log(error); }
 
-  // Description
-  try {
-    document.getElementById("description").style.textShadow = "black 1px 0 0";
-    document.getElementById("description-2").style.textShadow = "black 1px 0 0";
-  } catch (error) { console.log(error); }
-
   // Snaash > Reddit image
   try {
     document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
   } catch (error) { console.log(error); }
 
   // Other Components
-  changeColor("white", "black");
+  changeColor("#f5f5f5", "#171717");
 
   // Toggle navigation color
   activeTab(file + "-w", true);
@@ -131,8 +119,8 @@ function changeColor(newColor, otherColor) {
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #datu, #its, \
-  #work-1, #work-2, #email, #resume, #linkedin, #github, #instagram, #note");
+  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #dco, #its, \
+  #imdb, #caida, #email, #resume, #linkedin, #github, #instagram, #note");
   const changeColorList = [...changeColor];
 
   changeColorList.forEach(element => {
@@ -146,7 +134,7 @@ function changeColor(newColor, otherColor) {
 
   sameColorList.forEach(element => {
     if (element != "longterm-title" && element != "longterm-description") {
-      element.style.color = "black";
+      element.style.color = "#171717";
     }
   })
 }

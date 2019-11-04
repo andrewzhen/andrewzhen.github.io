@@ -248,7 +248,7 @@ input:checked + .slider:before {
   position: absolute;
   width: 76vw;
   top: 40vw;
-  background: black;
+  background: #171717;
   transition: all 0.5s ease;
 }
 
