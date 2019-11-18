@@ -93,6 +93,7 @@ section.visible {
   display: inline-block;
   margin-right: 2vw;
   transition: all 0.5s ease;
+  font-weight: 500;
 }
 
 .nav > a {
@@ -292,6 +293,7 @@ input:checked + .slider:before {
 /*----------------------------FOOTER*/
 #footer {
   margin-bottom: 5vw;
+  font-weight: 500;
 }
 
 #copyright {
