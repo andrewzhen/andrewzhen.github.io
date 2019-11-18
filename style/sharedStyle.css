@@ -35,7 +35,7 @@ html, body {
 }
 
 p { line-height: 210%; margin: 0; }
-a { color: black; }
+a { color: rgb(23,23,23); }
 
 .line-height-160 { line-height: 160%; }
 .line-height-210 { line-height: 210%; margin: 0; }
@@ -97,7 +97,7 @@ section.visible {
 
 .nav > a {
   font-size: 1vw;
-  color: black;
+  color: rgb(23,23,23);
   text-decoration: none;
   transition: all 0.5s ease;
   line-height: 2vw;
@@ -110,7 +110,7 @@ section.visible {
   transition: all 0.5s ease;
 }
 #home-bx, #about-bx, #photo-bx {
-  color: black;
+  color: rgb(23,23,23);
 }
 #home-bx:hover, #about-bx:hover, #photo-bx:hover {
   color: #8C8C8C;
@@ -123,7 +123,7 @@ section.visible {
   transition: all 0.5s ease;
 }
 #home-wx, #about-wx, #photo-wx {
-  color: white;
+  color: rgb(245, 245, 245);
 }
 #home-wx:hover, #about-wx:hover, #photo-wx:hover {
   color: #8C8C8C;
@@ -136,7 +136,7 @@ section.visible {
   transition: all 0.5s ease;
 }
 #home-b, #about-b, #photo-b {
-  color: black;
+  color: rgb(23,23,23);
 }
 #home-b:hover, #about-b:hover, #photo-b:hover {
   color: #8C8C8C;
@@ -149,7 +149,7 @@ section.visible {
   transition: all 0.5s ease;
 }
 #home-w, #about-w, #photo-w {
-  color: white;
+  color: rgb(245, 245, 245);
 }
 #home-w:hover, #about-w:hover, #photo-w:hover {
   color: #8C8C8C;
@@ -276,7 +276,7 @@ input:checked + .slider:before {
 #contact a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: rgb(23,23,23);
   transition: all 0.5s ease;
   width: fit-content;
 }

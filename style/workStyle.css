@@ -206,7 +206,7 @@
 
 /*---------------------------Long Term*/
 #longterm-banner {
-  background-color: #263238;
+  background-color: rgb(220,220,220);
   /*background-image: url('../assets/long-term-banner.jpg');
   background-size: cover;*/
 }
@@ -216,12 +216,12 @@
   font-weight: bold;
   margin-bottom: 0;
   margin-top: 0;
-  color: white;
+  color: rgb(23,23,23);
 }
 
 #longterm-description {
   font-size: 1vw;
-  color: white;
+  color: rgb(23,23,23);
   margin-right: 5vw;
 }
 

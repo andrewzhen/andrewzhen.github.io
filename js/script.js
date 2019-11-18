@@ -7,6 +7,8 @@ if (window.location.pathname.split('/').length == 2) {
   file = file == "index.html" ? "home" : 'about';
 }
 
+
+
 // INITIALIZE TOGGLE OR CHANGE TO CURRENT MODE
 if (sessionStorage.getItem('toggle') == null) {
   // * FALSE DEFAULTS TO LIGHT MODE, TRUE DEFAULTS TO DARK MODE
@@ -19,20 +21,18 @@ if (sessionStorage.getItem('toggle') == "true") {
   defaultMode();
 }
 
+
+
 // ACTIVE TAB
 function activeTab(id, dark) {
   try {
-    if (id.split('-')[0] == "home" || id.split('-')[0] == "about") {
-      if (dark) {
-        document.getElementById("checkDark").checked = true;
-      } else {
-        document.getElementById("checkDark").checked = false;
-      }
-      document.getElementById(id).style.color = "#8C8C8C";
+    if (dark) {
+      document.getElementById("checkDark").checked = true;
+    } else {
+      document.getElementById("checkDark").checked = false;
     }
-  } catch (error) {
-    console.log(error);
-  }
+    document.getElementById(id).style.color = "#8C8C8C";
+  } catch (error) { console.log(error); }
 }
 
 
@@ -119,8 +119,8 @@ function changeColor(newColor, otherColor) {
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #movie-txt, #link, #dco, #its, \
-  #imdb, #caida, #email, #resume, #linkedin, #github, #instagram, #note");
+  #description-2, #title, #summary, #year, #about-txt, #link, #dco, #its, \
+  #caida, #email, #resume, #linkedin, #github, #instagram, #note");
   const changeColorList = [...changeColor];
 
   changeColorList.forEach(element => {
@@ -145,6 +145,8 @@ function changeColor(newColor, otherColor) {
 function contactChange(id, text) {
   document.getElementById(id).innerHTML = text;
 }
+
+
 
 // COPY TEXT
 function copy(id, text) {
