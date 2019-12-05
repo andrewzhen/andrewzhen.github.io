@@ -119,7 +119,7 @@ function changeColor(newColor, otherColor) {
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #link, #dco, #its, \
+  #description-2, #title, #summary, #year, #about-txt, #link, #asgs, #dco, #its, \
   #caida, #email, #resume, #linkedin, #github, #instagram, #note");
   const changeColorList = [...changeColor];
 
