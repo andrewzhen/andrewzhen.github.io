@@ -40,8 +40,9 @@ a { color: rgb(23,23,23); }
 .line-height-160 { line-height: 160%; }
 .line-height-210 { line-height: 210%; margin: 0; }
 
-.mb-2 { margin-bottom: 2vw; }
-.mb-0 { margin-bottom: 0vw; }
+.mb-5 { margin-bottom: 5vw !important; }
+.mb-2 { margin-bottom: 2vw !important; }
+.mb-0 { margin-bottom: 0 !important; }
 
 /*----------------------------------FADEIN*/
 section {

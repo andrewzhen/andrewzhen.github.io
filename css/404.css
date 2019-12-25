@@ -1,0 +1,9 @@
+@media only screen and (max-width: 767px) {
+  body #white-block, body #color-block {
+    top: 42vw;
+  }
+
+  body section[id=description-2] {
+    margin-top: 18vw;
+  }
+}
