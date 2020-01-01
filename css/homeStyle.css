@@ -4,7 +4,7 @@
   body #description { font-size: 5.5vw; width: 100%; margin-bottom: 26vw; }
   body #color-block { top: 57vw; left: 12vw; width: 76%; height: 8vw; }
   body #white-block { top: 57vw; left: 12vw; width: 76%; height: 8vw; }
-  body #working-img { display: none; }
+  body #working-graphic { display: none; }
   body #description-2 { font-size: 4vw; width: 100%; margin-bottom: 19vw; }
   /*end landing*/
 
@@ -91,16 +91,17 @@
   100% {background: #E57373;}
 }
 
-#working-img {
+#working-graphic {
   position: absolute;
-  top: 12vw;
-  right: 0;
-  background-image: url("../assets/images/working.png");
+  top: 11vw;
+  right: -1vw;
+  background-image: url("../assets/images/working-graphic.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 45%;
   height: 25vw;
   z-index: -1;
+  opacity: 0.75;
 }
 
 

@@ -1,3 +1,9 @@
+// SCRIPT ENABLED
+try {
+  document.getElementById("darkmode").style.display = "block";
+} catch (error) { console.log(error); }
+
+
 // GET FILE NAME FROM EITHER WWW OR LOCAL
 if (window.location.pathname.split('/').length == 2) {
   var file = window.location.pathname.split('/')[1];
