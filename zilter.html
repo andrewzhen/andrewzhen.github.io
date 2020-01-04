@@ -15,9 +15,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Andrew Zhen design and development portfolio">
-  <meta name="keywords" content="Andrew Zhen, UCSD, San Diego, 2020, Design, Development, Portfolio, UX, Engineer, Web Devlopment, HTML, CSS, JavaScript">
+  <meta name="keywords" content="Andrew Zhen, UCSD, San Diego, 2020, Design, Development, Portfolio, UX, Engineer, Web Devlopment, HTML, CSS, JavaScript, Zilter, COGS 120">
   <meta name="author" content="Andrew Zhen">
-  <meta property="og:image" content="assets/images/portrait.jpg">
+  <meta property="og:image" content="assets/images/thumbnail.png">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
@@ -37,8 +37,8 @@
 <body id="body">
   <div class="head-container">
     <div id="header">
-      <div class="nav"><a href="https://ajzhen.com" id="home-bx">Home</a></div>
-      <div class="nav"><a href="https://ajzhen.com/about" id="about-bx">About</a></div>
+      <div class="nav"><a href="https://ajzhen.com" id="home-b">Home</a></div>
+      <div class="nav"><a href="https://ajzhen.com/about" id="about-b">About</a></div>
 
       <div id="nav-div">
         <div id="darkmode" class="nav"><span id="darkmode-txt">Dark Mode</span>
@@ -50,316 +50,278 @@
       </div>
     </div>
 
-    <div id="zilter-banner" class="banner"></div>
+    <div id="zilter-banner" class="banner spacer-4"></div>
     <div class="banner-info">
       <div id="valign-div">
-        <p id="work-title">Zilter Web App</p>
-        <div class="body-container">
-          <div>
-            <div class="inline-div" style="padding-right: 4.5vw">
-              <p id="work-header">Timeline</p>
-              <p id="work-header">Role</p>
-              <p id="work-header">Team</p>
-              <p id="work-header">Course</p>
-            </div>
-          </div>
-          <div>
-            <div class="inline-div">
-              <p id="work-value">October 2018 — December 2018</p>
-              <p id="work-value">UX Developer</p>
-              <p id="work-value">C. Wong, L. Ahn</p>
-              <p id="work-value">Interaction Design</p>
-             </div>
-          </div> 
-        </div>
+        <p id="work-title" class="spacer-4">Zilter Web App</p>
+        <p id="work-blurb" class="hidden spacer-1">UX Development</p>
+        <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
       </div>
     </div>
   </div>
 
   <main id="content-margins">
-    <div class="body-container">
-      <div><p id="body-header">Relevant Links</p></div>
-      <div>
-        <p>Website:  <a id="link" href="https://zilterproject.github.io/">https://zilterproject.github.io/</a></p>
-        <p>GitHub Repository:  <a id="link" href="https://github.com/zilterproject/zilterproject.github.io">https://github.com/zilterproject/zilterproject.github.io</a></p>
+    <div class="body-container spacer-6">
+      <div id="left-col" class="spacer-3">
+        <h2 id="body-header" class="spacer-2">Description</h2>
+        <p class="spacer-1">
+          The goal of this course was to focus on 
+          hands-on practice with a modern human-centered design process while 
+          building a web application to serve a set of target users. This 
+          project aims to enhance recreational activity.
+        </p>
+        <p class="spacer-1">
+          The way we materialized this goal was via 
+          Zilter, a web application concept that eases the shopping experience 
+          by consolidating all product research into one convenient place.
+        </p>
+        <p class="spacer-3">
+          Online shopping for gadgets and appliances 
+          (e.g. TVs, laptops, headphones) can be a tedious task given that you 
+          need to acquire information to get the best product at the best price. 
+          Specifically, Zilter provides standard product information, photos, 
+          videos and official reviews gathered from websites. The sources are 
+          cited in a bibliography.
+        </p>
+
+        <h2 id="body-header" class="spacer-2">Responsibility</h2>
+        <p class="spacer-3">
+          My main role was to implement digital 
+          mockups into user testable prototypes and in turn, present these to 
+          an audience while delivering a pitch for our concept. I shared the 
+          responsibility of performing user testing and turning feedback into 
+          thoughtful design tweaks.
+        </p>
+
+        <h4 class="subheader spacer-1">Need Finding</h4>
+        <p class="spacer-1">
+          For the scope of our project to enhance recreation, our team decided 
+          to hone in on the opportunity to analyze breakdowns and design 
+          opportunities around the online shopping experience.
+        </p>
+        <p class="spacer-3">
+          First, we conducted ad libitum sampling on three users in which the 
+          observer informally records all observations that are relevant or 
+          interesting. We simply asked the users to shop for an item online.
+        </p>
+
+        <!-- User 1: Kevin, 19 Years Old -->
+        <h5 class="medium spacer-1">User 1: Kevin, 19 Years Old</h5>
+        <p class="spacer-2">
+          Kevin is a 3rd year biology student who enjoys cooking and needs a 
+          whetstone to sharpen his knives and a mesh strainer to filter and to 
+          clean his vegetables.
+        </p>
+        <div class="four-six-container spacer-3">
+          <p class="second">
+            While observing Kevin, I noticed that he needed a way to figure out 
+            if a product’s physical dimensions were right for him. Here, he uses 
+            the width of a paper to truly understand the diameter of a strainer. 
+            Although measurements were provided to him, he needed a way to compare 
+            it relative to himself. To us, this was a design opportunity to improve 
+            product expectations.
+          </p>
+          <img src="assets/zilter/kevin.jpg" class="first">
+        </div>
+
+        <!-- User 2 — Charles, 21 Years Old -->
+        <h5 class="medium spacer-1">User 2: Charles, 21 Years Old</h5>
+        <p class="spacer-2">
+          Charles is a 4th year pre-law student who likes to browse and shop 
+          for clothes and high-fashion items online during his free time.
+        </p>
+        <div class="five-five-container spacer-2">
+          <div class="center">
+            <img src="assets/zilter/charles-1.jpg" class="float-left">
+          </div>
+          <div class="center">
+            <img src="assets/zilter/charles-2.jpg" class="float-right">
+          </div>
+        </div>
+        <p class="spacer-3">
+          After making an offer to a seller on Grailed, a marketplace website, 
+          Charles switches over to YouTube to watch videos on the item he was 
+          looking at on Grailed. Charles needs to make a better judgement of 
+          the item of interest while simultaneously shopping for it. What we 
+          took from this observation was that users often need external sources 
+          to help them make purchasing decisions.
+        </p>
+
+        <!-- User 3 — Ariane, 20 Years Old -->
+        <h5 class="medium spacer-1">User 3: Ariane, 20 Years Old</h5>
+        <p class="spacer-2">
+          Ariane is a 3rd year math-computer science student who likes to 
+          spend her free time browsing through online retail stores looking to 
+          see if any pieces catches her attention.
+        </p>
+        <div class="four-six-container spacer-3">
+          <p class="second">
+            Ariane is browsing through a clothing website and wants to find the 
+            best deals. She sets the price filter from lowest to highest so that 
+            she can see the items that are on sale or at the best price 
+            first. This observation shows us that users want to filter 
+            through large quantities of products to find exactly what they are 
+            looking for.
+          </p>
+          <img src="assets/zilter/ariane.jpg" class="first">
+        </div>
+
+        <p class="spacer-3">
+          In conclusion, after analyzing different users engage in online 
+          browsing and shopping, we have deduced that people want the best 
+          combination of quality and price. In order to meet this demand, we 
+          chose to play the role that informs users instead of markets to users. 
+          Essentially, we want to create the Wikipedia of shopping.
+        </p>
+
+        <!-- Paper Sketches -->
+        <h4 class="subheader spacer-2">Paper Sketches</h4>
+        <div class="five-five-container spacer-2">
+          <div class="center">
+            <img src="assets/zilter/paper-landing.jpg" class="float-left">
+          </div>
+          <div class="center">
+            <img src="assets/zilter/paper-filter.jpg" class="float-right">
+          </div>
+        </div>
+        <p class="spacer-3">
+          The initial ideation process includes a rough sketch of features we 
+          would like to eventually impement. The left image shows a very minimal 
+          landing page that is similar to a Google search. The right image shows 
+          a standard filtering functionality.
+        </p>
+
+        <!-- Digital Wireframes -->
+        <h4 class="subheader spacer-2">Digital Wireframes</h4>
+        <div class="five-five-container spacer-2">
+          <div class="center">
+            <img src="assets/zilter/wireframe-landing.jpg" class="float-left">
+          </div>
+          <div class="center">
+            <img src="assets/zilter/wireframe-filter.jpg" class="float-right">
+          </div>
+        </div>
+        <p class="spacer-3">
+          The second iteration of the web app concept is a wireframe that gives 
+          the general layout of its features. The left wireframe is the landing 
+          page that features popular items and latest items to be added onto 
+          Zilter. The right wireframe dispalys example filters for a vacuum.
+        </p>
+
+        <!-- Working Prototypes -->
+        <h4 class="subheader spacer-2">Working Prototypes</h4>
+        <div class="five-five-container spacer-2">
+          <div class="center">
+            <img src="assets/zilter/prototype-landing.png" class="float-left">
+          </div>
+          <div class="center">
+            <img src="assets/zilter/prototype-filter.png" class="float-right">
+          </div>
+        </div>
+        <p class="spacer-2">
+          The final iteration polishes the user interface by incorporating 
+          color, images and other visual detail. Functionality was also 
+          implemented to unite together the static web pages.
+        </p>
+        <div class="five-five-container spacer-2">
+          <div class="center">
+            <img src="assets/zilter/prototype-results.png" class="float-left">
+          </div>
+          <div class="center">
+            <img src="assets/zilter/prototype-product.png" class="float-right">
+          </div>
+        </div>
+        <p class="spacer-3">
+          Many websites used for product researching focus on a single aspect 
+          of information and do not include an array of necessary data to come 
+          to a decision. For example, Youtube presents videos and CNET is 
+          generally acknowledged for tech reviews but neither curate sources 
+          from other outlets. The concept of Zilter takes key components from 
+          all over the internet to curate the most relevant content for users 
+          to access on one platform. After filtering out specifics, users 
+          click on a result to see photos and all the technical specifications 
+          as well as critical reviews and videos that help them make the best choice.
+        </p>
+
+        <!-- Branding -->
+        <h4 class="subheader spacer-2">Branding</h4>
+        <div class="center spacer-2">
+          <img id="zilter-logo" src="assets/zilter/logo.png" style="width: 50%;">
+        </div>
+        <p class="spacer-1">
+          The name was inspired by the physical functionality of a filter. 
+          Like a filter, we hope that our web app removes unwanted noise when 
+          trying to separate out important and non-important information.
+        </p>
+        <p class="spacer-3">
+          The black and gray color scheme was chosen 
+          to reflect the simplicity of our mission goal of making product 
+          purchases straightforward. The focus of our site is the products 
+          themselves so minimal attention ought to go towards anything else. 
+          The green accents were infused to add a splash of color representing 
+          the excitement of making a purchase and to also build brand identity. 
+          Furthermore, the black and green combination is reminiscent of 
+          old-school computer terminals which then brings us to the new age of 
+          information that our web app presents. The Zilter logo accentuates 
+          the letter Z by shaping itself into the silhouette of a lightning 
+          bolt which symbolizes fast access to information at one’s fingertips 
+          that we hope to provide users in order to help them make an informed 
+          purchase.
+        </p>
+
+        <h2 id="body-header" class="spacer-2">Conclusion + Takeaways</h2>
+        <p>
+          Online shopping was a recreational activity that we wanted to enhance. 
+          To do this, we first had to understand what about shopping that could 
+          be improved on. After observing real people shop, we came up with a 
+          solution that bridges the gap between wanting a product and actually 
+          purchasing it: knowing which one to purchase. With this information 
+          hub, users can come with their questions and leave with a clear 
+          consumer intention.
+        </p>
       </div>
-    </div>
 
-    <div class="body-container">
-      <div><p id="body-header">Tools + Skills</p></div>
-      <div>
-        <p>HTML, CSS, Git, Figma + Interaction Design, Need Finding, Prototyping</p>
-      </div>
-    </div>
-
-    <div class="body-container">
-      <div><p id="body-header">Description</p></div>
-      <div>
-        <p>The goal of this course was to focus on 
-           hands-on practice with a modern human-centered design process while 
-           building a web application to serve a set of target users. This 
-           project aims to enhance recreational activity.</p> <br/> <br/>
-        <p>The way we materialized this goal was via 
-           Zilter, a web application concept that eases the shopping experience 
-           by consolidating all product research into one convenient place.</p> <br/> <br/>
-        <p>Online shopping for gadgets and appliances 
-           (e.g. TVs, laptops, headphones) can be a tedious task given that you 
-           need to acquire information to get the best product at the best price. 
-           Specifically, Zilter provides standard product information, photos, 
-           videos and official reviews gathered from websites. The sources are 
-           cited in a bibliography.</p>
-      </div>
-    </div>
-
-    <div class="body-container">
-      <div><p id="body-header">Responsibility</p></div>
-      <div>
-        <p>My main role was to implement digital 
-           mockups into user testable prototypes and in turn, present these to 
-           an audience while delivering a pitch for our concept. I shared the 
-           responsibility of performing user testing and turning feedback into 
-           thoughtful design tweaks.</p>
-      </div>
-    </div>
-
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p class="subheader zilter-subheader">Need Finding</p>
-        <p>For the scope of our project to enhance recreation, our team decided 
-           to hone in on the opportunity to analyze breakdowns and design 
-           opportunities around the online shopping experience. <br/> <br/>
-
-           First, we conducted ad libitum sampling on three users in which the 
-           observer informally records all observations that are relevant or 
-           interesting. We simply asked the users to shop for an item online.</p>
-      </div>
-    </div>
-
-    <!-- User 1 — Kevin, 19 Years Old -->
-    <div class="body-container mb-2">
-      <div></div>
-      <div>
-        <p class="subheader">User 1 — Kevin, 19 Years Old</p>
-        <p>Kevin is a 3rd year biology student who enjoys cooking and needs a 
-           whetstone to sharpen his knives and a mesh strainer to filter and to 
-           clean his vegetables.</p>
-      </div>
-    </div>
-    <div class="impact-container">
-      <div></div>
-      <div id="second" class="caption">
-        <p>I noticed, while observing Kevin, that he needed a way to figure out 
-           if a product’s physical dimensions were right for him. Here, he uses 
-           the width of a paper to truly understand the diameter of a strainer. 
-           Although measurements were provided to him, he needed a way to compare 
-           it relative to himself. To us, this was a design opportunity to improve 
-           product expectations.</p>
-      </div>
-      <div id="first"><img src="assets/zilter/kevin.jpg"></div>
-    </div>
-
-
-    <!-- User 2 — Charles, 21 Years Old -->
-    <div class="body-container mb-2">
-      <div></div>
-      <div>
-        <p class="subheader">User 2 — Charles, 21 Years Old</p>
-        <p>Charles is a 4th year pre-law student who likes to browse and shop 
-           for clothes and high-fashion items online during his free time.</p>
-      </div>
-    </div>
-    <div class="impact-container mb-2">
-      <div></div>
-      <div id="first"><img src="assets/zilter/charles-1.jpg" style="padding-right: 1vw; width: 96%"></div>
-      <div id="second" style="text-align: right"><img src="assets/zilter/charles-2.jpg" style="padding-left: 1vw; width: 96%"></div>
-    </div>
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>After making an offer to a seller on Grailed, a marketplace website, 
-           Charles switches over to YouTube to watch videos on the item he was 
-           looking at on Grailed. Charles needs to make a better judgement of 
-           the item of interest while simultaneously shopping for it. What we 
-           took from this observation was that users often need external sources 
-           to help them make purchasing decisions.</p>
-      </div>
-    </div>
-
-
-    <!-- User 3 — Ariane, 20 Years Old -->
-    <div class="body-container mb-2">
-      <div></div>
-      <div>
-        <p class="subheader">User 3 — Ariane, 20 Years Old</p>
-        <p>Ariane is a 3rd year math-computer science student who likes to 
-           spend her free time browsing through online retail stores looking to 
-           see if any pieces catches her attention.</p>
-      </div>
-    </div>
-    <div class="impact-container">
-      <div></div>
-      <div id="second" class="caption">
-        <p>Ariane is browsing through a clothing website and wants to find the 
-           best deals. She sets the price filter from lowest to highest so that 
-           she can see the items that are on sale or at the best price 
-           first. This observation shows us that users want to filter 
-           through large quantities of products to find exactly what they are 
-           looking for. </p>
-      </div>
-      <div id="first"><img src="assets/zilter/ariane.jpg"></div>
-    </div>
-
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>In conclusion, after analyzing different users engage in online 
-           browsing and shopping, we have deduced that people want the best 
-           combination of quality and price. In order to meet this demand, we 
-           chose to play the role that informs users instead of markets to users. 
-           Essentially, we want to create the Wikipedia of shopping.</p>
-      </div>
-    </div>
-
-
-    <!-- Paper Sketches -->
-    <div class="body-container mb-0">
-      <div></div>
-      <div><p class="subheader zilter-subheader">Paper Sketches</p></div>
-    </div>
-    <div class="impact-container mb-2">
-      <div></div>
-      <div id="first"><img src="assets/zilter/paper-landing.jpg" style="padding-right: 1vw; width: 96%"></div>
-      <div id="second" style="text-align: right"><img src="assets/zilter/paper-filter.jpg" style="padding-left: 1vw; width: 96%"></div>
-    </div>
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>The initial ideation process includes a rough sketch of features we 
-           would like to eventually impement. The left image shows a very minimal 
-           landing page that is similar to a Google search. The right image shows 
-           a standard filtering functionality.</p>
-      </div>
-    </div>
-
-
-    <!-- Digital Wireframes -->
-    <div class="body-container mb-0">
-      <div></div>
-      <div><p class="subheader zilter-subheader">Digital Wireframes</p></div>
-    </div>
-    <div class="impact-container mb-2">
-      <div></div>
-      <div id="first"><img src="assets/zilter/wireframe-landing.jpg" style="padding-right: 1vw; width: 93%; outline: 1px solid black"></div>
-      <div id="second" style="text-align: right"><img src="assets/zilter/wireframe-filter.jpg" style="padding-left: 1vw; width: 93%; outline: 1px solid black"></div>
-    </div>
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>The second iteration of the web app concept is a wireframe that gives 
-           the general layout of its features. The left wireframe is the landing 
-           page that features popular items and latest items to be added onto 
-           Zilter. The right wireframe dispalys example filters for a vacuum.</p>
-      </div>
-    </div>
-
-
-    <!-- Working Prototypes -->
-    <div class="body-container mb-0">
-      <div></div>
-      <div><p class="subheader zilter-subheader">Working Prototypes</p></div>
-    </div>
-    <div class="impact-container mb-2">
-      <div></div>
-      <div id="first"><img src="assets/zilter/prototype-landing.png" style="padding-right: 1vw; width: 96%"></div>
-      <div id="second" style="text-align: right"><img src="assets/zilter/prototype-filter.png" style="padding-left: 1vw; width: 96%"></div>
-    </div>
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>The final iteration polishes the user interface by incorporating 
-           color, images and other visual detail. Functionality was also 
-           implemented to unite together the static web pages. </p>
-      </div>
-    </div>
-    <div class="impact-container mb-2">
-      <div></div>
-      <div id="first"><img src="assets/zilter/prototype-results.png" style="padding-right: 1vw; width: 96%"></div>
-      <div id="second" style="text-align: right"><img src="assets/zilter/prototype-product.png" style="padding-left: 1vw; width: 96%"></div>
-    </div>
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p>Many websites used for product researching focus on a single aspect 
-           of information and do not include an array of necessary data to come 
-           to a decision. For example, Youtube presents videos and CNET is 
-           generally acknowledged for tech reviews but neither curate sources 
-           from other outlets. The concept of Zilter takes key components from 
-           all over the internet to curate the most relevant content for users 
-           to access on one platform. After filtering out specifics, users 
-           click on a result to see photos and all the technical specifications 
-           as well as critical reviews and videos that help them make the best choice.
-           <br/> <br/>
-           The working prototype can be accessed <a id="link" href="https://zilterproject.github.io/">here</a>.
-         </p>
-      </div>
-    </div>
-
-    
-    <!-- Branding -->
-    <div class="body-container">
-      <div></div>
-      <div>
-        <p class="subheader zilter-subheader">Branding</p>
-        <img id="zilter-logo" src="assets/zilter/logo.png" style="display: block; margin: auto; width: 50%">
-        <p>The name was inspired by the physical functionality of a filter. 
-           Like a filter, we hope that our web app removes unwanted noise when 
-           trying to separate out important and non-important information.</p> <br/><br/>
-        <p>The black and gray color scheme was chosen 
-           to reflect the simplicity of our mission goal of making product 
-           purchases straightforward. The focus of our site is the products 
-           themselves so minimal attention ought to go towards anything else. 
-           The green accents were infused to add a splash of color representing 
-           the excitement of making a purchase and to also build brand identity. 
-           Furthermore, the black and green combination is reminiscent of 
-           old-school computer terminals which then brings us to the new age of 
-           information that our web app presents. The Zilter logo accentuates 
-           the letter Z by shaping itself into the silhouette of a lightning 
-           bolt which symbolizes fast access to information at one’s fingertips 
-           that we hope to provide users in order to help them make an informed 
-           purchase.</p>
-      </div>
-    </div>
-
-    <div class="body-container">
-      <div><p id="body-header">Conclusion + Takeaways</p></div>
-      <div>
-        <p>Online shopping was a recreational activity that we wanted to enhance. 
-           To do this, we first had to understand what about shopping that could 
-           be improved on. After observing real people shop, we came up with a 
-           solution that bridges the gap between wanting a product and actually 
-           purchasing it: knowing which one to purchase. With this information 
-           hub, users can come with their questions and leave with a clear 
-           consumer intention.</p>
-      </div>
-    </div>
-    <div class="conclusion-container">
-      <div></div>
-      <div>
-        <p class="subheader zilter-subheader">Final Comments</p>
-        <p>We think that Zilter has been developed well enough for its concept 
-           to be understood. However, given the time and effort contraints of 
-           the course (10 weeks with 3 members), we feel that we have only 
-           carried out the beginning stages of the original vision.</p> <br/><br/>
-        <p>We recognize the potential for improvement of many aspects of the 
-           current web app. Such areas include responsive web-design and user 
-           inferface.</p>
+      <div id="right-col" class="details">
+        <div class="info-header" style="margin-top: 0">
+          <h3>Date</h3>
+          <p>Oct 2018 - Dec 2018</p>
+        </div>
+        <div class="info-header">
+          <h3>Role</h3>
+          <p>UX Developer</p>
+        </div>
+        <div class="info-header">
+          <h3>Team</h3>
+          <p>
+            C. Wong <br>
+            L. Ahn
+          </p>
+        </div>
+        <div class="info-header">
+          <h3>Resources</h3>
+          <p>
+            <a id="link" href="https://zilterproject.github.io/">Website</a> <br>
+            <a id="link" href="https://github.com/zilterproject/zilterproject.github.io">GitHub Repository</a>
+          </p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            HTML <br>
+            CSS <br>
+            Git <br>
+            Figma <br>
+            Interaction Design <br>
+            Need Finding <br>
+            Prototyping
+          </p>
+        </div>
       </div>
     </div>
 
     <footer id="footer">
       <p id="note">Created by Andrew Zhen</p>
-      <p id="copyright">© 2019 San Diego</p>
+      <p id="copyright">© 2020 San Diego</p>
       <div style="clear: both"></div>
     </footer>
   </main>

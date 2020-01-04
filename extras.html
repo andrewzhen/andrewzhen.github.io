@@ -17,7 +17,7 @@
   <meta name="description" content="Andrew Zhen design and development portfolio">
   <meta name="keywords" content="Andrew Zhen, UCSD, San Diego, 2020, Design, Development, Portfolio, UX, Engineer, Web Devlopment, HTML, CSS, JavaScript">
   <meta name="author" content="Andrew Zhen">
-  <meta property="og:image" content="assets/images/portrait.jpg">
+  <meta property="og:image" content="assets/images/thumbnail.png">
   <meta property="og:image:type" content="image/jpg">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
@@ -37,8 +37,8 @@
 <body id="body">
   <div class="head-container">
     <div id="header">
-      <div class="nav"><a href="https://ajzhen.com" id="home-bx">Home</a></div>
-      <div class="nav"><a href="https://ajzhen.com/about" id="about-bx">About</a></div>
+      <div class="nav"><a href="https://ajzhen.com" id="home-b">Home</a></div>
+      <div class="nav"><a href="https://ajzhen.com/about" id="about-b">About</a></div>
 
       <div id="nav-div">
         <div id="darkmode" class="nav"><span id="darkmode-txt">Dark Mode</span>
@@ -50,126 +50,171 @@
       </div>
     </div>
 
-    <div id="longterm-banner" class="banner"></div>
+    <div id="extras-banner" class="banner spacer-4"></div>
     <div class="banner-info">
       <div id="valign-div">
-        <p id="longterm-title">Extras</p>
-        <div class="body-container" style="grid-template-columns: 100%;">
-          <div>
-            <div class="inline-div">
-              <p id="longterm-description">A collection of my personal design and development projects.</p>
-            </div>
-          </div>
-        </div>
+        <p id="work-title">Extras</p>
+        <p id="extras-blurb" class="spacer-5">A collection of my personal design and development projects.</p>
+        <p id="work-blurb" class="hidden spacer-6">A collection of my personal design and development projects.</p>
       </div>
     </div>
   </div>
 
   <main id="content-margins">
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">Day Trip Icons</p>
-          <p class="longterm-date">September 2019</p><br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             Adobe Illustrator <br/>
-             Iconography <br/><br/>
-             Flat Lay <br/>
-             Branding</p>
-        </div>
+    <h2 id="extras-header" class="spacer-2">Day Trip Icons</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-5">
+      <div id="left-col">
+        <img src="assets/extras/camera-gear.jpg">
       </div>
-      <div><img src="assets/extras/camera-gear.jpg"></div>
-    </div>
-
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">Dropbox Parallax</p>
-          <p class="longterm-date">August 2019</p><br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             HTML <br/>
-             CSS <br/><br/>
-             Parallax Scrolling <br/>
-             Color Theory</p>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Sep 2019</p>
         </div>
-      </div>
-      <div><img src="assets/extras/dropbox-parallax.gif"></div>
-      <!-- style="padding: 1%; background: #E0E0E0; width: 98%;" -->
-    </div>
-
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">Smile</p>
-          <p class="longterm-date">March 2019</p><br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             HTML <br/>
-             CSS <br/>
-             Adobe Illustrator <br/><br/>
-             SVG <br/>
-             Line animation</p>
-        </div>
-      </div>
-      <div><img src="assets/extras/smile.gif"></div>
-    </div>
-
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">Rocket Countdown</p>
-          <p class="longterm-date">December 2018</p><br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             HTML <br/>
-             CSS <br/>
-             JavaScript <br/>
-             Adobe Illustrator <br/><br/>
-             User Interface <br/>
-             Color Theory</p>
-        </div>
-      </div>
-      <div><img src="assets/extras/rocket.gif"></div>
-    </div>
-
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">My Money</p>
-          <p class="longterm-date">June 2018</p> <br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             Python <br/>
-             Python Libraries / Modules <br/>
-             Microsoft Excel <br/><br/>
-             Data Cleaning <br/>
-             Finance Tracking <br/><br/>
-             <a id="link" href="https://github.com/andrewzhen/mymoney-public">GitHub Repository</a>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            Adobe Illustrator <br/>
+            Iconography <br/>
+            Flat Lay <br/>
+            Branding
           </p>
         </div>
       </div>
-      <div><img src="assets/extras/mymoney.jpg"></div>
     </div>
 
-    <div class="body-container-longterm">
-      <div>
-        <div class="project-info">
-          <p class="project-header">Quickly Web App</p>
-          <p class="longterm-date">March 2018</p> <br/><br/>
-          <p id="longterm-details" class="line-height-160">
-             HTML <br/>
-             CSS <br/>
-             Python <br/>
-             Python Libraries / Modules <br/>
-             Microsoft Excel <br/><br/>
-             Data Cleaning <br/>
-             Calendar File (ics)<br/><br/>
+    <h2 id="extras-header" class="spacer-2">Dropbox Parallax</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-5">
+      <div id="left-col">
+        <img src="assets/extras/dropbox-parallax.gif">
+      </div>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Aug 2019</p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            HTML <br/>
+            CSS <br/>
+            Parallax Scrolling <br/>
+            Color Theory
           </p>
         </div>
       </div>
-      <div style="margin-bottom: 10vw"><img src="assets/extras/quickly.jpg"></div>
+    </div>
+
+    <h2 id="extras-header" class="spacer-2">Smile</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-5">
+      <div id="left-col">
+        <img src="assets/extras/smile.gif">
+      </div>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Mar 2019</p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            HTML <br/>
+            CSS <br/>
+            Adobe Illustrator <br/>
+            SVG <br/>
+            Line animation
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="extras-header" class="spacer-2">Rocket Countdown</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-5">
+      <div id="left-col">
+        <img src="assets/extras/rocket.gif">
+      </div>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Dec 2018</p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            HTML <br/>
+            CSS <br/>
+            JavaScript <br/>
+            Adobe Illustrator <br/>
+            User Interface <br/>
+            Color Theory
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="extras-header" class="spacer-2">My Money</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-5">
+      <div id="left-col">
+        <img src="assets/extras/mymoney.jpg">
+      </div>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Jun 2018</p>
+        </div>
+        <div class="info-header">
+          <h3>Resources</h3>
+          <p>
+            <a id="link" href="https://github.com/andrewzhen/mymoney-public">GitHub Repository</a>
+          </p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            Python <br/>
+            Python Libraries <br/>
+            Microsoft Excel <br/>
+            Data Cleaning <br/>
+            Finance Tracking
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="extras-header" class="spacer-2">Quickly Web App</h2>
+    <button id="details" class="hidden spacer-4 collapse">Show More Details ▾</button>
+    <div class="body-container spacer-6">
+      <div id="left-col">
+        <img src="assets/extras/quickly.jpg">
+      </div>
+      <div id="right-col" class="details">
+        <div class="info-header margin-top-none">
+          <h3 class="margin-top-none">Date</h3>
+          <p>Mar 2018</p>
+        </div>
+        <div class="info-header">
+          <h3>Tools + Skills</h3>
+          <p>
+            HTML <br/>
+            CSS <br/>
+            Python <br/>
+            Python Libraries <br/>
+            Microsoft Excel <br/>
+            Data Cleaning <br/>
+            Calendar File (ics)
+          </p>
+        </div>
+      </div>
     </div>
 
     <footer id="footer">
       <p id="note">Created by Andrew Zhen</p>
-      <p id="copyright">© 2019 San Diego</p>
+      <p id="copyright">© 2020 San Diego</p>
       <div style="clear: both"></div>
     </footer>
   </main>

@@ -4,6 +4,67 @@ try {
 } catch (error) { console.log(error); }
 
 
+
+// EXPAND/COLLAPSE DETAILS EVENT LISTENER
+try {
+  var coll = document.getElementsByClassName("collapse");
+  var det = document.getElementsByClassName("details");
+
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      if (det[i].style.display === "block") {
+        coll[i].classList.add("spacer-4");
+        toggleDetails(i, false);
+      } else {
+        coll[i].classList.remove("spacer-4");
+        toggleDetails(i, true);
+      }
+    });
+  }
+} catch (error) { console.log(error); }
+
+
+
+// RESIZE EVENT LISTENER
+try {
+  window.addEventListener("resize", function() {
+    if (window.innerWidth > 767) {
+      toggleDetails(-1, true);
+    } else {
+      toggleDetails(-1, false);
+    }
+  })
+} catch (error) { console.log(error); }
+
+
+
+// SHOW/HIDE DETAILS
+toggleDetails = (index, toggle) => {
+  if (index >= 0) {
+    if (toggle) {
+      det[index].style.display = "block";
+      coll[index].innerHTML = "Show Less Details ▴";
+    } else {
+      det[index].style.display = "none";
+      coll[index].innerHTML = "Show More Details ▾";
+    }
+  } else {
+    // Resized -> close all/keep all details
+    for (let i = 0; i < coll.length; i++) {
+      if (toggle) {
+        det[i].style.display = "block";
+        coll[i].innerHTML = "Show Less Details ▴";
+      } else {
+        det[i].style.display = "none";
+        coll[i].innerHTML = "Show More Details ▾";
+        coll[i].classList.add("spacer-4");
+      }
+    }
+  }
+}
+
+
+
 // GET FILE NAME FROM EITHER WWW OR LOCAL
 if (window.location.pathname.split('/').length == 2) {
   var file = window.location.pathname.split('/')[1];
@@ -62,7 +123,7 @@ function toggle() {
 function defaultMode() {
   // Work pages
   try {
-    document.getElementById("content-margins").style.background = "#f5f5f5";
+    document.getElementById("body").style.background = "#f5f5f5";
   } catch (error) { console.log(error); }
 
   // NAV
@@ -93,7 +154,7 @@ function defaultMode() {
 function darkMode() {
   // Work pages
   try {
-    document.getElementById("content-margins").style.background = "#171717";
+    document.getElementById("body").style.background = "#171717";
   } catch (error) { console.log(error); }
 
   // NAV
@@ -126,22 +187,11 @@ function changeColor(newColor, otherColor) {
   const changeColor = document.querySelectorAll("\
   #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
   #description-2, #title, #summary, #year, #about-txt, #link, #asgs, #dco, #its, \
-  #caida, #email, #resume, #linkedin, #github, #instagram, #note");
+  #caida, #email, #resume, #linkedin, #github, #note");
   const changeColorList = [...changeColor];
 
   changeColorList.forEach(element => {
     element.style.color = newColor;
-  })
-
-  // Don't change color of these elements
-  const sameColor = document.querySelectorAll("\
-  #work-title, #work-header, #work-value, #logo-caption");
-  const sameColorList = [...sameColor];
-
-  sameColorList.forEach(element => {
-    if (element != "longterm-title" && element != "longterm-description") {
-      element.style.color = "#171717";
-    }
   })
 }
 

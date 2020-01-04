@@ -1,7 +1,7 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   /*landing*/
-  body #content-margins { padding-top: 18vw; top: 90vw; }
+  body #content-margins { top: 90vw; }
   body #header { padding-bottom: 15vw; padding-top: 10vw; }
   #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
@@ -24,6 +24,13 @@
   body #contact { font-size: 4vw; font-weight: 500; margin-bottom: 15vw;}
   body #copyright, body #note { font-size: 3vw; }
   /*end footer*/
+
+  body .spacer-6 { margin-bottom: 45vw !important; }
+  body .spacer-5 { margin-bottom: 30vw !important; }
+  body .spacer-4 { margin-bottom: 18vw !important; }
+  body .spacer-3 { margin-bottom: 12vw !important; }
+  body .spacer-2 { margin-bottom: 6vw !important; }
+  body .spacer-1 { margin-bottom: 3vw !important; }
 }
 
 html, body {
@@ -34,15 +41,31 @@ html, body {
   transition: all 0.5s ease;
 }
 
+body { background-color: #f5f5f5; }
+
 p { line-height: 210%; margin: 0; }
 a { color: rgb(23,23,23); }
+.medium { font-weight: 600; font-size: inherit; }
 
 .line-height-160 { line-height: 160%; }
 .line-height-210 { line-height: 210%; margin: 0; }
 
-.mb-5 { margin-bottom: 5vw !important; }
-.mb-2 { margin-bottom: 2vw !important; }
-.mb-0 { margin-bottom: 0 !important; }
+.spacer-6 { margin-bottom: 15vw !important; }
+.spacer-5 { margin-bottom: 10vw !important; }
+.spacer-4 { margin-bottom: 6vw !important; }
+.spacer-3 { margin-bottom: 4vw !important; }
+.spacer-2 { margin-bottom: 2vw !important; }
+.spacer-1 { margin-bottom: 1vw !important; }
+.spacer-0 { margin-bottom: 0 !important; }
+
+.hidden { display: none; }
+
+.center { text-align: center; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.margin-top-none { margin-top: 0 !important; }
 
 /*----------------------------------FADEIN*/
 section.transparent {
@@ -66,11 +89,12 @@ section.visible {
 }
 
 .head-container {
-  padding-top: 5vw;
+  padding: 5vw 12vw 0 12vw;
+  /* padding-top: 5vw;
   padding-left: 12vw;
   padding-right: 12vw;
   position: fixed;
-  z-index: -2;
+  z-index: -2; */
 }
 
 .highlight {
@@ -78,7 +102,7 @@ section.visible {
 }
 
 #header {
-  padding-bottom: 7vw;
+  padding-bottom: 5vw;
 }
 
 #logo {
@@ -103,32 +127,6 @@ section.visible {
   text-decoration: none;
   transition: all 0.5s ease;
   line-height: 2vw;
-}
-
-/*--------------------------------ONLY BLACK NAV*/
-#home-bx {
-  font-size: 1vw;
-  display: inline;
-  transition: all 0.5s ease;
-}
-#home-bx, #about-bx, #photo-bx {
-  color: rgb(23,23,23);
-}
-#home-bx:hover, #about-bx:hover, #photo-bx:hover {
-  color: #8C8C8C;
-}
-
-/*--------------------------------ONLY WHITE NAV*/
-#home-wx {
-  font-size: 1vw;
-  display: inline;
-  transition: all 0.5s ease;
-}
-#home-wx, #about-wx, #photo-wx {
-  color: rgb(245, 245, 245);
-}
-#home-wx:hover, #about-wx:hover, #photo-wx:hover {
-  color: #8C8C8C;
 }
 
 /*--------------------------------BLACK NAV*/
@@ -245,14 +243,10 @@ input:checked + .slider:before {
 
 /*-----------------------------BODY*/
 #content-margins {
-  padding-top: 7vw;
   padding-left: 12vw;
   padding-right: 12vw;
-  position: absolute;
   width: 76vw;
   top: 40vw;
-  /* background: #171717; */
-  background: #f5f5f5;
   transition: all 0.5s ease;
 }
 
