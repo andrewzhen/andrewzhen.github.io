@@ -1,5 +1,6 @@
 // SCRIPT ENABLED
 try {
+  // Show dark mode if script enabled
   document.getElementById("darkmode").style.display = "block";
 } catch (error) { console.log(error); }
 
@@ -12,9 +13,12 @@ try {
 
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
+      // Hide details
       if (det[i].style.display === "block") {
         coll[i].classList.add("spacer-4");
         toggleDetails(i, false);
+
+      // Show details
       } else {
         coll[i].classList.remove("spacer-4");
         toggleDetails(i, true);
@@ -27,19 +31,28 @@ try {
 
 // RESIZE EVENT LISTENER
 try {
+  let width = window.innerWidth;
   window.addEventListener("resize", function() {
+    // Show details if desktop view
     if (window.innerWidth > 767) {
       toggleDetails(-1, true);
     } else {
-      toggleDetails(-1, false);
+      // Collapse details if width changes
+      if (width != window.innerWidth) {
+        toggleDetails(-1, false);
+        
+        // Update width
+        width = window.innerWidth;
+      }
     }
-  })
+  });
 } catch (error) { console.log(error); }
 
 
 
 // SHOW/HIDE DETAILS
 toggleDetails = (index, toggle) => {
+  // If a valid index is given
   if (index >= 0) {
     if (toggle) {
       det[index].style.display = "block";
@@ -48,6 +61,8 @@ toggleDetails = (index, toggle) => {
       det[index].style.display = "none";
       coll[index].innerHTML = "Show More Details ▾";
     }
+
+  // If invalid index given
   } else {
     // Resized -> close all/keep all details
     for (let i = 0; i < coll.length; i++) {
@@ -67,11 +82,25 @@ toggleDetails = (index, toggle) => {
 
 // GET FILE NAME FROM EITHER WWW OR LOCAL
 if (window.location.pathname.split('/').length == 2) {
+  // WWW
   var file = window.location.pathname.split('/')[1];
-  file = file == "about" ? "about" : "home";
+  if (file != "about") {
+    if (!file) {
+      file == "home";
+    } else {
+      file == "work";
+    }
+  }
 } else {
+  // LOCAL
   var file = window.location.pathname.split('/')[7];
-  file = file == "index.html" ? "home" : 'about';
+  if (file == "index.html") {
+    file = "home";
+  } else if (file == "about.html") {
+    file = "about";
+  } else {
+    file = "work";
+  }
 }
 
 
@@ -130,7 +159,6 @@ function defaultMode() {
   try {
     document.getElementById("home-w").id = "home-b";
     document.getElementById("about-w").id = "about-b";
-    document.getElementById("photo-w").id = "photo-b";
     activeTab(file + "-b", false);
     document.getElementById("description").style.filter = "none";
     document.getElementById("description-2").style.filter = "none";
@@ -161,7 +189,6 @@ function darkMode() {
   try {
     document.getElementById("home-b").id = "home-w";
     document.getElementById("about-b").id = "about-w";
-    document.getElementById("photo-b").id = "photo-w";
     activeTab(file + "-w", true);
   } catch (error) { console.log(error); }
 
@@ -185,9 +212,9 @@ function changeColor(newColor, otherColor) {
 
   // Change color of these elements
   const changeColor = document.querySelectorAll("\
-  #body, #home-x, #about-x, #photo-x, #darkmode-txt-x, #description, \
-  #description-2, #title, #summary, #year, #about-txt, #link, #asgs, #dco, #its, \
-  #caida, #email, #resume, #linkedin, #github, #note");
+  #body, #darkmode-txt-x, #description, #description-2, #title, #summary, \
+  #year, #about-txt, #link, #asgs, #dco, #its, #caida, #email, #resume, \
+  #linkedin, #github, #note");
   const changeColorList = [...changeColor];
 
   changeColorList.forEach(element => {
