@@ -135,10 +135,10 @@ section.visible {
   display: inline;
   transition: all 0.5s ease;
 }
-#home-b, #about-b, #photo-b {
+#home-b, #about-b {
   color: rgb(23,23,23);
 }
-#home-b:hover, #about-b:hover, #photo-b:hover {
+#home-b:hover, #about-b:hover {
   color: #8C8C8C;
 }
 
@@ -148,10 +148,10 @@ section.visible {
   display: inline;
   transition: all 0.5s ease;
 }
-#home-w, #about-w, #photo-w {
+#home-w, #about-w {
   color: rgb(245, 245, 245);
 }
-#home-w:hover, #about-w:hover, #photo-w:hover {
+#home-w:hover, #about-w:hover {
   color: #8C8C8C;
 }
 

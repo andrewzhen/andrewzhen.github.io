@@ -93,7 +93,7 @@ if (window.location.pathname.split('/').length == 2) {
   }
 } else {
   // LOCAL
-  var file = window.location.pathname.split('/')[7];
+  var file = window.location.pathname.split('/')[6];
   if (file == "index.html") {
     file = "home";
   } else if (file == "about.html") {
