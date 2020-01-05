@@ -13,11 +13,12 @@
   body .five-five-container img { float: none; margin: 0 0 6vw 0; }
   body #img-caption { font-size: 2.5vw; }
 
-  body #right-col { order: 1; display: none; margin: 6vw 0; }
+  body #right-col { order: 1; display: none; margin: 0 0 6vw 0; }
   body #left-col { order: 2; }
-  body .head-container #work-blurb, body #details { display: block; font-size: 3.2vw; }
+  body #work-blurb, body #details { display: block; font-size: 3.2vw; }
+  body #work-blurb + button { margin-bottom: 5vw !important; }
   body .head-container #extras-blurb { display: none; }
-  body #extras-header { font-size: 5vw; margin-bottom: 2.5vw; }
+  body #extras-header { font-size: 5vw; margin-bottom: 3vw !important; }
 
   body .body-container { grid-template-columns: 100%; margin-bottom: 10vw; }
   body .body-container p { font-size: 3.2vw; }
@@ -32,7 +33,7 @@
   body .body-container ul { font-size: 3.2vw; }
   body .body-container ul li { padding: 2vw 0; }
   
-  body .head-container #designco-banner { height: 100vw; }
+  body .head-container #designco-banner { height: 70vw; }
 
   body .prototype-container { grid-template-columns: 100%; }
   body .prototype-container div { margin: 0 0 12vw 0; }
@@ -62,16 +63,8 @@
 }
 
 #img-caption {
-  font-size: 1vw;
   color: #8C8C8C;
   text-align: center;
-}
-
-.banner {
-  width: 100vw;
-  /* height: 40vw; */
-  height: 10vw;
-  margin: 0 0 0 -12vw;
 }
 
 .info-header {
@@ -128,10 +121,6 @@
   grid-template-columns: 82% 18%;
 }
 
-.body-container p {
-  font-size: 1vw;
-}
-
 .body-container img {
   width: 100%;
 }
@@ -160,7 +149,6 @@
 }
 
 .four-six-container p {
-  font-size: 1vw;
   margin: 0;
 }
 

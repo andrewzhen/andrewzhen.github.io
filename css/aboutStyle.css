@@ -1,7 +1,7 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   body .aboutContainer { width: 100%; margin-bottom: 10vw; }
-  body .aboutPic img { margin-bottom: 10vw; }
+  body .aboutPic img { width: 100vw; margin-left: -12vw; }
   .aboutContainer .aboutTxt { font-size: 4vw; }
   .aboutContainer .aboutSpacing { margin-bottom: 10vw; }
 }

@@ -1,5 +1,6 @@
 // SCRIPT ENABLED
 try {
+
   // Show dark mode if script enabled
   document.getElementById("darkmode").style.display = "block";
 } catch (error) { console.log(error); }
@@ -13,6 +14,7 @@ try {
 
   for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
+      
       // Hide details
       if (det[i].style.display === "block") {
         coll[i].classList.add("spacer-4");
@@ -33,10 +35,12 @@ try {
 try {
   let width = window.innerWidth;
   window.addEventListener("resize", function() {
+
     // Show details if desktop view
     if (window.innerWidth > 767) {
       toggleDetails(-1, true);
     } else {
+
       // Collapse details if width changes
       if (width != window.innerWidth) {
         toggleDetails(-1, false);
@@ -52,6 +56,7 @@ try {
 
 // SHOW/HIDE DETAILS
 toggleDetails = (index, toggle) => {
+
   // If a valid index is given
   if (index >= 0) {
     if (toggle) {
@@ -64,6 +69,7 @@ toggleDetails = (index, toggle) => {
 
   // If invalid index given
   } else {
+
     // Resized -> close all/keep all details
     for (let i = 0; i < coll.length; i++) {
       if (toggle) {
@@ -82,16 +88,18 @@ toggleDetails = (index, toggle) => {
 
 // GET FILE NAME FROM EITHER WWW OR LOCAL
 if (window.location.pathname.split('/').length == 2) {
+
   // WWW
   var file = window.location.pathname.split('/')[1];
   if (file != "about") {
     if (!file) {
-      file == "home";
+      file = "home";
     } else {
-      file == "work";
+      file = "work";
     }
   }
 } else {
+
   // LOCAL
   var file = window.location.pathname.split('/')[6];
   if (file == "index.html") {
