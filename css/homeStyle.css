@@ -2,8 +2,8 @@
 @media only screen and (max-width: 767px) {
   /*landing*/
   body #description { font-size: 5.5vw; width: 100%; margin-bottom: 30vw !important; }
-  body #color-block { top: 57vw; left: 12vw; width: 76%; height: 8vw; }
-  body #white-block { top: 57vw; left: 12vw; width: 76%; height: 8vw; }
+  body #color-block { top: 25vw; left: 12vw; width: 76%; height: 8vw; }
+  body #white-block { top: 25vw; left: 12vw; width: 76%; height: 8vw; }
   body #working-graphic { display: none; }
   body #description-2 { font-size: 4vw; width: 100%; margin-bottom: 19vw; }
   /*end landing*/
@@ -32,16 +32,16 @@
   z-index: 10;
 }
 #description-2 {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   transition: all 0.5s ease;
   width: 38%;
-  line-height: 120%;
+  line-height: 160%;
   z-index: 10;
 }
 
 #white-block {
   position: absolute;
-  top: 12vw;
+  top: 0;
   right: 12vw;
   width: 45%;
   height: 25vw;
@@ -51,7 +51,7 @@
 
 #color-block {
   position: absolute;
-  top: 12vw;
+  top: 0;
   right: 12vw;
   width: 45%;
   height: 25vw;
@@ -91,7 +91,7 @@
 
 #working-graphic {
   position: absolute;
-  top: 9vw;
+  top: -3vw;
   right: -1vw;
   background-image: url("../assets/images/working-graphic.png");
   background-size: contain;

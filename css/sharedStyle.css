@@ -1,6 +1,5 @@
 @media only screen and (max-width: 767px) {
   /*landing*/
-  body #content-margins { top: 90vw; }
   body #header { padding-bottom: 15vw; padding-top: 10vw; }
   #darkmode-txt { display: none; }
   body .nav { margin-right: 9vw;}
@@ -76,14 +75,6 @@ section.visible {
 }
 
 /*----------------------------------HEADER*/
-.default-top {
-  top: 0 !important;
-  padding-top: 5vw !important;
-  padding-top: 5vw;
-  padding-left: 12vw;
-  padding-right: 12vw;
-}
-
 .head-container {
   padding: 5vw 12vw 0 12vw;
 }
@@ -109,7 +100,6 @@ section.visible {
   display: inline-block;
   margin-right: 2vw;
   transition: all 0.5s ease;
-  font-weight: 500;
 }
 
 .nav > a {
@@ -231,7 +221,8 @@ input:checked + .slider:before {
   padding-left: 12vw;
   padding-right: 12vw;
   width: 76vw;
-  top: 40vw;
+  /* top: 40vw; */
+  position: relative;
   transition: all 0.5s ease;
 }
 
@@ -273,8 +264,7 @@ input:checked + .slider:before {
 
 /*----------------------------FOOTER*/
 #footer {
-  margin-bottom: 5vw;
-  font-weight: 500;
+  margin: 0 12vw 5vw;
 }
 
 #copyright {

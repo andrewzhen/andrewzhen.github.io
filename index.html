@@ -23,7 +23,7 @@
   <meta property="og:image:height" content="1024">
 
   <!-- Title & Favicon -->
-  <title>Home : Andrew Zhen</title>
+  <title>Andrew Zhen</title>
   <link rel="icon" type="image/png" href="assets/images/logo.png"/>
   <link rel="shortcut icon" type="image/png" href="assets/images/logo.png">
 
@@ -35,7 +35,7 @@
 </head>
 
 <body id="body">
-  <main class="default-top">
+  <div class="head-container">
     <nav id="header">
       <div class="nav"><a href="https://ajzhen.com" id="home-b">Home</a></div>
       <div class="nav"><a href="https://ajzhen.com/about" id="about-b">About</a></div>
@@ -49,7 +49,9 @@
         </div>
       </div>
     </nav>
+  </div>
 
+  <main id="content-margins">
     <div id="description-div">
       <p id="description" class="spacer-3">Andrew designs and develops for digital experiences.</p>
       <p id="description-2" class="spacer-6">He's a UX engineer currently at A.S. Graphic Studio and helping lead UCSD’s largest design community.</p>
@@ -153,19 +155,19 @@
 
           <li><a href="assets/files/resume.pdf" id="resume" onmouseover="contactChange('resume', 'resume.pdf')" onmouseleave="contactChange('resume', '+ Résumé')">+ Résumé</a></li>
 
-          <li><a href="https://www.linkedin.com/in/andrew-zhen/" id="linkedin" onmouseover="contactChange('linkedin', 'linkedin.com/in/andrew-zhen/')" onmouseleave="contactChange('linkedin', '+ LinkedIn')">+ LinkedIn</a></li>
+          <li><a href="https://www.linkedin.com/in/andrew-zhen" id="linkedin" onmouseover="contactChange('linkedin', 'linkedin.com/in/andrew-zhen')" onmouseleave="contactChange('linkedin', '+ LinkedIn')">+ LinkedIn</a></li>
 
           <li><a href="https://github.com/andrewzhen" id="github" onmouseover="contactChange('github', 'github.com/andrewzhen')" onmouseleave="contactChange('github', '+ GitHub')">+ GitHub</a></li>
         </ul>
       </div>
     </section>
-
-    <footer id="footer">
-      <p id="note">Created by Andrew Zhen</p>
-      <p id="copyright">© 2020 San Diego</p>
-      <div style="clear: both"></div>
-    </footer>
   </main>
+
+  <footer id="footer">
+    <p id="note">Created by Andrew Zhen</p>
+    <p id="copyright">© 2020 San Diego</p>
+    <div style="clear: both"></div>
+  </footer>
 
   <script src="script/script.js" type="text/javascript"></script>
 </body>
