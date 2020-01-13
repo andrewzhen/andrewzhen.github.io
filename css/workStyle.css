@@ -48,6 +48,14 @@
   background-position: center;
 }
 
+#photography-banner {
+  background-color: #999;
+  height: 40vw;
+  background-image: url('../assets/photography/banner.png');
+  background-size: cover;
+  background-position: center;
+}
+
 #caida-banner { background-color: #BBE8E0; /*background-image: url('../assets/caida-banner.jpg'); background-size: cover;*/ }
 #snaash-banner { background-color: #F3D1A6; /*background-image: url('../assets/snaash-banner.jpg'); background-size: cover;*/ }
 #zilter-banner { background-color: #A5D6A7; /*background-image: url('../assets/zilter-banner.jpg'); background-size: cover;*/ }

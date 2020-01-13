@@ -91,15 +91,15 @@
 
 #working-graphic {
   position: absolute;
-  top: -3vw;
-  right: -1vw;
+  top: -4vw;
+  right: 24vw;
   background-image: url("../assets/images/working-graphic.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 45%;
-  height: 25vw;
+  width: 21vw;
+  height: 28vw;
   z-index: -1;
-  opacity: 0.75;
+  opacity: 0.80;
 }
 
 

@@ -65,8 +65,8 @@ h5 { font-size: 1.2vw; }
 /*----------------------------------FADEIN*/
 section.transparent {
   opacity: 0;
-  transform: translate(0, 100px);
-  transition: all 2s;
+  transform: translate(0, 250px);
+  transition: all 1s;
 }
 
 section.visible {
@@ -221,7 +221,6 @@ input:checked + .slider:before {
   padding-left: 12vw;
   padding-right: 12vw;
   width: 76vw;
-  /* top: 40vw; */
   position: relative;
   transition: all 0.5s ease;
 }
