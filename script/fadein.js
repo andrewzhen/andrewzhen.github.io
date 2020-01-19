@@ -26,7 +26,7 @@ $(document).on("scroll", function() {
   for (var i = 0; i < tags.length; i++) {
     var tag = tags[i]
 
-    if($(tag).position().top < pageBottom) {
+    if($(tag).position().top < pageBottom - 300) {
       $(tag).addClass("visible")
     }
     // else {
