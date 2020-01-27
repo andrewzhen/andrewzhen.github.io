@@ -172,9 +172,10 @@ function defaultMode() {
     document.getElementById("description-2").style.filter = "none";
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image
+  // Invert Logos
   try {
-    document.getElementById("reddit").src = "assets/snaash/reddit-dark.png";
+    document.getElementById("reddit").src = "assets/grandama/reddit-dark.png";
+    document.getElementById("grandama").src = "assets/grandama/grandama-dark.png";
   } catch (error) { console.log(error); }
 
   // Other Components
@@ -200,9 +201,10 @@ function darkMode() {
     activeTab(file + "-w", true);
   } catch (error) { console.log(error); }
 
-  // Snaash > Reddit image
+  // Invert Logos
   try {
-    document.getElementById("reddit").src = "assets/snaash/reddit-light.png";
+    document.getElementById("reddit").src = "assets/grandama/reddit-light.png";
+    document.getElementById("grandama").src = "assets/grandama/grandama-light.png";
   } catch (error) { console.log(error); }
 
   // Other Components

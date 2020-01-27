@@ -1,7 +1,7 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   body #work-title { font-size: 7vw; margin-bottom: 0 !important; }
-  body #caida-banner, body #snaash-banner, body #zilter-banner, body #quickly-banner, body #extras-banner { height: 20vw; }
+  body #caida-banner, body #grandama-banner, body #zilter-banner, body #quickly-banner, body #extras-banner { height: 20vw; }
 
   body #left-col { padding-right: 0; }
 
@@ -11,6 +11,7 @@
   body .four-six-container img { margin: 0 0 6vw 0; width: 100% !important; }
   body .five-five-container { grid-template-columns: 100%; }
   body .five-five-container img { float: none; margin: 0 0 6vw 0; }
+  body .five-five-container .persona { padding: 5vw !important; }
   body #img-caption { font-size: 2.5vw; }
 
   body #right-col { order: 1; display: none; margin: 0 0 6vw 0; }
@@ -38,6 +39,7 @@
   body .prototype-container { grid-template-columns: 100%; }
   body .prototype-container div { margin: 0 0 12vw 0; }
   body .mobile-hidden { display: none; }
+  body .logo { width: 50% !important; display: block; margin: auto; }
 } 
 
 #designco-banner { 
@@ -57,7 +59,7 @@
 }
 
 #caida-banner { background-color: #BBE8E0; /*background-image: url('../assets/caida-banner.jpg'); background-size: cover;*/ }
-#snaash-banner { background-color: #F3D1A6; /*background-image: url('../assets/snaash-banner.jpg'); background-size: cover;*/ }
+#grandama-banner { background-color: #F3D1A6; /*background-image: url('../assets/grandama-banner.jpg'); background-size: cover;*/ }
 #zilter-banner { background-color: #A5D6A7; /*background-image: url('../assets/zilter-banner.jpg'); background-size: cover;*/ }
 #quickly-banner { background-color: #FFF279; /*background-image: url('../assets/quickly-banner.jpg'); background-size: cover;*/ }
 #extras-banner { background-color: #DCDCDC; }
@@ -71,7 +73,7 @@
 }
 
 #img-caption {
-  color: #8C8C8C;
+  color: black;
   text-align: center;
 }
 
@@ -106,7 +108,7 @@
 #left-col { padding-right: 3vw; }
 #right-col { display: block; }
 
-.logo-width { width: 40% !important; }
+.logo { width: 30% !important; }
 
 .drop-shadow-half { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 .drop-shadow-full { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19); }
@@ -175,6 +177,11 @@
   width: calc(100% - 1vw);
   text-align: center;
 }  
+
+.persona {
+  width: 50% !important;
+  margin: auto !important;
+}
 
 /*---------------------------Prototype Container*/
 .prototype-container {
