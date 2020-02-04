@@ -1,6 +1,5 @@
 // SCRIPT ENABLED
 try {
-
   // Show dark mode if script enabled
   document.getElementById("darkmode").style.display = "block";
 } catch (error) { console.log(error); }
@@ -113,11 +112,11 @@ if (window.location.pathname.split('/').length == 2) {
 
 
 
-// INITIALIZE TOGGLE OR CHANGE TO CURRENT MODE
+// DARK MODE
 if (sessionStorage.getItem('toggle') == null) {
-  // * FALSE DEFAULTS TO LIGHT MODE, TRUE DEFAULTS TO DARK MODE
-  // * CHANGE NAV ID TO "-b" FOR LIGHT MODE AND "-w" for DARK MODE
-  sessionStorage.setItem("toggle", true);
+  // * FALSE = LIGHT MODE, TRUE = DARK MODE
+  // * ALSO CHANGE NAV ID TO "-b" FOR LIGHT MODE AND "-w" for DARK MODE
+  sessionStorage.setItem("toggle", false);
 }
 if (sessionStorage.getItem('toggle') == "true") {
   darkMode();
