@@ -265,14 +265,21 @@ input:checked + .slider:before {
 
 /*----------------------------FOOTER*/
 #footer {
-  margin: 0 12vw 5vw;
+  display: table;
+  width: 76vw;
+  margin-bottom: 5vw;
+  position: relative;
+  bottom: 0;
+}
+
+#footer * {
+  display: table-cell;
 }
 
 #copyright {
-  float: right;
+  text-align: right;
 }
 
 #note {
-  float: left;
-  transition: all 0.5s ease;
+  text-align: left;
 }

@@ -1,7 +1,7 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   body #work-title { font-size: 7vw; margin-bottom: 0 !important; }
-  body #caida-banner, body #grandama-banner, body #zilter-banner, body #quickly-banner, body #extras-banner { height: 20vw; }
+  body #caida-banner, body #grandama-banner, body #zilter-banner, body #quickly-banner, body #more-banner { height: 20vw; }
 
   body #left-col { padding-right: 0; }
 
@@ -18,8 +18,8 @@
   body #left-col { order: 2; }
   body #work-blurb, body #details { display: block; font-size: 3.2vw; }
   body #work-blurb + button { margin-bottom: 5vw !important; }
-  body .head-container #extras-blurb { display: none; }
-  body #extras-header { font-size: 5vw; margin-bottom: 3vw !important; }
+  body .head-container #more-blurb { display: none; }
+  body #more-header { font-size: 5vw; margin-bottom: 3vw !important; }
 
   body .body-container { grid-template-columns: 100%; margin-bottom: 10vw; }
   body .body-container p { font-size: 3.2vw; }
@@ -45,8 +45,8 @@
 #designco-banner { background-image: url('../assets/designco/designco-banner.jpg'); }
 #photography-banner { background-image: url('../assets/photography/banner.png'); }
 #caida-banner { background-image: url('../assets/caida/banner.png'); }
-#grandama-banner { background-color: #F3D1A6; /*background-image: url('../assets/grandama-banner.jpg'); background-size: cover;*/ }
-#more-banner { background-color: #DCDCDC; }
+#grandama-banner { background-image: url('../assets/grandama/banner.png'); }
+#more-banner { background-image: url('../assets/more/banner.png'); }
 
 #link { transition: all 0.5s ease; }
 
@@ -103,7 +103,7 @@
   height: 50vw;
 }
 
-#extras-header {
+#more-header {
   font-size: 2.6vw;
   font-weight: 700;
   margin-top: 0;
