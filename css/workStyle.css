@@ -1,7 +1,6 @@
 /*-----------------------------RESPONSIVENESS*/
 @media only screen and (max-width: 767px) {
   body #work-title { font-size: 7vw; margin-bottom: 0 !important; }
-  body #caida-banner, body #grandama-banner, body #zilter-banner, body #quickly-banner, body #more-banner { height: 20vw; }
 
   body #left-col { padding-right: 0; }
 
@@ -16,7 +15,7 @@
 
   body #right-col { order: 1; display: none; margin: 0 0 6vw 0; }
   body #left-col { order: 2; }
-  body #work-blurb, body #details { display: block; font-size: 3.2vw; }
+  body #work-blurb, body #details { display: block; font-size: 3.2vw; margin-top: 5vw; }
   body #work-blurb + button { margin-bottom: 5vw !important; }
   body .head-container #more-blurb { display: none; }
   body #more-header { font-size: 5vw; margin-bottom: 3vw !important; }
@@ -34,7 +33,9 @@
   body .body-container ul { font-size: 3.2vw; }
   body .body-container ul li { padding: 2vw 0; }
   
-  body .head-container #designco-banner { height: 70vw; }
+  #grandama-banner { height: 50vw; }
+  #caida-banner { height: 55vw; }
+  #photography-banner, #designco-banner, #more-banner { height: 70vw; }
 
   body .prototype-container { grid-template-columns: 100%; }
   body .prototype-container div { margin: 0 0 12vw 0; }
@@ -78,6 +79,11 @@
   font-size: 4vw;
   font-weight: bold;
   margin-top: 0;
+  line-height: 160%;
+}
+
+#more-blurb {
+  margin-top: 3vw;
 }
 
 #details {
