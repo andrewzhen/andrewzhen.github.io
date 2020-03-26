@@ -50,9 +50,11 @@ h5 { font-size: 1.2vw; }
 
 .banner {
   width: 100vw;
-  /* height: 40vw; */
-  height: 10vw;
+  height: 40vw;
+  /* height: 10vw; */
   margin: 0 0 0 -12vw;
+  background-size: cover;
+  background-position: center;
 }
 
 .hidden { display: none; }
