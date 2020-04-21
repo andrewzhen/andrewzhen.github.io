@@ -116,7 +116,7 @@ if (window.location.pathname.split('/').length == 2) {
 if (sessionStorage.getItem('toggle') == null) {
   // * FALSE = LIGHT MODE, TRUE = DARK MODE
   // * ALSO CHANGE NAV ID TO "-b" FOR LIGHT MODE AND "-w" for DARK MODE
-  sessionStorage.setItem("toggle", false);
+  sessionStorage.setItem("toggle", true);
 }
 if (sessionStorage.getItem('toggle') == "true") {
   darkMode();
