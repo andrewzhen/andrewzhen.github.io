@@ -370,13 +370,14 @@ try {
 // Set Initial Dark Mode Settings
 if (sessionStorage.getItem('toggle') == null) {
   // * FALSE = LIGHT MODE, TRUE = DARK MODE
-  sessionStorage.setItem("toggle", true);
+  sessionStorage.setItem("toggle", false);
 }
-if (sessionStorage.getItem('toggle') == "true") {
-  darkMode();
-} else {
-  defaultMode();
-}
+toggle();
+// if (sessionStorage.getItem('toggle') == "true") {
+//   darkMode();
+// } else {
+//   defaultMode();
+// }
 
 
 

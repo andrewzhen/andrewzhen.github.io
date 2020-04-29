@@ -320,7 +320,8 @@ input:checked + .slider:before {
   color: inherit;
 }
 #tab h2.dark:hover::before, #tab h2.dark::before {
-  background-color: black;
+  /* background-color: black; */
+  background-color: white;
 }
 #tab h2:hover {
   cursor: pointer;
@@ -359,7 +360,8 @@ input:checked + .slider:before {
   font-weight: 500;
   margin-bottom: 2vw;
   width: fit-content;
-  background: linear-gradient(to right, black 50%, white 50%);
+  /* background: linear-gradient(to right, black 50%, white 50%); */
+  background: linear-gradient(to right, white 50%, #171717 50%);
   background-size: 260% 170%;
   background-position: right bottom;
   transition: .5s;
@@ -370,7 +372,8 @@ input:checked + .slider:before {
 .work-item div h3:hover {
   cursor: pointer;
   background-position: left bottom;
-  color: white;
+  /* color: white; */
+  color: black;
 }
 .numerate {
   font-family: "Suisse Int'l Mono";
