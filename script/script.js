@@ -81,7 +81,7 @@ window.onload = function() {
 
   for (let i = 0; i < tab.length; i++) {
     tab[i].addEventListener("click", function() {
-      console.log(windowWidth);
+      
       if (windowWidth < 767) {
         tab[0].style.display = "block";
         tab[1].style.display = "block";
@@ -121,18 +121,17 @@ window.onload = function() {
           foot.style.top = "5rem";
         }
       } else {
-        console.log('not less than 767');
+        
         tab[0].style.display = "none";
         tab[1].style.display = "none";
         tab[2].style.display = "block";
         workGrid[0].style.display = "block";
         workGrid[1].style.display = "block";
-        console.log("i is ", i);
+        
         // Work
         if (i == 2) {
           tab[i].classList.toggle("active");
           tab[i + 1].classList.remove("active");
-          console.log("removed");
           aboutTab.style.display = "none";
           workTab.style.display = "grid";
           foot.style.top = "80rem";
@@ -150,30 +149,32 @@ window.onload = function() {
   }
 
   window.addEventListener("resize", function() {
-    windowWidth = window.innerWidth;
-
-    let tab = document.getElementById("tab").children;
-    if (window.innerWidth < 767) {
-      tab[0].style.display = "block";
-      tab[1].style.display = "block";
-      tab[2].style.display = "none";
-      workGrid[0].style.display = "block";
-      workGrid[1].style.display = "none";
-      tab[0].classList.add("active");
-      tab[1].classList.remove("active");
-      foot.style.top = "63rem";
-    } else {
-      tab[0].style.display = "none";
-      tab[1].style.display = "none";
-      tab[2].style.display = "block";
-      workGrid[0].style.display = "block";
-      workGrid[1].style.display = "block";
-      tab[2].classList.add("active");
-      foot.style.top = "80rem";
+    if (window.width != windowWidth) {
+      windowWidth = window.innerWidth;
+      
+      let tab = document.getElementById("tab").children;
+      if (window.innerWidth < 767) {
+        tab[0].style.display = "block";
+        tab[1].style.display = "block";
+        tab[2].style.display = "none";
+        workGrid[0].style.display = "block";
+        workGrid[1].style.display = "none";
+        tab[0].classList.add("active");
+        tab[1].classList.remove("active");
+        foot.style.top = "63rem";
+      } else {
+        tab[0].style.display = "none";
+        tab[1].style.display = "none";
+        tab[2].style.display = "block";
+        workGrid[0].style.display = "block";
+        workGrid[1].style.display = "block";
+        tab[2].classList.add("active");
+        foot.style.top = "80rem";
+      }
+      tab[3].classList.remove("active");
+      aboutTab.style.display = "none";
+      workTab.style.display = "grid";
     }
-    tab[3].classList.remove("active");
-    aboutTab.style.display = "none";
-    workTab.style.display = "grid";
   })
 
 

@@ -308,7 +308,7 @@ input:checked + .slider:before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: white;
+  background-color: black;
   visibility: hidden;
   transition: .3s;
 }
