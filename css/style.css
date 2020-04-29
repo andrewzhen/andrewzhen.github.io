@@ -109,6 +109,7 @@ table {
   #content #about-tab div:not(:last-child) { padding: 0; order: 2; }
   #content #about-tab #portrait { background-image: url("../assets/images/portrait-full.jpg"); border-radius: 5px; order: 1; height: 40vw; }
   #work-tab .work-item .numerate { font-size: 0.9rem; }
+  #content #work-tab .work-item div { width: 100%; }
   #work-tab > div:last-child { display: none; }
 
   /* Work */
@@ -136,7 +137,7 @@ table {
 @media only screen and (max-width: 1023px) {
   #work-tab div .work-item div h3 { font-size: 1.3rem; padding: 0.17rem; height: initial; }
   #content #work-tab .work-item { grid-template-columns: 10% 90%; }
-  #content #work-tab .work-item div { width: 80%; }
+  #work-tab .work-item div { width: 80%; }
 }
 
 .spacer6 { margin-bottom: 15vw; }

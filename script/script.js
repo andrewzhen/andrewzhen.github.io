@@ -373,12 +373,11 @@ if (sessionStorage.getItem('toggle') == null) {
   // * FALSE = LIGHT MODE, TRUE = DARK MODE
   sessionStorage.setItem("toggle", false);
 }
-toggle();
-// if (sessionStorage.getItem('toggle') == "true") {
-//   darkMode();
-// } else {
-//   defaultMode();
-// }
+if (sessionStorage.getItem('toggle') == "true") {
+  darkMode();
+} else {
+  defaultMode();
+}
 
 
 
@@ -387,11 +386,9 @@ function toggle() {
   if (sessionStorage.getItem('toggle') == "false") {
     darkMode();
     sessionStorage.setItem('toggle', true);
-    document.getElementById("checkDark").checked = true;
   } else {
     defaultMode();
     sessionStorage.setItem('toggle', false);
-    document.getElementById("checkDark").checked = false;
   }
 }
 
@@ -399,6 +396,8 @@ function toggle() {
 
 // Default Mode
 function defaultMode() {
+  document.getElementById("checkDark").checked = false;
+  
   let lightColor = "#F7F7F8"
   document.getElementById("message").style.backgroundColor = lightColor;
   document.getElementsByClassName("details")[0].style.backgroundColor = lightColor;
@@ -419,6 +418,8 @@ function defaultMode() {
 
 // Dark Mode
 function darkMode() {
+  document.getElementById("checkDark").checked = true;
+
   let darkColor = "#2B2B2B";
   document.getElementById("message").style.backgroundColor = darkColor;
   document.getElementsByClassName("details")[0].style.backgroundColor = darkColor;
