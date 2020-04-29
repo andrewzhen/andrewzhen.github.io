@@ -371,7 +371,7 @@ try {
 // Set Initial Dark Mode Settings
 if (sessionStorage.getItem('toggle') == null) {
   // * FALSE = LIGHT MODE, TRUE = DARK MODE
-  sessionStorage.setItem("toggle", false);
+  sessionStorage.setItem("toggle", true);
 }
 if (sessionStorage.getItem('toggle') == "true") {
   darkMode();
@@ -397,7 +397,7 @@ function toggle() {
 // Default Mode
 function defaultMode() {
   document.getElementById("checkDark").checked = false;
-  
+
   let lightColor = "#F7F7F8"
   document.getElementById("message").style.backgroundColor = lightColor;
   document.getElementsByClassName("details")[0].style.backgroundColor = lightColor;

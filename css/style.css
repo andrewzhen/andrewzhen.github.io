@@ -377,7 +377,7 @@ input:checked + .slider:before {
   color: black;
 }
 .numerate {
-  font-family: "Suisse Int'l Mono";
+  font-family: "Suisse Mono";
 }
 
 #about-tab {
@@ -506,7 +506,7 @@ main, article, #content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  font-family: "Suisse Int'l Mono";
+  font-family: "Suisse Mono";
   font-size: 0.8rem;
   background-color: #F7F7F8;
   box-sizing: border-box;
