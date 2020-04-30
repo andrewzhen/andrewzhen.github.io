@@ -60,22 +60,22 @@ window.onload = function() {
   let tab = document.getElementById("tab").children;
   if (window.innerWidth < 767) {
     tab[0].style.display = "block";
+    tab[0].classList.add("active");
     tab[1].style.display = "block";
     tab[2].style.display = "none";
+    tab[2].classList.add("active");
     workGrid[0].style.display = "block";
     workGrid[1].style.display = "none";
-    tab[0].classList.add("active");
     foot.style.top = "63rem";
   } else {
     tab[0].style.display = "none";
+    tab[0].classList.add("active");
     tab[1].style.display = "none";
     tab[2].style.display = "block";
     workGrid[0].style.display = "block";
     workGrid[1].style.display = "block";
-    tab[2].classList.add("active");
     foot.style.top = "80rem";
   }
-  tab[3].classList.remove("active");
   aboutTab.style.display = "none";
   workTab.style.display = "grid";
 
@@ -89,10 +89,12 @@ window.onload = function() {
         workGrid[0].style.display = "block";
         workGrid[1].style.display = "none";
         foot.style.top = "63rem";
+
         // Development
         if (i == 0) {
-          tab[i].classList.toggle("active");
+          tab[i].classList.add("active");
           tab[i + 1].classList.remove("active");
+          tab[i + 2].classList.add("active");
           tab[i + 3].classList.remove("active");
           aboutTab.style.display = "none";
           workTab.style.display = "grid";
@@ -103,7 +105,8 @@ window.onload = function() {
         // Design
         } else if (i == 1) {
           tab[i - 1].classList.remove("active");
-          tab[i].classList.toggle("active");
+          tab[i].classList.add("active");
+          tab[i + 1].classList.add("active");
           tab[i + 2].classList.remove("active");
           aboutTab.style.display = "none";
           workTab.style.display = "grid";
@@ -115,13 +118,13 @@ window.onload = function() {
         } else {
           tab[i - 3].classList.remove("active");
           tab[i - 2].classList.remove("active");
-          tab[i].classList.toggle("active");
+          tab[i - 1].classList.remove("active");
+          tab[i].classList.add("active");
           workTab.style.display = "none";
           aboutTab.style.display = "grid";    
           foot.style.top = "5rem";
         }
       } else {
-        
         tab[0].style.display = "none";
         tab[1].style.display = "none";
         tab[2].style.display = "block";
@@ -130,7 +133,9 @@ window.onload = function() {
         
         // Work
         if (i == 2) {
-          tab[i].classList.toggle("active");
+          tab[i - 2].classList.add("active");
+          tab[i - 1].classList.remove("active");
+          tab[i].classList.add("active");
           tab[i + 1].classList.remove("active");
           aboutTab.style.display = "none";
           workTab.style.display = "grid";
@@ -138,8 +143,10 @@ window.onload = function() {
 
         // About
         } else {
+          tab[i - 3].classList.remove("active");
+          tab[i - 2].classList.remove("active");
           tab[i - 1].classList.remove("active");
-          tab[i].classList.toggle("active");
+          tab[i].classList.add("active");
           aboutTab.style.display = "grid";
           workTab.style.display = "none";
           foot.style.top = "10rem";
@@ -149,18 +156,17 @@ window.onload = function() {
   }
 
   window.addEventListener("resize", function() {
-    if (window.width != windowWidth) {
+    if (window.innerWidth !== windowWidth) {
       windowWidth = window.innerWidth;
       
       let tab = document.getElementById("tab").children;
-      if (window.innerWidth < 767) {
+      if (windowWidth < 767) {
         tab[0].style.display = "block";
         tab[1].style.display = "block";
         tab[2].style.display = "none";
+        // tab[2].classList.add("active");
         workGrid[0].style.display = "block";
         workGrid[1].style.display = "none";
-        tab[0].classList.add("active");
-        tab[1].classList.remove("active");
         foot.style.top = "63rem";
       } else {
         tab[0].style.display = "none";
@@ -168,12 +174,8 @@ window.onload = function() {
         tab[2].style.display = "block";
         workGrid[0].style.display = "block";
         workGrid[1].style.display = "block";
-        tab[2].classList.add("active");
         foot.style.top = "80rem";
       }
-      tab[3].classList.remove("active");
-      aboutTab.style.display = "none";
-      workTab.style.display = "grid";
     }
   })
 
