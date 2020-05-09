@@ -85,12 +85,12 @@ table {
 
 @font-face {
   font-family: "Suisse Mono";
-  src: url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
-  src: url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.woff2") format("woff2"), /* chrome firefox */
-  url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.woff") format("woff"), /* chrome firefox */
-  url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-  url("http://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.svg#Suisse Int'l Mono") format("svg"), /* iOS 4.1- */
+  src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
+  src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.woff2") format("woff2"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.woff") format("woff"), /* chrome firefox */
+  url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+  url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.svg#Suisse Int'l Mono") format("svg"), /* iOS 4.1- */
   url("../assets/fonts/Suisse\ Mono\ Regular.woff"),
   url("../assets/fonts/Suisse\ Mono\ Regular.woff2");
 }
@@ -134,8 +134,8 @@ table {
   #work-pages .work-container .content { flex-direction: column; }
   #work-pages .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; }
   #work-pages .work-container .content .narrative { width: 100%; }
-  #work-pages .work-container .details { flex-direction: column; }
-  #work-pages .work-container .details div { width: 100%; padding: 0; margin-bottom: 1.5rem; }
+  #work-pages .work-container .details { flex-direction: column; padding: 1.5rem; }
+  #work-pages .work-container .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
 
   /* Contact */
   body #contact { font-size: 1rem; font-weight: 500; display: flex; justify-content: space-between; float: none; width: 100%; margin: auto; }
@@ -425,13 +425,27 @@ body.fade {
   max-width: 1300px;
 }
 
-.work-content > img {
+.work-header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: var(--bg);
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.work-nav {
+  position: absolute;
+}
+
+.work-nav img {
   transition: 0.3s;
   height: 1.1rem;
   margin-right: 1rem;
 }
 
-.work-content > img + span {
+.work-nav img + span {
   font-weight: 500;
   font-size: 1.3rem;
   vertical-align: text-bottom;
