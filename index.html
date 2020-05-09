@@ -14,16 +14,16 @@
   <!-- Metadata -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Andrew Zhen development and design portfolio">
+  <meta name="description" content="Andrew Zhen Development & Design Portfolio">
   <meta name="keywords" content="Andrew Zhen, UCSD, San Diego, 2020, Design, Development, Portfolio, UX, Engineer, Web Development, HTML, CSS, JavaScript">
   <meta name="author" content="Andrew Zhen">
-  <meta property="og:image" content="assets/images/thumbnail.png">
-  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image" content="assets/images/preview.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1024">
   <meta property="og:image:height" content="1024">
 
   <!-- Title & Favicon -->
-  <title>Andrew Zhen</title>
+  <title>Andrew Zhen | Developer Designer</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.svg"/>
   <link rel="shortcut icon" type="image/png" href="assets/images/favicon.svg">
 
@@ -31,42 +31,58 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
+<body class="fade">
   <main>
     <article>
       <canvas id="noise" class="noise"></canvas>
       
       <div id="content">
-        <nav id="header" class="spacer2">
+        <nav id="header" class="spacer4">
           <div id="headline">
             <a id="headline-text">
-              <h1>Andrew designs and develops for digital experiences</h1>
+              <h1>Andrew Zhen</h1>
             </a>
           </div>
-      
-          <div id="darkmode">
-            <span id="darkmode-txt">Dark Mode</span>
-            <label class="switch">
-              <input id="checkDark" type="checkbox" onchange="toggle()">
-              <span class="slider round"></span>
-            </label>
+
+          <div id="contact">
+            <div>
+              <a 
+                id="email" 
+                onclick="copy('email', 'andrewjzhen@gmail.com')" 
+                onmouseleave="contactChange('email', 'Email')" 
+                title="Copy to clipboard"
+              >
+                Email
+              </a>
+              <div class="external"></div>
+            </div>
+
+            <a href="assets/files/resume.pdf" id="resume">
+              Résumé
+              <div class="external"></div>
+            </a>
+            <a href="https://www.linkedin.com/in/andrew-zhen" id="linkedin">
+              LinkedIn
+              <div class="external"></div>
+            </a>
+            <a href="https://github.com/andrewzhen" id="github">
+              GitHub
+              <div class="external"></div>
+            </a>
           </div>
 
           <div style="clear: both;"></div>
         </nav>
     
-        <div id="intro" class="spacer2">
-          <p id="message" class="text-bubble">
-            4th year Cognitive Science–Design major 🎓 and an aspiring UX 
-            engineer with a passion and skillset in design prototyping, 
-            front-end development, and working on a team
+        <div id="intro" class="spacer4">
+          <p id="message">
+            Hey, I’m a <span id="me">web developer</span> based in San Diego and I design and 
+            develop for digital experiences. I currently develop student 
+            body-related websites 
+            @<a href="http://asgraphicstudio.ucsd.edu/" target="_blank">A.S. Graphic Studio</a> 
+            and help lead UCSD’s largest design community 
+            @<a href="http://www.ucsddesign.co/" target="_blank">Design Co</a>.
           </p>
-          <p id="reply" class="text-bubble">sounds good, let’s chat!</p>
-          <div style="clear: both;"></div>
-
-          <p id="read">Read</p>
-
-          <div style="clear: both;"></div>
         </div>
       
         <div id="tab" class="spacer3">
@@ -81,29 +97,34 @@
           <div><h2>Design</h2></div>
         </section>
 
-        <section id="about-tab">
+        <section id="about-tab" class="spacer5">
+          <div id="portrait"></div>
+
           <div>
-            <h2 class="spacer2">Hi, I'm Andrew</h2>
-            <p class="spacer2">75% dev. 24% design. 1% noodles.</p>
-            <p class="spacer1">
-              Currently, I’m a web developer 
-              @<a href="http://asgraphicstudio.ucsd.edu/" target="_blank">A.S. Graphic Studio</a>, 
-              UCSD’s graphic design solution, designing and developing websites and 
-              @<a href="http://www.ucsddesign.co/" target="_blank">Design Co</a>, 
-              UCSD’s largest design community, leading workshops and coding 
-              away with React.js.
+            <p class="spacer2">Hey, I'm Andrew</p>
+            <p class="spacer2">75% dev, 24% design, 1% noodles</p>
+            <p class="spacer2">
+              I’m a 4th year Cognitive Science–Design major at UCSD and an aspiring UX 
+              engineer with a passion and skillset in design prototyping, 
+              front-end development, and collaboration!
             </p>
-            <p class="spacer1">
+            <p class="spacer2">
+              Currently, I design and develop websites at UCSD’s graphic design agency, 
+              @<a href="http://asgraphicstudio.ucsd.edu/" target="_blank">A.S. Graphic Studio</a>, 
+              and lead workshops and code away with React.js 
+              @<a href="http://www.ucsddesign.co/" target="_blank">Design Co</a>, 
+              UCSD’s pre-professional design organization.
+            </p>
+            <p class="spacer2">
               Previously, I worked as a UX developer @UCSD’s IT Services 
               and @The Center for Applied Internet Data Analysis (Supercomputer Center).
             </p>
-            <p class="spacer1">
+            <p>
               Away from my computer, I’m a big fan of basketball, puzzles, 
-              interior design, and photosynthesizing in the sun!
+              interior design, and photosynthesizing in the sun. Come talk to 
+              me about your favorite topic; I'd love to hear from you!
             </p>
           </div>
-
-          <div id="portrait"></div>
         </section>
 
         <section id="work-pages">
@@ -835,47 +856,6 @@
             </div>
           </div>
         </section>
-    
-        <footer id="footer">
-          <div id="contact">
-            <a 
-              id="email" 
-              onmouseover="contactChange('email', 'andrewjzhen@gmail.com')" 
-              onmouseleave="contactChange('email', 'Email')" 
-              onclick="copy('email', 'andrewjzhen@gmail.com')"
-            >
-              Email
-            </a>
-            <a 
-              href="assets/files/resume.pdf" 
-              id="resume" 
-              onmouseover="contactChange('resume', 'resume.pdf')" 
-              onmouseleave="contactChange('resume', 'Résumé')"
-            >
-              Résumé
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/andrew-zhen" 
-              id="linkedin" 
-              onmouseover="contactChange('linkedin', 'linkedin.com/in/andrew-zhen')" 
-              onmouseleave="contactChange('linkedin', 'LinkedIn')"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://github.com/andrewzhen" 
-              id="github" 
-              onmouseover="contactChange('github', 'github.com/andrewzhen')" 
-              onmouseleave="contactChange('github', 'GitHub')"
-            >
-              GitHub
-            </a>
-          </div>
-          
-          <p id="copyright">Andrew Zhen © 2020</p>
-
-          <div style="clear: both;"></div>
-        </footer>
       </div>
     </article>
   </main>
