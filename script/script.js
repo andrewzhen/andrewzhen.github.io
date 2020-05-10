@@ -305,9 +305,6 @@ handleContainer = (el, direction) => {
         document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
       });
     }, 300);
-    
-
-    history.back();
   }
 }
 
@@ -318,6 +315,7 @@ document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {
     handleContainer(active, "translateY(100vh)");
+    history.back();
   }
 };
 
@@ -356,6 +354,7 @@ loadWork = (lst, col) => {
         // Close container
         $('.work-nav')[0].addEventListener('click', function() {
           handleContainer(active, 'translateY(100vh)');
+          history.back();
         });
       });
       history.pushState(null, null, lst[i].url);
