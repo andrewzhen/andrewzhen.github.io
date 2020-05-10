@@ -8,22 +8,22 @@ var work = {
     {
       title: "Sun God Festival 2020",
       description: "Design and development of UC San Diego’s annual art and music festival website featuring past artists such as Drake and Kendrick Lamar.",
-      url: "sgf"
+      url: "sun-god-festival"
     },
     {
       title: "Design Co – Join Our Team",
       description: "Development of Design Co’s recruiting page using React.js, aiming to encourage student designers join our team.",
-      url: "designco"
+      url: "design-co"
     },
     {
       title: "UCSD Census",
       description: "Design and development of a website to engage and inform the UC San Diego campus community of the importance of being counted.",
-      url: "census"
+      url: "ucsd-census"
     },
     {
       title: "Triton Fest Spring 2020",
       description: "Development of a linktree-style webpage used to increase social media engagement for UC San Diego’s after-hours event series.",
-      url: "tritonfest"
+      url: "triton-fest"
     }
   ],
 
@@ -55,16 +55,86 @@ var windowWidth = window.innerWidth;
 
 
 
-// Load events into DOM
-window.onload = function() {
-  loadWork(work.development, 0);
-  loadWork(work.design, 1);
+// Noise
+const noise = () => {
+  let canvas, ctx;
+  let wWidth, wHeight;
+  let noiseData = [];
+  let frame = 0;
+  let loopTimeout;
 
+  // Create Noise
+  const createNoise = () => {
+    const idata = ctx.createImageData(wWidth, wHeight);
+    const buffer32 = new Uint32Array(idata.data.buffer);
+    const len = buffer32.length;
+    for (let i = 0; i < len; i++) {
+      if (Math.random() < 0.5) {
+        buffer32[i] = 0xff000000;
+      }
+    }
+    noiseData.push(idata);
+  };
+
+  // Play Noise
+  const paintNoise = () => {
+    if (frame === 9) {
+      frame = 0;
+    } else {
+      frame++;
+    }
+    ctx.putImageData(noiseData[frame], 0, 0);
+  };
+
+  // Loop
+  const loop = () => {
+    paintNoise(frame);
+    loopTimeout = window.setTimeout(() => {
+      window.requestAnimationFrame(loop);
+    }, (1000 / 25));
+  };
+
+  // Setup
+  const setup = () => {
+    wWidth = window.innerWidth;
+    wHeight = window.innerHeight;
+    canvas.width = wWidth;
+    canvas.height = wHeight;
+    for (let i = 0; i < 10; i++) {
+      createNoise();
+    }
+    loop();
+  };
+
+  // Reset
+  let resizeThrottle;
+  const reset = () => {
+    window.addEventListener('resize', () => {
+      window.clearTimeout(resizeThrottle);
+      resizeThrottle = window.setTimeout(() => {
+        window.clearTimeout(loopTimeout);
+        setup();
+      }, 200);
+    }, false);
+  };
+
+  // Init
+  const init = (() => {
+    canvas = document.getElementById('noise');
+    ctx = canvas.getContext('2d');
+    setup();
+  })();
+};
+
+
+
+// Tabs handler
+handleTabs = () => {
   let workTab = document.getElementById("work-tab");
   let aboutTab = document.getElementById("about-tab");
   let workGrid = document.getElementById("work-tab").children;
-
   let tab = document.getElementById("tab").children;
+
   if (window.innerWidth < 767) {
     tab[0].style.display = "block";
     tab[0].classList.add("active");
@@ -151,27 +221,46 @@ window.onload = function() {
           workTab.style.display = "none";
         }
       }
-    })
+    });
   }
 
+  // Open about tab
+  document.getElementById("me").addEventListener("click", function() {
+    document.getElementById("tab").scrollIntoView();
+    document.getElementById("tab").children[3].dispatchEvent(new Event("click"));
+  });
+}
+
+
+
+// Load events into DOM
+window.onload = function() {
+  loadWork(work.development, 0);
+  loadWork(work.design, 1);
+  handleTabs();
+
   window.addEventListener("resize", function() {
-    if (window.innerWidth !== windowWidth) {
-      windowWidth = window.innerWidth;
-      
-      let tab = document.getElementById("tab").children;
-      if (windowWidth < 767) {
-        tab[0].style.display = "block";
-        tab[1].style.display = "block";
-        tab[2].style.display = "none";
-        workGrid[0].style.display = "block";
-        workGrid[1].style.display = "none";
-      } else {
-        tab[0].style.display = "none";
-        tab[1].style.display = "none";
-        tab[2].style.display = "block";
-        workGrid[0].style.display = "block";
-        workGrid[1].style.display = "block";
+    try {
+      if (window.innerWidth !== windowWidth) {
+        windowWidth = window.innerWidth;
+        
+        let tab = document.getElementById("tab").children;
+        if (windowWidth < 767) {
+          tab[0].style.display = "block";
+          tab[1].style.display = "block";
+          tab[2].style.display = "none";
+          workGrid[0].style.display = "block";
+          workGrid[1].style.display = "none";
+        } else {
+          tab[0].style.display = "none";
+          tab[1].style.display = "none";
+          tab[2].style.display = "block";
+          workGrid[0].style.display = "block";
+          workGrid[1].style.display = "block";
+        }
       }
+    } catch (error) {
+      console.log("Currently viewing work");
     }
   });
 
@@ -187,106 +276,32 @@ window.onload = function() {
     }
     handleContainer(active, "translateY(100vh)");
   });
-
-
-  const noise = () => {
-    let canvas, ctx;
-    let wWidth, wHeight;
-    let noiseData = [];
-    let frame = 0;
-    let loopTimeout;
-
-    // Create Noise
-    const createNoise = () => {
-      const idata = ctx.createImageData(wWidth, wHeight);
-      const buffer32 = new Uint32Array(idata.data.buffer);
-      const len = buffer32.length;
-      for (let i = 0; i < len; i++) {
-        if (Math.random() < 0.5) {
-          buffer32[i] = 0xff000000;
-        }
-      }
-      noiseData.push(idata);
-    };
-
-    // Play Noise
-    const paintNoise = () => {
-      if (frame === 9) {
-        frame = 0;
-      } else {
-        frame++;
-      }
-      ctx.putImageData(noiseData[frame], 0, 0);
-    };
-
-    // Loop
-    const loop = () => {
-      paintNoise(frame);
-      loopTimeout = window.setTimeout(() => {
-        window.requestAnimationFrame(loop);
-      }, (1000 / 25));
-    };
-
-    // Setup
-    const setup = () => {
-      wWidth = window.innerWidth;
-      wHeight = window.innerHeight;
-      canvas.width = wWidth;
-      canvas.height = wHeight;
-      for (let i = 0; i < 10; i++) {
-        createNoise();
-      }
-      loop();
-    };
-
-    // Reset
-    let resizeThrottle;
-    const reset = () => {
-      window.addEventListener('resize', () => {
-        window.clearTimeout(resizeThrottle);
-        resizeThrottle = window.setTimeout(() => {
-          window.clearTimeout(loopTimeout);
-          setup();
-        }, 200);
-      }, false);
-    };
-
-    // Init
-    const init = (() => {
-      canvas = document.getElementById('noise');
-      ctx = canvas.getContext('2d');
-      setup();
-    })();
-  };
-  noise();
-
-  // Open about tab
-  document.getElementById("me").addEventListener("click", function() {
-    document.getElementById("tab").scrollIntoView();
-    document.getElementById("tab").children[3].dispatchEvent(new Event("click"));
-  });
 }
 
+
+
+// Fade window on load
 window.addEventListener("load", function(e) {
   document.body.classList.remove("fade");
 });
 
 
+
 // Work container handler
 handleContainer = (el, direction) => {
-  if (direction == "translateY(0)") {
-    body.style.overflow = "hidden";
-    active = el;
-    el.style.visibility = "visible";
-  } else {
-    body.style.overflow = "scroll";
-    active = null;
-    el.style.visibility = "hidden";
-    history.pushState(null, null, "/");
+  if (active != "home") {
+    $('.work-container').css({ transform: 'translateY(100vh)' });
+  
+    setTimeout(function() {
+      $('#container').remove();
+      $('#content').load('index.html #container', function() {
+        active = "home";
+        loadWork(work.development, 0);
+        loadWork(work.design, 1);
+        handleTabs();
+      });
+    }, 300);
   }
-
-  el.style.transform = direction;
-  el.scrollTop = 0;
 }
 
 
@@ -295,9 +310,7 @@ handleContainer = (el, direction) => {
 document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {
-    try {
-      handleContainer(active, "translateY(100vh)");
-    } catch (error) {}
+    handleContainer(active, "translateY(100vh)");
   }
 };
 
@@ -312,31 +325,39 @@ loadWork = (lst, col) => {
     let span_text = document.createTextNode(work_num);
     let div2 = document.createElement("div");
     let h3 = document.createElement("h3");
+    let a = document.createElement("a");
     let h3_text = document.createTextNode(lst[i].title);
     let p = document.createElement("p");
     let p_text = document.createTextNode(lst[i].description);
-  
-    let container = document.getElementById("work-pages").children[col].children[i];
 
     div.classList.add("work-item");
     span.classList.add("numerate");
     span.appendChild(span_text);
-    h3.appendChild(h3_text);
-    h3.addEventListener("click", function() {
-      handleContainer(container, "translateY(0)");
+    a.href = lst[i].url + ".html";
+    a.addEventListener("click", function(e) {
+      e.preventDefault();
+      $('#container').remove();
+      $('#content').load(this.href + ' #container', function() {
+        setTimeout(function() {
+          active = $('#container');
+          $('.work-container').css({ transform: 'translateY(0)' });
+        }, 10);
+
+        $('.work-nav')[0].addEventListener('click', function() {
+          handleContainer(active, 'translateY(100vh)');
+        });
+      });
       history.pushState(null, null, lst[i].url);
-    })
+    });
+
+    a.appendChild(h3_text);
+    h3.appendChild(a);
     p.appendChild(p_text);
     div2.appendChild(h3);
     div2.appendChild(p);
     div.appendChild(span);
     div.appendChild(div2);
     document.getElementById("work-tab").children[col].appendChild(div);
-
-    // Close button
-    container.children[0].children[0].addEventListener("click", function() {
-      handleContainer(container, "translateY(100vh)");
-    })
   }
 }
 

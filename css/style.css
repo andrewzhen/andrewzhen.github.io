@@ -130,12 +130,13 @@ table {
   #work-tab > div:last-child { display: none; }
 
   /* Work */
-  #work-pages .work-content h3 { margin: 3rem 0; font-size: 2rem; }
-  #work-pages .work-container .content { flex-direction: column; }
-  #work-pages .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; }
-  #work-pages .work-container .content .narrative { width: 100%; }
-  #work-pages .work-container .details { flex-direction: column; padding: 1.5rem; }
-  #work-pages .work-container .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
+  #content .work-content h3 { margin: 3rem 0; font-size: 2rem; }
+  #content .work-container .content { flex-direction: column; }
+  #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; }
+  #content .work-container .content .narrative { width: 100%; }
+  #content .work-content .details { flex-direction: column; padding: 1.5rem; }
+  #content .work-content .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
+  #content .narrative { z-index: -1; }
 
   /* Contact */
   body #contact { font-size: 1rem; font-weight: 500; display: flex; justify-content: space-between; float: none; width: 100%; margin: auto; }
@@ -220,6 +221,39 @@ body.fade {
   display: inline;
   font-size: 1rem;
   font-weight: 600;
+}
+
+#contact {
+  float: right;
+  transition: 0.3s;
+}
+#contact a {
+  text-decoration: none;
+  color: var(--text, white);
+  transition: 0.3s;
+}
+#contact a:hover {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+#contact .external {
+  width: 0.75rem;
+  height: 0.75rem;
+  display: inline-block;
+  background-image: url("../assets/images/external.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#contact > div {
+  margin-right: 2rem;
+  display: inline-block;
+}
+#contact a:not(:first-child):not(:last-child) {
+  margin-right: 2rem;
+}
+#email:hover {
+  cursor: pointer;
 }
 
 /* Content ----------------------------------------------------------------- */
@@ -324,9 +358,16 @@ body.fade {
   line-height: initial;
 }
 .work-item div h3:hover {
-  cursor: pointer;
   background-position: left bottom;
   color: var(--bg);
+}
+.work-item div h3:hover a {
+  color: var(--bg, indigo);
+  transition: .5s;
+}
+.work-item div h3 a {
+  color: var(--text, white);
+  text-decoration: none;
 }
 .numerate {
   font-family: "Suisse Mono";
@@ -361,41 +402,6 @@ body.fade {
   border-radius: 5px;
 }
 
-
-/* Contact ----------------------------------------------------------------- */
-#contact {
-  float: right;
-  transition: 0.3s;
-}
-#contact a {
-  text-decoration: none;
-  color: var(--text, white);
-  transition: 0.3s;
-}
-#contact a:hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-#contact .external {
-  width: 0.75rem;
-  height: 0.75rem;
-  display: inline-block;
-  background-image: url("../assets/images/external.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-#contact > div {
-  margin-right: 2rem;
-  display: inline-block;
-}
-#contact a:not(:first-child):not(:last-child) {
-  margin-right: 2rem;
-}
-#email:hover {
-  cursor: pointer;
-}
-
 /* Work -------------------------------------------------------------------- */
 .work-container {
   width: 100vw;
@@ -407,7 +413,6 @@ body.fade {
   transform: translateY(100vh);
   transition: .6s;
   overflow: scroll;
-  visibility: hidden;
 }
 
 .border {
@@ -438,21 +443,20 @@ body.fade {
 .work-nav {
   position: absolute;
 }
-
 .work-nav img {
   transition: 0.3s;
   height: 1.1rem;
   margin-right: 1rem;
 }
-
 .work-nav img + span {
   font-weight: 500;
   font-size: 1.3rem;
   vertical-align: text-bottom;
 }
-
-.work-content > img:hover {
+.work-nav:hover {
   cursor: pointer;
+}
+.work-nav:hover img {
   transform: rotate(180deg);
   transition: 0.3s;
 }
@@ -527,6 +531,7 @@ body.fade {
   font-size: 1.1rem;
   line-height: 160%;
   counter-reset: subheader;
+  z-index: 1;
 }
 
 .narrative p, .narrative ul {
