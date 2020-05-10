@@ -52,7 +52,7 @@ var work = {
 var active;
 var body = document.getElementsByTagName("body")[0];
 var windowWidth = window.innerWidth;
-
+var scrollPos;
 
 
 // Noise
@@ -226,7 +226,7 @@ handleTabs = () => {
 
   // Open about tab
   document.getElementById("me").addEventListener("click", function() {
-    document.getElementById("tab").scrollIntoView();
+    document.getElementById("tab").scrollIntoView({ behavior: "smooth" });
     document.getElementById("tab").children[3].dispatchEvent(new Event("click"));
   });
 }
@@ -264,14 +264,17 @@ window.onload = function() {
     }
   });
 
-  window.addEventListener('popstate', function() {
+  window.addEventListener('popstate', function(e) {
     let url = window.location.pathname.replace(/^\/([^\/]*).*$/, '$1');
     let project_length = work.development.length + work.design.length;
     for (let i = 0; i < project_length; i++) {
-      let project = document.getElementsByClassName("work-item")[i].children[1].children[0];
-      if (url == project.innerText) {
-        console.log(document.getElementsByClassName("work-item")[i].children[1].children[0]);
-        document.getElementsByClassName("work-item")[i].children[1].children[0].dispatchEvent('click');
+      let project = i < work.development.length ? work.development[i] : work.design[i] - work.development.length;
+      if (url == project.url) {
+        try {
+          $('.work-nav')[0].dispatchEvent('click');
+        } catch (error) {
+          console.log("No forward history");
+        }
       }
     }
     handleContainer(active, "translateY(100vh)");
@@ -299,8 +302,12 @@ handleContainer = (el, direction) => {
         loadWork(work.development, 0);
         loadWork(work.design, 1);
         handleTabs();
+        document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
       });
     }, 300);
+    
+
+    history.back();
   }
 }
 
@@ -335,6 +342,9 @@ loadWork = (lst, col) => {
     span.appendChild(span_text);
     a.href = lst[i].url + ".html";
     a.addEventListener("click", function(e) {
+      // Get scroll position for later
+      scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+
       e.preventDefault();
       $('#container').remove();
       $('#content').load(this.href + ' #container', function() {
@@ -343,6 +353,7 @@ loadWork = (lst, col) => {
           $('.work-container').css({ transform: 'translateY(0)' });
         }, 10);
 
+        // Close container
         $('.work-nav')[0].addEventListener('click', function() {
           handleContainer(active, 'translateY(100vh)');
         });

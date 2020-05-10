@@ -130,6 +130,7 @@ table {
   #work-tab > div:last-child { display: none; }
 
   /* Work */
+  #content .work-content { margin: 0 auto 5rem; }
   #content .work-content h3 { margin: 3rem 0; font-size: 2rem; }
   #content .work-container .content { flex-direction: column; }
   #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; }
@@ -187,7 +188,7 @@ html, body {
   line-height: 160%;
   background-color: var(--bg, indigo);
   color: var(--text, white);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   opacity: 1;
   transition: 0.7s opacity;
 }
@@ -471,20 +472,24 @@ body.fade {
 .details {
   display: flex;
   align-items: flex-start;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: "Suisse Mono";
   font-size: 0.8rem;
   background-color: #4E5269;
   box-sizing: border-box;
-  padding: 1.5rem 0;
+  padding: 2rem 4rem;
   border-radius: 5px;
   margin-bottom: 4vw;
 }
 
 .details div {
-  width: fit-content;
-  max-width: 25%;
+  /* width: fit-content;
+  max-width: 25%; */
+  width: 20%;
   box-sizing: border-box;
+}
+.details div:not(:last-child) {
+  margin-right: calc(20%/3);
 }
 
 .details div h5 {
