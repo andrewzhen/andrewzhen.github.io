@@ -260,10 +260,18 @@ window.addEventListener("load", function(e) {
 
 
 // Refresh
-window.onbeforeunload = function(e) {
-  active = "home";
-  return handleContainer();
-};
+// window.addEventListener("beforeunload", function(evt) {
+
+//   // Cancel the event (if necessary)
+//   evt.preventDefault();
+
+//   // Google Chrome requires returnValue to be set
+//   evt.returnValue = '';
+
+//   active = "home";
+
+//   return handleContainer(active, 'translateY(100vh)');;
+// });
 
 
 
