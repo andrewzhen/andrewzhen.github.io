@@ -260,18 +260,12 @@ window.addEventListener("load", function(e) {
 
 
 // Refresh
-// window.addEventListener("beforeunload", function(evt) {
-
-//   // Cancel the event (if necessary)
-//   evt.preventDefault();
-
-//   // Google Chrome requires returnValue to be set
-//   evt.returnValue = '';
-
-//   active = "home";
-
-//   return handleContainer(active, 'translateY(100vh)');;
-// });
+window.onbeforeunload = function() { 
+  window.setTimeout(function () { 
+      window.location = 'https://ajzhen.com/';
+  }, 0); 
+  window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
+}
 
 
 
