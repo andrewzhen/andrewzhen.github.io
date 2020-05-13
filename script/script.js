@@ -260,7 +260,7 @@ window.addEventListener("load", function(e) {
 
 
 // Refresh
-window.onbeforeunload = function() { 
+window.onbeforeunload = window.onunload = function() { 
   window.setTimeout(function () { 
       window.location = 'https://ajzhen.com/';
   }, 0); 
