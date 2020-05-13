@@ -50,9 +50,14 @@ var work = {
 
 // Variables
 var active;
+var activeTab = 0;
 var body = document.getElementsByTagName("body")[0];
-var windowWidth = window.innerWidth;
+var workTab = document.getElementById("work-tab");
+var aboutTab = document.getElementById("about-tab");
+var workGrid = document.getElementById("work-tab").children;
+var tab = document.getElementById("tab").children;
 var scrollPos;
+
 
 
 // Noise
@@ -128,99 +133,82 @@ const noise = () => {
 
 
 
-// Tabs handler
-handleTabs = () => {
-  let workTab = document.getElementById("work-tab");
-  let aboutTab = document.getElementById("about-tab");
-  let workGrid = document.getElementById("work-tab").children;
-  let tab = document.getElementById("tab").children;
-
-  if (window.innerWidth < 767) {
+resizeTabs = () => {
+  if (window.innerWidth <= 767) {
     tab[0].style.display = "block";
-    tab[0].classList.add("active");
     tab[1].style.display = "block";
     tab[2].style.display = "none";
-    tab[2].classList.add("active");
-    workGrid[0].style.display = "block";
-    workGrid[1].style.display = "none";
-  } else {
+    
+    if (activeTab == 0) {
+      workGrid[0].style.display = "block";
+      workGrid[1].style.display = "none";
+    }
+  
+    if (activeTab == 1) {
+      workGrid[0].style.display = "none";
+      workGrid[1].style.display = "block";
+    }
+  }
+  
+  if (window.innerWidth > 767) {
     tab[0].style.display = "none";
-    tab[0].classList.add("active");
     tab[1].style.display = "none";
     tab[2].style.display = "block";
     workGrid[0].style.display = "block";
     workGrid[1].style.display = "block";
   }
-  aboutTab.style.display = "none";
-  workTab.style.display = "grid";
+}
 
+
+
+toggleTab = tabIndex => {
+  // Show Work tab by default
+  workTab.style.display = "grid";
+  aboutTab.style.display = "none";
+
+  if (tabIndex == 0 || tabIndex == 2) {
+    // Activate both Development and Work tabs
+
+    if (tabIndex == 0 && window.innerWidth <= 767) {
+      // Toggle Development tab if on mobile
+      workGrid[0].style.display = "block";
+      workGrid[1].style.display = "none";
+    }
+    tab[0].classList.add("active");
+    tab[1].classList.remove("active");
+    tab[2].classList.add("active");
+    tab[3].classList.remove("active");
+
+  } else if (tabIndex == 1) {
+    // Display Design tab
+    tab[0].classList.remove("active");
+    tab[1].classList.add("active");
+    tab[2].classList.add("active");
+    tab[3].classList.remove("active");
+    workGrid[0].style.display = "none";
+    workGrid[1].style.display = "block";
+    console.log("0 " + window.getComputedStyle(workGrid[0]).display);
+    console.log("1 " + window.getComputedStyle(workGrid[1]).display);
+
+  } else if (tabIndex == 3) {
+    // Display About tab
+    tab[0].classList.remove("active");
+    tab[1].classList.remove("active");
+    tab[2].classList.remove("active");
+    tab[3].classList.add("active");
+    workTab.style.display = "none";
+    aboutTab.style.display = "grid";
+  }
+}
+
+
+
+initializeTabs = () => {
   for (let i = 0; i < tab.length; i++) {
     tab[i].addEventListener("click", function() {
-      
-      if (windowWidth < 767) {
-        tab[0].style.display = "block";
-        tab[1].style.display = "block";
-        tab[2].style.display = "none";
-        workGrid[0].style.display = "block";
-        workGrid[1].style.display = "none";
-
-        // Development
-        if (i == 0) {
-          tab[i].classList.add("active");
-          tab[i + 1].classList.remove("active");
-          tab[i + 2].classList.add("active");
-          tab[i + 3].classList.remove("active");
-          aboutTab.style.display = "none";
-          workTab.style.display = "grid";
-
-          workGrid[0].style.display = "block";
-          workGrid[1].style.display = "none";
-        // Design
-        } else if (i == 1) {
-          tab[i - 1].classList.remove("active");
-          tab[i].classList.add("active");
-          tab[i + 1].classList.add("active");
-          tab[i + 2].classList.remove("active");
-          aboutTab.style.display = "none";
-          workTab.style.display = "grid";
-
-          workGrid[0].style.display = "none";
-          workGrid[1].style.display = "block";
-        // About
-        } else {
-          tab[i - 3].classList.remove("active");
-          tab[i - 2].classList.remove("active");
-          tab[i - 1].classList.remove("active");
-          tab[i].classList.add("active");
-          workTab.style.display = "none";
-          aboutTab.style.display = "grid";    
-        }
-      } else {
-        tab[0].style.display = "none";
-        tab[1].style.display = "none";
-        tab[2].style.display = "block";
-        workGrid[0].style.display = "block";
-        workGrid[1].style.display = "block";
-        
-        // Work
-        if (i == 2) {
-          tab[i - 2].classList.add("active");
-          tab[i - 1].classList.remove("active");
-          tab[i].classList.add("active");
-          tab[i + 1].classList.remove("active");
-          aboutTab.style.display = "none";
-          workTab.style.display = "grid";
-
-        // About
-        } else {
-          tab[i - 3].classList.remove("active");
-          tab[i - 2].classList.remove("active");
-          tab[i - 1].classList.remove("active");
-          tab[i].classList.add("active");
-          aboutTab.style.display = "grid";
-          workTab.style.display = "none";
-        }
-      }
+      activeTab = i;
+      toggleTab(i);
+      // resizeTabs(); // may not need
     });
   }
 
@@ -237,31 +225,12 @@ handleTabs = () => {
 window.onload = function() {
   loadWork(work.development, 0);
   loadWork(work.design, 1);
-  handleTabs();
+  resizeTabs();
+  toggleTab(0)
+  initializeTabs();
 
   window.addEventListener("resize", function() {
-    try {
-      if (window.innerWidth !== windowWidth) {
-        windowWidth = window.innerWidth;
-        
-        let tab = document.getElementById("tab").children;
-        if (windowWidth < 767) {
-          tab[0].style.display = "block";
-          tab[1].style.display = "block";
-          tab[2].style.display = "none";
-          workGrid[0].style.display = "block";
-          workGrid[1].style.display = "none";
-        } else {
-          tab[0].style.display = "none";
-          tab[1].style.display = "none";
-          tab[2].style.display = "block";
-          workGrid[0].style.display = "block";
-          workGrid[1].style.display = "block";
-        }
-      }
-    } catch (error) {
-      console.log("Currently viewing work");
-    }
+    resizeTabs();
   });
 
   window.addEventListener('popstate', function(e) {
@@ -290,6 +259,14 @@ window.addEventListener("load", function(e) {
 
 
 
+// Refresh
+window.onbeforeunload = function(e) {
+  active = "home";
+  return handleContainer();
+};
+
+
+
 // Work container handler
 handleContainer = (el, direction) => {
   if (active != "home") {
@@ -301,7 +278,17 @@ handleContainer = (el, direction) => {
         active = "home";
         loadWork(work.development, 0);
         loadWork(work.design, 1);
-        handleTabs();
+        
+        // Re-initialize variables
+        workTab = document.getElementById("work-tab");
+        aboutTab = document.getElementById("about-tab");
+        workGrid = document.getElementById("work-tab").children;
+        tab = document.getElementById("tab").children;
+
+        // Don't change order
+        toggleTab(activeTab);
+        resizeTabs();
+        initializeTabs();
         document.documentElement.scrollTop = document.body.scrollTop = scrollPos;
       });
     }, 300);
@@ -340,7 +327,7 @@ loadWork = (lst, col) => {
     span.appendChild(span_text);
     a.href = lst[i].url + ".html";
     a.addEventListener("click", function(e) {
-      // Get scroll position for later
+      // Update scroll position
       scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
       e.preventDefault();
@@ -373,15 +360,13 @@ loadWork = (lst, col) => {
 
 
 
-// Contact Change
-function contactChange(id, text) {
+contactChange = (id, text) => {
   document.getElementById(id).innerHTML = text;
 }
 
 
 
-// Copy Email Text
-function copy(id, text) {
+copy = (id, text) => {
   const el = document.createElement('textarea');
   el.value = text;
   document.body.appendChild(el);

@@ -47,17 +47,6 @@ table {
 /* Fonts */
 @font-face {
   font-family: "Suisse Int'l"; 
-  src: url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.eot"); 
-  src: url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.eot?#iefix") format("embedded-opentype"), 
-  url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.woff2") format("woff2"),
-  url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.woff") format("woff"),
-  url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.ttf") format("truetype"),
-  url("../assets/fonts/Suisse\ BP\ Int\'l\ Thin.otf") format("opentype"); 
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Suisse Int'l"; 
   src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot"); 
   src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot?#iefix") format("embedded-opentype"), 
   url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.svg#Suisse Int'l") format("svg"),
@@ -75,15 +64,6 @@ table {
 }
 
 @font-face {
-  font-family: "Suisse Int'l"; 
-  src: url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.eot"); 
-  src: url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.eot?#iefix") format("embedded-opentype"), 
-  url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.svg#Suisse Int'l Bold") format("svg"),
-  url("../assets/fonts/Suisse\ BP\ Int\'l\ Bold.woff");
-  font-weight: 700;
-}
-
-@font-face {
   font-family: "Suisse Mono";
   src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
   src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -98,14 +78,14 @@ table {
 @font-face {
   font-family: "Suisse Works";
   src: url("../assets/fonts/Suisse\ Works\ Medium.otf") format("opentype");
-  font-weight: 600;
 }
 
-@media only screen and (max-width: 500px) {
-  #content #contact > div { margin-right: 1rem; }
-  #content #contact a:not(:first-child):not(:last-child) { margin-right: 1rem; }
-  #content #contact .external { width: 0.5rem; height: 0.5rem; }
-  #contact a { font-size: 0.8rem; }
+
+
+@media only screen and (max-width: 1023px) {
+  #work-tab div .work-item div h3 { font-size: 1.3rem; padding: 0.17rem; height: initial; }
+  #content #work-tab .work-item { grid-template-columns: 10% 90%; }
+  #work-tab .work-item div { width: 80%; }
 }
 
 @media only screen and (max-width: 767px) {
@@ -131,9 +111,9 @@ table {
 
   /* Work */
   #content .work-content { margin: 0 auto 5rem; }
-  #content .work-content h3 { margin: 3rem 0; font-size: 2rem; }
+  #content .work-content h3 { margin: 3rem 0; font-size: 1.5rem; }
   #content .work-container .content { flex-direction: column; }
-  #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; }
+  #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; height: 60vh; }
   #content .work-container .content .narrative { width: 100%; }
   #content .work-content .details { flex-direction: column; padding: 1.5rem; }
   #content .work-content .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
@@ -151,11 +131,20 @@ table {
   body .spacer1 { margin-bottom: 3vw; }
 }
 
-@media only screen and (max-width: 1023px) {
-  #work-tab div .work-item div h3 { font-size: 1.3rem; padding: 0.17rem; height: initial; }
-  #content #work-tab .work-item { grid-template-columns: 10% 90%; }
-  #work-tab .work-item div { width: 80%; }
+@media only screen and (max-width: 500px) {
+  #content #contact > div { margin-right: 1rem; }
+  #content #contact a:not(:first-child):not(:last-child) { margin-right: 1rem; }
+  #content #contact .external { width: 0.5rem; height: 0.5rem; }
+  #contact a { font-size: 0.8rem; }
+  #content .work-content .work-header { -webkit-box-shadow: 0 -10px 30px 0 #111; -moz-box-shadow: 0 -10px 30px 0 #111; box-shadow: 0 -10px 30px 0 #111; }
+  #content .narrative .logo { width: 50%; }
 }
+
+@media only screen and (max-width: 340px) {
+  #content #contact .external { display: none; }
+}
+
+
 
 .spacer6 { margin-bottom: 15vw; }
 .spacer5 { margin-bottom: 10vw; }
@@ -165,13 +154,7 @@ table {
 .spacer1 { margin-bottom: 1vw; }
 .spacer0 { margin-bottom: 0; }
 
-.hidden { display: none; }
-.center { text-align: center; }
-.medium { font-weight: 600; font-size: inherit; }
-.float-left { float: left; }
-.float-right { float: right; }
-.margin-top-none { margin-top: 0 !important; }
-.mono { font-family: "Suisse Mono"; }
+
 
 /* Variables --------------------------------------------------------------- */
 :root {
@@ -188,7 +171,6 @@ html, body {
   line-height: 160%;
   background-color: var(--bg, indigo);
   color: var(--text, white);
-  /* scroll-behavior: smooth; */
   opacity: 1;
   transition: 0.7s opacity;
 }
@@ -221,7 +203,6 @@ body.fade {
   font-family: "Suisse Works";
   display: inline;
   font-size: 1rem;
-  font-weight: 600;
 }
 
 #contact {
@@ -265,7 +246,7 @@ body.fade {
 }
 
 #message {
-  font-size: 2rem;
+  font-size: 1.8rem;
   width: 70%;
   margin-bottom: 0.3rem;
   line-height: 120%;
@@ -416,15 +397,6 @@ body.fade {
   overflow: scroll;
 }
 
-.border {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background-color: black !important;
-}
-
 .work-content {
   margin: 5rem auto;
   width: 75%;
@@ -434,11 +406,13 @@ body.fade {
 .work-header {
   position: sticky;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: var(--bg);
-  padding: 2.5rem 0;
+  padding: 2rem calc(25vw/2);
+  margin-left: calc(-25vw/2);
   display: flex;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .work-nav {
@@ -481,25 +455,19 @@ body.fade {
   border-radius: 5px;
   margin-bottom: 4vw;
 }
-
 .details div {
-  /* width: fit-content;
-  max-width: 25%; */
   width: 20%;
   box-sizing: border-box;
 }
 .details div:not(:last-child) {
   margin-right: calc(20%/3);
 }
-
 .details div h5 {
   margin-bottom: 1vw;
 }
-
 .details div p {
   color: #9E9E9E;
 }
-
 .details a {
   color: inherit;
 }
@@ -523,7 +491,7 @@ body.fade {
 }
 
 #caida-img { background-image: url("../assets/images/caida/banner.jpg"); }
-#sgf-img { background-image: url("..//assets/images/sgf/banner.mov"); }
+#sgf-img { background-image: url("..//assets/images/sgf/banner.png"); }
 #dco-img { background-image: url("../assets/images/designco/banner.jpg"); }
 #census-img { background-image: url("../assets/images/census/banner.jpg"); }
 #tritonfest-img { background-image: url("../assets/images/tritonfest/banner.jpg"); }
@@ -538,41 +506,34 @@ body.fade {
   counter-reset: subheader;
   z-index: 1;
 }
-
 .narrative p, .narrative ul {
   color: #9E9E9E;
 }
-
 .narrative ul {
   padding-left: 2rem;
 }
-
 .narrative h4 {
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1vw;
 }
-
 .narrative h5 {
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 0.5vw;
 }
-
 .narrative h5::before {
   counter-increment: subheader;
   content: "0" counter(subheader) ".";
   font-family: "Suisse Mono";
   font-size: 1.1rem;
 }
-
 .narrative img {
   border-radius: 5px;
   width: 100%;
 }
-
-.logo {
-  width: 30% !important;
+.narrative .logo {
+  width: 30%;
 }
 
 .dual-image {
@@ -583,7 +544,6 @@ body.fade {
 .blend img:first-child {
   border-radius: 5px 0 0 5px;
 }
-
 .blend img:last-child {
   border-radius: 0 5px 5px 0;
 }
