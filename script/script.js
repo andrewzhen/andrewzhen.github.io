@@ -2,27 +2,38 @@ var work = {
   "development" : [
     {
       title: "CAIDA Internship",
-      description: "A summer-long, UX development experience at The Center of Applied Internet Data Analysis at UC San Diego using Meteor.js.",
+      description: 
+        "A summer-long, UX development experience at The Center of \
+        Applied Internet Data Analysis at UC San Diego using Meteor.js.",
       url: "caida"
     },
     {
       title: "Sun God Festival 2020",
-      description: "Design and development of UC San Diego’s annual art and music festival website featuring past artists such as Drake and Kendrick Lamar.",
+      description: 
+        "Design and development of UC San Diego’s annual art and music festival \
+        website featuring past artists such as Drake and Kendrick Lamar.",
       url: "sun-god-festival"
     },
     {
       title: "Design Co – Join Our Team",
-      description: "Development of Design Co’s recruiting page using React.js, aiming to encourage student designers join our team.",
+      description: 
+        "Development of Design Co’s recruiting web page using React.js, aiming to \
+        encourage student designers to join our leadership team.",
       url: "design-co"
     },
     {
       title: "UCSD Census",
-      description: "Design and development of a website to engage and inform the UC San Diego campus community of the importance of being counted.",
+      description: 
+        "Design and development of a website to engage and inform the UC San \
+        Diego campus community of the importance of being counted in the \
+        census.",
       url: "ucsd-census"
     },
     {
       title: "Triton Fest Spring 2020",
-      description: "Development of a linktree-style webpage used to increase social media engagement for UC San Diego’s after-hours event series.",
+      description: 
+        "Development of a linktree-style web page used to increase social \
+        media engagement for UC San Diego’s after-hours event series.",
       url: "triton-fest"
     }
   ],
@@ -30,17 +41,25 @@ var work = {
   "design" : [
     {
       title: "GrandAMA App Design",
-      description: "Design and prototyping of an advice-giving platform, powered by the wisdom of elders.",
+      description: 
+        "Design and prototyping of an advice-giving mobile application to \
+        help bridge the gap between generations. Powered by the wisdom of \
+        elders.",
       url: "grandama"
     },
     {
       title: "Illustrations and Prototypes",
-      description: "A collection of my personal design projects.",
+      description: 
+        "A collection of my personal design projects, ranging from line \
+        animation to full-stack web development.",
       url: "illustrations-prototypes"
     },
     {
       title: "Digital Photography",
-      description: "A gallery of my hobby-turned-money-making skill.",
+      description: 
+        "A portfolio of my photography work requiring me to location-scout, \
+        plan logistics, and edit and deliver photos to the client in a timely \
+        manner.",
       url: "photography"
     }
   ]
@@ -187,8 +206,6 @@ toggleTab = tabIndex => {
     tab[3].classList.remove("active");
     workGrid[0].style.display = "none";
     workGrid[1].style.display = "block";
-    console.log("0 " + window.getComputedStyle(workGrid[0]).display);
-    console.log("1 " + window.getComputedStyle(workGrid[1]).display);
 
   } else if (tabIndex == 3) {
     // Display About tab

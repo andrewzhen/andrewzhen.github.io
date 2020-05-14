@@ -64,6 +64,15 @@ table {
 }
 
 @font-face {
+  font-family: "Suisse Int'l"; 
+  src: url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.eot"); 
+  src: url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.eot?#iefix") format("embedded-opentype"), 
+  url("//db.onlinewebfonts.com/t/8e52b05f6b6c1a65b0c49c8286f690b2.svg#Suisse Int'l Bold") format("svg"),
+  url("../assets/fonts/Suisse\ BP\ Int\'l\ Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
   font-family: "Suisse Mono";
   src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot"); /* IE9*/
   src: url("https://db.onlinewebfonts.com/t/008acf881eac29f0c639b8e2345a1764.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
@@ -113,9 +122,10 @@ table {
   #content .work-content { margin: 0 auto 5rem; }
   #content .work-content h3 { margin: 3rem 0; font-size: 1.5rem; }
   #content .work-container .content { flex-direction: column; }
-  #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; height: 60vh; }
+  /* #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; height: 60vh; } */
+  #content .work-container .content .sticky-image { position: fixed; width: 75%; margin: 0 0 10vw 0; height: 60vh; z-index: -1; top: 11.5rem; }
   #content .work-container .content .narrative { width: 100%; }
-  #content .work-content .details { flex-direction: column; padding: 1.5rem; }
+  #content .work-content .details { flex-direction: column; padding: 1.5rem; margin: 125vw 0 10vw; }
   #content .work-content .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
   #content .narrative { z-index: -1; }
 
@@ -136,7 +146,7 @@ table {
   #content #contact a:not(:first-child):not(:last-child) { margin-right: 1rem; }
   #content #contact .external { width: 0.5rem; height: 0.5rem; }
   #contact a { font-size: 0.8rem; }
-  #content .work-content .work-header { -webkit-box-shadow: 0 -10px 30px 0 #111; -moz-box-shadow: 0 -10px 30px 0 #111; box-shadow: 0 -10px 30px 0 #111; }
+  #content .work-content .work-header { -webkit-box-shadow: 0 30px 10px -30px #111; -moz-box-shadow: 0 30px 10px -30px #111; box-shadow: 0 30px 10px -30px #111; }
   #content .narrative .logo { width: 50%; }
 }
 
@@ -438,7 +448,7 @@ body.fade {
 
 .work-content h3 {
   font-size: 2.5rem;
-  font-weight: bold;
+  font-weight: 700;
   margin: 5rem 0;
   line-height: initial; 
 }
