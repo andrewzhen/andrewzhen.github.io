@@ -86,7 +86,14 @@ table {
 
 @font-face {
   font-family: "Suisse Works";
+  src: url("../assets/fonts/Suisse\ Works\ Regular.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Suisse Works";
   src: url("../assets/fonts/Suisse\ Works\ Medium.otf") format("opentype");
+  font-weight: 600;
 }
 
 
@@ -104,7 +111,7 @@ table {
   #content #headline-text { font-size: 2rem; }
 
   /* Landing */
-  #intro #message { margin-bottom: 3rem; width: 100%; }
+  #intro #message { font-size: 1.6rem; margin-bottom: 3rem; width: 100%; }
 
   /* Main */
   #content #work-tab { grid-template-columns: 100%; }
@@ -147,6 +154,7 @@ table {
   #content #contact .external { width: 0.5rem; height: 0.5rem; }
   #contact a { font-size: 0.8rem; }
   #content .work-content .work-header { -webkit-box-shadow: 0 30px 10px -30px #111; -moz-box-shadow: 0 30px 10px -30px #111; box-shadow: 0 30px 10px -30px #111; }
+  #content #ip-img + .narrative { margin-top: 120vw; }
   #content .narrative .logo { width: 50%; }
 }
 
@@ -213,6 +221,7 @@ body.fade {
   font-family: "Suisse Works";
   display: inline;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 #contact {
@@ -256,15 +265,10 @@ body.fade {
 }
 
 #message {
-  font-size: 1.8rem;
+  font-size: 2rem;
   width: 70%;
   margin-bottom: 0.3rem;
   line-height: 120%;
-}
-#message a {
-  color: var(--text, white);
-  font-size: 1.8rem;
-  text-decoration: none;
 }
 #me {
   text-decoration: underline;

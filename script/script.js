@@ -277,12 +277,12 @@ window.addEventListener("load", function(e) {
 
 
 // Refresh
-window.onbeforeunload = window.onunload = function() { 
-  window.setTimeout(function () { 
-      window.location = 'https://ajzhen.com/';
-  }, 0); 
-  window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
-}
+// window.onbeforeunload = window.onunload = function() { 
+//   window.setTimeout(function () { 
+//       window.location = 'https://ajzhen.com/';
+//   }, 0); 
+//   window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
+// }
 
 
 
