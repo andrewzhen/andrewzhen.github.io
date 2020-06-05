@@ -267,7 +267,7 @@ window.onload = function() {
         }
       }
     }
-    handleContainer(active, "translateY(100vh)");
+    handleContainer(active, "translateX(100vw)");
   });
 }
 
@@ -283,7 +283,7 @@ window.addEventListener("load", function(e) {
 // Work container handler
 handleContainer = (el, direction) => {
   if (active != "home") {
-    $('.work-container').css({ transform: 'translateY(100vh)' });
+    $('.work-container').css({ transform: 'translateX(100vw)' });
   
     setTimeout(function() {
       $('#container').remove();
@@ -314,7 +314,7 @@ handleContainer = (el, direction) => {
 document.onkeydown = function(evt) {
   evt = evt || window.event;
   if (evt.keyCode == 27) {
-    handleContainer(active, "translateY(100vh)");
+    handleContainer(active, "translateX(100vw)");
     history.back();
   }
 };
@@ -348,12 +348,12 @@ loadWork = (lst, col) => {
       $('#content').load(this.href + ' #container', function() {
         setTimeout(function() {
           active = $('#container');
-          $('.work-container').css({ transform: 'translateY(0)' });
+          $('.work-container').css({ transform: 'translateX(0)' });
         }, 10);
 
         // Close container
         $('.work-nav')[0].addEventListener('click', function() {
-          handleContainer(active, 'translateY(100vh)');
+          handleContainer(active, 'translateX(100vw)');
           history.back();
         });
       });
