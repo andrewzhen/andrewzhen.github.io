@@ -1,3 +1,4 @@
+/********************************** RESET ************************************/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -44,7 +45,7 @@ table {
   border-spacing: 0; }
 
 
-/* Fonts */
+/********************************** FONTS ************************************/
 @font-face {
   font-family: "Suisse Int'l"; 
   src: url("//db.onlinewebfonts.com/t/13ab13418f633c1b0516fed6e30bedbc.eot"); 
@@ -98,6 +99,7 @@ table {
 
 
 
+/******************************* RESPONSIVENESS ******************************/
 @media only screen and (max-width: 1023px) {
   #work-tab div .work-item div h3 { font-size: 1.3rem; padding: 0.17rem; height: initial; }
   #content #work-tab .work-item { grid-template-columns: 10% 90%; }
@@ -132,7 +134,7 @@ table {
   /* #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; height: 60vh; } */
   #content .work-container .content .sticky-image { position: fixed; width: 75%; margin: 0 0 10vw 0; height: 60vh; z-index: -1; top: 11.5rem; }
   #content .work-container .content .narrative { width: 100%; }
-  #content .work-content .details { flex-direction: column; padding: 1.5rem; margin: 125vw 0 10vw; }
+  #content .work-content .details { flex-direction: column; padding: 1.5rem; margin: 68vh 0 10vw; }
   #content .work-content .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
   #content .narrative { z-index: -1; }
 
@@ -164,6 +166,7 @@ table {
 
 
 
+/********************************** VARIABLES ********************************/
 .spacer6 { margin-bottom: 15vw; }
 .spacer5 { margin-bottom: 10vw; }
 .spacer4 { margin-bottom: 6vw; }
@@ -172,14 +175,13 @@ table {
 .spacer1 { margin-bottom: 1vw; }
 .spacer0 { margin-bottom: 0; }
 
-
-
-/* Variables --------------------------------------------------------------- */
 :root {
-  --text: #FFFDE7;
-  --bg: #3C405A;
+  /* --text: #FFFDE7;
+  --bg: #3C405A; */
+  --text: #333;
+  --bg: white;
+  --details: #eee;
 }
-
 
 html, body {
   font-family: "Suisse Int'l", Roboto, sans-serif;
@@ -206,11 +208,10 @@ body.fade {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  opacity: .02;
-  background-color: white;
+  opacity: .05;
 }
 
-/* Header ------------------------------------------------------------------ */
+/********************************** HEADER ***********************************/
 #headline {
   float: left;
 }
@@ -257,7 +258,7 @@ body.fade {
   cursor: pointer;
 }
 
-/* Content ----------------------------------------------------------------- */
+/********************************** CONTENT **********************************/
 #content {
   margin: 5rem auto;
   width: 75%;
@@ -336,7 +337,7 @@ body.fade {
 .work-item {
   display: grid;
   grid-template-columns: 7% 93%;
-  grid-template-rows: 15rem;
+  grid-template-rows: 13rem;
 }
 .work-item div {
   width: 75%;
@@ -344,10 +345,10 @@ body.fade {
 .work-item div h3 {
   font-size: 1.7rem;
   font-weight: 500;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   width: fit-content;
   background: linear-gradient(to right, var(--text) 50%, var(--bg) 50%);
-  background-size: 200% 170%;
+  background-size: 201% 170%;
   background-position: right bottom;
   transition: .5s;
   padding: 0.2rem;
@@ -364,6 +365,7 @@ body.fade {
 .work-item div h3 a {
   color: var(--text, white);
   text-decoration: none;
+  font-weight: 600;
 }
 .numerate {
   font-family: "Suisse Mono";
@@ -398,7 +400,7 @@ body.fade {
   border-radius: 5px;
 }
 
-/* Work -------------------------------------------------------------------- */
+/********************************** WORK *************************************/
 .work-container {
   width: 100vw;
   height: 100vh;
@@ -412,7 +414,7 @@ body.fade {
 }
 
 .work-content {
-  margin: 5rem auto;
+  margin: 5rem auto 2rem;
   width: 75%;
   max-width: 1300px;
 }
@@ -422,7 +424,7 @@ body.fade {
   top: 0;
   width: 100vw;
   background-color: var(--bg);
-  padding: 2rem calc(25vw/2);
+  padding: 3rem calc(25vw/2);
   margin-left: calc(-25vw/2);
   display: flex;
   align-items: center;
@@ -463,7 +465,7 @@ body.fade {
   justify-content: space-between;
   font-family: "Suisse Mono";
   font-size: 0.8rem;
-  background-color: #4E5269;
+  background-color: var(--details);
   box-sizing: border-box;
   padding: 2rem 4rem;
   border-radius: 5px;
@@ -493,9 +495,9 @@ body.fade {
 
 .sticky-image {
   position: sticky;
-  top: 5rem;
+  top: 6rem;
   border-radius: 5px;
-  width: 40%;
+  width: 35%;
   height: 85vh;
   margin-right: 5%;
   background-position: center;
@@ -504,17 +506,19 @@ body.fade {
   transition: 1s;
 }
 
-#caida-img { background-image: url("../assets/images/caida/banner.jpg"); }
-#sgf-img { background-image: url("..//assets/images/sgf/banner.png"); }
-#dco-img { background-image: url("../assets/images/designco/banner.jpg"); }
-#census-img { background-image: url("../assets/images/census/banner.jpg"); }
+#levelup-img { background-image: url("../assets/images/levelup/banner.jpg"); }
+/* #caida-img { background-image: url("../assets/images/caida/banner.jpg"); } */
+#sgf-img { background-image: url("..//assets/images/sgf/banner.jpg"); }
+#joinourteam-img { background-image: url("../assets/images/joinourteam/banner.jpg"); }
 #tritonfest-img { background-image: url("../assets/images/tritonfest/banner.jpg"); }
+#asce-img { background-image: url("../assets/images/asce/banner.jpg"); }
+
 #grandama-img { background-image: url("../assets/images/grandama/banner.jpg"); }
 #ip-img { background-image: url("../assets/images/ip/banner.jpg"); }
 #photo-img { background-image: url("../assets/images/photography/banner.jpg"); }
 
 .narrative {
-  width: 55%;
+  width: 60%;
   font-size: 1.1rem;
   line-height: 160%;
   counter-reset: subheader;

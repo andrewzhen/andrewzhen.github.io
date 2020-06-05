@@ -1,40 +1,46 @@
 var work = {
   "development" : [
+    // {
+    //   title: "CAIDA Internship",
+    //   description: 
+    //     "A summer-long, UX development experience at The Center of \
+    //     Applied Internet Data Analysis at UC San Diego using Meteor.js.",
+    //   url: "caida"
+    // },
     {
-      title: "CAIDA Internship",
+      title: "Design Co – Level Up",
       description: 
-        "A summer-long, UX development experience at The Center of \
-        Applied Internet Data Analysis at UC San Diego using Meteor.js.",
-      url: "caida"
+        "Web development of Design Co's 10-week design program that provides \
+        students with the opportunity to tackle a real-world challenge.",
+      url: "levelup"
     },
     {
       title: "Sun God Festival 2020",
       description: 
-        "Design and development of UC San Diego’s annual art and music festival \
-        website featuring past artists such as Drake and Kendrick Lamar.",
+        "Web design and development of UC San Diego’s annual art and music \
+        festival featuring past artists such as Drake and Kendrick Lamar.",
       url: "sun-god-festival"
     },
     {
       title: "Design Co – Join Our Team",
       description: 
-        "Development of Design Co’s recruiting web page using React.js, aiming to \
-        encourage student designers to join our leadership team.",
-      url: "design-co"
+        "Web development of Design Co’s recruiting intitative using React.js, \
+        aiming to encourage student designers to join our leadership team.",
+      url: "joinourteam"
     },
     {
-      title: "UCSD Census",
+      title: "Triton Fest – Good Clean Fun",
       description: 
-        "Design and development of a website to engage and inform the UC San \
-        Diego campus community of the importance of being counted in the \
-        census.",
-      url: "ucsd-census"
-    },
-    {
-      title: "Triton Fest Spring 2020",
-      description: 
-        "Development of a linktree-style web page used to increase social \
-        media engagement for UC San Diego’s after-hours event series.",
+        "Web development of a linktree-style resource page to increase \
+        social media engagement for UC San Diego’s after-hours event series.",
       url: "triton-fest"
+    },
+    {
+      title: "A.S. Concerts & Events",
+      description: 
+        "Web development of UC San Diego's student programming board \
+        responsible for some of the longest standing campus traditions.",
+      url: "asce"
     }
   ],
 
@@ -57,9 +63,8 @@ var work = {
     {
       title: "Digital Photography",
       description: 
-        "A portfolio of my photography work requiring me to location-scout, \
-        plan logistics, and edit and deliver photos to the client in a timely \
-        manner.",
+        "A portfolio of my photography work. Responsibilities include \
+        location-scouting, logistics planning, and photo editing.",
       url: "photography"
     }
   ]
@@ -149,7 +154,7 @@ const noise = () => {
     setup();
   })();
 };
-
+noise();
 
 
 resizeTabs = () => {
@@ -225,7 +230,6 @@ initializeTabs = () => {
     tab[i].addEventListener("click", function() {
       activeTab = i;
       toggleTab(i);
-      // resizeTabs(); // may not need
     });
   }
 
@@ -273,16 +277,6 @@ window.onload = function() {
 window.addEventListener("load", function(e) {
   document.body.classList.remove("fade");
 });
-
-
-
-// Refresh
-// window.onbeforeunload = window.onunload = function() { 
-//   window.setTimeout(function () { 
-//       window.location = 'https://ajzhen.com/';
-//   }, 0); 
-//   window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
-// }
 
 
 
