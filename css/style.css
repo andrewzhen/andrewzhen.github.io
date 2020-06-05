@@ -110,7 +110,7 @@ table {
   /* Header */
   #header { margin-bottom: 3rem; }
   #headline { margin-bottom: 2rem; }
-  #content #headline-text { font-size: 2rem; }
+  #content #headline-text { font-size: 1.5rem; }
 
   /* Landing */
   #intro #message { font-size: 1.6rem; margin-bottom: 3rem; width: 100%; }
@@ -120,7 +120,7 @@ table {
   #content #work-tab div h2 { display: none; }
   #work-tab div .work-item { grid-template-columns: 10% 90%; grid-template-rows: 12rem; }
   #work-tab div .work-item div { width: 100%; }
-  #work-tab div .work-item div h3 { font-size: 1.3rem; padding: 0.17rem; height: initial; }
+  #work-tab div .work-item div h3 { font-size: 1.2rem; padding: 0.17rem; height: initial; }
   #content #about-tab { grid-template-columns: 100%; grid-template-rows: 70vw; }
   #content #about-tab #portrait { border-radius: 3px; height: 60vw; margin-right: 0; }
   #work-tab .work-item .numerate { font-size: 0.9rem; }
@@ -132,7 +132,7 @@ table {
   #content .work-content h3 { margin: 3rem 0; font-size: 1.5rem; }
   #content .work-container .content { flex-direction: column; }
   /* #content .work-container .content .sticky-image { position: static; width: 100%; margin: 0 0 10vw 0; height: 60vh; } */
-  #content .work-container .content .sticky-image { position: fixed; width: 75%; margin: 0 0 10vw 0; height: 60vh; z-index: -1; top: 11.5rem; }
+  #content .work-container .content .sticky-image { position: fixed; width: 80%; margin: 0 0 10vw 0; height: 60vh; z-index: -1; top: 11.5rem; }
   #content .work-container .content .narrative { width: 100%; }
   #content .work-content .details { flex-direction: column; padding: 1.5rem; margin: 73vh 0 10vw; }
   #content .work-content .details div { width: 100%; max-width: 100%; padding: 0; margin-bottom: 1.5rem; }
@@ -155,7 +155,7 @@ table {
   #content #contact a:not(:first-child):not(:last-child) { margin-right: 1rem; }
   #content #contact .external { width: 0.5rem; height: 0.5rem; }
   #contact a { font-size: 0.8rem; }
-  #content .work-content .work-header { width: 110vw; padding: 2rem calc(35vw/2); margin-left: calc(-35vw/2); -webkit-box-shadow: 0 25px 10px -30px #111; -moz-box-shadow: 0 25px 10px -30px #111; box-shadow: 0 25px 10px -30px #111; }
+  #content .work-content .work-header { width: 110vw; padding: 2rem calc(30vw/2); margin-left: calc(-30vw/2); -webkit-box-shadow: 0 25px 10px -30px #111; -moz-box-shadow: 0 25px 10px -30px #111; box-shadow: 0 25px 10px -30px #111; }
   #content #ip-img + .narrative { margin-top: 120vw; }
   #content .narrative .logo { width: 50%; }
 }
@@ -217,10 +217,9 @@ body.fade {
   text-decoration: none;
 }
 #headline-text {
-  font-family: "Suisse Works";
   display: inline;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #contact {
@@ -281,7 +280,6 @@ body.fade {
   align-items: center;
   font-size: 0.8rem;
   font-weight: 500;
-  text-transform: uppercase;
 }
 #tab h2 {
   position: relative;
@@ -409,11 +407,12 @@ body.fade {
   transform: translateY(100vh);
   transition: .6s;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .work-content {
   margin: 5rem auto 2rem;
-  width: 75%;
+  width: 80%;
   max-width: 1300px;
 }
 
@@ -427,6 +426,8 @@ body.fade {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  opacity: 0.7;
+  backdrop-filter: blur(10px);
 }
 
 .work-nav {
@@ -529,7 +530,7 @@ body.fade {
   padding-left: 2rem;
 }
 .narrative h4 {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.5rem;
   margin-bottom: 1vw;
 }
