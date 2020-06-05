@@ -176,8 +176,6 @@ table {
 .spacer0 { margin-bottom: 0; }
 
 :root {
-  /* --text: #FFFDE7;
-  --bg: #3C405A; */
   --text: #333;
   --bg: white;
   --details: #eee;
@@ -189,8 +187,8 @@ html, body {
   font-weight: 500;
   transition: 0.3s;
   line-height: 160%;
-  background-color: var(--bg, indigo);
-  color: var(--text, white);
+  background-color: var(--bg);
+  color: var(--text);
   opacity: 1;
   transition: 0.7s opacity;
 }
@@ -231,7 +229,7 @@ body.fade {
 }
 #contact a {
   text-decoration: none;
-  color: var(--text, white);
+  color: var(--text);
   transition: 0.3s;
 }
 #contact a:hover {
@@ -296,7 +294,7 @@ body.fade {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--text, white);
+  background-color: var(--text);
   visibility: hidden;
   transition: .3s;
 }
@@ -359,11 +357,11 @@ body.fade {
   color: var(--bg);
 }
 .work-item div h3:hover a {
-  color: var(--bg, indigo);
+  color: var(--bg);
   transition: .5s;
 }
 .work-item div h3 a {
-  color: var(--text, white);
+  color: var(--text);
   text-decoration: none;
   font-weight: 600;
 }
@@ -407,9 +405,8 @@ body.fade {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--bg, indigo);
-  /* transform: translateY(100vh); */
-  transform: translateX(100vw);
+  background-color: var(--bg);
+  transform: translateY(100vh);
   transition: .6s;
   overflow: scroll;
 }
